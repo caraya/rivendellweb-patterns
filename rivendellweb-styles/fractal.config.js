@@ -23,7 +23,7 @@ fractal.components.set('path', path.join(__dirname, 'components'));
 /*
  * Tell Fractal where to look for documentation pages.
  */
-fractal.docs.set('path', path.join(__dirname, 'docs'));
+fractal.docs.set('path', path.join(__dirname, 'text'));
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
@@ -39,7 +39,7 @@ fractal.components.set('default.preview', '@preview');
  * Set destinations
 */
 /* Set the static HTML build destination */
-fractal.web.set('builder.dest', __dirname + '/build');
+fractal.web.set('builder.dest', __dirname + '/docs');
 
 /*
  * Tell Fractal what statuses to use
