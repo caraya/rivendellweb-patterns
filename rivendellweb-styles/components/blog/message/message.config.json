@@ -1,0 +1,15 @@
+{
+	"title": "Message",
+	"status": "Draft",
+	"variants": [
+		{
+			"name": "info"
+		},
+		{
+			"name": "warning"
+		},
+		{
+			"name": "danger"
+		}
+	]
+}

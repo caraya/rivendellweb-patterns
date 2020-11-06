@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+## Metadata
+--------------------------------------------------------------*/
+.entry-meta__content {
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.entry-meta__content span {
+  font-weight: 700;
+}
+
+.entry-meta__content .entry-meta__item {
+  font-size: 0.9em;
+  flex: 1 0 auto;
+}

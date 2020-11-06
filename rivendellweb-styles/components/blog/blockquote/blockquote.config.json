@@ -1,0 +1,18 @@
+{
+	"title": "Blockquote",
+	"status": "draft",
+	"variants": [
+		{
+			"name": "default"
+		},
+		{
+			"name": "thin-both"
+		},
+		{
+			"name": "thin-top"
+		},
+		{
+			"name": "large"
+		}
+	]
+}

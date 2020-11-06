@@ -1,0 +1,11 @@
+{
+  "name": "rivendellweb-styles",
+  "version": "0.1.0",
+  "dependencies": {
+    "@frctl/fractal": "^1.5.0"
+  },
+  "scripts": {
+    "fractal:start": "fractal start --sync",
+    "fractal:build": "fractal build"
+  }
+}

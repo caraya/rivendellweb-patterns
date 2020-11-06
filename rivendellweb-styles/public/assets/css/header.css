@@ -1,0 +1,252 @@
+/*--------------------------------------------------------------
+## Header, posts and pages
+--------------------------------------------------------------*/
+.header-image {
+  grid-column: 1/-1;
+  margin: 0;
+  max-height: 65vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.header-image img {
+  height: auto;
+  width: 100vw;
+}
+
+.site-header {
+  position: relative;
+  padding: 0;
+}
+
+@media screen and (max-width: 24.15em) {
+  .site-header {
+    padding: 0 1em;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  .site-header {
+    grid-column: 2/-2;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .custom-logo-link {
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+    -webkit-margin-end: 1rem;
+            margin-inline-end: 1rem;
+  }
+  .custom-logo-link img {
+    height: 100px;
+    width: auto;
+  }
+  .site-branding {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  .site-branding__text {
+    margin: 0;
+    padding: 0;
+    flex: 1 0 60%;
+  }
+  .site-branding__text .site-title {
+    --recursive-casual: 1;
+    --recursive-mono: 1;
+    font-size: 2.1em;
+    font-size: calc(var(--h2-font-size-min) * 1em);
+    font-weight: calc(var(--recursive-weight) * var(--h2-vf-wght-multiplier-l));
+    line-height: var(--h2-line-height-min);
+    margin-bottom: 0;
+  }
+  .site-branding__text .site-description {
+    margin-top: 0;
+  }
+  .main-navigation {
+    width: 40%;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+  .main-navigation ul {
+    align: end;
+  }
+  .site-branding {
+    margin-right: 1rem;
+  }
+  .site-branding__text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+
+.main-navigation {
+  display: block;
+  font-weight: 400;
+  clear: left;
+}
+
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-top: 1em;
+  padding-left: 0;
+}
+
+.main-navigation ul ul {
+  display: none;
+  top: 1.5em;
+  z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+  top: 0;
+}
+
+.main-navigation ul ul li {
+  padding-left: 1em;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+
+.main-navigation ul ul a {
+  width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+
+.main-navigation li {
+  position: relative;
+}
+
+.main-navigation a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5em 1em 0.5em 0;
+  text-decoration: none;
+  color: #cd2653;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  text-decoration: underline;
+}
+
+.main-navigation .menu-item-has-children,
+.main-navigation .page_item_has_children {
+  min-width: 218px;
+}
+
+.main-navigation .menu-item-has-children > a,
+.main-navigation .page_item_has_children > a {
+  padding-right: 2em;
+}
+
+button.dropdown-toggle {
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: #cd2653;
+  color: white;
+  line-height: 1.5em;
+  padding: 0 0.25em;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 1.2em 1.2em 0 0;
+  padding: 0.6em 0.8em;
+  font-size: 80%;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Toggle small menu and children on */
+.toggled-on ul,
+.children.toggled-on {
+  display: block;
+}
+
+@media screen and (min-width: 24.15em) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation .menu-item-has-children > a,
+  .main-navigation .page_item_has_children > a {
+    padding-right: 2em;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .main-navigation ul {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-navigation ul ul {
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    margin-left: 0;
+  }
+  .main-navigation ul ul li {
+    padding-left: 0;
+  }
+  .main-navigation ul ul li a {
+    width: 218px;
+  }
+  .main-navigation ul li a {
+    padding: 0.4em 1em;
+  }
+}
+
+@media screen and (min-width: 43.75em) {
+  .main-navigation ul {
+    justify-content: flex-end;
+    padding-top: 0;
+    /* If you want dropdowns to open on hover, uncomment this: */
+    /*
+			li:hover > ul,
+				li:focus > ul {
+				display: block;
+			}
+			*/
+  }
+}
+
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
