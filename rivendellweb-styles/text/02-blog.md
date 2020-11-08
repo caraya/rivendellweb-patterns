@@ -358,34 +358,10 @@ body {
                 Verdana,
                 sans-serif;
   font-weight: var(--recursive-weight);
-  font-variation-settings: var(--recursive-aalt),
-  var(--recursive-case),
-  var(--recursive-dlig),
-  var(--recursive-dnom),
-  var(--recursive-frac),
-  var(--recursive-numr),
-  var(--recursive-ordn),
-  var(--recursive-pnum),
-  var(--recursive-sinf),
-  var(--recursive-ss01),
-  var(--recursive-ss02),
-  var(--recursive-ss03),
-  var(--recursive-ss04),
-  var(--recursive-ss05),
-  var(--recursive-ss06),
-  var(--recursive-ss07),
-  var(--recursive-ss08),
-  var(--recursive-ss09),
-  var(--recursive-ss10),
-  var(--recursive-ss11),
-  var(--recursive-ss12),
-  var(--recursive-sups),
-  var(--recursive-titl),
-  var(--recursive-zero),
-  "MONO" var(--recursive-mono),
-  "CASL" var(--recursive-casual),
-  "slnt" var(--recursive-slant),
-  "ital" var(--recursive-italic);
+  font-variation-settings:    "MONO" var(--recursive-mono),
+                              "CASL" var(--recursive-casual),
+                              "slnt" var(--recursive-slant),
+                              "ital" var(--recursive-italic);
 }
 ```
 
