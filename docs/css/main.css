@@ -1045,7 +1045,7 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
    @font-face {
   font-family: 'Recursive';
   font-weight: 300 1000;
-  src: url('./fonts/recursive.woff2') format('woff2');
+  src: url('fonts/recursive.woff2') format('woff2');
 }
 
    body {
