@@ -59,4 +59,4 @@ fractal.docs.engine(hbs);
 fractal.web.set('static.path', __dirname + '/static');
 
 /* Set the static HTML build destination */
-fractal.web.set('builder.dest', __dirname + '/build');
+fractal.web.set('builder.dest', __dirname + '/docs');

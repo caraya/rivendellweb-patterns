@@ -1,0 +1,542 @@
+/* CSS HSL */
+:root {
+  /* --dark-jungle-green: hsla(189, 66%, 8%, 1);
+  --myrtle-green: hsla(177, 61%, 29%, 1);
+  --morning-blue: hsla(168, 17%, 60%, 1);
+  --peach-crayola: hsla(27, 81%, 77%, 1);
+  --red-pigment: hsla(359, 85%, 56%, 1);
+  // material design palette 
+  --md-primaryColor: #5500e8;
+  --md-primaryLightColor: #9244ff;
+  --md-primaryDarkColor: #0000b4;
+  --md-secondaryColor: #1775d1;
+  --md-secondaryLightColor: #63a3ff;
+  --md-secondaryDarkColor: #004a9f;
+  --md-primaryTextColor: #ffffff;
+  --md-secondaryTextColor: #ffffff;
+   */
+
+  /* whites */
+  --color-white: #fffefc;
+  --color-pearl: #fbfcf7;
+  --color-alabaster: #fefaf0;
+  --color-snow: #f4fefd;
+  --color-ivory: #fef7e5;
+  --color-cream: #fffbda;
+  --color-eggshell: #fef9e3;
+  --color-cotton: #fbfcf7;
+  --color-chiffon: #fafaf1;
+  --color-salt: #f8efec;
+  --color-lace: #faf3ea;
+  --color-coconut: #fff1e6;
+  --color-linen: #f2ebd3;
+  --color-bone: #e7dfcc;
+  --color-porcelain: #fffffc;
+  --color-parchment: #fcf6df;
+  --color-rice: #fbf6ef;
+    
+  /* blues */
+    
+  --color-blue: #0074d9;
+  --color-navy: #001f3f;
+  --color-aqua: #7fdbff;
+  --color-sky: #00b2ff;
+  --color-teal: #39cccc;
+  --color-slate: #757b87;
+  --color-indigo: #281e5d;
+  --color-cobalt: #1438bd;
+  --color-ocean: #026063;
+  --color-peacock: #002d37;
+  --color-azure: #1621a6;
+  --color-cerulean: #0592c2;
+  --color-lapis: #2632c2;
+  --color-spruce: #2c3e4b;
+  --color-stone: #59788d;
+  --color-aegean: #1e456e;
+  --color-berry: #24146f;
+  --color-denim: #141e3c;
+  --color-admiral: #061094;
+  --color-sapphire: #52b2c0;
+  --color-arctic: #82edfd;
+  
+  /* browns */
+    
+  --color-tan: #e5dbac;
+  --color-beige: #ecdc99;
+  --color-macaroon: #f7df75;
+  --color-hazelwood: #c9bc8e;
+  --color-granola: #d6b75a;
+  --color-oat: #dec98a;
+  --color-eggnog: #fbe29d;
+  --color-fawn: #c7a951;
+  --color-sugarcookie: #f3ebad;
+  --color-sand: #d7b963;
+  --color-sepia: #e3b678;
+  --color-latte: #e9c17b;
+  --color-oyster: #dcd69f;
+  --color-biscotti: #e3c565;
+  --color-parmesean: #fee993;
+  --color-hazelnut: #bda55d;
+  --color-sandcastle: #dbc27d;
+  --color-buttermilk: #fdefb2;
+  --color-sanddollar: #ebe7b9;
+  --color-shortbread: #fce791;
+  
+  /* yellows */
+    
+  --color-yellow: #ffdc00;
+  --color-canary: #fac801;
+  --color-gold: #f9a602;
+  --color-daffodil: #feee88;
+  --color-flaxen: #d5b65a;
+  --color-butter: #fee226;
+  --color-lemon: #effd5f;
+  --color-mustard: #e9b829;
+  --color-corn: #e4cd04;
+  --color-medallion: #e4b103;
+  --color-dandelion: #fdce2a;
+  --color-bumblebee: #fce206;
+  --color-banana: #fcf4a3;
+  --color-butterscotch: #fabd04;
+  --color-dijon: #c29200;
+  --color-honey: #ec9707;
+  --color-blonde: #fdeb75;
+  --color-pineapple: #ffe327;
+  --color-tuscansun: #fcd12a;
+  
+  /* oranges */
+  
+  --color-orange: #ff851b;
+  --color-tangerine: #f98228;
+  --color-merigold: #fdae1d;
+  --color-cider: #b66827;
+  --color-rust: #8c4005;
+  --color-ginger: #bc5703;
+  --color-tiger: #fb6b02;
+  --color-bronze: #b2560c;
+  --color-cantaloupe: #fca172;
+  --color-apricot: #ed810f;
+  --color-carrot: #ed7116;
+  --color-squash: #c95c09;
+  --color-spice: #7a3a03;
+  --color-marmalade: #d16102;
+  --color-amber: #893201;
+  --color-sandstone: #d57128;
+  --color-yam: #cc5801;
+  
+  /* reds */
+    
+  --color-red: #ff4136;
+  --color-cherry: #9a0f02;
+  --color-rose: #e2252a;
+  --color-jam: #600f0b;
+  --color-merlot: #541f1b;
+  --color-garnet: #5f0a04;
+  --color-crimson: #b8100a;
+  --color-ruby: #900503;
+  --color-scarlet: #910d08;
+  --color-redwine: #4c0805;
+  --color-redapple: #a91b0d;
+  --color-mahogany: #420d09;
+  --color-blood: #710c04;
+  --color-sangria: #5f1914;
+  --color-currant: #670c07;
+  --color-blush: #bb544a;
+  --color-candy: #d31603;
+  --color-lipstick: #9b0f02;
+  
+  /* pinks */
+    
+  --color-pink: #f69acd;
+  --color-fuchsia: #f012be;
+  --color-punch: #f25278;
+  --color-watermelon: #fe809c;
+  --color-flamingo: #fda4b8;
+  --color-rouge: #f26c8c;
+  --color-salmon: #fdab9f;
+  --color-coral: #fe7d67;
+  --color-peach: #fb9483;
+  --color-strawberry: #fc4c4e;
+  --color-rosewood: #a04242;
+  --color-lemonade: #fabacb;
+  --color-taffy: #fa85c4;
+  --color-bubblegum: #fd5ca8;
+  --color-balletslipper: #f69abf;
+  --color-crepe: #f1b7c6;
+  --color-maroon: #85144b;
+  --color-hotpink: #ff1696;
+  
+  /* purples */
+  
+  --color-purple: #b10dc9;
+  --color-mauve: #7a4a89;
+  --color-violet: #710193;
+  --color-boysenberry: #630536;
+  --color-lavender: #e3a0f6;
+  --color-plum: #601a36;
+  --color-lilac: #b65fcd;
+  --color-periwinkle: #be93d4; 
+  --color-eggplant: #311431;
+  --color-iris: #9866c5;
+  --color-heather: #9b7cb9;
+  --color-amethyst: #a45de4;
+  --color-raisin: #290916;
+  --color-orchid: #af69ee;
+  --color-mulberry: #4d0220;
+  
+  /* greens */
+    
+  --color-green: #2ecc40;
+  --color-chartreuse: #b0fd38;
+  --color-juniper: #395311;
+  --color-sage: #728c69;
+  --color-lime: #01ff70;
+  --color-fern: #5dbc64;
+  --color-olive: #98bf64;
+  --color-emerald: #038911;
+  --color-pear: #74b62d;
+  --color-moss: #476d1e;
+  --color-shamrock: #03ac13;
+  --color-seafoam: #3cec96;
+  --color-pine: #24501e;
+  --color-parakeet: #02c04a;
+  --color-mint: #98ecc3;
+  --color-seaweed: #354b21;
+  --color-pickle: #5a7d36;
+  --color-pistachio: #b2d3c1;
+  --color-basil: #32622d;
+  --color-crocodile: #5f7c3a;
+  
+  /* browns */
+    
+  --color-brown: #241709;
+  --color-coffee: #4b371c;
+  --color-mocha: #3c290d;
+  --color-peanut: #795c34;
+  --color-carob: #35260f;
+  --color-hickory: #371d10;
+  --color-pecan: #4a2512;
+  --color-walnut: #432711;
+  --color-caramel: #66360f;
+  --color-gingerbread: #5d2c04;
+  --color-chocolate: #2c1603;
+  --color-tortilla: #9a7b4f;
+  --color-umber: #352415;
+  --color-tawny: #7e491d;
+  --color-brunette: #391e07;
+  --color-cinammon: #642b0d;
+  --color-penny: #522915;
+  
+  /* greys */
+    
+  --color-grey: #aaaaaa;
+  --color-shadow: #373737;
+  --color-graphite: #584d5b;
+  --color-iron: #332d31;
+  --color-pewter: #6a6880;
+  --color-cloud: #c5c5d0;
+  --color-silver: #dddddd;
+  --color-smoke: #59515f;
+  --color-anchor: #42424c;
+  --color-ash: #554c4d;
+  --color-porpoise: #4d4c5c;
+  --color-dove: #7c6e7f;
+  --color-fog: #655965;
+  --color-flint: #7d7c9c;
+  --color-pebble: #333333;
+  --color-lead: #403f4e;
+  --color-coin: #9897a9;
+  --color-fossil: #787276;
+    
+  /* blacks */
+    
+  --color-black: #111111;
+  --color-ebony: #080401;
+  --color-crow: #25221F;
+  --color-charcoal: #222023
+}
+
+.color-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+
+.color-item {
+  border: 2px solid var(--color-black);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+
+}
+
+/* .color-10 {background-color: var(--dark-jungle-green);}
+.color-20 {background-color: var(--myrtle-green);}
+.color-30 {background-color: var(--morning-blue);}
+.color-40 {background-color: var(--peach-crayola);}
+.color-50 {background-color: var(--red-pigment);}
+
+/* Custom Material Design Palette 
+.md-primaryColor {background-color: #5500e8}
+.md-primaryLightColor {background-color: #9244ff}
+.md-primaryDarkColor {background-color: #0000b4}
+.md-secondaryColor {background-color: #1775d1}
+.md-secondaryLightColor {background-color: #63a3ff}
+.md-secondaryDarkColor {background-color: #004a9f}
+.md-primaryTextColor {background-color: #ffffff}
+.md-secondaryTextColor {background-color: #ffffff}
+
+/* Default Material Design Palette 
+.md-default-primaryColor {background-color: #6200EE}
+.md-default-primaryVariantColor {background-color: #3700B3}
+.md-default-secondaryColor {background-color: #03DAC6}
+.md-default-secondaryVariantColor {background-color: #018786}
+.md-default-backgroundColor {background-color: #FFFFFF}
+.md-default-surfaceColor {background-color: #FFFFFF}
+.md-default-errorColor {background-color: #B00020}
+.md-default-lightText {background-color: #FFFFFF}
+.md-default-darkText {background-color: #000000} */
+
+/* Colors taken from The New Defaults */
+  /* whites */
+  .white {background-color: var(--color-white);}
+  .pearl {background-color: var(--color-pearl);}
+  .alabaster {background-color: var(--color-alabaster);}
+  .snow {background-color: var(--color-snow);}
+  .ivory {background-color: var(--color-ivory);}
+  .cream {background-color: var(--color-cream);}
+  .eggshell {background-color: var(--color-eggshell);}
+  .cotton {background-color: var(--color-cotton);}
+  .chiffon {background-color: var(--color-chiffon);}
+  .salt {background-color: var(--color-salt);}
+  .lace {background-color: var(--color-lace);}
+  .coconut {background-color: var(--color-coconut);}
+  .linen {background-color: var(--color-linen);}
+  .bone {background-color: var(--color-bone);}
+  .porcelain {background-color: var(--color-porcelain);}
+  .parchment {background-color: var(--color-parchment);}
+  .rice {background-color: var(--color-rice);}
+      
+    /* blues */
+      
+  .blue {color: white; background-color: var(--color-blue);}
+  .navy {color: white; background-color: var(--color-navy);}
+  .aqua {color: white; background-color: var(--color-aqua);}
+  .sky {color: white; background-color: var(--color-sky);}
+  .teal {color: white; background-color: var(--color-teal);}
+  .slate {color: white; background-color: var(--color-slate);}
+  .indigo {color: white; background-color: var(--color-indigo);}
+  .cobalt {color: white; background-color: var(--color-cobalt);}
+  .ocean {color: white; background-color: var(--color-ocean);}
+  .peacock {color: white; background-color: var(--color-peacock);}
+  .azure {color: white; background-color: var(--color-azure);}
+  .cerulean {color: white; background-color: var(--color-cerulean);}
+  .lapis {color: white; background-color: var(--color-lapis);}
+  .spruce {color: white; background-color: var(--color-spruce);}
+  .stone {color: white; background-color: var(--color-stone);}
+  .aegean {color: white; background-color: var(--color-aegean);}
+  .berry {color: white; background-color: var(--color-berry);}
+  .denim {color: white; background-color: var(--color-denim);}
+  .admiral {color: white; background-color: var(--color-admiral);}
+  .sapphire {color: white; background-color: var(--color-sapphire);}
+  .arctic {color: white; background-color: var(--color-arctic);}
+    
+    /* browns */
+      
+  .tan {background-color: var(--color-tan);}
+  .beige {background-color: var(--color-beige);}
+  .macaroon {background-color: var(--color-macaroon);}
+  .hazelwood {background-color: var(--color-hazelwood);}
+  .granola {background-color: var(--color-granola);}
+  .oat {background-color: var(--color-oat);}
+  .eggnog {background-color: var(--color-eggnog);}
+  .fawn {background-color: var(--color-fawn);}
+  .sugarcookie {background-color: var(--color-sugarcookie);}
+  .sand {background-color: var(--color-sand);}
+  .sepia {background-color: var(--color-sepia);}
+  .latte {background-color: var(--color-latte);}
+  .oyster {background-color: var(--color-oyster);}
+  .biscotti {background-color: var(--color-biscotti);}
+  .parmesean {background-color: var(--color-parmesean);}
+  .hazelnut {background-color: var(--color-hazelnut);}
+  .sandcastle {background-color: var(--color-sandcastle);}
+  .buttermilk {background-color: var(--color-buttermilk);}
+  .sanddollar {background-color: var(--color-sanddollar);}
+  .shortbread {background-color: var(--color-shortbread);}
+    
+    /* yellows */
+      
+  .yellow {background-color: var(--color-yellow);}
+  .canary {background-color: var(--color-canary);}
+  .gold {background-color: var(--color-gold);}
+  .daffodil {background-color: var(--color-daffodil);}
+  .flaxen {background-color: var(--color-flaxen);}
+  .butter {background-color: var(--color-butter);}
+  .lemon {background-color: var(--color-lemon);}
+  .mustard {background-color: var(--color-mustard);}
+  .corn {background-color: var(--color-corn);}
+  .medallion {background-color: var(--color-medallion);}
+  .dandelion {background-color: var(--color-dandelion);}
+  .bumblebee {background-color: var(--color-bumblebee);}
+  .banana {background-color: var(--color-banana);}
+  .butterscotch {background-color: var(--color-butterscotch);}
+  .dijon {background-color: var(--color-dijon);}
+  .honey {background-color: var(--color-honey);}
+  .blonde {background-color: var(--color-blonde);}
+  .pineapple {background-color: var(--color-pineapple);}
+  .tuscansun {background-color: var(--color-tuscansun);}
+    
+    /* oranges */
+    
+  .orange {background-color: var(--color-orange);}
+  .tangerine {background-color: var(--color-tangerine);}
+  .merigold {background-color: var(--color-merigold);}
+  .cider {background-color: var(--color-cider);}
+  .rust {background-color: var(--color-rust);}
+  .ginger {background-color: var(--color-ginger);}
+  .tiger {background-color: var(--color-tiger);}
+  .bronze {background-color: var(--color-bronze);}
+  .cantaloupe {background-color: var(--color-cantaloupe);}
+  .apricot {background-color: var(--color-apricot);}
+  .carrot {background-color: var(--color-carrot);}
+  .squash {background-color: var(--color-squash);}
+  .spice {background-color: var(--color-spice);}
+  .marmalade {background-color: var(--color-marmalade);}
+  .amber {background-color: var(--color-amber);}
+  .sandstone {background-color: var(--color-sandstone);}
+  .yam {background-color: var(--color-yam);}
+    
+    /* reds */
+      
+  .red {color: white;background-color: var(--color-red);}
+  .cherry {color: white;background-color: var(--color-cherry);}
+  .rose {color: white;background-color: var(--color-rose);}
+  .jam {color: white;background-color: var(--color-jam);}
+  .merlot {color: white;background-color: var(--color-merlot);}
+  .garnet {color: white;background-color: var(--color-garnet);}
+  .crimson {color: white;background-color: var(--color-crimson);}
+  .ruby {color: white;background-color: var(--color-ruby);}
+  .scarlet {color: white;background-color: var(--color-scarlet);}
+  .redwine {color: white;background-color: var(--color-redwine);}
+  .redapple {color: white;background-color: var(--color-redapple);}
+  .mahogany {color: white;background-color: var(--color-mahogany);}
+  .blood {color: white;background-color: var(--color-blood);}
+  .sangria {color: white;background-color: var(--color-sangria);}
+  .currant {color: white;background-color: var(--color-currant);}
+  .blush {color: white;background-color: var(--color-blush);}
+  .candy {color: white;background-color: var(--color-candy);}
+  .lipstick {color: white;background-color: var(--color-lipstick);}
+    
+    /* pinks */
+      
+  .pink {color: white; background-color: var(--color-pink);}
+  .fuchsia {color: white; background-color: var(--color-fuchsia);}
+  .punch {color: white; background-color: var(--color-punch);}
+  .watermelon {color: white; background-color: var(--color-watermelon);}
+  .flamingo {color: white; background-color: var(--color-flamingo);}
+  .rouge {color: white; background-color: var(--color-rouge);}
+  .salmon {color: white; background-color: var(--color-salmon);}
+  .coral {color: white; background-color: var(--color-coral);}
+  .peach {color: white; background-color: var(--color-peach);}
+  .strawberry {color: white; background-color: var(--color-strawberry);}
+  .rosewood {color: white; background-color: var(--color-rosewood);}
+  .lemonade {color: white; background-color: var(--color-lemonade);}
+  .taffy {color: white; background-color: var(--color-taffy);}
+  .bubblegum {color: white; background-color: var(--color-bubblegum);}
+  .balletslipper {color: white; background-color: var(--color-balletslipper);}
+  .crepe {color: white; background-color: var(--color-crepe);}
+  .maroon {color: white; background-color: var(--color-maroon);}
+  .hotpink {color: white; background-color: var(--color-hotpink);}
+    
+    /* purples */
+    
+  .purple {color: white; background-color: var(--color-purple);}
+  .mauve {color: white; background-color: var(--color-mauve);}
+  .violet {color: white; background-color: var(--color-violet);}
+  .boysenberry {color: white; background-color: var(--color-boysenberry);}
+  .lavender {color: white; background-color: var(--color-lavender);}
+  .plum {color: white; background-color: var(--color-plum);}
+  .lilac {color: white; background-color: var(--color-lilac);}
+  .periwinkle {color: white; background-color: var(--color-periwinkle);}
+  .eggplant {color: white; background-color: var(--color-eggplant);}
+  .iris {color: white; background-color: var(--color-iris);}
+  .heather {color: white; background-color: var(--color-heather);}
+  .amethyst {color: white; background-color: var(--color-amethyst);}
+  .raisin {color: white; background-color: var(--color-raisin);}
+  .orchid {color: white; background-color: var(--color-orchid);}
+  .mulberry {color: white; background-color: var(--color-mulberry);}
+    
+    /* greens */
+      
+  .green {color: white; background-color: var(--color-green);}
+  .chartreuse {color: white; background-color: var(--color-chartreuse);}
+  .juniper {color: white; background-color: var(--color-juniper);}
+  .sage {color: white; background-color: var(--color-sage);}
+  .lime {color: white; background-color: var(--color-lime);}
+  .fern {color: white; background-color: var(--color-fern);}
+  .olive {color: white; background-color: var(--color-olive);}
+  .emerald {color: white; background-color: var(--color-emerald);}
+  .pear {color: white; background-color: var(--color-pear);}
+  .moss {color: white; background-color: var(--color-moss);}
+  .shamrock {color: white; background-color: var(--color-shamrock);}
+  .seafoam {color: white; background-color: var(--color-seafoam);}
+  .pine {color: white; background-color: var(--color-pine);}
+  .parakeet {color: white; background-color: var(--color-parakeet);}
+  .mint {color: white; background-color: var(--color-mint);}
+  .seaweed {color: white; background-color: var(--color-seaweed);}
+  .pickle {color: white; background-color: var(--color-pickle);}
+  .pistachio {color: white; background-color: var(--color-pistachio);}
+  .basil {color: white; background-color: var(--color-basil);}
+  .crocodile {color: white; background-color: var(--color-crocodile);}
+    
+    /* browns */
+      
+  .brown {color: white; background-color: var(--color-brown);}
+  .coffee {color: white; background-color: var(--color-coffee);}
+  .mocha {color: white; background-color: var(--color-mocha);}
+  .peanut {color: white; background-color: var(--color-peanut);}
+  .carob {color: white; background-color: var(--color-carob);}
+  .hickory {color: white; background-color: var(--color-hickory);}
+  .pecan {color: white; background-color: var(--color-pecan);}
+  .walnut {color: white; background-color: var(--color-walnut);}
+  .caramel {color: white; background-color: var(--color-caramel);}
+  .gingerbread {color: white; background-color: var(--color-gingerbread);}
+  .chocolate {color: white; background-color: var(--color-chocolate);}
+  .tortilla {color: white; background-color: var(--color-tortilla);}
+  .umber {color: white; background-color: var(--color-umber);}
+  .tawny {color: white; background-color: var(--color-tawny);}
+  .brunette {color: white; background-color: var(--color-brunette);}
+  .cinammon {color: white; background-color: var(--color-cinammon);}
+  .penny {color: white; background-color: var(--color-penny);}
+    
+    /* greys */
+      
+  .grey {color: white; background-color: var(--color-grey);}
+  .shadow {color: white; background-color: var(--color-shadow);}
+  .graphite {color: white; background-color: var(--color-graphite);}
+  .iron {color: white; background-color: var(--color-iron);}
+  .pewter {color: white; background-color: var(--color-pewter);}
+  .cloud {color: white; background-color: var(--color-cloud);}
+  .silver {color: white; background-color: var(--color-silver);}
+  .smoke {color: white; background-color: var(--color-smoke);}
+  .anchor {color: white; background-color: var(--color-anchor);}
+  .ash {color: white; background-color: var(--color-ash);}
+  .porpoise {color: white; background-color: var(--color-porpoise);}
+  .dove {color: white; background-color: var(--color-dove);}
+  .fog {color: white; background-color: var(--color-fog);}
+  .flint {color: white; background-color: var(--color-flint);}
+  .pebble {color: white; background-color: var(--color-pebble);}
+  .lead {color: white; background-color: var(--color-lead);}
+  .coin {color: white; background-color: var(--color-coin);}
+  .fossil {color: white; background-color: var(--color-fossil);}
+      
+    /* blacks */
+      
+  .black {color: white; background-color: var(--color-black);}
+  .ebony {color: white; background-color: var(--color-ebony);}
+  .crow {color: white; background-color: var(--color-crow);}
+  .charcoal {color: white; background-color: var(--color-charcoal);}
+  
