@@ -1,0 +1,24 @@
+/* =====================================================
+   Embedded content
+   w3c.github.io/html/semantics-embedded-content.html
+   ===================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+ img {
+  border: 0;
+
+  @media print {
+    page-break-inside: avoid;
+  }
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  display: block;
+  overflow: hidden;
+  fill: currentColor;
+}

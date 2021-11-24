@@ -1,0 +1,10 @@
+{
+  "name": "figure",
+  "context": {
+    "src": "/images/Navy_Cross.png",
+    "alt": "Navy Cross",
+    "width": "408px",
+    "height": "859px"
+  },
+  "variants": []
+}

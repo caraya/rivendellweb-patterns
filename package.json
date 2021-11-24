@@ -1,0 +1,45 @@
+{
+  "name": "rivendellweb-patterns",
+  "version": "1.0.0",
+  "description": "Fractal-based pattern library and idea repository",
+  "main": "index.js",
+  "scripts": {
+    "start": "fractal start --sync",
+    "build": "fractal build"
+  },
+  "keywords": [],
+  "author": "Carlos Araya <carlos.araya@gmail.com> (https://publishing-project.rivendellweb.net/)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "@frctl/fractal": "^1.5.11",
+    "@frctl/handlebars": "^1.2.13",
+    "@frctl/mandelbrot": "^1.9.4",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.11",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-libsquoosh": "^1.0.12",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss-color-function": "^4.1.0",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-define-property": "^0.5.0",
+    "postcss-each": "^1.1.0",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^14.0.2",
+    "postcss-import-ext-glob": "^2.0.1",
+    "postcss-map-get": "^0.3.0",
+    "postcss-nesting": "^10.0.2",
+    "postcss-preset-env": "^7.0.0",
+    "postcss-simple-vars": "^6.0.3",
+    "postcss-sorting": "^7.0.1"
+  },
+  "browserslist": [
+    "Chrome 58",
+    "Edge 16",
+    "Firefox 53",
+    "Safari 10.1"
+  ]
+}
