@@ -1,0 +1,21 @@
+{
+  "name": "shadows",
+  "variants": [{
+    "name": "low",
+    "context": {
+      "name": "low"
+    }
+  },
+  {
+    "name": "medium",
+    "context": {
+      "name": "medium"
+    }
+  },
+  {
+    "name": "high",
+    "context": {
+      "name": "high"
+    }
+  }]
+}

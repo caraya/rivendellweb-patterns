@@ -1,0 +1,17 @@
+{
+  "name": "article",
+  "context": {
+    "header-name": "Hacia La Ciudad Espléndida",
+    "header-subtitle": "Nobel Literature Prize Lecture",
+    "header-summary": "Nobel Lecture, December 13, 1971. From Les Prix Nobel en 1971, Editor Wilhelm Odelberg, [Nobel Foundation], Stockholm, 1972",
+    "authors": [{
+      "name": "Pablo Neruda"
+    }],
+    "variants": [{
+      "name": "two-cols",
+      "context": {
+        "name": "two-cols"
+      }
+    }]  
+  }
+}

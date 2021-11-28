@@ -1,0 +1,13 @@
+<div class="header">
+  <h1>{{header-name}}</h1>
+  <h2>{{header-subtitle}}</h2>
+
+  <h3 class="authors">
+    {{#each authors}}
+      <span class="author">{{name}}</span>
+    {{/each}}
+  </h3>
+  <hr>
+  <p class="article-summary recursive-mono-linear">{{ header-summary }}</p>
+  <hr>
+</div>

@@ -202,6 +202,117 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
   border-top: 10px double var(--color-azure);
 }
 
+   /* color-mix() experiment: lighten a charcoal black */
+
+   :root {
+  /* very dark brand blue */
+  --text1: color-mix(in srgb, var(--color-charcoal) 10%, white);
+  --text2: color-mix(in srgb, var(--color-charcoal) 20%, white);
+  --text3: color-mix(in srgb, var(--color-charcoal) 30%, white);
+  --text4: color-mix(in srgb, var(--color-charcoal) 40%, white);
+  --text5: color-mix(in srgb, var(--color-charcoal) 50%, white);
+  --text6: color-mix(in srgb, var(--color-charcoal) 60%, white);
+  --text7: color-mix(in srgb, var(--color-charcoal) 70%, white);
+  --text8: color-mix(in srgb, var(--color-charcoal) 80%, white);
+  --text9: color-mix(in srgb, var(--color-charcoal) 90%, white);
+}
+
+   .dark-text1 {
+  background-color: var(--text1);
+}
+
+   .dark-text2 {
+  background-color: var(--text2);
+}
+
+   .dark-text3 {
+  background-color: var(--text3);
+}
+
+   .dark-text4 {
+  background-color: var(--text4);
+}
+
+   .dark-text5 {
+  background-color: var(--text5);
+}
+
+   .dark-text6 {
+  background-color: var(--text6);
+}
+
+   .dark-text7 {
+  background-color: var(--text7);
+}
+
+   .dark-text8 {
+  background-color: var(--text8);
+}
+
+   .dark-text9 {
+  background-color: var(--text9);
+  coloe: var(--color-pearl);
+}
+
+   /* color-mix() experiment: darken a light green mint color  */
+
+   :root {
+  --light-text1: color-mix(in srgb, var(--color-mint) 10%, black);
+  --light-text2: color-mix(in srgb, var(--color-mint) 20%, black);
+  --light-text3: color-mix(in srgb, var(--color-mint) 30%, black);
+  --light-text4: color-mix(in srgb, var(--color-mint) 40%, black);
+  --light-text5: color-mix(in srgb, var(--color-mint) 50%, black);
+  --light-text6: color-mix(in srgb, var(--color-mint) 60%, black);
+  --light-text7: color-mix(in srgb, var(--color-mint) 70%, black);
+  --light-text8: color-mix(in srgb, var(--color-mint) 80%, black);
+  --light-text9: color-mix(in srgb, var(--color-mint) 90%, black);
+}
+
+   .light-text1 {
+  background-color: var(--light-text1);
+  color: var(--color-pearl);
+}
+
+   .light-text2 {
+  background-color: var(--light-text2);
+  color: var(--color-pearl);
+}
+
+   .light-text3 {
+  background-color: var(--light-text3);
+  color: var(--color-pearl);
+}
+
+   .light-text4 {
+  background-color: var(--light-text4);
+  color: var(--color-pearl);
+}
+
+   .light-text5 {
+  background-color: var(--light-text5);
+  color: var(--color-pearl);
+}
+
+   .light-text6 {
+  background-color: var(--light-text6);
+  color: var(--color-pearl);
+}
+
+   .light-text7 {
+  background-color: var(--light-text7);
+  color: var(--color-pearl);
+}
+
+   .light-text8 {
+  background-color: var(--light-text8);
+  color: var(--color-pearl);
+}
+
+   .light-text9 {
+  background-color: var(--light-text9);
+  color: var(--color-pearl);
+}
+
    /* CSS HSL */
 
    :root {
@@ -958,6 +1069,33 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
 	content: 'Figure ' counter(figure_count) ': ';
   }
 
+   .header h1 {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+   .header h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+   .header h3 {
+    text-align: center;
+
+  }
+
+   .header hr {
+    border: 1px solid var(--color-charcoal);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+   .header p.article-summary {
+    margin: 0 auto;
+    text-align: justify;
+    width: 60%;
+  }
+
    a {
   color: #cd2653;
   text-decoration: none;
@@ -1008,6 +1146,58 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
   margin: 0;
 }
 
+   @counter-style circled-decimal {
+  suffix: ' ';
+  symbols: '\24EA' '\2460' '\2461' '\2462' '\2463' '\2464' '\2465' '\2466' '\2467' '\2468' '\2469' '\246A' '\246B' '\246C' '\246D' '\246E' '\246F' '\2470' '\2471' '\2472' '\2473' '\3251' '\3252' '\3253' '\3254' '\3255' '\3256' '\3257' '\3258' '\3259' '\325a' '\325b' '\325c' '\325d' '\325e' '\325f' '\32b1' '\32b2' '\32b3' '\32b4' '\32b5' '\32b6' '\32b7' '\32b8' '\32b9' '\32ba' '\32bb' '\32bc' '\32bd' '\32be' '\32bf';
+  system: fixed 0;
+  }
+
+   @counter-style decimal-leading-zero {
+  symbols: '\30\30' '\30\31' '\30\32' '\30\33' '\30\34' '\30\35' '\30\36' '\30\37' '\30\38' '\30\39';
+  system: fixed;
+}
+
+   @counter-style dotted-decimal {
+  suffix: ' ';
+  symbols: '\2488' '\2489' '\248A' '\248B' '\248C' '\248D' '\248E' '\248F' '\2490' '\2491' '\2492' '\2493' '\2494' '\2495' '\2496' '\2497' '\2498' '\2499' '\249A' '\249B';
+  system: fixed;
+}
+
+   @counter-style filled-circled-decimal {
+suffix: ' ';
+symbols: '\2776' '\2777' '\2778' '\2779' '\277a' '\277b' '\277c' '\277d' '\277e' '\277f' '\24EB' '\24EC' '\24ED' '\24EE' '\24EF' '\24F0' '\24F1' '\24F2' '\24F3' '\24F4';
+system: fixed;
+}
+
+   ol {
+  list-style: decimal;
+}
+
+   ol li::marker {
+  color: var(--color-violet);
+  font-size: 125%;
+}
+
+   .list--circled-decimal {
+  list-style-type: circled-decimal;
+}
+
+   .list--decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+
+   .list--dotted-decimal {
+  list-style-type: dotted-decimal;
+}
+
+   .list--filled-circled-decimal {
+  list-style-type: filled-circled-decimal;
+  }
+
+   ol {
+  list-style: decimal;
+}
+
    :root {
   --shadow-color: 0deg 0% 0%;
   --shadow-elevation-low:
@@ -1042,10 +1232,55 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
   box-shadow: var(--shadow-elevation-high);
 }
 
+   table {
+  margin: 0 1.5rem;
+  table-layout: fixed;
+  width: 100%;
+}
+
+   table,
+th,
+tr,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: .5em;
+}
+
+   .table--no-borders {
+  border: none;
+  border-collapse: collapse;
+  padding: .5em;
+}
+
+   .table--no-borders th,
+  .table--no-borders tr,
+  .table--no-borders td {
+    border: none;
+  }
+
+   .table--centered th,
+  .table--centered tr,
+  .table--centered td {
+    text-align: center;
+  }
+
+   .table--cell-center {
+  text-align: center;
+}
+
+   .table--cell-left {
+  text-align: left;
+}
+
+   .table--cell-right {
+  text-align: right;
+}
+
    @font-face {
   font-family: 'Recursive';
   font-weight: 300 1000;
-  src: url('fonts/recursive.woff2') format('woff2');
+  src: url('/fonts/recursive.woff2') format('woff2');
 }
 
    body {
@@ -1608,4 +1843,53 @@ object {
    iframe {
   margin: 1.5em 0;
 }
+
+   article {
+  margin: 0 auto;
+  width: 60vw;
+
+
+}
+
+   .article__content p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 1.1rem;
+  }
+
+   .article--two-cols .article__content {
+    columns: 2; 
+  }
+
+   .article--two-cols .article__content p {
+      font-size: 1.2rem;
+      line-height: 1.3;
+      margin-bottom: 1.1rem;
+    }
+
+   article {
+  margin: 0 auto;
+  width: 60vw;
+}
+
+   .article--content p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 1.1rem;
+  }
+
+   .article--twoCols {
+  width: 100%; 
+}
+
+   .article--twoCols .article--content {
+    column-gap: 1rem;
+    column-width: 30vw;
+  }
+
+   .article--twoCols p {
+    font-size: 1em;
+    line-height: 1.3;
+    margin-bottom: 1.1rem;
+  }
 /*# sourceMappingURL=main.css.map */

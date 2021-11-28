@@ -1,0 +1,58 @@
+/* color-mix() experiment: darken a light green mint color  */
+
+:root {
+  --light-text1: color-mix(in srgb, var(--color-mint) 10%, black);
+  --light-text2: color-mix(in srgb, var(--color-mint) 20%, black);
+  --light-text3: color-mix(in srgb, var(--color-mint) 30%, black);
+  --light-text4: color-mix(in srgb, var(--color-mint) 40%, black);
+  --light-text5: color-mix(in srgb, var(--color-mint) 50%, black);
+  --light-text6: color-mix(in srgb, var(--color-mint) 60%, black);
+  --light-text7: color-mix(in srgb, var(--color-mint) 70%, black);
+  --light-text8: color-mix(in srgb, var(--color-mint) 80%, black);
+  --light-text9: color-mix(in srgb, var(--color-mint) 90%, black);
+}
+
+.light-text1 {
+  background-color: var(--light-text1);
+  color: var(--color-pearl);
+}
+
+.light-text2 {
+  background-color: var(--light-text2);
+  color: var(--color-pearl);
+}
+
+.light-text3 {
+  background-color: var(--light-text3);
+  color: var(--color-pearl);
+}
+
+.light-text4 {
+  background-color: var(--light-text4);
+  color: var(--color-pearl);
+}
+
+.light-text5 {
+  background-color: var(--light-text5);
+  color: var(--color-pearl);
+}
+
+.light-text6 {
+  background-color: var(--light-text6);
+  color: var(--color-pearl);
+}
+
+.light-text7 {
+  background-color: var(--light-text7);
+  color: var(--color-pearl);
+}
+
+.light-text8 {
+  background-color: var(--light-text8);
+  color: var(--color-pearl);
+}
+
+.light-text9 {
+  background-color: var(--light-text9);
+  color: var(--color-pearl);
+}

@@ -1,0 +1,49 @@
+.blockquote--normal {
+  padding-left: 1.5em;
+  border-left: 5px solid var(--color-azure);
+}
+
+.cite {
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.blockquote--center,
+.blockquote--center .cite {
+  margin: 2em auto;
+  text-align: center;
+}
+
+.blockquote--center {
+  width: 80%;
+  width: 80ch;
+  border-top: 5px solid var(--color-azure);
+  border-bottom: 5px solid var(--color-azure);
+}
+
+.blockquote--large {
+  font-size: 1.5em;
+}
+
+.blockquote--large p,
+.blockquote--large .cite {
+  width: 60ch;
+}
+
+.blockquote--single-top {
+  border-top: 5px solid var(--color-azure);
+}
+
+.blockquote--single-bottom {
+  border-bottom: 5px solid var(--color-azure);
+}
+
+.blockquote--single-both {
+  border-top: 5px solid var(--color-azure);
+  border-bottom: 5px solid var(--color-azure);
+}
+
+.blockquote--double-both {
+  border-top: 10px double var(--color-azure);
+  border-bottom: 10px double var(--color-azure);
+}

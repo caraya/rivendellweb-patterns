@@ -1,0 +1,47 @@
+table {
+  table-layout: fixed;
+  margin: 0 1.5rem;
+  width: 100%;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: .5em;
+}
+
+.table--no-borders {
+  border: none;
+  border-collapse: collapse;
+  padding: .5em;
+
+  & th,
+  & tr,
+  & td {
+    border: none;
+  }
+}
+
+.table--centered {
+
+  & th,
+  & tr,
+  & td {
+    text-align: center;
+  }
+}
+
+.table--cell-center {
+  text-align: center;
+}
+
+.table--cell-left {
+  text-align: left;
+}
+
+.table--cell-right {
+  text-align: right;
+}

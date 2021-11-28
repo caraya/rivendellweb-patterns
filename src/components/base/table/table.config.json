@@ -1,0 +1,22 @@
+{
+  "name": "table",
+  "collated": false,
+  "variants": [{
+    "name": "no-borders",
+    "context": {
+      "name": "no-borders"
+    }
+  },
+  {
+    "name": "centered",
+    "context": {
+      "name": "centered"
+    }
+  },
+  {
+    "name": "random",
+    "context": {
+      "name": "random"
+    }
+  }]
+}
