@@ -152,6 +152,339 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
   overflow: hidden;
 }
 
+   h1, h2, h3, h4, h5, h6 {
+  font-family: 'Recursive', sans-serif;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+   h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+   h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+   h3 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+   h4 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+   h5 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+   h6 {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+   p[class^=para] {
+  margin-bottom: 2rem;
+}
+
+   /* Variable instances */
+
+   .recursive-mono-linear-light {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-linear-light-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-casual-light {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-casual-light-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-linear {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-linear-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-casual {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-casual-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-linear-medium {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-linear-medium-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-casual-medium {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-casual-medium-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-linear-semibold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-linear-semibold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-casual-semibold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-casual-semibold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-linear-bold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-linear-bold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-casual-bold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-casual-bold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-linear-extrabold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-linear-extrabold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-casual-extrabold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-casual-extrabold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-linear-black {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-linear-black-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-casual-black {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-casual-black-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-linear-extrablack {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-linear-extrablack-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-mono-casual-extrablack {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-mono-casual-extrablack-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-casual-light {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-casual-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-linear {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-linear-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-casual {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-casual-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-linear-medium {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-linear-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-casual-medium {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-casual-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-linear-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-linear-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-casual-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-casual-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-linear-bold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-linear-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-casual-bold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-casual-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-linear-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-linear-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-casual-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-casual-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-linear-black {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-linear-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-casual-black {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-casual-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-linear-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-linear-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+
+   .recursive-sans-casual-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+
+   .recursive-sans-casual-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+
+   .leading {
+  font-size: 1.25em;
+  width: 80vw;
+  width: 80ch;
+}
+
+   a {
+  color: #cd2653;
+  text-decoration: none;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+   a:visited {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+   a:hover, a:focus, a:active {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+   a:focus {
+  outline: thin dotted;
+}
+
    .blockquote--normal {
   border-left: 5px solid var(--color-azure);
   padding-left: 1.5em;
@@ -200,6 +533,339 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
    .blockquote--double-both {
   border-bottom: 10px double var(--color-azure);
   border-top: 10px double var(--color-azure);
+}
+
+   @font-face {
+  font-family: 'Recursive';
+  font-weight: 300 1000;
+  src: url('/fonts/recursive.woff2') format('woff2');
+}
+
+   body {
+  font-family: 'Recursive', sans-serif;
+  font-size: 100%;
+  line-height: 1.3;
+  margin: 2em;
+}
+
+   /**
+ * CSS for Recursive
+ * Generated by Wakamai Fondue - https://wakamaifondue.com
+ * by Roel Nieskens/PixelAmbacht - https://pixelambacht.nl
+ */
+
+   /* Set custom properties for each layout feature */
+
+   :root {
+  --recursive-aalt: "aalt" off;
+  --recursive-afrc: "afrc" off;
+  --recursive-case: "case" off;
+  --recursive-dlig: "dlig" off;
+  --recursive-dnom: "dnom" off;
+  --recursive-frac: "frac" off;
+  --recursive-numr: "numr" off;
+  --recursive-ordn: "ordn" off;
+  --recursive-pnum: "pnum" off;
+  --recursive-sinf: "sinf" off;
+  /* --recursive-ss01: "ss01" off;
+  --recursive-ss02: "ss02" off;
+  --recursive-ss03: "ss03" off;
+  --recursive-ss04: "ss04" off;
+  --recursive-ss05: "ss05" off;
+  --recursive-ss06: "ss06" off;
+  --recursive-ss07: "ss07" off;
+  --recursive-ss08: "ss08" off;
+  --recursive-ss09: "ss09" off;
+  --recursive-ss10: "ss10" off;
+  --recursive-ss11: "ss11" off;
+  --recursive-ss12: "ss12" off;
+  --recursive-ss20: "ss20" off; */
+  --recursive-sups: "sups" off;
+  --recursive-titl: "titl" off;
+  --recursive-zero: "zero" off;
+}
+
+   /* If class is applied, update custom property and
+ apply modern font-variant-* when supported */
+
+   .recursive-aalt {
+  --recursive-aalt: "aalt" on;
+}
+
+   .recursive-afrc {
+  --recursive-afrc: "afrc" on;
+}
+
+   @supports (font-variant-numeric: stacked-fractions) {
+  .recursive-afrc {
+      --recursive-afrc: "____";
+      font-variant-numeric: stacked-fractions;
+  }
+}
+
+   .recursive-case {
+  --recursive-case: "case" on;
+}
+
+   .recursive-dlig {
+  --recursive-dlig: "dlig" on;
+}
+
+   @supports (font-variant-ligatures: discretionary-ligatures) {
+  .recursive-dlig {
+      --recursive-dlig: "____";
+      font-variant-ligatures: discretionary-ligatures;
+  }
+}
+
+   .recursive-dnom {
+  --recursive-dnom: "dnom" on;
+}
+
+   .recursive-frac {
+  --recursive-frac: "frac" on;
+}
+
+   @supports (font-variant-numeric: diagonal-fractions) {
+  .recursive-frac {
+      --recursive-frac: "____";
+      font-variant-numeric: diagonal-fractions;
+  }
+}
+
+   .recursive-numr {
+  --recursive-numr: "numr" on;
+}
+
+   .recursive-ordn {
+  --recursive-ordn: "ordn" on;
+}
+
+   @supports (font-variant-numeric: ordinal) {
+  .recursive-ordn {
+      --recursive-ordn: "____";
+      font-variant-numeric: ordinal;
+  }
+}
+
+   .recursive-pnum {
+  --recursive-pnum: "pnum" on;
+}
+
+   @supports (font-variant-numeric: proportional-nums) {
+  .recursive-pnum {
+      --recursive-pnum: "____";
+      font-variant-numeric: proportional-nums;
+  }
+}
+
+   .recursive-sinf {
+  --recursive-sinf: "sinf" on;
+}
+
+   /* .recursive-ss01 {
+  --recursive-ss01: "ss01" on;
+}
+
+.recursive-ss02 {
+  --recursive-ss02: "ss02" on;
+}
+
+.recursive-ss03 {
+  --recursive-ss03: "ss03" on;
+}
+
+.recursive-ss04 {
+  --recursive-ss04: "ss04" on;
+}
+
+.recursive-ss05 {
+  --recursive-ss05: "ss05" on;
+}
+
+.recursive-ss06 {
+  --recursive-ss06: "ss06" on;
+}
+
+.recursive-ss07 {
+  --recursive-ss07: "ss07" on;
+}
+
+.recursive-ss08 {
+  --recursive-ss08: "ss08" on;
+}
+
+.recursive-ss09 {
+  --recursive-ss09: "ss09" on;
+}
+
+.recursive-ss10 {
+  --recursive-ss10: "ss10" on;
+}
+
+.recursive-ss11 {
+  --recursive-ss11: "ss11" on;
+}
+
+.recursive-ss12 {
+  --recursive-ss12: "ss12" on;
+}
+
+.recursive-ss20 {
+  --recursive-ss20: "ss20" on;
+} */
+
+   .recursive-sups {
+  --recursive-sups: "sups" on;
+}
+
+   @supports (font-variant-position: super) {
+  .recursive-sups {
+      --recursive-sups: "____";
+      font-variant-position: super;
+  }
+}
+
+   .recursive-titl {
+  --recursive-titl: "titl" on;
+}
+
+   @supports (font-variant-caps: titling-caps) {
+  .recursive-titl {
+      --recursive-titl: "____";
+      font-variant-caps: titling-caps;
+  }
+}
+
+   .recursive-zero {
+  --recursive-zero: "zero" on;
+}
+
+   @supports (font-variant-numeric: slashed-zero) {
+  .recursive-zero {
+      --recursive-zero: "____";
+      font-variant-numeric: slashed-zero;
+  }
+}
+
+   /* Apply current state of all custom properties
+ whenever a class is being applied */
+
+   .recursive-aalt,
+.recursive-afrc,
+.recursive-case,
+.recursive-dlig,
+.recursive-dnom,
+.recursive-frac,
+.recursive-numr,
+.recursive-ordn,
+.recursive-pnum,
+.recursive-sinf,
+/* .recursive-ss01,
+.recursive-ss02,
+.recursive-ss03,
+.recursive-ss04,
+.recursive-ss05,
+.recursive-ss06,
+.recursive-ss07,
+.recursive-ss08,
+.recursive-ss09,
+.recursive-ss10,
+.recursive-ss11,
+.recursive-ss12,
+.recursive-ss20, */
+.recursive-sups,
+.recursive-titl,
+.recursive-zero {
+  font-feature-settings: 
+    var(--recursive-aalt),
+    var(--recursive-afrc), 
+    var(--recursive-case), 
+    var(--recursive-dlig), 
+    var(--recursive-dnom), 
+    var(--recursive-frac), 
+    var(--recursive-numr), 
+    var(--recursive-ordn), 
+    var(--recursive-pnum), 
+    var(--recursive-sinf), 
+    /* var(--recursive-ss01), 
+    var(--recursive-ss02), 
+    var(--recursive-ss03), 
+    var(--recursive-ss04), 
+    var(--recursive-ss05), 
+    var(--recursive-ss06), 
+    var(--recursive-ss07), 
+    var(--recursive-ss08), 
+    var(--recursive-ss09), 
+    var(--recursive-ss10), 
+    var(--recursive-ss11), 
+    var(--recursive-ss12), 
+    var(--recursive-ss20),  */
+    var(--recursive-sups), 
+    var(--recursive-titl), 
+    var(--recursive-zero);
+}
+
+   ul
+ul li::marker {
+  color: rebeccapurple;
+}
+
+   ul li {
+  font-size: 125%;
+  list-style: disc;
+}
+
+   @counter-style circled-decimal {
+  suffix: ' ';
+  symbols: '\24EA' '\2460' '\2461' '\2462' '\2463' '\2464' '\2465' '\2466' '\2467' '\2468' '\2469' '\246A' '\246B' '\246C' '\246D' '\246E' '\246F' '\2470' '\2471' '\2472' '\2473' '\3251' '\3252' '\3253' '\3254' '\3255' '\3256' '\3257' '\3258' '\3259' '\325a' '\325b' '\325c' '\325d' '\325e' '\325f' '\32b1' '\32b2' '\32b3' '\32b4' '\32b5' '\32b6' '\32b7' '\32b8' '\32b9' '\32ba' '\32bb' '\32bc' '\32bd' '\32be' '\32bf';
+  system: fixed 0;
+  }
+
+   @counter-style decimal-leading-zero {
+  symbols: '\30\30' '\30\31' '\30\32' '\30\33' '\30\34' '\30\35' '\30\36' '\30\37' '\30\38' '\30\39';
+  system: fixed;
+}
+
+   @counter-style dotted-decimal {
+  suffix: ' ';
+  symbols: '\2488' '\2489' '\248A' '\248B' '\248C' '\248D' '\248E' '\248F' '\2490' '\2491' '\2492' '\2493' '\2494' '\2495' '\2496' '\2497' '\2498' '\2499' '\249A' '\249B';
+  system: fixed;
+}
+
+   @counter-style filled-circled-decimal {
+suffix: ' ';
+symbols: '\2776' '\2777' '\2778' '\2779' '\277a' '\277b' '\277c' '\277d' '\277e' '\277f' '\24EB' '\24EC' '\24ED' '\24EE' '\24EF' '\24F0' '\24F1' '\24F2' '\24F3' '\24F4';
+system: fixed;
+}
+
+   ol {
+  list-style: decimal;
+}
+
+   ol li::marker {
+  color: var(--color-violet);
+  font-size: 125%;
+}
+
+   .list--circled-decimal {
+  list-style-type: circled-decimal;
+}
+
+   .list--decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+
+   .list--dotted-decimal {
+  list-style-type: dotted-decimal;
+}
+
+   .list--filled-circled-decimal {
+  list-style-type: filled-circled-decimal;
+  }
+
+   ol {
+  list-style: decimal;
 }
 
    /* color-mix() experiment: lighten a charcoal black */
@@ -1050,32 +1716,11 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
 
    .charcoal { background-color: var(--color-charcoal);color: white;}
 
-   figure {
-  counter-increment: figure_count;
-  margin: 2em auto;
-  max-width: 60vw;
-}
-
-   figure img {
-	object-fit: contain;
-	width: 100%;
-  }
-
-   figure figcaption {
-    color: var(--color-charcoal);
-  }
-
-   figure figcaption::before {
-	content: 'Figure ' counter(figure_count) ': ';
-  }
-
    .header h1 {
-    margin-bottom: 0;
     text-align: center;
   }
 
    .header h2 {
-    margin-top: 0;
     text-align: center;
   }
 
@@ -1095,31 +1740,6 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
     text-align: justify;
     width: 60%;
   }
-
-   a {
-  color: #cd2653;
-  text-decoration: none;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-
-   a:visited {
-  color: #cd2653;
-  text-decoration: underline;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-
-   a:hover, a:focus, a:active {
-  color: #cd2653;
-  text-decoration: underline;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-
-   a:focus {
-  outline: thin dotted;
-}
 
    .message {
   border: 1px solid #ddd;
@@ -1144,92 +1764,6 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
   font-size: 2em;
   font-weight: 700;
   margin: 0;
-}
-
-   @counter-style circled-decimal {
-  suffix: ' ';
-  symbols: '\24EA' '\2460' '\2461' '\2462' '\2463' '\2464' '\2465' '\2466' '\2467' '\2468' '\2469' '\246A' '\246B' '\246C' '\246D' '\246E' '\246F' '\2470' '\2471' '\2472' '\2473' '\3251' '\3252' '\3253' '\3254' '\3255' '\3256' '\3257' '\3258' '\3259' '\325a' '\325b' '\325c' '\325d' '\325e' '\325f' '\32b1' '\32b2' '\32b3' '\32b4' '\32b5' '\32b6' '\32b7' '\32b8' '\32b9' '\32ba' '\32bb' '\32bc' '\32bd' '\32be' '\32bf';
-  system: fixed 0;
-  }
-
-   @counter-style decimal-leading-zero {
-  symbols: '\30\30' '\30\31' '\30\32' '\30\33' '\30\34' '\30\35' '\30\36' '\30\37' '\30\38' '\30\39';
-  system: fixed;
-}
-
-   @counter-style dotted-decimal {
-  suffix: ' ';
-  symbols: '\2488' '\2489' '\248A' '\248B' '\248C' '\248D' '\248E' '\248F' '\2490' '\2491' '\2492' '\2493' '\2494' '\2495' '\2496' '\2497' '\2498' '\2499' '\249A' '\249B';
-  system: fixed;
-}
-
-   @counter-style filled-circled-decimal {
-suffix: ' ';
-symbols: '\2776' '\2777' '\2778' '\2779' '\277a' '\277b' '\277c' '\277d' '\277e' '\277f' '\24EB' '\24EC' '\24ED' '\24EE' '\24EF' '\24F0' '\24F1' '\24F2' '\24F3' '\24F4';
-system: fixed;
-}
-
-   ol {
-  list-style: decimal;
-}
-
-   ol li::marker {
-  color: var(--color-violet);
-  font-size: 125%;
-}
-
-   .list--circled-decimal {
-  list-style-type: circled-decimal;
-}
-
-   .list--decimal-leading-zero {
-  list-style-type: decimal-leading-zero;
-}
-
-   .list--dotted-decimal {
-  list-style-type: dotted-decimal;
-}
-
-   .list--filled-circled-decimal {
-  list-style-type: filled-circled-decimal;
-  }
-
-   ol {
-  list-style: decimal;
-}
-
-   :root {
-  --shadow-color: 0deg 0% 0%;
-  --shadow-elevation-low:
-    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
-    0.8px 1px 1.4px -1.2px hsl(var(--shadow-color) / 0.1),
-    1.9px 2.5px 3.5px -2.5px hsl(var(--shadow-color) / 0.1);
-  --shadow-elevation-medium:
-    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.11),
-    1.6px 2px 2.9px -0.8px hsl(var(--shadow-color) / 0.11),
-    4px 5.1px 7.3px -1.7px hsl(var(--shadow-color) / 0.11),
-    9.6px 12.5px 17.7px -2.5px hsl(var(--shadow-color) / 0.11);
-  --shadow-elevation-high:
-    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
-    2.8px 3.6px 5.1px -0.4px hsl(var(--shadow-color) / 0.1),
-    5.3px 6.8px 9.7px -0.7px hsl(var(--shadow-color) / 0.1),
-    8.6px 11.1px 15.8px -1.1px hsl(var(--shadow-color) / 0.1),
-    13.8px 17.8px 25.3px -1.4px hsl(var(--shadow-color) / 0.1),
-    21.5px 27.8px 39.5px -1.8px hsl(var(--shadow-color) / 0.1),
-    32.8px 42.3px 60.2px -2.1px hsl(var(--shadow-color) / 0.1),
-    48.2px 62.3px 88.6px -2.5px hsl(var(--shadow-color) / 0.1);
-}
-
-   .shadow-low {
-  box-shadow: var(--shadow-elevation-low);
-}
-
-   .shadow-medium {
-  box-shadow: var(--shadow-elevation-medium);
-}
-
-   .shadow-high {
-  box-shadow: var(--shadow-elevation-high);
 }
 
    table {
@@ -1277,544 +1811,67 @@ td {
   text-align: right;
 }
 
-   @font-face {
-  font-family: 'Recursive';
-  font-weight: 300 1000;
-  src: url('/fonts/recursive.woff2') format('woff2');
+   figure {
+  counter-increment: figure_count;
+  margin: 2em auto;
+  max-width: 60vw;
 }
 
-   body {
-  font-family: 'Recursive', sans-serif;
-  font-size: 100%;
-  line-height: 1.3;
-  margin: 2em;
+   figure img {
+	object-fit: contain;
+	width: 100%;
+  }
+
+   figure figcaption {
+    color: var(--color-charcoal);
+  }
+
+   figure figcaption::before {
+	content: 'Figure ' counter(figure_count) ': ';
+  }
+
+   .rounded {
+  border-radius: 50%;
 }
-
-   h1, h2, h3 {
-  font-family: 'Recursive', sans-serif;
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   p {
-  line-height: 1.5;
-  width: 80vw;
-  width: 80ch;
-}
-
-   /**
- * CSS for Recursive
- * Generated by Wakamai Fondue - https://wakamaifondue.com
- * by Roel Nieskens/PixelAmbacht - https://pixelambacht.nl
- */
-
-   /* Set custom properties for each layout feature */
 
    :root {
-  --recursive-aalt: "aalt" off;
-  --recursive-afrc: "afrc" off;
-  --recursive-case: "case" off;
-  --recursive-dlig: "dlig" off;
-  --recursive-dnom: "dnom" off;
-  --recursive-frac: "frac" off;
-  --recursive-numr: "numr" off;
-  --recursive-ordn: "ordn" off;
-  --recursive-pnum: "pnum" off;
-  --recursive-sinf: "sinf" off;
-  /* --recursive-ss01: "ss01" off;
-  --recursive-ss02: "ss02" off;
-  --recursive-ss03: "ss03" off;
-  --recursive-ss04: "ss04" off;
-  --recursive-ss05: "ss05" off;
-  --recursive-ss06: "ss06" off;
-  --recursive-ss07: "ss07" off;
-  --recursive-ss08: "ss08" off;
-  --recursive-ss09: "ss09" off;
-  --recursive-ss10: "ss10" off;
-  --recursive-ss11: "ss11" off;
-  --recursive-ss12: "ss12" off;
-  --recursive-ss20: "ss20" off; */
-  --recursive-sups: "sups" off;
-  --recursive-titl: "titl" off;
-  --recursive-zero: "zero" off;
-}
-
-   /* If class is applied, update custom property and
- apply modern font-variant-* when supported */
-
-   .recursive-aalt {
-  --recursive-aalt: "aalt" on;
-}
-
-   .recursive-afrc {
-  --recursive-afrc: "afrc" on;
-}
-
-   @supports (font-variant-numeric: stacked-fractions) {
-  .recursive-afrc {
-      --recursive-afrc: "____";
-      font-variant-numeric: stacked-fractions;
-  }
-}
-
-   .recursive-case {
-  --recursive-case: "case" on;
-}
-
-   .recursive-dlig {
-  --recursive-dlig: "dlig" on;
-}
-
-   @supports (font-variant-ligatures: discretionary-ligatures) {
-  .recursive-dlig {
-      --recursive-dlig: "____";
-      font-variant-ligatures: discretionary-ligatures;
-  }
-}
-
-   .recursive-dnom {
-  --recursive-dnom: "dnom" on;
-}
-
-   .recursive-frac {
-  --recursive-frac: "frac" on;
-}
-
-   @supports (font-variant-numeric: diagonal-fractions) {
-  .recursive-frac {
-      --recursive-frac: "____";
-      font-variant-numeric: diagonal-fractions;
-  }
-}
-
-   .recursive-numr {
-  --recursive-numr: "numr" on;
-}
-
-   .recursive-ordn {
-  --recursive-ordn: "ordn" on;
-}
-
-   @supports (font-variant-numeric: ordinal) {
-  .recursive-ordn {
-      --recursive-ordn: "____";
-      font-variant-numeric: ordinal;
-  }
-}
-
-   .recursive-pnum {
-  --recursive-pnum: "pnum" on;
-}
-
-   @supports (font-variant-numeric: proportional-nums) {
-  .recursive-pnum {
-      --recursive-pnum: "____";
-      font-variant-numeric: proportional-nums;
-  }
-}
-
-   .recursive-sinf {
-  --recursive-sinf: "sinf" on;
-}
-
-   /* .recursive-ss01 {
-  --recursive-ss01: "ss01" on;
-}
-
-.recursive-ss02 {
-  --recursive-ss02: "ss02" on;
-}
-
-.recursive-ss03 {
-  --recursive-ss03: "ss03" on;
-}
-
-.recursive-ss04 {
-  --recursive-ss04: "ss04" on;
-}
-
-.recursive-ss05 {
-  --recursive-ss05: "ss05" on;
-}
-
-.recursive-ss06 {
-  --recursive-ss06: "ss06" on;
-}
-
-.recursive-ss07 {
-  --recursive-ss07: "ss07" on;
-}
-
-.recursive-ss08 {
-  --recursive-ss08: "ss08" on;
-}
-
-.recursive-ss09 {
-  --recursive-ss09: "ss09" on;
-}
-
-.recursive-ss10 {
-  --recursive-ss10: "ss10" on;
-}
-
-.recursive-ss11 {
-  --recursive-ss11: "ss11" on;
-}
-
-.recursive-ss12 {
-  --recursive-ss12: "ss12" on;
-}
-
-.recursive-ss20 {
-  --recursive-ss20: "ss20" on;
-} */
-
-   .recursive-sups {
-  --recursive-sups: "sups" on;
-}
-
-   @supports (font-variant-position: super) {
-  .recursive-sups {
-      --recursive-sups: "____";
-      font-variant-position: super;
-  }
-}
-
-   .recursive-titl {
-  --recursive-titl: "titl" on;
-}
-
-   @supports (font-variant-caps: titling-caps) {
-  .recursive-titl {
-      --recursive-titl: "____";
-      font-variant-caps: titling-caps;
-  }
-}
-
-   .recursive-zero {
-  --recursive-zero: "zero" on;
-}
-
-   @supports (font-variant-numeric: slashed-zero) {
-  .recursive-zero {
-      --recursive-zero: "____";
-      font-variant-numeric: slashed-zero;
-  }
-}
-
-   /* Apply current state of all custom properties
- whenever a class is being applied */
-
-   .recursive-aalt,
-.recursive-afrc,
-.recursive-case,
-.recursive-dlig,
-.recursive-dnom,
-.recursive-frac,
-.recursive-numr,
-.recursive-ordn,
-.recursive-pnum,
-.recursive-sinf,
-/* .recursive-ss01,
-.recursive-ss02,
-.recursive-ss03,
-.recursive-ss04,
-.recursive-ss05,
-.recursive-ss06,
-.recursive-ss07,
-.recursive-ss08,
-.recursive-ss09,
-.recursive-ss10,
-.recursive-ss11,
-.recursive-ss12,
-.recursive-ss20, */
-.recursive-sups,
-.recursive-titl,
-.recursive-zero {
-  font-feature-settings: 
-    var(--recursive-aalt),
-    var(--recursive-afrc), 
-    var(--recursive-case), 
-    var(--recursive-dlig), 
-    var(--recursive-dnom), 
-    var(--recursive-frac), 
-    var(--recursive-numr), 
-    var(--recursive-ordn), 
-    var(--recursive-pnum), 
-    var(--recursive-sinf), 
-    /* var(--recursive-ss01), 
-    var(--recursive-ss02), 
-    var(--recursive-ss03), 
-    var(--recursive-ss04), 
-    var(--recursive-ss05), 
-    var(--recursive-ss06), 
-    var(--recursive-ss07), 
-    var(--recursive-ss08), 
-    var(--recursive-ss09), 
-    var(--recursive-ss10), 
-    var(--recursive-ss11), 
-    var(--recursive-ss12), 
-    var(--recursive-ss20),  */
-    var(--recursive-sups), 
-    var(--recursive-titl), 
-    var(--recursive-zero);
-}
-
-   /* Variable instances */
-
-   .recursive-mono-linear-light {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-light-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-light {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-light-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-medium {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-medium-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-medium {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-medium-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-semibold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-semibold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-semibold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-semibold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-bold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-bold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-bold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-bold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-extrabold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-extrabold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-extrabold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-extrabold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-black {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-black-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-black {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-black-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-extrablack {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-extrablack-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-extrablack {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-extrablack-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-light {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-light-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-medium {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-medium-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-medium {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-medium-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-semibold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-semibold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-semibold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-semibold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-bold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-bold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-bold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-bold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-extrabold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-extrabold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-extrabold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-extrabold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-black {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-black-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-black {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-black-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-extrablack {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-extrablack-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-extrablack {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-extrablack-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
+    0.8px 1px 1.4px -1.2px hsl(var(--shadow-color) / 0.1),
+    1.9px 2.5px 3.5px -2.5px hsl(var(--shadow-color) / 0.1);
+  --shadow-elevation-medium:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.11),
+    1.6px 2px 2.9px -0.8px hsl(var(--shadow-color) / 0.11),
+    4px 5.1px 7.3px -1.7px hsl(var(--shadow-color) / 0.11),
+    9.6px 12.5px 17.7px -2.5px hsl(var(--shadow-color) / 0.11);
+  --shadow-elevation-high:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
+    2.8px 3.6px 5.1px -0.4px hsl(var(--shadow-color) / 0.1),
+    5.3px 6.8px 9.7px -0.7px hsl(var(--shadow-color) / 0.1),
+    8.6px 11.1px 15.8px -1.1px hsl(var(--shadow-color) / 0.1),
+    13.8px 17.8px 25.3px -1.4px hsl(var(--shadow-color) / 0.1),
+    21.5px 27.8px 39.5px -1.8px hsl(var(--shadow-color) / 0.1),
+    32.8px 42.3px 60.2px -2.1px hsl(var(--shadow-color) / 0.1),
+    48.2px 62.3px 88.6px -2.5px hsl(var(--shadow-color) / 0.1);
+}
+
+   div[class^="shadow"] {
+  border: 1px solid var(--color-charcoal);
+  height: 300px;
+  width: 300px;
+}
+
+   .shadow--low {
+  box-shadow: var(--shadow-elevation-low);
+}
+
+   .shadow--medium {
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+   .shadow--high {
+  box-shadow: var(--shadow-elevation-high);
 }
 
    video,
@@ -1847,29 +1904,6 @@ object {
    article {
   margin: 0 auto;
   width: 60vw;
-
-
-}
-
-   .article__content p {
-    font-size: 1.2rem;
-    line-height: 1.3;
-    margin-bottom: 1.1rem;
-  }
-
-   .article--two-cols .article__content {
-    columns: 2; 
-  }
-
-   .article--two-cols .article__content p {
-      font-size: 1.2rem;
-      line-height: 1.3;
-      margin-bottom: 1.1rem;
-    }
-
-   article {
-  margin: 0 auto;
-  width: 60vw;
 }
 
    .article--content p {
@@ -1878,17 +1912,16 @@ object {
     margin-bottom: 1.1rem;
   }
 
-   .article--twoCols {
+   .article--two-cols {
   width: 100%; 
 }
 
-   .article--twoCols .article--content {
-    column-gap: 1rem;
-    column-width: 30vw;
+   .article--two-cols >.article--content {
+    columns: 2 auto;
   }
 
-   .article--twoCols p {
-    font-size: 1em;
+   .article--two-cols p {
+    font-size: 1rem;
     line-height: 1.3;
     margin-bottom: 1.1rem;
   }

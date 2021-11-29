@@ -1,0 +1,39 @@
+:root {
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
+    0.8px 1px 1.4px -1.2px hsl(var(--shadow-color) / 0.1),
+    1.9px 2.5px 3.5px -2.5px hsl(var(--shadow-color) / 0.1);
+  --shadow-elevation-medium:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.11),
+    1.6px 2px 2.9px -0.8px hsl(var(--shadow-color) / 0.11),
+    4px 5.1px 7.3px -1.7px hsl(var(--shadow-color) / 0.11),
+    9.6px 12.5px 17.7px -2.5px hsl(var(--shadow-color) / 0.11);
+  --shadow-elevation-high:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
+    2.8px 3.6px 5.1px -0.4px hsl(var(--shadow-color) / 0.1),
+    5.3px 6.8px 9.7px -0.7px hsl(var(--shadow-color) / 0.1),
+    8.6px 11.1px 15.8px -1.1px hsl(var(--shadow-color) / 0.1),
+    13.8px 17.8px 25.3px -1.4px hsl(var(--shadow-color) / 0.1),
+    21.5px 27.8px 39.5px -1.8px hsl(var(--shadow-color) / 0.1),
+    32.8px 42.3px 60.2px -2.1px hsl(var(--shadow-color) / 0.1),
+    48.2px 62.3px 88.6px -2.5px hsl(var(--shadow-color) / 0.1);
+}
+
+div[class^="shadow"] {
+  border: 1px solid var(--color-charcoal);
+  height: 300px;
+  width: 300px;
+}
+
+.shadow--low {
+  box-shadow: var(--shadow-elevation-low);
+}
+
+.shadow--medium {
+  box-shadow: var(--shadow-elevation-medium);
+}
+
+.shadow--high {
+  box-shadow: var(--shadow-elevation-high);
+}

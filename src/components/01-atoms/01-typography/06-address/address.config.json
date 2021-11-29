@@ -1,0 +1,19 @@
+{
+  "title": "Address",
+  "context": {
+      "addressLines": [
+          {
+              "text": "Example.com,"
+          },
+          {
+              "text": "Box 564,"
+          },
+          {
+              "text": "Disneyland"
+          },
+          {
+              "text": "USA"
+          }
+      ]
+  }
+}

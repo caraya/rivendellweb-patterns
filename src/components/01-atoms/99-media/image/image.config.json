@@ -1,0 +1,81 @@
+{
+  "name": "image",
+  "context": {
+    "src": "http://via.placeholder.com/640x360",
+    "alt": "placeholder image",
+    "width": "640px",
+    "height": "360px"
+  },
+  "variants": [
+    {
+      "name": "thumb",
+      "label": "01-thumb",
+      "context": {
+        "src": "http://via.placeholder.com/200x200",
+        "alt": "placeholder image",
+        "width": "200px",
+        "height": "200px"
+      }
+    },
+    {
+      "name": "small",
+      "label": "02-small",
+      "context": {
+        "src": "http://via.placeholder.com/320x180",
+        "alt": "placeholder image",
+        "width": "320px",
+        "height": "180px"
+      }
+    },
+    {
+      "name": "medium",
+      "label": "03-medium",
+      "context": {
+        "src": "http://via.placeholder.com/640x360",
+        "alt": "placeholder image",
+        "width": "640px",
+        "height": "360px"
+      }
+    },
+    {
+      "name": "large",
+      "label": "04-large",
+      "context": {
+        "src": "http://via.placeholder.com/960x540",
+        "alt": "placeholder image",
+        "width": "960px",
+        "height": "540px"
+      }
+    },
+    {
+      "name": "xlarge",
+      "label": "05-xlarge",
+      "context": {
+        "src": "http://via.placeholder.com/1280x720",
+        "alt": "placeholder image",
+        "width": "1280px",
+        "height": "720px"
+      }
+    },
+    {
+      "name": "banner",
+      "label": "06-banner",
+      "context": {
+        "src": "http://via.placeholder.com/1600x400",
+        "alt": "placeholder image",
+        "width": "1600px",
+        "height": "400px"
+      }
+    },
+    {
+      "name": "hero",
+      "label": "07-hero",
+      "context": {
+        "src": "http://via.placeholder.com/1920x1080",
+        "alt": "placeholder image",
+        "width": "1920px",
+        "height": "1080px"
+      }
+    }
+  ]
+}

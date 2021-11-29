@@ -1,0 +1,11 @@
+{
+  "name": "header",
+  "context": {
+    "header-name": "This is the article title",
+    "header-subtitle": "the subtitle, if any",
+    "header-summary": "This is the summary of the article if that's what we're putting it under, we may want to remove it for non-article headers",
+    "authors": [{
+      "name": "Neil Doe"
+    }]  
+  }
+}

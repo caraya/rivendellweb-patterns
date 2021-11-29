@@ -1,0 +1,92 @@
+{
+  "name": "Font Styles",
+  "label": "Recursive Named Instances",
+  "collated": true,
+  "context": {
+    "paraContent": "The Go programming language is an open source project to make programmers more productive. Go is expressive, concise, clean, and efficient. Its concurrency mechanisms make it easy to write programs that get the most out of multicore and networked machines, while its novel type system enables flexible and modular program construction. Go compiles quickly to machine code yet has the convenience of garbage collection and the power of run-time reflection. It's a fast, statically typed, compiled language that feels like a dynamically typed, interpreted language."
+  },
+  "variants": [{
+    "name": "recursive-mono-linear",
+    "label": "mono linear",
+    "context": {
+      "font-style": "recursive-mono-linear"
+    }
+  },
+  {
+    "name": "recursive-mono-linear-italic",
+    "label": "mono linear italic",
+    "context": {
+      "font-style": "recursive-mono-linear-italic"
+    }
+  },
+  {
+    "name": "recursive-mono-linear-bold",
+    "label": "mono linear bold",
+    "context": {
+      "font-style": "recursive-mono-linear-bold"
+    }
+  },
+  {
+    "name": "recursive-mono-linear-bold-italic",
+    "label": "mono linear bold italic",
+    "context": {
+      "font-style": "recursive-mono-linear-bold-italic"
+    }
+  },
+  {
+    "name": "recursive-sans-linear-medium",
+    "label": "sans linear medium",
+    "context": {
+      "font-style": "recursive-sans-linear-medium"
+    }
+  },
+  {
+    "name": "recursive-sans-linear-medium-italic",
+    "label": "sans linear medium italic",
+    "context": {
+      "font-style": "recursive-sans-linear-medium-italic"
+    }
+  },
+  {
+    "name": "recursive-sans-linear-bold",
+    "label": "sans linear bold",
+    "context": {
+      "font-style": "recursive-sans-linear-bold"
+    }
+  },
+  {
+    "name": "recursive-sans-linear-bold-italic",
+    "label": "sans linear bold italic",
+    "context": {
+      "font-style": "recursive-sans-linear-bold-italic"
+    }
+  },
+  {
+    "name": "recursive-sans-casual-medium",
+    "label": "sans casual medium",
+    "context": {
+      "font-style": "recursive-sans-casual-medium"
+    }
+  },
+  {
+    "name": "recursive-sans-casual-medium-italic",
+    "label": "sans casual medium italic",
+    "context": {
+      "font-style": "recursive-sans-casual-medium-italic"
+    }
+  },
+  {
+    "name": "recursive-sans-casual-bold",
+    "label": "sans casual bold",
+    "context": {
+      "font-style": "recursive-sans-casual-bold"
+    }
+  },
+  {
+    "name": "recursive-sans-casual-bold-italic",
+    "label": "sans casual bold italic",
+    "context": {
+      "font-style": "recursive-sans-casual-bold-italic"
+    }
+  }]
+}

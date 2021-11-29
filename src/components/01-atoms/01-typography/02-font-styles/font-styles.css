@@ -1,0 +1,261 @@
+p[class^=para] {
+  margin-bottom: 2rem;
+}
+
+/* Variable instances */
+.recursive-mono-linear-light {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-linear-light-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-casual-light {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-casual-light-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-linear {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-linear-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-casual {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-casual-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-linear-medium {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-linear-medium-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-casual-medium {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-casual-medium-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-linear-semibold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-linear-semibold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-casual-semibold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-casual-semibold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-linear-bold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-linear-bold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-casual-bold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-casual-bold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-linear-extrabold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-linear-extrabold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-casual-extrabold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-casual-extrabold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-linear-black {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-linear-black-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-casual-black {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-casual-black-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-linear-extrablack {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-linear-extrablack-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-mono-casual-extrablack {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-mono-casual-extrablack-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+
+.recursive {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-casual-light {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-casual-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-linear {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-linear-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-casual {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-casual-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-linear-medium {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-linear-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-casual-medium {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-casual-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-linear-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-linear-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-casual-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-casual-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-linear-bold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-linear-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-casual-bold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-casual-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-linear-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-linear-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-casual-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-casual-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-linear-black {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-linear-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-casual-black {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-casual-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-linear-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-linear-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+
+.recursive-sans-casual-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+
+.recursive-sans-casual-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+
