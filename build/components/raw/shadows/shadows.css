@@ -20,14 +20,20 @@
     48.2px 62.3px 88.6px -2.5px hsl(var(--shadow-color) / 0.1);
 }
 
-.shadow-low {
+div[class^="shadow"] {
+  border: 1px solid var(--color-charcoal);
+  height: 300px;
+  width: 300px;
+}
+
+.shadow--low {
   box-shadow: var(--shadow-elevation-low);
 }
 
-.shadow-medium {
+.shadow--medium {
   box-shadow: var(--shadow-elevation-medium);
 }
 
-.shadow-high {
+.shadow--high {
   box-shadow: var(--shadow-elevation-high);
 }

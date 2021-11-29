@@ -1,0 +1,9 @@
+ul
+ul li::marker {
+  color: rebeccapurple;
+}
+
+ul li {
+  font-size: 125%;
+  list-style: disc;
+}

@@ -6,14 +6,12 @@ a {
 }
 
 a:visited {
-  color: #cd2653;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
 
 a:hover, a:focus, a:active {
-  color: #cd2653;
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
