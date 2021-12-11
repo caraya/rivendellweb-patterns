@@ -1,0 +1,38 @@
+{
+  "name": "bulleted-list",
+  "context": {
+    "listItems": [
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      },
+      {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    ]
+  },
+  "variants": []
+}

@@ -1,6 +1,6 @@
 # Colors
 
-I'm still looking for one or two color palletes that I like. In the meantime I'll just use this component to park ideas, in addition to what I already use for the blog and other projects.
+I'm still looking for one or two color palletes that I like. In the meantime I'll just use this component to park drafts, in addition to what I already use for the blog and other projects.
 
 ## The New Defaults
 
