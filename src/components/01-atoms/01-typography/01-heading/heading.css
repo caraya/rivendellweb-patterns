@@ -39,3 +39,7 @@ h6 {
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
+
+.vertical {
+  writing-mode: vertical-rl;
+}

@@ -30,6 +30,30 @@
       {
           "name": "h6",
           "label": "H6"
-      }
+      },
+      {
+        "name": "h1-vertical",
+        "label": "H1 Vertical"
+    },
+    {
+        "name": "h2-vertical",
+        "label": "H2 Vertical"
+    },
+    {
+        "name": "h3-vertical",
+        "label": "H3 Vertical"
+    },
+    {
+        "name": "h4-vertical",
+        "label": "H4 Vertical"
+    },
+    {
+        "name": "h5-vertical",
+        "label": "H5 Vertical"
+    },
+    {
+        "name": "h6-vertical",
+        "label": "H6 Vertical"
+    }
   ]
 }
