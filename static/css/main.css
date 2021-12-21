@@ -510,8 +510,10 @@ h6 {
 }
 
    .blockquote--normal {
-  border-left: 5px solid var(--color-azure);
-  padding-left: 1.5em;
+  -webkit-border-start: 5px solid var(--color-azure);
+          border-inline-start: 5px solid var(--color-azure);
+  -webkit-padding-start: 1.5em;
+          padding-inline-start: 1.5em;
 }
 
    .cite {
@@ -519,45 +521,86 @@ h6 {
   margin-top: 1em;
 }
 
-   .blockquote--center,
-.blockquote--center .cite {
-  margin: 2em auto;
-  text-align: center;
-}
-
    .blockquote--center {
-  border-bottom: 5px solid var(--color-azure);
-  border-top: 5px solid var(--color-azure);
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
+
+  -webkit-border-before: 5px solid var(--color-azure);
+
+          border-block-start: 5px solid var(--color-azure);
+  margin: 0 auto;
+  text-align: center;
+
   width: 80%;
   width: 80ch;
 }
 
-   .blockquote--large {
-  font-size: 1.5em;
-}
+   .blockquote--center p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
 
-   .blockquote--large p,
-.blockquote--large .cite {
+   .blockquote--center p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
+
+   .blockquote--large {
+  font-size: 1.5rem;
   width: 60ch;
 }
 
    .blockquote--single-top {
-  border-top: 5px solid var(--color-azure);
+  -webkit-border-before: 5px solid var(--color-azure);
+          border-block-start: 5px solid var(--color-azure);
 }
+
+   .blockquote--single-top p:first-child {
+    -webkit-margin-before: 1rem;
+            margin-block-start: 1rem;
+  }
 
    .blockquote--single-bottom {
-  border-bottom: 5px solid var(--color-azure);
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
 }
 
+   .blockquote--single-bottom p:last-child {
+    -webkit-margin-after: 1rem;
+            margin-block-end: 1rem;
+  }
+
    .blockquote--single-both {
-  border-bottom: 5px solid var(--color-azure);
-  border-top: 5px solid var(--color-azure);
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
+  -webkit-border-before: 5px solid var(--color-azure);
+          border-block-start: 5px solid var(--color-azure);
 }
+
+   .blockquote--single-both p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
+
+   .blockquote--single-both p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
 
    .blockquote--double-both {
   border-bottom: 10px double var(--color-azure);
   border-top: 10px double var(--color-azure);
 }
+
+   .blockquote--double-both p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
+
+   .blockquote--double-both p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
 
    @font-face {
   font-family: 'Recursive';
@@ -846,7 +889,8 @@ ul li::marker {
 }
 
    dd:not(:last-child) {
-  margin-bottom: 1.25rem;
+  -webkit-margin-after: 1.25rem;
+          margin-block-end: 1.25rem;
 }
 
    @counter-style circled-decimal {

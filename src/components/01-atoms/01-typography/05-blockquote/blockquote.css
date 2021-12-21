@@ -1,6 +1,6 @@
 .blockquote--normal {
-  padding-left: 1.5em;
-  border-left: 5px solid var(--color-azure);
+  padding-inline-start: 1.5em;
+  border-inline-start: 5px solid var(--color-azure);
 }
 
 .cite {
@@ -8,42 +8,69 @@
   margin-top: 1em;
 }
 
-.blockquote--center,
-.blockquote--center .cite {
-  margin: 2em auto;
-  text-align: center;
-}
-
 .blockquote--center {
+  margin: 0 auto;
+  text-align: center;
+
   width: 80%;
   width: 80ch;
-  border-top: 5px solid var(--color-azure);
-  border-bottom: 5px solid var(--color-azure);
+
+  border-block-start: 5px solid var(--color-azure);
+  border-block-end: 5px solid var(--color-azure);
+
+  & p:first-child {
+    margin-block-start: 1em;
+  }
+
+  & p:last-child {
+    margin-block-end: 1em;
+  }
 }
+
 
 .blockquote--large {
-  font-size: 1.5em;
-}
-
-.blockquote--large p,
-.blockquote--large .cite {
+  font-size: 1.5rem;
   width: 60ch;
 }
 
 .blockquote--single-top {
-  border-top: 5px solid var(--color-azure);
+  border-block-start: 5px solid var(--color-azure);
+
+  & p:first-child {
+    margin-block-start: 1rem;
+  }
 }
 
 .blockquote--single-bottom {
-  border-bottom: 5px solid var(--color-azure);
+  border-block-end: 5px solid var(--color-azure);
+
+  & p:last-child {
+    margin-block-end: 1rem;
+  }
 }
 
 .blockquote--single-both {
-  border-top: 5px solid var(--color-azure);
-  border-bottom: 5px solid var(--color-azure);
+  border-block-start: 5px solid var(--color-azure);
+  border-block-end: 5px solid var(--color-azure);
+
+  & p:first-child {
+    margin-block-start: 1em;
+  }
+
+  & p:last-child {
+    margin-block-end: 1em;
+  }
 }
 
 .blockquote--double-both {
   border-top: 10px double var(--color-azure);
   border-bottom: 10px double var(--color-azure);
+
+  & p:first-child {
+    margin-block-start: 1em;
+  }
+
+  & p:last-child {
+    margin-block-end: 1em;
+  }
 }
