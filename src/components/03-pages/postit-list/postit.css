@@ -1,0 +1,17 @@
+.postit-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+
+
+  & .postit:nth-child(2n){
+    transform: rotate(20deg);
+  }
+  
+  & .postit:nth-child(2n+1){
+    background-color: var(--color-aqua);
+    transform: rotate(-20deg);
+  }
+}
+

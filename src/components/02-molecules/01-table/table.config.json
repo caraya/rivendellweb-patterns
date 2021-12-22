@@ -1,5 +1,6 @@
 {
   "name": "table",
+  "label": "Table",
   "collated": false,
   "variants": [{
     "name": "no-borders",
