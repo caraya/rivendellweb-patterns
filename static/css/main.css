@@ -759,7 +759,7 @@ ol {
 }
 /* color-mix() experiment: lighten a charcoal black */
 :root {
-  /* very dark brand blue */
+  /* lightening charcoal */
   --text1: color-mix(in srgb, var(--color-charcoal) 10%, white);
   --text2: color-mix(in srgb, var(--color-charcoal) 20%, white);
   --text3: color-mix(in srgb, var(--color-charcoal) 30%, white);
@@ -770,81 +770,81 @@ ol {
   --text8: color-mix(in srgb, var(--color-charcoal) 80%, white);
   --text9: color-mix(in srgb, var(--color-charcoal) 90%, white);
 }
-.dark-text1 {
+.light-text1 {
   background-color: var(--text1);
 }
-.dark-text2 {
+.light-text2 {
   background-color: var(--text2);
 }
-.dark-text3 {
+.light-text3 {
   background-color: var(--text3);
 }
-.dark-text4 {
+.light-text4 {
   background-color: var(--text4);
 }
-.dark-text5 {
+.light-text5 {
   background-color: var(--text5);
 }
-.dark-text6 {
+.light-text6 {
   background-color: var(--text6);
 }
-.dark-text7 {
+.light-text7 {
   background-color: var(--text7);
 }
-.dark-text8 {
+.light-text8 {
   background-color: var(--text8);
 }
-.dark-text9 {
-  background-color: var(--text9);
-  coloe: var(--color-pearl);
-}
-/* color-mix() experiment: darken a light green mint color  */
-:root {
-  --light-text1: color-mix(in srgb, var(--color-mint) 10%, black);
-  --light-text2: color-mix(in srgb, var(--color-mint) 20%, black);
-  --light-text3: color-mix(in srgb, var(--color-mint) 30%, black);
-  --light-text4: color-mix(in srgb, var(--color-mint) 40%, black);
-  --light-text5: color-mix(in srgb, var(--color-mint) 50%, black);
-  --light-text6: color-mix(in srgb, var(--color-mint) 60%, black);
-  --light-text7: color-mix(in srgb, var(--color-mint) 70%, black);
-  --light-text8: color-mix(in srgb, var(--color-mint) 80%, black);
-  --light-text9: color-mix(in srgb, var(--color-mint) 90%, black);
-}
-.light-text1 {
-  background-color: var(--light-text1);
-  color: var(--color-pearl);
-}
-.light-text2 {
-  background-color: var(--light-text2);
-  color: var(--color-pearl);
-}
-.light-text3 {
-  background-color: var(--light-text3);
-  color: var(--color-pearl);
-}
-.light-text4 {
-  background-color: var(--light-text4);
-  color: var(--color-pearl);
-}
-.light-text5 {
-  background-color: var(--light-text5);
-  color: var(--color-pearl);
-}
-.light-text6 {
-  background-color: var(--light-text6);
-  color: var(--color-pearl);
-}
-.light-text7 {
-  background-color: var(--light-text7);
-  color: var(--color-pearl);
-}
-.light-text8 {
-  background-color: var(--light-text8);
-  color: var(--color-pearl);
-}
 .light-text9 {
-  background-color: var(--light-text9);
-  color: var(--color-pearl);
+  background-color: var(--text9);
+  color: #fff;
+}
+/* color-mix() experiment: darken a dark green mint color  */
+:root {
+  --dark-text1: color-mix(in srgb, var(--color-mint) 10%, black);
+  --dark-text2: color-mix(in srgb, var(--color-mint) 20%, black);
+  --dark-text3: color-mix(in srgb, var(--color-mint) 30%, black);
+  --dark-text4: color-mix(in srgb, var(--color-mint) 40%, black);
+  --dark-text5: color-mix(in srgb, var(--color-mint) 50%, black);
+  --dark-text6: color-mix(in srgb, var(--color-mint) 60%, black);
+  --dark-text7: color-mix(in srgb, var(--color-mint) 70%, black);
+  --dark-text8: color-mix(in srgb, var(--color-mint) 80%, black);
+  --dark-text9: color-mix(in srgb, var(--color-mint) 90%, black);
+}
+.dark-text1 {
+  background-color: var(--dark-text1);
+  color: #fff;
+}
+.dark-text2 {
+  background-color: var(--dark-text2);
+  color: #fff;
+}
+.dark-text3 {
+  background-color: var(--dark-text3);
+  color: #fff;
+}
+.dark-text4 {
+  background-color: var(--dark-text4);
+  color: #fff;
+}
+.dark-text5 {
+  background-color: var(--dark-text5);
+  color: #fff;
+}
+.dark-text6 {
+  background-color: var(--dark-text6);
+  color: #fff;
+}
+.dark-text7 {
+  background-color: var(--dark-text7);
+  color: #fff;
+}
+.dark-text8 {
+  background-color: var(--dark-text8);
+  color: #fff;
+}
+.dark-text9 {
+  background-color: var(--dark-text9);
+  color: #fff;
 }
 /* CSS HSL */
 :root {
@@ -1145,7 +1145,7 @@ ol {
 /* Colors taken from The New Defaults */
 /* whites */
 .white {background-color: var(--color-white);}
-.pearl {background-color: white; ;}
+.pearl {background-color: var(--color-pearl);}
 .alabaster {background-color: var(--color-alabaster);}
 .snow {background-color: var(--color-snow);}
 .ivory {background-color: var(--color-ivory);}
@@ -1386,6 +1386,82 @@ ol {
 .top-banana {  background-color: var(--color-top-banana); color: white; }
 .citron-yella {  background-color: var(--color-citron-yella); color: white; }
 .panther-pink {  background-color: var(--color-panther-pink); color: white; }
+figure {
+  counter-increment: figure_count;
+  margin: 2em auto;
+  max-width: 60vw;
+}
+figure img {
+	object-fit: contain;
+	width: 100%;
+  }
+figure figcaption {
+    color: var(--color-charcoal);
+  }
+figure figcaption::before {
+	content: 'Figure ' counter(figure_count) ': ';
+  }
+.rounded {
+  border-radius: 50%;
+}
+:root {
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
+    0.8px 1px 1.4px -1.2px hsl(var(--shadow-color) / 0.1),
+    1.9px 2.5px 3.5px -2.5px hsl(var(--shadow-color) / 0.1);
+  --shadow-elevation-medium:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.11),
+    1.6px 2px 2.9px -0.8px hsl(var(--shadow-color) / 0.11),
+    4px 5.1px 7.3px -1.7px hsl(var(--shadow-color) / 0.11),
+    9.6px 12.5px 17.7px -2.5px hsl(var(--shadow-color) / 0.11);
+  --shadow-elevation-high:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
+    2.8px 3.6px 5.1px -0.4px hsl(var(--shadow-color) / 0.1),
+    5.3px 6.8px 9.7px -0.7px hsl(var(--shadow-color) / 0.1),
+    8.6px 11.1px 15.8px -1.1px hsl(var(--shadow-color) / 0.1),
+    13.8px 17.8px 25.3px -1.4px hsl(var(--shadow-color) / 0.1),
+    21.5px 27.8px 39.5px -1.8px hsl(var(--shadow-color) / 0.1),
+    32.8px 42.3px 60.2px -2.1px hsl(var(--shadow-color) / 0.1),
+    48.2px 62.3px 88.6px -2.5px hsl(var(--shadow-color) / 0.1);
+}
+div[class^="shadow"] {
+  border: 1px solid var(--color-charcoal);
+  height: 300px;
+  width: 300px;
+}
+.shadow--low {
+  box-shadow: var(--shadow-elevation-low);
+}
+.shadow--medium {
+  box-shadow: var(--shadow-elevation-medium);
+}
+.shadow--high {
+  box-shadow: var(--shadow-elevation-high);
+}
+video,
+object {
+  clear: both;
+  display: block;
+  height: auto !important;
+  margin: 1em auto;
+  max-width: 100% !important;
+}
+div.video iframe {
+  clear: both;
+  display: block;
+  margin: 1em auto;
+  max-width: inherit;
+  text-align: center;
+}
+div.video p {
+  font-style: italic;
+  font-weight: 700;
+  margin-top: -.125em;
+}
+iframe {
+  margin: 1.5em 0;
+}
 .message {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -1463,82 +1539,6 @@ td {
 .table--cell-right {
   text-align: right;
 }
-figure {
-  counter-increment: figure_count;
-  margin: 2em auto;
-  max-width: 60vw;
-}
-figure img {
-	object-fit: contain;
-	width: 100%;
-  }
-figure figcaption {
-    color: var(--color-charcoal);
-  }
-figure figcaption::before {
-	content: 'Figure ' counter(figure_count) ': ';
-  }
-.rounded {
-  border-radius: 50%;
-}
-:root {
-  --shadow-color: 0deg 0% 0%;
-  --shadow-elevation-low:
-    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
-    0.8px 1px 1.4px -1.2px hsl(var(--shadow-color) / 0.1),
-    1.9px 2.5px 3.5px -2.5px hsl(var(--shadow-color) / 0.1);
-  --shadow-elevation-medium:
-    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.11),
-    1.6px 2px 2.9px -0.8px hsl(var(--shadow-color) / 0.11),
-    4px 5.1px 7.3px -1.7px hsl(var(--shadow-color) / 0.11),
-    9.6px 12.5px 17.7px -2.5px hsl(var(--shadow-color) / 0.11);
-  --shadow-elevation-high:
-    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
-    2.8px 3.6px 5.1px -0.4px hsl(var(--shadow-color) / 0.1),
-    5.3px 6.8px 9.7px -0.7px hsl(var(--shadow-color) / 0.1),
-    8.6px 11.1px 15.8px -1.1px hsl(var(--shadow-color) / 0.1),
-    13.8px 17.8px 25.3px -1.4px hsl(var(--shadow-color) / 0.1),
-    21.5px 27.8px 39.5px -1.8px hsl(var(--shadow-color) / 0.1),
-    32.8px 42.3px 60.2px -2.1px hsl(var(--shadow-color) / 0.1),
-    48.2px 62.3px 88.6px -2.5px hsl(var(--shadow-color) / 0.1);
-}
-div[class^="shadow"] {
-  border: 1px solid var(--color-charcoal);
-  height: 300px;
-  width: 300px;
-}
-.shadow--low {
-  box-shadow: var(--shadow-elevation-low);
-}
-.shadow--medium {
-  box-shadow: var(--shadow-elevation-medium);
-}
-.shadow--high {
-  box-shadow: var(--shadow-elevation-high);
-}
-video,
-object {
-  clear: both;
-  display: block;
-  height: auto !important;
-  margin: 1em auto;
-  max-width: 100% !important;
-}
-div.video iframe {
-  clear: both;
-  display: block;
-  margin: 1em auto;
-  max-width: inherit;
-  text-align: center;
-}
-div.video p {
-  font-style: italic;
-  font-weight: 700;
-  margin-top: -.125em;
-}
-iframe {
-  margin: 1.5em 0;
-}
 .header h1 {
     text-align: center;
   }
@@ -1592,4 +1592,53 @@ article {
     background-color: var(--color-aqua);
     transform: rotate(-20deg);
   }
+.grid-item {
+  background-color: var(--color-anchor);
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 150%;
+  height: 200px;
+  padding: 20px;
+}
+.grid-item:nth-child(even) {
+    background-color: lightgray;
+    color: var(--color-charcoal);
+  }
+.grid--four {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--six {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(6, 1fr);
+}
+.simple--eight {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(8, 1fr);
+}
+.simple--twelve {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid--fifteen {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(15, 1fr);
+}
+.grid--compound12 {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+}
 /*# sourceMappingURL=main.css.map */

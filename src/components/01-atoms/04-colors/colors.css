@@ -301,7 +301,7 @@
 /* Colors taken from The New Defaults */
   /* whites */
   .white {background-color: var(--color-white);}
-  .pearl {background-color: white; ;}
+  .pearl {background-color: var(--color-pearl);}
   .alabaster {background-color: var(--color-alabaster);}
   .snow {background-color: var(--color-snow);}
   .ivory {background-color: var(--color-ivory);}
