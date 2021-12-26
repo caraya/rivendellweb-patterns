@@ -1,6 +1,6 @@
 {
-  "name": "simple",
-  "Label": "Simple Grid",
+  "name": "variations",
+  "Label": "Grid Variations",
   "context": {
     "gridItems": [
       {
@@ -62,50 +62,27 @@
       },
       {
         "text": "20"
+      },
+      {
+        "text": "21"
+      },
+      {
+        "text": "22"
+      },
+      {
+        "text": "23"
+      },
+      {
+        "text": "24"
       }
     ]
   },
   "variants": [
     {
-      "name": "four",
-      "label": "Four Columns",
+      "name": "three-uneven",
+      "label": "Big Center",
       "context": {
-        "name": "four"
-      }
-    },
-    {
-      "name": "six",
-      "label": "6 Columns",
-      "context": {
-        "name": "six"
-      }
-    },
-    {
-      "name": "eight",
-      "label": "8 Columns",
-      "context": {
-        "name": "eight"
-      }
-    },
-    {
-      "name": "twelve",
-      "label": "12 Columns",
-      "context": {
-        "name": "twelve"
-      }
-    },
-    {
-      "name": "fifteen",
-      "label": "15 Columns",
-      "context": {
-        "name": "fifteen"
-      }
-    },
-    {
-      "name": "compound12",
-      "label": "Compound 12 columns",
-      "context": {
-        "name": "compound12"
+        "name": "three-uneven"
       }
     }
   ]

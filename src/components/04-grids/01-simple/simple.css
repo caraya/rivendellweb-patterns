@@ -7,7 +7,7 @@
   height: 200px;
 
   &:nth-child(even) {
-    background-color: lightgray;
+    background-color: var(--color-cloud);
     color: var(--color-charcoal);
   }
 }
@@ -27,14 +27,14 @@
   grid-auto-flow: row;
 }
 
-.simple--eight {
+.grid--eight {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 1rem;
   grid-auto-flow: row;
 }
 
-.simple--twelve {
+.grid--twelve {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
@@ -53,4 +53,24 @@
   grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
   gap: 1rem;
   grid-auto-flow: row;
+}
+
+
+.grid--three-uneven-center {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 0 2rem;
+  grid-auto-flow: row;
+}
+
+.grid--three-uneven {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 0 2rem;
+  grid-auto-flow: row;
+
+  & > .video {
+    grid-column: 2 / 2;
+  }
+
 }

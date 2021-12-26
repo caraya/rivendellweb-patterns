@@ -1,0 +1,117 @@
+{
+  "name": "simple",
+  "Label": "Simple Grid",
+  "context": {
+    "gridItems": [
+      {
+        "text": "1"
+      },
+      {
+        "text": "2"
+      },
+      {
+        "text": "3"
+      },
+      {
+        "text": "4"
+      },
+      {
+        "text": "5"
+      },
+      {
+        "text": "6"
+      },
+      {
+        "text": "7"
+      },
+      {
+        "text": "8"
+      },
+      {
+        "text": "9"
+      },
+      {
+        "text": "10"
+      },
+      {
+        "text": "11"
+      },
+      {
+        "text": "12"
+      },
+      {
+        "text": "13"
+      },
+      {
+        "text": "14"
+      },
+      {
+        "text": "15"
+      },
+      {
+        "text": "16"
+      },
+      {
+        "text": "17"
+      },
+      {
+        "text": "18"
+      },
+      {
+        "text": "19"
+      },
+      {
+        "text": "20"
+      },
+      {
+        "text": "21"
+      },
+      {
+        "text": "22"
+      },
+      {
+        "text": "23"
+      },
+      {
+        "text": "24"
+      }
+    ]
+  },
+  "variants": [
+    {
+      "name": "four",
+      "label": "4 Columns",
+      "context": {
+        "name": "four"
+      }
+    },
+    {
+      "name": "six",
+      "label": "6 Columns",
+      "context": {
+        "name": "six"
+      }
+    },
+    {
+      "name": "eight",
+      "label": "8 Columns",
+      "context": {
+        "name": "eight"
+      }
+    },
+    {
+      "name": "twelve",
+      "label": "12 Columns",
+      "context": {
+        "name": "twelve"
+      }
+    },
+    {
+      "name": "fifteen",
+      "label": "15 Columns",
+      "context": {
+        "name": "fifteen"
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.grid-item {
+  background-color: var(--color-anchor);
+  color: var(--color-white);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  height: 200px;
+
+  &:nth-child(even) {
+    background-color: var(--color-cloud);
+    color: var(--color-charcoal);
+  }
+}
+
+.grid--three-uneven {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  gap: 1rem;
+  
+
+  &.video {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
