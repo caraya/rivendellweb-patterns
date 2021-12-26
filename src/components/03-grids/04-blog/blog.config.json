@@ -1,0 +1,7 @@
+{
+  "name": "blog",
+  "Label": "Blog-like content",
+  "context": {
+    "name": "blog"
+  }
+}

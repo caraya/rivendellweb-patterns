@@ -1,6 +1,3 @@
-// TODO: Implement image task
-// TODO: implement default task to run everything
-
 const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 

@@ -79,10 +79,24 @@
   },
   "variants": [
     {
-      "name": "compound12",
-      "label": "Compound 12 columns",
+      "name": "compound23",
+      "label": "Compound 2x3 Grid",
       "context": {
-        "name": "compound12"
+        "name": "compound23"
+      }
+    },
+    {
+      "name": "compound34",
+      "label": "Compound 3x4 Grid",
+      "context": {
+        "name": "compound34"
+      }
+    },
+    {
+      "name": "compound46",
+      "label": "Compound 4x6 Grid",
+      "context": {
+        "name": "compound46"
       }
     }
   ]
