@@ -1,0 +1,8 @@
+dt {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+dd:not(:last-child) {
+  margin-block-end: 1.25rem;
+}

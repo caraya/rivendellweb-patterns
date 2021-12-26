@@ -1,7 +1,7 @@
 /* color-mix() experiment: lighten a charcoal black */
 
 :root {
-  /* very dark brand blue */
+  /* lightening charcoal */
   --text1: color-mix(in srgb, var(--color-charcoal) 10%, white);
   --text2: color-mix(in srgb, var(--color-charcoal) 20%, white);
   --text3: color-mix(in srgb, var(--color-charcoal) 30%, white);
@@ -13,39 +13,39 @@
   --text9: color-mix(in srgb, var(--color-charcoal) 90%, white);
 }
 
-.dark-text1 {
+.light-text1 {
   background-color: var(--text1);
 }
 
-.dark-text2 {
+.light-text2 {
   background-color: var(--text2);
 }
 
-.dark-text3 {
+.light-text3 {
   background-color: var(--text3);
 }
 
-.dark-text4 {
+.light-text4 {
   background-color: var(--text4);
 }
 
-.dark-text5 {
+.light-text5 {
   background-color: var(--text5);
 }
 
-.dark-text6 {
+.light-text6 {
   background-color: var(--text6);
 }
 
-.dark-text7 {
+.light-text7 {
   background-color: var(--text7);
 }
 
-.dark-text8 {
+.light-text8 {
   background-color: var(--text8);
 }
 
-.dark-text9 {
+.light-text9 {
   background-color: var(--text9);
-  coloe: var(--color-pearl);
+  color: #fff;
 }

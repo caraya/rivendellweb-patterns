@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.postit {
+  list-style: none;
+  margin: 1rem;
+  color: var(--color-charcoal);
+  background-color:#ffc;
+  height:300px;
+  width:300px;
+
+  & a {
+    color: var(--color-charcoal);
+    text-decoration:none;
+    display: block;
+  }
+
+  & h5 {
+    text-align: center;
+  }
+
+  & p {
+    font-family: 'Pacifico', cursive;
+    padding: 1rem;
+  }
+}

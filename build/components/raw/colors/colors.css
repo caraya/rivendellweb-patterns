@@ -17,8 +17,7 @@
    */
 
   /* whites */
-  --color-white: #fffefc;
-  --color-pearl: #fbfcf7;
+  --color-white: #fffeff;
   --color-alabaster: #fefaf0;
   --color-snow: #f4fefd;
   --color-ivory: #fef7e5;
@@ -253,7 +252,7 @@
   --color-black: #111111;
   --color-ebony: #080401;
   --color-crow: #25221F;
-  --color-charcoal: #222023
+  --color-charcoal: #222023;
 }
 
 .color-container {
@@ -270,7 +269,6 @@
   align-items: center;
   width: 200px;
   height: 200px;
-
 }
 
 /* .color-10 {background-color: var(--dark-jungle-green);}
@@ -539,4 +537,3 @@
   .ebony {color: white; background-color: var(--color-ebony);}
   .crow {color: white; background-color: var(--color-crow);}
   .charcoal {color: white; background-color: var(--color-charcoal);}
-  

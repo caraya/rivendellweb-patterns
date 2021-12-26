@@ -1,5 +1,13 @@
+p {margin-bottom: 1rem;}
+
 .leading {
   font-size: 1.25em;
   width: 80vw;
   width: 80ch;
+}
+
+.narrow {
+  font-size: 1em;
+  width: 30vw;
+  width: 30ch;
 }

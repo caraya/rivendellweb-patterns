@@ -82,7 +82,68 @@
 
     
     
-    <p>This is the component library for FooCorp. <strong>Feel free to look around!</strong></p>
+    <p>These are the design patterns and design ideas for my projects under the Rivendellweb umbrella. It is also a starting point for research for my own projects.</p>
+<h2 id="color-palettes--design-tokens">Color Palettes &amp; Design Tokens</h2>
+<h2 id="the-new-defaults">The new defaults</h2>
+<p>I took the color palette from <a href="http://dudleystorey.github.io/thenewdefaults/">The New Defaults</a> by <a href="https://twitter.com/dudleystorey">Dudley Storey</a> and converted them to [CSS Custom Properties](CSS Custom Properties for Cascading Variables Module Level 1) so I can play with them easier in code accross the system.</p>
+<h2 id="mopar-colors">Mopar Colors</h2>
+<p>The second set of colors, the one I labeled Funky Colors, are my interpretation of the colors used in Mopar cars in the late 1960s and early 1970s… nothing screamed out loud like cars painted in colors like Plum Crazy Purple or Top Banana :).</p>
+<h2 id="lightening-and-darkening-colors">Lightening and Darkening colors</h2>
+<p>The last two blocks of colors are experimental. They use the <a href="https://drafts.csswg.org/css-color-5/#color-mix">color-mix()</a> function, part of the CSS Color Module level 5, to lighten and darken the corresponding colors. This will only work on Safari TP 122 and Firefox Nightly right now.</p>
+<h2 id="variable-fonts-and-typography">Variable Fonts and Typography</h2>
+<p>The primary font used in the site is <a href="https://recursive.design">Recursive</a>, a <a href="https://web.dev/variable-fonts/">variable font</a>.</p>
+<p>Recursive provides a lot of functionality in the available axes:</p>
+<dl>
+<dt><strong>Weight</strong></dt>
+<dd>Recursive comes in a wide range of weights, from Light (<code>300</code>) to a super-heavy ExtraBlack (<code>1000</code>). You can choose from its seven predefined weights, or set a custom value through its *Weight* (<code>wght</code>) axis. And because Recursive maintains consistent letterforms along the entire *Weight* axis, it allows for smooth animations between any of its different weights.</dd>
+
+<dt><strong>Slant</strong>and <strong>Cursive</strong></dt>
+<dd>In Recursive, slant and cursive letterforms can be controlled separately. The *Slant* axis (<code>slnt</code>) defines the angle of the letters, while the *Cursive* axis (<code>CRSV</code>) lets you tweak how cursive letterforms are substituted in along `slnt`.
+<dd>Recursive’s cursive letterforms (<code>CRSV 1</code>) replace familiar “roman” letterforms with cursive alternates like the single-story “a” and “g”. By default, Recursive will automatically apply these cursive alternates when setting the <em>Slant</em> axis (<code>slnt</code>) beyond <code>-14</code>. This allows smooth, animated transitions from normal to oblique type up to 13.99° of slope, but also a “true italic” style with cursive letterforms at 14°. It is also possible to use sloped romans (<code>slnt -15, CRSV 0</code>), upright italics (<code>slnt 0, CRSV 1</code>), or set custom values on both axes for more options to play with.
+
+<dt><strong>Casual</strong></dt>
+<dd><em>Linear</em> (<code>CASL 0</code>) styles have subtly-flattened edges and simple, open forms. This optimizes readability and enables enhanced focus in dense information, such as long-form text and complex code.
+<dd>*Casual* (<code>CASL 1</code>) echoes the soft & curvy brush strokes of casual signpainting, but simplifies these forms for a striking and inviting tone. This makes it ideal for web headlines, code snippets, and command line interfaces.
+
+<dt><strong>Sans</strong> and <strong>Mono</strong></dt>
+<dd>The typeface comes in two practical and highly readable subfamilies, Sans and Mono. Thanks to its *Monospace* axis (<code>MONO</code>),both of these subfamilies can be used in a single font file. You can even select custom instances that are semi-proportional or semi-monospaced.
+<dd><em>Recursive Sans</em> is made for text & user interface design. While its proportional characters deliver comfortable reading at text sizes, its heaviest weights are perfect to create punchy, tightly-spaced headlines.
+<dd><em>Recursive Mono</em> is made for code. Its characters share the same width for clear legibility and perfect alignment. This is particularly helpful for use in programming and data-heavy design tasks, but also allows for creative possibilities in display typography.
+</dl>
+
+<h2 id="grid-research">Grid research</h2>
+<p>I’m working on different Grid systems and models. The ideaa is that once we have the grids set up, we can create different layouts and styles for different designs and devices.</p>
+<p>The current grids versions are:</p>
+<ul>
+<li>4 columns</li>
+<li>6 columns</li>
+<li>8 columns</li>
+<li>12 columns</li>
+<li>15 columns</li>
+</ul>
+<p>All these columns use the <code>fr</code> (flexible ratio) unit to create equal-width columns. This is not always what we want but it is a good starting point.</p>
+<h2 id="compound-grids">Compound grids</h2>
+<ul>
+<li>2x3 Compound grid (2 + 1 + 1 + 2)</li>
+<li>3x4 Compound grid (3 + 1 + 2 + 2 + 1 + 3)</li>
+<li>4x6 Compound grid (2 + 1 + 1 + 2 + 2 + 1 + 1 + 2)</li>
+</ul>
+<p>Compound grids make it easier to layout content in a grid. Because not all cells on the grid are equally sized we can play with positioning content in the bigger cells and leaving the smaller ones empty or viceversa depending on the design.</p>
+<h2 id="experiments">Experiments</h2>
+<ul>
+<li>6 columns equivalent with a larger center column (1 + 4 + 1). This column positions content in a grid item</li>
+</ul>
+<p>For more information about compound grids see <a href="https://www.smashingmagazine.com/2019/07/inspired-design-decisions-pressing-matters/">Inspired Design Decisions: Pressing Matters</a> by <a href="https://www.smashingmagazine.com/author/andy-clarke/">Andrew Clarke</a></p>
+<p>To create your own compound grid, check Michelle Barker’s <a href="https://codepen.io/michellebarker/full/zYOMYWv">Compoung Grid Generator</a></p>
+<p>A follow up is the positioning items in the grid. For an idea of how to do it, see this <a href="https://codepen.io/caraya/pen/poWdRwP">Codepen</a></p>
+<h2 id="status">Status</h2>
+<p>Right now I’m working with the following status labels and definitions:</p>
+<ul>
+<li><strong>Idea</strong>: Somethign I’m thinking about</li>
+<li><strong>draft</strong>: First implementation</li>
+<li><strong>review</strong>: Ready for review</li>
+<li><strong>done</strong>: I’m done with this.</li>
+</ul>
 
     
 
@@ -685,78 +746,6 @@
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-layout">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-layout-items">
-                    Layout
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-layout-items">
-                
-                
-                
-                
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/message--default.html" data-role="tree-link" data-pjax data-handle="message">
-                <span>Message</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/table--default.html" data-role="tree-link" data-pjax data-handle="table">
-                <span>Table</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-                </ul>
-            </li>
-            
-        
-    
-        
-        
-            
-            
             <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-media">
                 <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-media-items">
                     Media
@@ -877,6 +866,130 @@
             
         
     
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-utils">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-utils-items">
+                    Utils
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-utils-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/article-content.html" data-role="tree-link" data-pjax data-handle="article-content">
+                <span>Article</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--default.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Message</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/postit.html" data-role="tree-link" data-pjax data-handle="postit">
+                <span>Postit</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--default.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>Table</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
 
                 </ul>
             </li>
@@ -902,8 +1015,34 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/footer.html" data-role="tree-link" data-pjax data-handle="footer">
-                <span>Footer</span>
+            <a class="Tree-entityLink" href="./components/detail/table--default.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>Table</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--default.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Message</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -949,6 +1088,130 @@
         </li>
         
     
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/footer.html" data-role="tree-link" data-pjax data-handle="footer">
+                <span>Footer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-grids">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-grids-items">
+                    Grids
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-grids-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/simple--default.html" data-role="tree-link" data-pjax data-handle="simple">
+                <span>Simple</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/compound--default.html" data-role="tree-link" data-pjax data-handle="compound">
+                <span>Compound</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/variations--default.html" data-role="tree-link" data-pjax data-handle="variations">
+                <span>Variations</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
                 </ul>
             </li>
@@ -968,32 +1231,6 @@
                 
                 
                 
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/alert.html" data-role="tree-link" data-pjax data-handle="alert">
-                <span>Alert</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
     
         
         
@@ -1021,33 +1258,13 @@
         </li>
         
     
-
-                </ul>
-            </li>
-            
-        
-    
-        
-        
-            
-            
-            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-web-components">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-web-components-items">
-                    Web Components
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-web-components-items">
-                
-                
-                
-                
-    
         
         
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/rw-alert.html" data-role="tree-link" data-pjax data-handle="rw-alert">
-                <span>Rw Alert</span>
+            <a class="Tree-entityLink" href="./components/detail/postit-list.html" data-role="tree-link" data-pjax data-handle="postit-list">
+                <span>Postit List</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1109,18 +1326,6 @@
         </li>
         
     
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./docs/status.html" data-role="tree-link" data-pjax data-handle="">
-                <span>Status</span>
-                
-            </a>
-        </li>
-        
-    
 
     </ul>
 </div>
@@ -1146,8 +1351,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-11-29T19:22:03.505Z">
-                                11/29/2021
+                            <time datetime="2021-12-26T23:10:38.268Z">
+                                12/26/2021
                             </time>
                         
                     </dd>
@@ -1327,6 +1532,188 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="./components/detail/heading--h6.html" data-role="tree-link" data-pjax data-handle="heading">
                 <span>H6</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/heading--h1-vertical.html" data-role="tree-link" data-pjax data-handle="heading">
+                <span>H1 Vertical</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/heading--h2-vertical.html" data-role="tree-link" data-pjax data-handle="heading">
+                <span>H2 Vertical</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/heading--h3-vertical.html" data-role="tree-link" data-pjax data-handle="heading">
+                <span>H3 Vertical</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/heading--h4-vertical.html" data-role="tree-link" data-pjax data-handle="heading">
+                <span>H4 Vertical</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/heading--h5-vertical.html" data-role="tree-link" data-pjax data-handle="heading">
+                <span>H5 Vertical</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/heading--h6-vertical.html" data-role="tree-link" data-pjax data-handle="heading">
+                <span>H6 Vertical</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/heading--h2.html" data-role="tree-link" data-pjax data-handle="heading">
+                <span>H 2</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2200,286 +2587,6 @@
         
     
         
-            
-            <div class="Navigation-group" data-role="variant-group" data-component="message">
-                
-<div class="Tree" data-behaviour="tree" id="tree-message-variants">
-    <div class="Tree-header">
-        <h3 class="Tree-title">Message Variants</h3>
-
-        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
-            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
-
-        </button>
-    </div>
-    <ul class="Tree-items Tree-depth-1">
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/message--default.html" data-role="tree-link" data-pjax data-handle="message">
-                <span>Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/message--normal.html" data-role="tree-link" data-pjax data-handle="message">
-                <span>Normal</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/message--info.html" data-role="tree-link" data-pjax data-handle="message">
-                <span>Info</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/message--danger.html" data-role="tree-link" data-pjax data-handle="message">
-                <span>Danger</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/message--warning.html" data-role="tree-link" data-pjax data-handle="message">
-                <span>Warning</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-    </ul>
-</div>
-
-            </div>
-        
-    
-        
-            
-            <div class="Navigation-group" data-role="variant-group" data-component="table">
-                
-<div class="Tree" data-behaviour="tree" id="tree-table-variants">
-    <div class="Tree-header">
-        <h3 class="Tree-title">Table Variants</h3>
-
-        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
-            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
-
-        </button>
-    </div>
-    <ul class="Tree-items Tree-depth-1">
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/table--default.html" data-role="tree-link" data-pjax data-handle="table">
-                <span>Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/table--no-borders.html" data-role="tree-link" data-pjax data-handle="table">
-                <span>No Borders</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/table--centered.html" data-role="tree-link" data-pjax data-handle="table">
-                <span>Centered</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="./components/detail/table--random.html" data-role="tree-link" data-pjax data-handle="table">
-                <span>Random</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-    </ul>
-</div>
-
-            </div>
-        
-    
-        
     
         
             
@@ -2844,7 +2951,950 @@
         
     
         
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="message">
+                
+<div class="Tree" data-behaviour="tree" id="tree-message-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Message Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
     
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--default.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--normal.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Normal</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--info.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Info</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--danger.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Danger</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--warning.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Warning</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="table">
+                
+<div class="Tree" data-behaviour="tree" id="tree-table-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Table Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--default.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--no-borders.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>No Borders</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--centered.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>Centered</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--random.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>Random</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="table">
+                
+<div class="Tree" data-behaviour="tree" id="tree-table-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Table Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--default.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--no-borders.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>No Borders</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--centered.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>Centered</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/table--random.html" data-role="tree-link" data-pjax data-handle="table">
+                <span>Random</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="message">
+                
+<div class="Tree" data-behaviour="tree" id="tree-message-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Message Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--default.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--normal.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Normal</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--info.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Info</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--danger.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Danger</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/message--warning.html" data-role="tree-link" data-pjax data-handle="message">
+                <span>Warning</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+    
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="simple">
+                
+<div class="Tree" data-behaviour="tree" id="tree-simple-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Simple Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/simple--default.html" data-role="tree-link" data-pjax data-handle="simple">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/simple--four.html" data-role="tree-link" data-pjax data-handle="simple">
+                <span>4 Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/simple--six.html" data-role="tree-link" data-pjax data-handle="simple">
+                <span>6 Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/simple--eight.html" data-role="tree-link" data-pjax data-handle="simple">
+                <span>8 Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/simple--twelve.html" data-role="tree-link" data-pjax data-handle="simple">
+                <span>12 Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/simple--fifteen.html" data-role="tree-link" data-pjax data-handle="simple">
+                <span>15 Columns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="compound">
+                
+<div class="Tree" data-behaviour="tree" id="tree-compound-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Compound Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/compound--default.html" data-role="tree-link" data-pjax data-handle="compound">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/compound--compound23.html" data-role="tree-link" data-pjax data-handle="compound">
+                <span>Compound 2x3 Grid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/compound--compound34.html" data-role="tree-link" data-pjax data-handle="compound">
+                <span>Compound 3x4 Grid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/compound--compound46.html" data-role="tree-link" data-pjax data-handle="compound">
+                <span>Compound 4x6 Grid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="variations">
+                
+<div class="Tree" data-behaviour="tree" id="tree-variations-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Variations Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/variations--default.html" data-role="tree-link" data-pjax data-handle="variations">
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="./components/detail/variations--three-uneven.html" data-role="tree-link" data-pjax data-handle="variations">
+                <span>Big Center</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+            </div>
         
     
         
