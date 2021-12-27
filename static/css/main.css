@@ -459,6 +459,11 @@ a:focus {
     -webkit-margin-after: 1em;
             margin-block-end: 1em;
   }
+pre {
+  font-family: "Recursive", sans-serif;
+  font-size: 1.25rem;
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
 @font-face {
   font-family: 'Recursive';
   font-weight: 300 1000;

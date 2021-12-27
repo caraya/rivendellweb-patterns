@@ -1,0 +1,19 @@
+{
+  "name": "pre",
+  "label": "Preformatted Text",
+  "variants": [{
+      "name": "default",
+      "label": "Default",
+      "context": {
+        "name": "default"
+      }
+    },
+    {
+      "name": "code",
+      "label": "Code",
+      "context": {
+        "name": "code"
+      }
+    }
+  ]
+}
