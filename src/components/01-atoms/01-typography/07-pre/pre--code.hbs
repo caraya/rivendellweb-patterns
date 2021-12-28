@@ -1895,35 +1895,5 @@ Prism.languages.js = Prism.languages.javascript;
 			);
 		}
 	});
-
-	Prism.plugins.fileHighlight = {
-		/**
-		 * Executes the File Highlight plugin for all matching `pre` elements under the given container.
-		 *
-		 * Note: Elements which are already loaded or currently loading will not be touched by this method.
-		 *
-		 * @param {ParentNode} [container=document]
-		 */
-		highlight: function highlight(container) {
-			var elements = (container || document).querySelectorAll(SELECTOR);
-
-			for (var i = 0, element; (element = elements[i++]);) {
-				Prism.highlightElement(element);
-			}
-		}
-	};
-
-	var logged = false;
-	/** @deprecated Use `Prism.plugins.fileHighlight.highlight` instead. */
-	Prism.fileHighlight = function () {
-		if (!logged) {
-			console.warn('Prism.fileHighlight is deprecated. Use `Prism.plugins.fileHighlight.highlight` instead.');
-			logged = true;
-		}
-		Prism.plugins.fileHighlight.highlight.apply(this, arguments);
-	};
-
-}());
-
   </code>
 </pre>

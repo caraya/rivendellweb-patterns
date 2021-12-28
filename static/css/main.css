@@ -462,7 +462,12 @@ a:focus {
 pre {
   font-family: "Recursive", sans-serif;
   font-size: 1.25rem;
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+  font-variation-settings: 
+    "MONO" 1,
+    "CASL" 0,
+    "wght" 300,
+    "slnt" 0,
+    "CRSV" 0.5;
 }
 @font-face {
   font-family: 'Recursive';
@@ -1377,6 +1382,7 @@ ol {
   --color-bright-green: #66ff00;
   --color-top-banana: #ffed4d;
   --color-citron-yella: #9fa91f;
+  --color-rebeccapurple: #663399;
 }
 .hemi-orange {  background-color: var(--color-hemi-orange); color: white; }
 .plum-crazy {  background-color: var(--color-plum-crazy); color: white; }
@@ -1391,6 +1397,7 @@ ol {
 .top-banana {  background-color: var(--color-top-banana); color: white; }
 .citron-yella {  background-color: var(--color-citron-yella); color: white; }
 .panther-pink {  background-color: var(--color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--color-rebeccapurple); color: white; }
 figure {
   counter-increment: figure_count;
   margin: 2em auto;

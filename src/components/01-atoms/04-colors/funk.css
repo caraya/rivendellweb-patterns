@@ -11,6 +11,7 @@
   --color-bright-green: #66ff00;
   --color-top-banana: #ffed4d;
   --color-citron-yella: #9fa91f;
+  --color-rebeccapurple: #663399;
 }
 
 .hemi-orange {  background-color: var(--color-hemi-orange); color: white; }
@@ -26,3 +27,4 @@
 .top-banana {  background-color: var(--color-top-banana); color: white; }
 .citron-yella {  background-color: var(--color-citron-yella); color: white; }
 .panther-pink {  background-color: var(--color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--color-rebeccapurple); color: white; }
