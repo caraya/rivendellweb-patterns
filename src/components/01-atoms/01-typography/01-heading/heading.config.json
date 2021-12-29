@@ -54,6 +54,10 @@
     {
         "name": "h6-vertical",
         "label": "H6 Vertical"
+    },
+    {
+      "name": "marvin",
+      "label": "Marvin Book Cover"
     }
   ]
 }
