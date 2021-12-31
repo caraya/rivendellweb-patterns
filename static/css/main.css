@@ -728,13 +728,29 @@ ul li {
   list-style: disc;
 }
 dt {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
-dd:not(:last-child) {
-  -webkit-margin-after: 1.25rem;
-          margin-block-end: 1.25rem;
+dd {
+  -webkit-margin-start: 2em;
+          margin-inline-start: 2em;
 }
+dd:not(:last-child) {
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+.font-desc {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.font-desc dd {
+    -webkit-margin-start: 2em;
+            margin-inline-start: 2em;
+  }
+.font-desc dd:not(:last-child) {
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
+  }
 @counter-style circled-decimal {
   suffix: ' ';
   symbols: '\24EA' '\2460' '\2461' '\2462' '\2463' '\2464' '\2465' '\2466' '\2467' '\2468' '\2469' '\246A' '\246B' '\246C' '\246D' '\246E' '\246F' '\2470' '\2471' '\2472' '\2473' '\3251' '\3252' '\3253' '\3254' '\3255' '\3256' '\3257' '\3258' '\3259' '\325a' '\325b' '\325c' '\325d' '\325e' '\325f' '\32b1' '\32b2' '\32b3' '\32b4' '\32b5' '\32b6' '\32b7' '\32b8' '\32b9' '\32ba' '\32bb' '\32bc' '\32bd' '\32be' '\32bf';

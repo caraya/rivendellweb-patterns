@@ -4,13 +4,14 @@
   --color-cherry: #d2042d;
   --color-black-cherry: #52253a;
   --color-panther-pink: #be439d;
-  --color--green-go: #339a4b;
+  --color-green-go: #339a4b;
   --color-sublime-green: #a0e03a;
   --color-go-mango: #da5246;
   --color-butterscotch: #d48827;
   --color-bright-green: #66ff00;
   --color-top-banana: #ffed4d;
   --color-citron-yella: #9fa91f;
+  --color-rebeccapurple: #663399;
 }
 
 .hemi-orange {  background-color: var(--color-hemi-orange); color: white; }
@@ -18,7 +19,7 @@
 .cherry {  background-color: var(--color-cherry:); color: white; }
 .black-cherry {  background-color: var(--color-black-cherry); color: white; }
 .panther-pink {  background-color: var(--color-panther-pink); color: white; }
-.-green {  background-color: var(--color--green-go); color: white; }
+.green-go {  background-color: var(--color-green-go); color: white; }
 .sublime-green {  background-color: var(--color-sublime-green); color: white; }
 .go-mango {  background-color: var(--color-go-mango); color: white; }
 .butterscotch: {  background-color: var(--color-butterscotch); color: white; }
@@ -26,3 +27,4 @@
 .top-banana {  background-color: var(--color-top-banana); color: white; }
 .citron-yella {  background-color: var(--color-citron-yella); color: white; }
 .panther-pink {  background-color: var(--color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--color-rebeccapurple); color: white; }

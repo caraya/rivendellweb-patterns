@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Marvin Visions';
+  src: url('/fonts/MarvinVisionsBig-Bold.woff2') format('woff2');
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Recursive', sans-serif;
   font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
@@ -20,45 +25,17 @@ h5 {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}
 
-/* 
-h1 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-h6 {
-  font-size: 1rem;
-  text-transform: uppercase;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-} */
-
 .vertical {
   float: left;
   writing-mode: vertical-rl;
+}
+
+.marvin {
+  font-family: 'Marvin Visions', Helvetica, Arial, sans-serif;
+  font-size: 16rem;
+  color: #e65f1d;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+  text-shadow: 6px 6px 2px rgb(0 0 0 / 80%);
 }
