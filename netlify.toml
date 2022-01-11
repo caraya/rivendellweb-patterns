@@ -1,6 +1,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    Timing-Allow-Origin: "*";
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
@@ -11,4 +12,3 @@
       media-src *;
       script-src 'self';
       style-src 'self';'''
-    Timing-Allow-Origin: "*"
