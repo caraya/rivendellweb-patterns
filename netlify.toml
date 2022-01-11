@@ -1,15 +1,15 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Timing-Allow-Origin = "*";
+    Timing-Allow-Origin: "*"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-    // Content-Security-Policy = '''
-    //   default-src 'self';
-    //   img-src *;
-    //   frame-src 'self'; 
-    //   child-src 'self'; 
-    //   media-src *;
-    //   script-src 'self';
-    //   style-src 'self';
-    //   frame-ancestors 'self';'''
+    Content-Security-Policy = '''
+      default-src 'self';
+      img-src *;
+      frame-src 'self'; 
+      child-src 'self'; 
+      media-src *;
+      script-src 'self';
+      style-src 'self';
+      frame-ancestors 'self';'''
