@@ -7,8 +7,8 @@
     Content-Security-Policy = '''
       default-src 'self';
       img-src *;
-      frame-src 'self' *.youtube.com *.vimeo.com *.netlify.com; 
-      child-src 'self' *.youtube.com *.vimeo.com *.netlify.com; 
+      frame-src 'self';
+      child-src 'self';
       media-src *;
       script-src 'self';
       style-src 'self';'''
