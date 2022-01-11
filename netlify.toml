@@ -6,7 +6,8 @@
     X-Content-Type-Options = "nosniff"
     Content-Security-Policy = '''
       default-src 'self';
-      img-src *; 
+      img-src *;
+      frame-src '*.netlify.com'; 
       media-src *;
       script-src 'self';
       style-src 'self';'''
