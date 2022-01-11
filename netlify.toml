@@ -7,7 +7,9 @@
     Content-Security-Policy = '''
       default-src 'self';
       img-src *;
-      frame-src '*.netlify.com'; 
+      frame-src 'self' *.youtube.com *.vimeo.com *.netlify.com; 
+      child-src 'self' *.youtube.com *.vimeo.com *.netlify.com; 
       media-src *;
       script-src 'self';
       style-src 'self';'''
+    Timing-Allow-Origin: "*"
