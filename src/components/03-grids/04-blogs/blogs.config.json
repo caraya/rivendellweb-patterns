@@ -1,0 +1,22 @@
+{
+  "name": "Blogs",
+  "Label": "Blogs",
+  "context": {
+    "name": "Blogs"
+  },
+  "variants": [
+    {
+      "name": "blog-v1",
+      "label": "Blog V1",
+      "context": {
+        "name": "blog-v1"
+      }
+    },
+    {
+      "name": "blog-v2",
+      "label": "Blog V2",
+      "context": {
+        "name": "blog-v2"
+      }
+    }
+  ]}
