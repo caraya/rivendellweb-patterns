@@ -1,0 +1,19 @@
+.button {
+  padding-inline: 30px;
+  padding-block: 10px;
+}
+
+.button--hover:hover {
+  background-color: var(--color-cerulean);
+  color: var(--color-white)
+}
+
+.focus:focus {
+  border: 8px solid var(--color-cerulean);
+}
+
+.button--unstyled {
+  background-color: transparent;
+  border: 0;
+  text-decoration: underline;
+}

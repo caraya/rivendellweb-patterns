@@ -1,6 +1,12 @@
 {
   "name": "Button",
   "context": {
-      "buttonText": "Button Text"
-  }
+      "defaultText": "Default 23",
+      "hoverText": "Hover",
+      "activeText": "Active",
+      "focusText": "Focus",
+      "disabledText": "Disabled",
+      "unstyledText": "Unstyled Button"
+  },
+  "collated": true
 }
