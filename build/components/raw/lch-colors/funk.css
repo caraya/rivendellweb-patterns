@@ -1,0 +1,30 @@
+:root {
+  --lch-color-hemi-orange: lch(64.61% 76.27 53.74);
+  --lch-color-plum-crazy: lch(30.92% 102.31 308.18);
+  --lch-color-cherry: lch(45.06% 80.92 30.16);
+  --lch-color-black-cherry: lch(21.8% 23.72 351.88);
+  --lch-color-panther-pink: lch(48.91% 61.35 337.97);
+  --lch-color-green-go: lch(56.42% 54.4 143.72);
+  --lch-color-sublime-green: lch(82.65% 78.73 119.22);
+  --lch-color-go-mango: lch(54.05% 64.94 34.21);
+  --lch-color-butterscotch: lch(63.69% 64.99 67.73);
+  --lch-color-bright-green: lch(89.23% 106.96289251655789 129.28218977653546);
+  --lch-color-top-banana: lch(93.19% 75.44 94.73);
+  --lch-color-citron-yella: lch(66.7% 64.31 103.9);
+  --lch-color-rebeccapurple: lch(32.39% 61.24 308.86);
+}
+
+.hemi-orange {  background-color: var(--lch-color-hemi-orange); color: white; }
+.plum-crazy {  background-color: var(--lch-color-plum-crazy); color: white; }
+.cherry {  background-color: var(--lch-color-cherry:); color: white; }
+.black-cherry {  background-color: var(--lch-color-black-cherry); color: white; }
+.panther-pink {  background-color: var(--lch-color-panther-pink); color: white; }
+.green-go {  background-color: var(--lch-color-green-go); color: white; }
+.sublime-green {  background-color: var(--lch-color-sublime-green); color: white; }
+.go-mango {  background-color: var(--lch-color-go-mango); color: white; }
+.butterscotch: {  background-color: var(--lch-color-butterscotch); color: white; }
+.bright-green {  background-color: var(--lch-color-bright-green); color: white; }
+.top-banana {  background-color: var(--lch-color-top-banana); color: white; }
+.citron-yella {  background-color: var(--lch-color-citron-yella); color: white; }
+.panther-pink {  background-color: var(--lch-color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--lch-color-rebeccapurple); color: white; }

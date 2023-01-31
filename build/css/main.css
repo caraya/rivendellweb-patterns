@@ -1,617 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 /* =====================================================
    Application styles
    ===================================================== */
-
-   /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-   /* Document
-   ========================================================================== */
-
-   /**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-   html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
 }
-
-   /* Sections
-   ========================================================================== */
-
-   /**
- * Remove the margin in all browsers.
- */
-
-   body {
+* {
   margin: 0;
 }
-
-   /**
- * Render the `main` element consistently in IE.
- */
-
-   main {
+html, body {
+  height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+img, picture, video, canvas, svg {
   display: block;
+  max-width: 100%;
 }
-
-   /**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-
-   h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+input, button, textarea, select {
+  font: inherit;
 }
-
-   /* Grouping content
-   ========================================================================== */
-
-   /**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-
-   hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
-
-   /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-   pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+#root, #__next {
+  isolation: isolate;
 }
-
-   /* Text-level semantics
-   ========================================================================== */
-
-   /**
- * Remove the gray background on active links in IE 10.
- */
-
-   a {
-  background-color: transparent;
-}
-
-   /**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-   abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
-}
-
-   /**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-   b,
-strong {
-  font-weight: bolder;
-}
-
-   /**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-
-   code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-   /**
- * Add the correct font size in all browsers.
- */
-
-   small {
-  font-size: 80%;
-}
-
-   /**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-
-   sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-   sub {
-  bottom: -0.25em;
-}
-
-   sup {
-  top: -0.5em;
-}
-
-   /* Embedded content
-   ========================================================================== */
-
-   /**
- * Remove the border on images inside links in IE 10.
- */
-
-   img {
-  border-style: none;
-}
-
-   /* Forms
-   ========================================================================== */
-
-   /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-
-   button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-   /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-
-   button,
-input { /* 1 */
-  overflow: visible;
-}
-
-   /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-
-   button,
-select { /* 1 */
-  text-transform: none;
-}
-
-   /**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-
-   button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-   /**
- * Remove the inner border and padding in Firefox.
- */
-
-   button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-   /**
- * Restore the focus styles unset by the previous rule.
- */
-
-   button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-   /**
- * Correct the padding in Firefox.
- */
-
-   fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-   /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-
-   legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-   /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-
-   progress {
-  vertical-align: baseline;
-}
-
-   /**
- * Remove the default vertical scrollbar in IE 10+.
- */
-
-   textarea {
-  overflow: auto;
-}
-
-   /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-
-   [type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-   /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-
-   [type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-   /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-
-   [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-   /**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-
-   [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-   /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-
-   ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-   /* Interactive
-   ========================================================================== */
-
-   /*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-   details {
-  display: block;
-}
-
-   /*
- * Add the correct display in all browsers.
- */
-
-   summary {
-  display: list-item;
-}
-
-   /* Misc
-   ========================================================================== */
-
-   /**
- * Add the correct display in IE 10+.
- */
-
-   template {
-  display: none;
-}
-
-   /**
- * Add the correct display in IE 10.
- */
-
-   [hidden] {
-  display: none;
-}
-
-   /* PrismJS 1.25.0
+/* PrismJS 1.25.0
 https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript+apacheconf+bash+c+clojure+cmake+css-extras+dart+ejs+elixir+elm+glsl+go+graphql+handlebars+java+javadoc+javadoclike+jsdoc+js-extras+json+jsonp+js-templates+julia+kotlin+latex+liquid+lisp+makefile+markdown+markup-templating+nginx+ocaml+perl+php+phpdoc+php-extras+processing+protobuf+pug+puppet+python+r+jsx+tsx+ruby+rust+sass+scss+shell-session+smalltalk+soy+stylus+toml+typescript+wasm+wiki+xquery+yaml&plugins=show-language+toolbar */
-
-   code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;}
-
-   code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#073642;}
-
-   code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection{background:#073642;}
-
-   code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#073642;}
-
-   pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em;}
-
-   :not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3;}
-
-   :not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;}
-
-   .token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1;}
-
-   .token.punctuation{color:#586e75;}
-
-   .token.namespace{opacity:.7;}
-
-   .token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2;}
-
-   .token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198;}
-
-   .token.entity{background:#eee8d5;color:#657b83;}
-
-   .token.atrule,.token.attr-value,.token.keyword{color:#859900;}
-
-   .token.class-name,.token.function{color:#b58900;}
-
-   .token.important,.token.regex,.token.variable{color:#cb4b16;}
-
-   .token.bold,.token.important{font-weight:700;}
-
-   .token.italic{font-style:italic;}
-
-   .token.entity{cursor:help;}
-
-   div.code-toolbar{position:relative;}
-
-   div.code-toolbar>.toolbar{opacity:0;position:absolute;right:.2em;top:.3em;transition:opacity .3s ease-in-out;z-index:10;}
-
-   div.code-toolbar:hover>.toolbar{opacity:1;}
-
-   div.code-toolbar:focus-within>.toolbar{opacity:1;}
-
-   div.code-toolbar>.toolbar>.toolbar-item{display:inline-block;}
-
-   div.code-toolbar>.toolbar>.toolbar-item>a{cursor:pointer;}
-
-   div.code-toolbar>.toolbar>.toolbar-item>button{background:0 0;border:0;color:inherit;font:inherit;line-height:normal;overflow:visible;padding:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
-
-   div.code-toolbar>.toolbar>.toolbar-item>a,div.code-toolbar>.toolbar>.toolbar-item>button,div.code-toolbar>.toolbar>.toolbar-item>span{background:#f5f2f0;background:rgba(224,224,224,.2);border-radius:.5em;box-shadow:0 2px 0 0 rgba(0,0,0,.2);color:#bbb;font-size:.8em;padding:0 .5em;}
-
-   div.code-toolbar>.toolbar>.toolbar-item>a:focus,div.code-toolbar>.toolbar>.toolbar-item>a:hover,div.code-toolbar>.toolbar>.toolbar-item>button:focus,div.code-toolbar>.toolbar>.toolbar-item>button:hover,div.code-toolbar>.toolbar>.toolbar-item>span:focus,div.code-toolbar>.toolbar>.toolbar-item>span:hover{color:inherit;text-decoration:none;}
-
-   /* =====================================================
+code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;}
+code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#073642;}
+code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection{background:#073642;}
+code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#073642;}
+pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em;}
+:not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3;}
+:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;}
+.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#93a1a1;}
+.token.punctuation{color:#586e75;}
+.token.namespace{opacity:.7;}
+.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#268bd2;}
+.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string,.token.url{color:#2aa198;}
+.token.entity{background:#eee8d5;color:#657b83;}
+.token.atrule,.token.attr-value,.token.keyword{color:#859900;}
+.token.class-name,.token.function{color:#b58900;}
+.token.important,.token.regex,.token.variable{color:#cb4b16;}
+.token.bold,.token.important{font-weight:700;}
+.token.italic{font-style:italic;}
+.token.entity{cursor:help;}
+div.code-toolbar{position:relative;}
+div.code-toolbar>.toolbar{opacity:0;position:absolute;right:.2em;top:.3em;transition:opacity .3s ease-in-out;z-index:10;}
+div.code-toolbar:hover>.toolbar{opacity:1;}
+div.code-toolbar:focus-within>.toolbar{opacity:1;}
+div.code-toolbar>.toolbar>.toolbar-item{display:inline-block;}
+div.code-toolbar>.toolbar>.toolbar-item>a{cursor:pointer;}
+div.code-toolbar>.toolbar>.toolbar-item>button{background:0 0;border:0;color:inherit;font:inherit;line-height:normal;overflow:visible;padding:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;}
+div.code-toolbar>.toolbar>.toolbar-item>a,div.code-toolbar>.toolbar>.toolbar-item>button,div.code-toolbar>.toolbar>.toolbar-item>span{background:#f5f2f0;background:rgba(224,224,224,.2);border-radius:.5em;box-shadow:0 2px 0 0 rgba(0,0,0,.2);color:#bbb;font-size:.8em;padding:0 .5em;}
+div.code-toolbar>.toolbar>.toolbar-item>a:focus,div.code-toolbar>.toolbar>.toolbar-item>a:hover,div.code-toolbar>.toolbar>.toolbar-item>button:focus,div.code-toolbar>.toolbar>.toolbar-item>button:hover,div.code-toolbar>.toolbar>.toolbar-item>span:focus,div.code-toolbar>.toolbar>.toolbar-item>span:hover{color:inherit;text-decoration:none;}
+/* =====================================================
    Disabled elements
    w3c.github.io/html/disabled-elements.html
    ===================================================== */
-
-   /**
+/**
  * Use default cursor for disabled elements.
  */
-
-   [disabled] {
+[disabled] {
   cursor: default;
   opacity: 0.75;
 }
-
-   /**
+/**
  * Add the correct display in IE 10-.
  */
-
-   [hidden] {
+[hidden] {
   display: none !important;
 }
-
-   /* =====================================================
+/* =====================================================
    Embedded content
    w3c.github.io/html/semantics-embedded-content.html
    ===================================================== */
-
-   /**
+/**
  * Remove the border on images inside links in IE 10-.
  */
-
-   img {
+img {
   border: 0;
 }
-
-   @media print {
-
-   img {
+@media print {
+img {
     page-break-inside: avoid;
 }
   }
-
-   /**
+/**
  * Hide the overflow in IE.
  */
-
-   svg:not(:root) {
+svg:not(:root) {
   display: block;
   fill: currentColor;
   overflow: hidden;
 }
-
-   :root {
-  /* If the browser doesn't support custom properties */
-  --clr-10: hsl(275, 46%, 10%);
-  --clr-20: hsl(275, 46%, 20%);
-  --clr-30: hsl(275, 46%, 30%);
-  --clr-40: hsl(275, 46%, 40%);
-  --clr-50: hsl(275, 46%, 50%);
-  --clr-60: hsl(275, 46%, 60%);
-  --clr-70: hsl(275, 46%, 70%);
-  --clr-80: hsl(275, 46%, 80%);
-  --clr-90: hsl(275, 46%, 90%);
-  --clr-95: hsl(275, 46%, 95%);
-
-  --primary: hsl(275, 46%, 50%);
-  --primary-75: hsla(275, 46%, 50%, 75%);
-  --primary-50: hsla(275, 46%, 50%, 50%);
-  --primary-25: hsla(275, 46%, 50%, 25%);
-  --primary-15: hsla(275, 46%, 50%, 15%);
-  --primary-10: hsla(275, 46%, 50%, 10%);
-
-  --accent: hsl(230, 46%, 50%);
-  --accent-75: hsla(230, 46%, 50%, 75%);
-  --accent-50: hsla(230, 46%, 50%, 50%);
-  --accent-25: hsla(230, 46%, 50%, 25%);
-  --accent-15: hsla(230, 46%, 50%, 15%);
-  --accent-10: hsla(230, 46%, 50%, 10%);
+@font-face {
+  font-family: 'Marvin Visions';
+  src: url('/fonts/MarvinVisionsBig-Bold.woff2') format('woff2');
 }
-
-   @supports (--base-hue: 275;) {
-
-   :root {
-    --base-hue: 275;
-    --base-sat: 46%;
-
-    /* full color palette, from dark to light */
-    --clr-10: hsl(var(--base-hue), var(--base-sat), 10%);
-    --clr-20: hsl(var(--base-hue), var(--base-sat), 20%);
-    --clr-30: hsl(var(--base-hue), var(--base-sat), 30%);
-    --clr-40: hsl(var(--base-hue), var(--base-sat), 40%);
-    --clr-50: hsl(var(--base-hue), var(--base-sat), 50%);
-    --clr-60: hsl(var(--base-hue), var(--base-sat), 60%);
-    --clr-70: hsl(var(--base-hue), var(--base-sat), 70%);
-    --clr-80: hsl(var(--base-hue), var(--base-sat), 80%);
-    --clr-90: hsl(var(--base-hue), var(--base-sat), 90%);
-    --clr-95: hsl(var(--base-hue), var(--base-sat), 95%);
-
-
-    --primary-lightness: 50%;
-
-    /* primary color in varying opacity levels */
-    --primary: hsl(var(--base-hue), var(--base-sat), var(--primary-lightness));
-    --primary-75: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 75%);
-    --primary-50: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 50%);
-    --primary-25: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 25%);
-    --primary-15: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 15%);
-    --primary-10: hsla(var(--base-hue), var(--base-sat), var(--primary-lightness), 10%);
-
-
-    --accent-hue: calc(var(--base-hue) + 315);
-    --accent-lightness: 50%;
-
-    /* accent color in varying opacity levels */
-    --accent: hsl(var(--accent-hue), var(--base-sat), var(--accent-lightness));
-    --accent-75: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 75%);
-    --accent-50: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 50%);
-    --accent-25: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 25%);
-    --accent-15: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 15%);
-    --accent-10: hsla(var(--accent-hue), var(--base-sat), var(--accent-lightness), 10%);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Recursive', sans-serif;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+  line-height: 1.3;
+  margin: 3rem 0 1.38rem;
 }
-  }
-
-   @supports (@property (--link-color: red)) {
-
-   :root {
-}}
-
-   a {
+h1 {
+  font-size: 4.209rem;
+  margin-top: 0;
+}
+h2 {font-size: 3.157rem;}
+h3 {font-size: 2.369rem;}
+h4 {font-size: 1.777rem;}
+h5 {font-size: 1.333rem;}
+small, .text_small {font-size: 0.75rem;}
+.vertical {
+  float: left;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+}
+.marvin {
+  color: #e65f1d;
+  font-family: 'Marvin Visions', Helvetica, Arial, sans-serif;
+  font-size: 16rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  text-shadow: 6px 6px 2px rgb(0 0 0 / 80%);
+}
+/* Variable instances */
+.recursive-mono-linear-light {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-light-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-light {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-light-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-medium {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-medium-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-medium {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-medium-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-semibold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-semibold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-semibold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-semibold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-bold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-bold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-bold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-bold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-extrabold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-extrabold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-extrabold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-extrabold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-black {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-black-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-black {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-black-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-extrablack {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-extrablack-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-extrablack {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-extrablack-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+.recursive {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-light {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-medium {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-medium {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-bold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-bold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-black {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-black {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+p {margin-bottom: 1rem;}
+.leading {
+  font-size: 1.25em;
+  width: 80vw;
+  width: 80ch;
+}
+.narrow {
+  font-size: 1em;
+  width: 30vw;
+  width: 30ch;
+}
+a {
   color: #cd2653;
   text-decoration: none;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
-
-   a:visited {
-  color: #cd2653;
+a:visited {
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
-
-   a:hover, a:focus, a:active {
-  color: #cd2653;
+a:hover, a:focus, a:active {
   text-decoration: underline;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
 }
-
-   a:focus {
+a:focus {
   outline: thin dotted;
 }
-
-   a[href^='http'] {
-  background: url('/images/external.svg') no-repeat right;
+.blockquote--normal {
+  -webkit-border-start: 5px solid var(--color-azure);
+          border-inline-start: 5px solid var(--color-azure);
+  -webkit-padding-start: 1.5em;
+          padding-inline-start: 1.5em;
 }
-
-   .message {
-  border: 1px solid #ddd;
-  padding: 1.5em;
-  width: 50vw;
+.cite {
+  font-weight: 700;
+  margin-top: 1em;
 }
+.blockquote--center {
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
 
-   .message--title {
-    font-size: 2em;
-    font-weight: 700;
-    margin: 0;
+  -webkit-border-before: 5px solid var(--color-azure);
+
+          border-block-start: 5px solid var(--color-azure);
+  margin: 0 auto;
+  text-align: center;
+
+  width: 80%;
+  width: 80ch;
 }
-
-   @font-face {
+.blockquote--center p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
+.blockquote--center p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
+.blockquote--large {
+  font-size: 1.5rem;
+  width: 60ch;
+}
+.blockquote--single-top {
+  -webkit-border-before: 5px solid var(--color-azure);
+          border-block-start: 5px solid var(--color-azure);
+}
+.blockquote--single-top p:first-child {
+    -webkit-margin-before: 1rem;
+            margin-block-start: 1rem;
+  }
+.blockquote--single-bottom {
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
+}
+.blockquote--single-bottom p:last-child {
+    -webkit-margin-after: 1rem;
+            margin-block-end: 1rem;
+  }
+.blockquote--single-both {
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
+  -webkit-border-before: 5px solid var(--color-azure);
+          border-block-start: 5px solid var(--color-azure);
+}
+.blockquote--single-both p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
+.blockquote--single-both p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
+.blockquote--double-both {
+  border-bottom: 10px double var(--color-azure);
+  border-top: 10px double var(--color-azure);
+}
+.blockquote--double-both p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
+.blockquote--double-both p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
+pre {
+  font-family: "Recursive", sans-serif;
+  font-size: 1.25rem;
+  font-variation-settings: 
+    "MONO" 1,
+    "CASL" 0,
+    "wght" 300,
+    "slnt" 0,
+    "CRSV" 0.5;
+}
+article,
+footer {
+  margin: 1em auto;
+  width: 60vw;
+}
+article h2 + p:nth-of-type(1)::first-letter {
+  /* font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; */
+  color: #cd2653;
+  float: left;
+  font-size: 12rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
+/* .dropcap {
+  background: #303030;
+  color: #FDF9F2;
+  float: left;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0.1em 0.1em 0.2em 0;
+  padding: 0.1em;
+}
+.dropcap:before,
+.dropcap:after {
+  content: "";
+  display: block;
+}
+.dropcap:before {
+  margin-top: -0.2em;
+}
+.dropcap:after {
+  margin-bottom: -0.15em;
+} */
+@font-face {
   font-family: 'Recursive';
   font-weight: 300 1000;
   src: url('/fonts/recursive.woff2') format('woff2');
 }
-
-   body {
+body {
   font-family: 'Recursive', sans-serif;
   font-size: 100%;
   line-height: 1.3;
   margin: 2em;
 }
-
-   h1, h2, h3 {
-  font-family: 'Recursive', sans-serif;
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   p {
-  width: 80ch;
-}
-
-   /**
+/**
  * CSS for Recursive
  * Generated by Wakamai Fondue - https://wakamaifondue.com
  * by Roel Nieskens/PixelAmbacht - https://pixelambacht.nl
  */
-
-   /* Set custom properties for each layout feature */
-
-   :root {
+/* Set custom properties for each layout feature */
+:root {
   --recursive-aalt: "aalt" off;
   --recursive-afrc: "afrc" off;
   --recursive-case: "case" off;
@@ -639,86 +523,69 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
   --recursive-titl: "titl" off;
   --recursive-zero: "zero" off;
 }
-
-   /* If class is applied, update custom property and
+/* If class is applied, update custom property and
  apply modern font-variant-* when supported */
-
-   .recursive-aalt {
+.recursive-aalt {
   --recursive-aalt: "aalt" on;
 }
-
-   .recursive-afrc {
+.recursive-afrc {
   --recursive-afrc: "afrc" on;
 }
-
-   @supports (font-variant-numeric: stacked-fractions) {
+@supports (font-variant-numeric: stacked-fractions) {
   .recursive-afrc {
       --recursive-afrc: "____";
       font-variant-numeric: stacked-fractions;
   }
 }
-
-   .recursive-case {
+.recursive-case {
   --recursive-case: "case" on;
 }
-
-   .recursive-dlig {
+.recursive-dlig {
   --recursive-dlig: "dlig" on;
 }
-
-   @supports (font-variant-ligatures: discretionary-ligatures) {
+@supports (font-variant-ligatures: discretionary-ligatures) {
   .recursive-dlig {
       --recursive-dlig: "____";
       font-variant-ligatures: discretionary-ligatures;
   }
 }
-
-   .recursive-dnom {
+.recursive-dnom {
   --recursive-dnom: "dnom" on;
 }
-
-   .recursive-frac {
+.recursive-frac {
   --recursive-frac: "frac" on;
 }
-
-   @supports (font-variant-numeric: diagonal-fractions) {
+@supports (font-variant-numeric: diagonal-fractions) {
   .recursive-frac {
       --recursive-frac: "____";
       font-variant-numeric: diagonal-fractions;
   }
 }
-
-   .recursive-numr {
+.recursive-numr {
   --recursive-numr: "numr" on;
 }
-
-   .recursive-ordn {
+.recursive-ordn {
   --recursive-ordn: "ordn" on;
 }
-
-   @supports (font-variant-numeric: ordinal) {
+@supports (font-variant-numeric: ordinal) {
   .recursive-ordn {
       --recursive-ordn: "____";
       font-variant-numeric: ordinal;
   }
 }
-
-   .recursive-pnum {
+.recursive-pnum {
   --recursive-pnum: "pnum" on;
 }
-
-   @supports (font-variant-numeric: proportional-nums) {
+@supports (font-variant-numeric: proportional-nums) {
   .recursive-pnum {
       --recursive-pnum: "____";
       font-variant-numeric: proportional-nums;
   }
 }
-
-   .recursive-sinf {
+.recursive-sinf {
   --recursive-sinf: "sinf" on;
 }
-
-   /* .recursive-ss01 {
+/* .recursive-ss01 {
   --recursive-ss01: "ss01" on;
 }
 
@@ -769,44 +636,36 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
 .recursive-ss20 {
   --recursive-ss20: "ss20" on;
 } */
-
-   .recursive-sups {
+.recursive-sups {
   --recursive-sups: "sups" on;
 }
-
-   @supports (font-variant-position: super) {
+@supports (font-variant-position: super) {
   .recursive-sups {
       --recursive-sups: "____";
       font-variant-position: super;
   }
 }
-
-   .recursive-titl {
+.recursive-titl {
   --recursive-titl: "titl" on;
 }
-
-   @supports (font-variant-caps: titling-caps) {
+@supports (font-variant-caps: titling-caps) {
   .recursive-titl {
       --recursive-titl: "____";
       font-variant-caps: titling-caps;
   }
 }
-
-   .recursive-zero {
+.recursive-zero {
   --recursive-zero: "zero" on;
 }
-
-   @supports (font-variant-numeric: slashed-zero) {
+@supports (font-variant-numeric: slashed-zero) {
   .recursive-zero {
       --recursive-zero: "____";
       font-variant-numeric: slashed-zero;
   }
 }
-
-   /* Apply current state of all custom properties
+/* Apply current state of all custom properties
  whenever a class is being applied */
-
-   .recursive-aalt,
+.recursive-aalt,
 .recursive-afrc,
 .recursive-case,
 .recursive-dlig,
@@ -860,262 +719,1714 @@ https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+c
     var(--recursive-titl), 
     var(--recursive-zero);
 }
-
-   /* Variable instances */
-
-   .recursive-mono-linear-light {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-light-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-light {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-light-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-medium {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-medium-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-medium {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-medium-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-semibold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-semibold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-semibold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-semibold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-bold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-bold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-bold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-bold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-extrabold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-extrabold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-extrabold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-extrabold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-black {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-black-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-black {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-black-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-linear-extrablack {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-linear-extrablack-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-mono-casual-extrablack {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-mono-casual-extrablack-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-light {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-light-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-medium {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-medium-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-medium {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-medium-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-semibold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-semibold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-semibold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-semibold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-bold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-bold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-bold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-bold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-extrabold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-extrabold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-extrabold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-extrabold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-black {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-black-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-black {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-black-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-linear-extrablack {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-linear-extrablack-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-
-   .recursive-sans-casual-extrablack {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-
-   .recursive-sans-casual-extrablack-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
+.button {
+  padding-block: 10px;
+  padding-inline: 30px;
+}
+.button--hover:hover {
+  background-color: var(--color-cerulean);
+  color: var(--color-white);
+}
+.focus:focus {
+  border: 8px solid var(--color-cerulean);
+}
+.button--unstyled {
+  background-color: transparent;
+  border: 0;
+  text-decoration: underline;
+}
+ul
+ul li::marker {
+  color: rebeccapurple;
+}
+ul li {
+  font-size: 125%;
+  list-style: disc;
+}
+dt {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+dd {
+  -webkit-margin-start: 2em;
+          margin-inline-start: 2em;
+}
+dd:not(:last-child) {
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+.font-desc {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.font-desc dd {
+    -webkit-margin-start: 2em;
+            margin-inline-start: 2em;
+  }
+.font-desc dd:not(:last-child) {
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
+  }
+@counter-style circled-decimal {
+  suffix: ' ';
+  symbols: '\24EA' '\2460' '\2461' '\2462' '\2463' '\2464' '\2465' '\2466' '\2467' '\2468' '\2469' '\246A' '\246B' '\246C' '\246D' '\246E' '\246F' '\2470' '\2471' '\2472' '\2473' '\3251' '\3252' '\3253' '\3254' '\3255' '\3256' '\3257' '\3258' '\3259' '\325a' '\325b' '\325c' '\325d' '\325e' '\325f' '\32b1' '\32b2' '\32b3' '\32b4' '\32b5' '\32b6' '\32b7' '\32b8' '\32b9' '\32ba' '\32bb' '\32bc' '\32bd' '\32be' '\32bf';
+  system: fixed 0;
+  }
+@counter-style decimal-leading-zero {
+  symbols: '\30\30' '\30\31' '\30\32' '\30\33' '\30\34' '\30\35' '\30\36' '\30\37' '\30\38' '\30\39';
+  system: fixed;
+}
+@counter-style dotted-decimal {
+  suffix: ' ';
+  symbols: '\2488' '\2489' '\248A' '\248B' '\248C' '\248D' '\248E' '\248F' '\2490' '\2491' '\2492' '\2493' '\2494' '\2495' '\2496' '\2497' '\2498' '\2499' '\249A' '\249B';
+  system: fixed;
+}
+@counter-style filled-circled-decimal {
+suffix: ' ';
+symbols: '\2776' '\2777' '\2778' '\2779' '\277a' '\277b' '\277c' '\277d' '\277e' '\277f' '\24EB' '\24EC' '\24ED' '\24EE' '\24EF' '\24F0' '\24F1' '\24F2' '\24F3' '\24F4';
+system: fixed;
+}
+ol {
+  list-style: decimal;
+}
+ol li::marker {
+  color: var(--color-violet);
+  font-size: 125%;
+}
+.list--circled-decimal {
+  list-style-type: circled-decimal;
+}
+.list--decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+.list--dotted-decimal {
+  list-style-type: dotted-decimal;
+}
+.list--filled-circled-decimal {
+  list-style-type: filled-circled-decimal;
+  }
+ol {
+  list-style: decimal;
+}
+/* color-mix() experiment: lighten a charcoal black */
+:root {
+  /* lightening charcoal */
+  --text1: color-mix(in srgb, var(--color-charcoal) 10%, white);
+  --text2: color-mix(in srgb, var(--color-charcoal) 20%, white);
+  --text3: color-mix(in srgb, var(--color-charcoal) 30%, white);
+  --text4: color-mix(in srgb, var(--color-charcoal) 40%, white);
+  --text5: color-mix(in srgb, var(--color-charcoal) 50%, white);
+  --text6: color-mix(in srgb, var(--color-charcoal) 60%, white);
+  --text7: color-mix(in srgb, var(--color-charcoal) 70%, white);
+  --text8: color-mix(in srgb, var(--color-charcoal) 80%, white);
+  --text9: color-mix(in srgb, var(--color-charcoal) 90%, white);
+}
+.light-text1 {
+  background-color: var(--text1);
+}
+.light-text2 {
+  background-color: var(--text2);
+}
+.light-text3 {
+  background-color: var(--text3);
+}
+.light-text4 {
+  background-color: var(--text4);
+}
+.light-text5 {
+  background-color: var(--text5);
+}
+.light-text6 {
+  background-color: var(--text6);
+}
+.light-text7 {
+  background-color: var(--text7);
+}
+.light-text8 {
+  background-color: var(--text8);
+}
+.light-text9 {
+  background-color: var(--text9);
+  color: #fff;
+}
+/* color-mix() experiment: darken a dark green mint color  */
+:root {
+  --dark-text1: color-mix(in srgb, var(--color-mint) 10%, black);
+  --dark-text2: color-mix(in srgb, var(--color-mint) 20%, black);
+  --dark-text3: color-mix(in srgb, var(--color-mint) 30%, black);
+  --dark-text4: color-mix(in srgb, var(--color-mint) 40%, black);
+  --dark-text5: color-mix(in srgb, var(--color-mint) 50%, black);
+  --dark-text6: color-mix(in srgb, var(--color-mint) 60%, black);
+  --dark-text7: color-mix(in srgb, var(--color-mint) 70%, black);
+  --dark-text8: color-mix(in srgb, var(--color-mint) 80%, black);
+  --dark-text9: color-mix(in srgb, var(--color-mint) 90%, black);
+}
+.dark-text1 {
+  background-color: var(--dark-text1);
+  color: #fff;
+}
+.dark-text2 {
+  background-color: var(--dark-text2);
+  color: #fff;
+}
+.dark-text3 {
+  background-color: var(--dark-text3);
+  color: #fff;
+}
+.dark-text4 {
+  background-color: var(--dark-text4);
+  color: #fff;
+}
+.dark-text5 {
+  background-color: var(--dark-text5);
+  color: #fff;
+}
+.dark-text6 {
+  background-color: var(--dark-text6);
+  color: #fff;
+}
+.dark-text7 {
+  background-color: var(--dark-text7);
+  color: #fff;
+}
+.dark-text8 {
+  background-color: var(--dark-text8);
+  color: #fff;
+}
+.dark-text9 {
+  background-color: var(--dark-text9);
+  color: #fff;
+}
+/* CSS HSL */
+:root {
+
+  /* whites */
+  --color-white: #fffeff;
+  --color-alabaster: #fefaf0;
+  --color-snow: #f4fefd;
+  --color-ivory: #fef7e5;
+  --color-cream: #fffbda;
+  --color-eggshell: #fef9e3;
+  --color-cotton: #fbfcf7;
+  --color-chiffon: #fafaf1;
+  --color-salt: #f8efec;
+  --color-lace: #faf3ea;
+  --color-coconut: #fff1e6;
+  --color-linen: #f2ebd3;
+  --color-bone: #e7dfcc;
+  --color-porcelain: #fffffc;
+  --color-parchment: #fcf6df;
+  --color-rice: #fbf6ef;
+    
+  /* blues */
+    
+  --color-blue: #0074d9;
+  --color-navy: #001f3f;
+  --color-aqua: #7fdbff;
+  --color-sky: #00b2ff;
+  --color-teal: #39cccc;
+  --color-slate: #757b87;
+  --color-indigo: #281e5d;
+  --color-cobalt: #1438bd;
+  --color-ocean: #026063;
+  --color-peacock: #002d37;
+  --color-azure: #1621a6;
+  --color-cerulean: #0592c2;
+  --color-lapis: #2632c2;
+  --color-spruce: #2c3e4b;
+  --color-stone: #59788d;
+  --color-aegean: #1e456e;
+  --color-berry: #24146f;
+  --color-denim: #141e3c;
+  --color-admiral: #061094;
+  --color-sapphire: #52b2c0;
+  --color-arctic: #82edfd;
+  
+  /* browns */
+    
+  --color-tan: #e5dbac;
+  --color-beige: #ecdc99;
+  --color-macaroon: #f7df75;
+  --color-hazelwood: #c9bc8e;
+  --color-granola: #d6b75a;
+  --color-oat: #dec98a;
+  --color-eggnog: #fbe29d;
+  --color-fawn: #c7a951;
+  --color-sugarcookie: #f3ebad;
+  --color-sand: #d7b963;
+  --color-sepia: #e3b678;
+  --color-latte: #e9c17b;
+  --color-oyster: #dcd69f;
+  --color-biscotti: #e3c565;
+  --color-parmesean: #fee993;
+  --color-hazelnut: #bda55d;
+  --color-sandcastle: #dbc27d;
+  --color-buttermilk: #fdefb2;
+  --color-sanddollar: #ebe7b9;
+  --color-shortbread: #fce791;
+  
+  /* yellows */
+    
+  --color-yellow: #ffdc00;
+  --color-canary: #fac801;
+  --color-gold: #f9a602;
+  --color-daffodil: #feee88;
+  --color-flaxen: #d5b65a;
+  --color-butter: #fee226;
+  --color-lemon: #effd5f;
+  --color-mustard: #e9b829;
+  --color-corn: #e4cd04;
+  --color-medallion: #e4b103;
+  --color-dandelion: #fdce2a;
+  --color-bumblebee: #fce206;
+  --color-banana: #fcf4a3;
+  --color-butterscotch: #fabd04;
+  --color-dijon: #c29200;
+  --color-honey: #ec9707;
+  --color-blonde: #fdeb75;
+  --color-pineapple: #ffe327;
+  --color-tuscansun: #fcd12a;
+  
+  /* oranges */
+  
+  --color-orange: #ff851b;
+  --color-tangerine: #f98228;
+  --color-merigold: #fdae1d;
+  --color-cider: #b66827;
+  --color-rust: #8c4005;
+  --color-ginger: #bc5703;
+  --color-tiger: #fb6b02;
+  --color-bronze: #b2560c;
+  --color-cantaloupe: #fca172;
+  --color-apricot: #ed810f;
+  --color-carrot: #ed7116;
+  --color-squash: #c95c09;
+  --color-spice: #7a3a03;
+  --color-marmalade: #d16102;
+  --color-amber: #893201;
+  --color-sandstone: #d57128;
+  --color-yam: #cc5801;
+  
+  /* reds */
+    
+  --color-red: #ff4136;
+  --color-cherry: #9a0f02;
+  --color-rose: #e2252a;
+  --color-jam: #600f0b;
+  --color-merlot: #541f1b;
+  --color-garnet: #5f0a04;
+  --color-crimson: #b8100a;
+  --color-ruby: #900503;
+  --color-scarlet: #910d08;
+  --color-redwine: #4c0805;
+  --color-redapple: #a91b0d;
+  --color-mahogany: #420d09;
+  --color-blood: #710c04;
+  --color-sangria: #5f1914;
+  --color-currant: #670c07;
+  --color-blush: #bb544a;
+  --color-candy: #d31603;
+  --color-lipstick: #9b0f02;
+  
+  /* pinks */
+    
+  --color-pink: #f69acd;
+  --color-fuchsia: #f012be;
+  --color-punch: #f25278;
+  --color-watermelon: #fe809c;
+  --color-flamingo: #fda4b8;
+  --color-rouge: #f26c8c;
+  --color-salmon: #fdab9f;
+  --color-coral: #fe7d67;
+  --color-peach: #fb9483;
+  --color-strawberry: #fc4c4e;
+  --color-rosewood: #a04242;
+  --color-lemonade: #fabacb;
+  --color-taffy: #fa85c4;
+  --color-bubblegum: #fd5ca8;
+  --color-balletslipper: #f69abf;
+  --color-crepe: #f1b7c6;
+  --color-maroon: #85144b;
+  --color-hotpink: #ff1696;
+  
+  /* purples */
+  
+  --color-purple: #b10dc9;
+  --color-mauve: #7a4a89;
+  --color-violet: #710193;
+  --color-boysenberry: #630536;
+  --color-lavender: #e3a0f6;
+  --color-plum: #601a36;
+  --color-lilac: #b65fcd;
+  --color-periwinkle: #be93d4; 
+  --color-eggplant: #311431;
+  --color-iris: #9866c5;
+  --color-heather: #9b7cb9;
+  --color-amethyst: #a45de4;
+  --color-raisin: #290916;
+  --color-orchid: #af69ee;
+  --color-mulberry: #4d0220;
+  
+  /* greens */
+    
+  --color-green: #2ecc40;
+  --color-chartreuse: #b0fd38;
+  --color-juniper: #395311;
+  --color-sage: #728c69;
+  --color-lime: #01ff70;
+  --color-fern: #5dbc64;
+  --color-olive: #98bf64;
+  --color-emerald: #038911;
+  --color-pear: #74b62d;
+  --color-moss: #476d1e;
+  --color-shamrock: #03ac13;
+  --color-seafoam: #3cec96;
+  --color-pine: #24501e;
+  --color-parakeet: #02c04a;
+  --color-mint: #98ecc3;
+  --color-seaweed: #354b21;
+  --color-pickle: #5a7d36;
+  --color-pistachio: #b2d3c1;
+  --color-basil: #32622d;
+  --color-crocodile: #5f7c3a;
+  
+  /* browns */
+    
+  --color-brown: #241709;
+  --color-coffee: #4b371c;
+  --color-mocha: #3c290d;
+  --color-peanut: #795c34;
+  --color-carob: #35260f;
+  --color-hickory: #371d10;
+  --color-pecan: #4a2512;
+  --color-walnut: #432711;
+  --color-caramel: #66360f;
+  --color-gingerbread: #5d2c04;
+  --color-chocolate: #2c1603;
+  --color-tortilla: #9a7b4f;
+  --color-umber: #352415;
+  --color-tawny: #7e491d;
+  --color-brunette: #391e07;
+  --color-cinammon: #642b0d;
+  --color-penny: #522915;
+  
+  /* greys */
+    
+  --color-grey: #aaaaaa;
+  --color-shadow: #373737;
+  --color-graphite: #584d5b;
+  --color-iron: #332d31;
+  --color-pewter: #6a6880;
+  --color-cloud: #c5c5d0;
+  --color-silver: #dddddd;
+  --color-smoke: #59515f;
+  --color-anchor: #42424c;
+  --color-ash: #554c4d;
+  --color-porpoise: #4d4c5c;
+  --color-dove: #7c6e7f;
+  --color-fog: #655965;
+  --color-flint: #7d7c9c;
+  --color-pebble: #333333;
+  --color-lead: #403f4e;
+  --color-coin: #9897a9;
+  --color-fossil: #787276;
+    
+  /* blacks */
+    
+  --color-black: #111111;
+  --color-ebony: #080401;
+  --color-crow: #25221F;
+  --color-charcoal: #222023;
+}
+.color-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+.color-item {
+  align-items: center;
+  border: 2px solid var(--color-black);
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+/* .color-10 {background-color: var(--dark-jungle-green);}
+.color-20 {background-color: var(--myrtle-green);}
+.color-30 {background-color: var(--morning-blue);}
+.color-40 {background-color: var(--peach-crayola);}
+.color-50 {background-color: var(--red-pigment);}
+
+/* Custom Material Design Palette 
+.md-primaryColor {background-color: #5500e8}
+.md-primaryLightColor {background-color: #9244ff}
+.md-primaryDarkColor {background-color: #0000b4}
+.md-secondaryColor {background-color: #1775d1}
+.md-secondaryLightColor {background-color: #63a3ff}
+.md-secondaryDarkColor {background-color: #004a9f}
+.md-primaryTextColor {background-color: #ffffff}
+.md-secondaryTextColor {background-color: #ffffff}
+
+/* Default Material Design Palette 
+.md-default-primaryColor {background-color: #6200EE}
+.md-default-primaryVariantColor {background-color: #3700B3}
+.md-default-secondaryColor {background-color: #03DAC6}
+.md-default-secondaryVariantColor {background-color: #018786}
+.md-default-backgroundColor {background-color: #FFFFFF}
+.md-default-surfaceColor {background-color: #FFFFFF}
+.md-default-errorColor {background-color: #B00020}
+.md-default-lightText {background-color: #FFFFFF}
+.md-default-darkText {background-color: #000000} */
+/* Colors taken from The New Defaults */
+/* whites */
+.white {background-color: var(--color-white);}
+.pearl {background-color: var(--color-pearl);}
+.alabaster {background-color: var(--color-alabaster);}
+.snow {background-color: var(--color-snow);}
+.ivory {background-color: var(--color-ivory);}
+.cream {background-color: var(--color-cream);}
+.eggshell {background-color: var(--color-eggshell);}
+.cotton {background-color: var(--color-cotton);}
+.chiffon {background-color: var(--color-chiffon);}
+.salt {background-color: var(--color-salt);}
+.lace {background-color: var(--color-lace);}
+.coconut {background-color: var(--color-coconut);}
+.linen {background-color: var(--color-linen);}
+.bone {background-color: var(--color-bone);}
+.porcelain {background-color: var(--color-porcelain);}
+.parchment {background-color: var(--color-parchment);}
+.rice {background-color: var(--color-rice);}
+/* blues */
+.blue { background-color: var(--color-blue);color: white;}
+.navy { background-color: var(--color-navy);color: white;}
+.aqua { background-color: var(--color-aqua);color: white;}
+.sky { background-color: var(--color-sky);color: white;}
+.teal { background-color: var(--color-teal);color: white;}
+.slate { background-color: var(--color-slate);color: white;}
+.indigo { background-color: var(--color-indigo);color: white;}
+.cobalt { background-color: var(--color-cobalt);color: white;}
+.ocean { background-color: var(--color-ocean);color: white;}
+.peacock { background-color: var(--color-peacock);color: white;}
+.azure { background-color: var(--color-azure);color: white;}
+.cerulean { background-color: var(--color-cerulean);color: white;}
+.lapis { background-color: var(--color-lapis);color: white;}
+.spruce { background-color: var(--color-spruce);color: white;}
+.stone { background-color: var(--color-stone);color: white;}
+.aegean { background-color: var(--color-aegean);color: white;}
+.berry { background-color: var(--color-berry);color: white;}
+.denim { background-color: var(--color-denim);color: white;}
+.admiral { background-color: var(--color-admiral);color: white;}
+.sapphire { background-color: var(--color-sapphire);color: white;}
+.arctic { background-color: var(--color-arctic);color: white;}
+/* browns */
+.tan {background-color: var(--color-tan);}
+.beige {background-color: var(--color-beige);}
+.macaroon {background-color: var(--color-macaroon);}
+.hazelwood {background-color: var(--color-hazelwood);}
+.granola {background-color: var(--color-granola);}
+.oat {background-color: var(--color-oat);}
+.eggnog {background-color: var(--color-eggnog);}
+.fawn {background-color: var(--color-fawn);}
+.sugarcookie {background-color: var(--color-sugarcookie);}
+.sand {background-color: var(--color-sand);}
+.sepia {background-color: var(--color-sepia);}
+.latte {background-color: var(--color-latte);}
+.oyster {background-color: var(--color-oyster);}
+.biscotti {background-color: var(--color-biscotti);}
+.parmesean {background-color: var(--color-parmesean);}
+.hazelnut {background-color: var(--color-hazelnut);}
+.sandcastle {background-color: var(--color-sandcastle);}
+.buttermilk {background-color: var(--color-buttermilk);}
+.sanddollar {background-color: var(--color-sanddollar);}
+.shortbread {background-color: var(--color-shortbread);}
+/* yellows */
+.yellow {background-color: var(--color-yellow);}
+.canary {background-color: var(--color-canary);}
+.gold {background-color: var(--color-gold);}
+.daffodil {background-color: var(--color-daffodil);}
+.flaxen {background-color: var(--color-flaxen);}
+.butter {background-color: var(--color-butter);}
+.lemon {background-color: var(--color-lemon);}
+.mustard {background-color: var(--color-mustard);}
+.corn {background-color: var(--color-corn);}
+.medallion {background-color: var(--color-medallion);}
+.dandelion {background-color: var(--color-dandelion);}
+.bumblebee {background-color: var(--color-bumblebee);}
+.banana {background-color: var(--color-banana);}
+.butterscotch {background-color: var(--color-butterscotch);}
+.dijon {background-color: var(--color-dijon);}
+.honey {background-color: var(--color-honey);}
+.blonde {background-color: var(--color-blonde);}
+.pineapple {background-color: var(--color-pineapple);}
+.tuscansun {background-color: var(--color-tuscansun);}
+/* oranges */
+.orange {background-color: var(--color-orange);}
+.tangerine {background-color: var(--color-tangerine);}
+.merigold {background-color: var(--color-merigold);}
+.cider {background-color: var(--color-cider);}
+.rust {background-color: var(--color-rust);}
+.ginger {background-color: var(--color-ginger);}
+.tiger {background-color: var(--color-tiger);}
+.bronze {background-color: var(--color-bronze);}
+.cantaloupe {background-color: var(--color-cantaloupe);}
+.apricot {background-color: var(--color-apricot);}
+.carrot {background-color: var(--color-carrot);}
+.squash {background-color: var(--color-squash);}
+.spice {background-color: var(--color-spice);}
+.marmalade {background-color: var(--color-marmalade);}
+.amber {background-color: var(--color-amber);}
+.sandstone {background-color: var(--color-sandstone);}
+.yam {background-color: var(--color-yam);}
+/* reds */
+.red {background-color: var(--color-red);color: white;}
+.cherry {background-color: var(--color-cherry);color: white;}
+.rose {background-color: var(--color-rose);color: white;}
+.jam {background-color: var(--color-jam);color: white;}
+.merlot {background-color: var(--color-merlot);color: white;}
+.garnet {background-color: var(--color-garnet);color: white;}
+.crimson {background-color: var(--color-crimson);color: white;}
+.ruby {background-color: var(--color-ruby);color: white;}
+.scarlet {background-color: var(--color-scarlet);color: white;}
+.redwine {background-color: var(--color-redwine);color: white;}
+.redapple {background-color: var(--color-redapple);color: white;}
+.mahogany {background-color: var(--color-mahogany);color: white;}
+.blood {background-color: var(--color-blood);color: white;}
+.sangria {background-color: var(--color-sangria);color: white;}
+.currant {background-color: var(--color-currant);color: white;}
+.blush {background-color: var(--color-blush);color: white;}
+.candy {background-color: var(--color-candy);color: white;}
+.lipstick {background-color: var(--color-lipstick);color: white;}
+/* pinks */
+.pink { background-color: var(--color-pink);color: white;}
+.fuchsia { background-color: var(--color-fuchsia);color: white;}
+.punch { background-color: var(--color-punch);color: white;}
+.watermelon { background-color: var(--color-watermelon);color: white;}
+.flamingo { background-color: var(--color-flamingo);color: white;}
+.rouge { background-color: var(--color-rouge);color: white;}
+.salmon { background-color: var(--color-salmon);color: white;}
+.coral { background-color: var(--color-coral);color: white;}
+.peach { background-color: var(--color-peach);color: white;}
+.strawberry { background-color: var(--color-strawberry);color: white;}
+.rosewood { background-color: var(--color-rosewood);color: white;}
+.lemonade { background-color: var(--color-lemonade);color: white;}
+.taffy { background-color: var(--color-taffy);color: white;}
+.bubblegum { background-color: var(--color-bubblegum);color: white;}
+.balletslipper { background-color: var(--color-balletslipper);color: white;}
+.crepe { background-color: var(--color-crepe);color: white;}
+.maroon { background-color: var(--color-maroon);color: white;}
+.hotpink { background-color: var(--color-hotpink);color: white;}
+/* purples */
+.purple { background-color: var(--color-purple);color: white;}
+.mauve { background-color: var(--color-mauve);color: white;}
+.violet { background-color: var(--color-violet);color: white;}
+.boysenberry { background-color: var(--color-boysenberry);color: white;}
+.lavender { background-color: var(--color-lavender);color: white;}
+.plum { background-color: var(--color-plum);color: white;}
+.lilac { background-color: var(--color-lilac);color: white;}
+.periwinkle { background-color: var(--color-periwinkle);color: white;}
+.eggplant { background-color: var(--color-eggplant);color: white;}
+.iris { background-color: var(--color-iris);color: white;}
+.heather { background-color: var(--color-heather);color: white;}
+.amethyst { background-color: var(--color-amethyst);color: white;}
+.raisin { background-color: var(--color-raisin);color: white;}
+.orchid { background-color: var(--color-orchid);color: white;}
+.mulberry { background-color: var(--color-mulberry);color: white;}
+/* greens */
+.green { background-color: var(--color-green);color: white;}
+.chartreuse { background-color: var(--color-chartreuse);color: white;}
+.juniper { background-color: var(--color-juniper);color: white;}
+.sage { background-color: var(--color-sage);color: white;}
+.lime { background-color: var(--color-lime);color: white;}
+.fern { background-color: var(--color-fern);color: white;}
+.olive { background-color: var(--color-olive);color: white;}
+.emerald { background-color: var(--color-emerald);color: white;}
+.pear { background-color: var(--color-pear);color: white;}
+.moss { background-color: var(--color-moss);color: white;}
+.shamrock { background-color: var(--color-shamrock);color: white;}
+.seafoam { background-color: var(--color-seafoam);color: white;}
+.pine { background-color: var(--color-pine);color: white;}
+.parakeet { background-color: var(--color-parakeet);color: white;}
+.mint { background-color: var(--color-mint);color: white;}
+.seaweed { background-color: var(--color-seaweed);color: white;}
+.pickle { background-color: var(--color-pickle);color: white;}
+.pistachio { background-color: var(--color-pistachio);color: white;}
+.basil { background-color: var(--color-basil);color: white;}
+.crocodile { background-color: var(--color-crocodile);color: white;}
+/* browns */
+.brown { background-color: var(--color-brown);color: white;}
+.coffee { background-color: var(--color-coffee);color: white;}
+.mocha { background-color: var(--color-mocha);color: white;}
+.peanut { background-color: var(--color-peanut);color: white;}
+.carob { background-color: var(--color-carob);color: white;}
+.hickory { background-color: var(--color-hickory);color: white;}
+.pecan { background-color: var(--color-pecan);color: white;}
+.walnut { background-color: var(--color-walnut);color: white;}
+.caramel { background-color: var(--color-caramel);color: white;}
+.gingerbread { background-color: var(--color-gingerbread);color: white;}
+.chocolate { background-color: var(--color-chocolate);color: white;}
+.tortilla { background-color: var(--color-tortilla);color: white;}
+.umber { background-color: var(--color-umber);color: white;}
+.tawny { background-color: var(--color-tawny);color: white;}
+.brunette { background-color: var(--color-brunette);color: white;}
+.cinammon { background-color: var(--color-cinammon);color: white;}
+.penny { background-color: var(--color-penny);color: white;}
+/* greys */
+.grey { background-color: var(--color-grey);color: white;}
+.shadow { background-color: var(--color-shadow);color: white;}
+.graphite { background-color: var(--color-graphite);color: white;}
+.iron { background-color: var(--color-iron);color: white;}
+.pewter { background-color: var(--color-pewter);color: white;}
+.cloud { background-color: var(--color-cloud);color: white;}
+.silver { background-color: var(--color-silver);color: white;}
+.smoke { background-color: var(--color-smoke);color: white;}
+.anchor { background-color: var(--color-anchor);color: white;}
+.ash { background-color: var(--color-ash);color: white;}
+.porpoise { background-color: var(--color-porpoise);color: white;}
+.dove { background-color: var(--color-dove);color: white;}
+.fog { background-color: var(--color-fog);color: white;}
+.flint { background-color: var(--color-flint);color: white;}
+.pebble { background-color: var(--color-pebble);color: white;}
+.lead { background-color: var(--color-lead);color: white;}
+.coin { background-color: var(--color-coin);color: white;}
+.fossil { background-color: var(--color-fossil);color: white;}
+/* blacks */
+.black { background-color: var(--color-black);color: white;}
+.ebony { background-color: var(--color-ebony);color: white;}
+.crow { background-color: var(--color-crow);color: white;}
+.charcoal { background-color: var(--color-charcoal);color: white;}
+:root {
+  --color-hemi-orange: #f3782b;
+  --color-plum-crazy: #6600cc;
+  --color-cherry: #d2042d;
+  --color-black-cherry: #52253a;
+  --color-panther-pink: #be439d;
+  --color-green-go: #339a4b;
+  --color-sublime-green: #a0e03a;
+  --color-go-mango: #da5246;
+  --color-butterscotch: #d48827;
+  --color-bright-green: #66ff00;
+  --color-top-banana: #ffed4d;
+  --color-citron-yella: #9fa91f;
+  --color-rebeccapurple: #663399;
+}
+.hemi-orange {  background-color: var(--color-hemi-orange); color: white; }
+.plum-crazy {  background-color: var(--color-plum-crazy); color: white; }
+.cherry {  background-color: var(--color-cherry:); color: white; }
+.black-cherry {  background-color: var(--color-black-cherry); color: white; }
+.panther-pink {  background-color: var(--color-panther-pink); color: white; }
+.green-go {  background-color: var(--color-green-go); color: white; }
+.sublime-green {  background-color: var(--color-sublime-green); color: white; }
+.go-mango {  background-color: var(--color-go-mango); color: white; }
+.butterscotch: {  background-color: var(--color-butterscotch); color: white; }
+.bright-green {  background-color: var(--color-bright-green); color: white; }
+.top-banana {  background-color: var(--color-top-banana); color: white; }
+.citron-yella {  background-color: var(--color-citron-yella); color: white; }
+.panther-pink {  background-color: var(--color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--color-rebeccapurple); color: white; }
+/* color-mix() experiment: lighten a charcoal black */
+:root {
+  /* lightening charcoal */
+  --text1: color-mix(in lch, var(--lch-color-charcoal) 10%, white);
+  --text2: color-mix(in lch, var(--lch-color-charcoal) 20%, white);
+  --text3: color-mix(in lch, var(--lch-color-charcoal) 30%, white);
+  --text4: color-mix(in lch, var(--lch-color-charcoal) 40%, white);
+  --text5: color-mix(in lch, var(--lch-color-charcoal) 50%, white);
+  --text6: color-mix(in lch, var(--lch-color-charcoal) 60%, white);
+  --text7: color-mix(in lch, var(--lch-color-charcoal) 70%, white);
+  --text8: color-mix(in lch, var(--lch-color-charcoal) 80%, white);
+  --text9: color-mix(in lch, var(--lch-color-charcoal) 90%, white);
+}
+.light-text1 {
+  background-color: var(--text1);
+}
+.light-text2 {
+  background-color: var(--text2);
+}
+.light-text3 {
+  background-color: var(--text3);
+}
+.light-text4 {
+  background-color: var(--text4);
+}
+.light-text5 {
+  background-color: var(--text5);
+}
+.light-text6 {
+  background-color: var(--text6);
+}
+.light-text7 {
+  background-color: var(--text7);
+}
+.light-text8 {
+  background-color: var(--text8);
+}
+.light-text9 {
+  background-color: var(--text9);
+  color: #fff;
+}
+/* color-mix() experiment: darken a dark green mint color  */
+:root {
+  --dark-text1: color-mix(in lch, var(--lch-color-mint) 10%, black);
+  --dark-text2: color-mix(in lch, var(--lch-color-mint) 20%, black);
+  --dark-text3: color-mix(in lch, var(--lch-color-mint) 30%, black);
+  --dark-text4: color-mix(in lch, var(--lch-color-mint) 40%, black);
+  --dark-text5: color-mix(in lch, var(--lch-color-mint) 50%, black);
+  --dark-text6: color-mix(in lch, var(--lch-color-mint) 60%, black);
+  --dark-text7: color-mix(in lch, var(--lch-color-mint) 70%, black);
+  --dark-text8: color-mix(in lch, var(--lch-color-mint) 80%, black);
+  --dark-text9: color-mix(in lch, var(--lch-color-mint) 90%, black);
+}
+.dark-text1 {
+  background-color: var(--dark-text1);
+  color: #fff;
+}
+.dark-text2 {
+  background-color: var(--dark-text2);
+  color: #fff;
+}
+.dark-text3 {
+  background-color: var(--dark-text3);
+  color: #fff;
+}
+.dark-text4 {
+  background-color: var(--dark-text4);
+  color: #fff;
+}
+.dark-text5 {
+  background-color: var(--dark-text5);
+  color: #fff;
+}
+.dark-text6 {
+  background-color: var(--dark-text6);
+  color: #fff;
+}
+.dark-text7 {
+  background-color: var(--dark-text7);
+  color: #fff;
+}
+.dark-text8 {
+  background-color: var(--dark-text8);
+  color: #fff;
+}
+.dark-text9 {
+  background-color: var(--dark-text9);
+  color: #fff;
+}
+:root {
+  --lch-color-hemi-orange: lch(64.61% 76.27 53.74);
+  --lch-color-plum-crazy: lch(30.92% 102.31 308.18);
+  --lch-color-cherry: lch(45.06% 80.92 30.16);
+  --lch-color-black-cherry: lch(21.8% 23.72 351.88);
+  --lch-color-panther-pink: lch(48.91% 61.35 337.97);
+  --lch-color-green-go: lch(56.42% 54.4 143.72);
+  --lch-color-sublime-green: lch(82.65% 78.73 119.22);
+  --lch-color-go-mango: lch(54.05% 64.94 34.21);
+  --lch-color-butterscotch: lch(63.69% 64.99 67.73);
+  --lch-color-bright-green: lch(89.23% 106.96289251655789 129.28218977653546);
+  --lch-color-top-banana: lch(93.19% 75.44 94.73);
+  --lch-color-citron-yella: lch(66.7% 64.31 103.9);
+  --lch-color-rebeccapurple: lch(32.39% 61.24 308.86);
+}
+.hemi-orange {  background-color: var(--lch-color-hemi-orange); color: white; }
+.plum-crazy {  background-color: var(--lch-color-plum-crazy); color: white; }
+.cherry {  background-color: var(--lch-color-cherry:); color: white; }
+.black-cherry {  background-color: var(--lch-color-black-cherry); color: white; }
+.panther-pink {  background-color: var(--lch-color-panther-pink); color: white; }
+.green-go {  background-color: var(--lch-color-green-go); color: white; }
+.sublime-green {  background-color: var(--lch-color-sublime-green); color: white; }
+.go-mango {  background-color: var(--lch-color-go-mango); color: white; }
+.butterscotch: {  background-color: var(--lch-color-butterscotch); color: white; }
+.bright-green {  background-color: var(--lch-color-bright-green); color: white; }
+.top-banana {  background-color: var(--lch-color-top-banana); color: white; }
+.citron-yella {  background-color: var(--lch-color-citron-yella); color: white; }
+.panther-pink {  background-color: var(--lch-color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--lch-color-rebeccapurple); color: white; }
+/* CSS HSL */
+:root {
+  /* whites */
+  --lch-color-white: lch(99.75% 0.59 322.97);
+  --lch-color-alabaster: lch(98.38% 5.31 88.81);
+  --lch-color-snow: lch(98.88% 3.6 191.54);
+  --lch-color-ivory: lch(97.42% 9.56 88.8);
+  --lch-color-cream: lch(98.3% 16.5959 98.9853);
+  --lch-color-eggshell: lch(97.88% 11.27 94.99);
+  --lch-color-cotton: lch(98.78% 2.48 113.53);
+  --lch-color-chiffon: lch(98.09% 4.48 104.96);
+  --lch-color-salt: lch(95.1% 3.78 43.28);
+  --lch-color-lace: lch(96.21% 5.39 76.13);
+  --lch-color-coconut: lch(96.04% 7.9354 63.5890);
+  --lch-color-linen: lch(93.13% 12.59 92.24);
+  --lch-color-bone: lch(89.08% 10.38 87.43);
+  --lch-color-porcelain: lch(99.94% 1.4768030355972712 105.15485512711214);
+  --lch-color-parchment: lch(96.9% 11.89 93.57);
+  --lch-color-rice: lch(97.13% 4.08 78.2);
+    
+  /* blues */
+    
+  --lch-color-blue: lch(47.91% 60.51507214391339 272.80151710832934);
+  --lch-color-navy: lch(11.16% 24.115011735336843 270.0866464285895);
+  --lch-color-aqua: lch(82.68% 34.17 231.2);
+  --lch-color-sky: lch(68% 52.66597590625377 250.13112380999644);
+  --lch-color-teal: lch(74.74% 40.7 196.72);
+  --lch-color-slate: lch(51.41% 7.38 267.1);
+  --lch-color-indigo: lch(15.83% 41.92 298.34);
+  --lch-color-cobalt: lch(29.6% 80.37 292.81);
+  --lch-color-ocean: lch(36.28% 25.43 200.69);
+  --lch-color-peacock: lch(16.07% 16.05 222.47);
+  --lch-color-azure: lch(22.23% 81.7 297.36);
+  --lch-color-cerulean: lch(56% 40.1 239.88);
+  --lch-color-lapis: lch(29.38% 86.04 295.96);
+  --lch-color-spruce: lch(25.08% 11.35 246.4);
+  --lch-color-stone: lch(48.64% 16.94 244.34);
+  --lch-color-aegean: lch(28.12% 28.44 264.75);
+  --lch-color-berry: lch(14.72% 58.85 300.79);
+  --lch-color-denim: lch(11.69% 21.48 281.01);
+  --lch-color-admiral: lch(16.54% 81.52 299.36);
+  --lch-color-sapphire: lch(67.27% 30.97 211.6);
+  --lch-color-arctic: lch(87.79% 34.27 211.49);
+  
+  /* browns */
+    
+  --lch-color-tan: lch(87.35% 24.58 94.28);
+  --lch-color-beige: lch(87.92% 35.1 92.24);
+  --lch-color-macaroon: lch(89.24% 54.39 91.07);
+  --lch-color-hazelwood: lch(76.49% 25.12 91.04);
+  --lch-color-granola: lch(75.78% 50.8 86.09);
+  --lch-color-oat: lch(81.66% 34.35 88.17);
+  --lch-color-eggnog: lch(90.79% 37.11 87.05);
+  --lch-color-fawn: lch(70.63% 48.83 85.67);
+  --lch-color-sugarcookie: lch(92.59% 31.49 97.42);
+  --lch-color-sand: lch(76.47% 47.36 85.9);
+  --lch-color-sepia: lch(77.14% 39.56 73.59);
+  --lch-color-latte: lch(80.49% 41.57 78.45);
+  --lch-color-oyster: lch(85.11% 28.36 98.37);
+  --lch-color-biscotti: lch(80.69% 51.53 87.18);
+  --lch-color-parmesean: lch(92.68% 44.44 91.33);
+  --lch-color-hazelnut: lch(68.72% 40.44 86.9);
+  --lch-color-sandcastle: lch(79.43% 38.13 86.52);
+  --lch-color-buttermilk: lch(94.5% 31.46 93.13);
+  --lch-color-sanddollar: lch(91.1% 23.36 99.85);
+  --lch-color-shortbread: lch(91.98% 44.5 91.3);
+  
+  /* yellows */
+    
+  --lch-color-yellow: lch(88.71% 87.3637049440909 89.66456102993442);
+  --lch-color-canary: lch(83.27% 83.84 84.46);
+  --lch-color-gold: lch(75.09% 81.92 72.56);
+  --lch-color-daffodil: lch(93.81% 51.24 94.65);
+  --lch-color-flaxen: lch(75.43% 50.38 85.97);
+  --lch-color-butter: lch(90.18% 83.64 91.65);
+  --lch-color-lemon: lch(96.13% 73.49 105.16);
+  --lch-color-mustard: lch(77.65% 72.65 82.7);
+  --lch-color-corn: lch(82.4% 81.46 92.55);
+  --lch-color-medallion: lch(75.32% 77.45 82.47);
+  --lch-color-dandelion: lch(85.12% 79.04 85.03);
+  --lch-color-bumblebee: lch(89.95% 87.65 92.33);
+  --lch-color-banana: lch(95.47% 40.5 98.16);
+  --lch-color-butterscotch: lch(80.6% 82.57 80.57);
+  --lch-color-dijon: lch(63.84% 68.54 80.65);
+  --lch-color-honey: lch(70.08% 78.25 70.07);
+  --lch-color-blonde: lch(92.79% 58.74 94.2);
+  --lch-color-pineapple: lch(90.52% 83.75 91.68);
+  --lch-color-tuscansun: lch(85.76% 79.35 86.41);
+  
+  /* oranges */
+  
+  --lch-color-orange: lch(68.85% 82.93005751125918 58.50051184545872);
+  --lch-color-tangerine: lch(67.43% 77.97 56.86);
+  --lch-color-merigold: lch(77.44% 79.26 73.55);
+  --lch-color-cider: lch(52.35% 56.22 59.54);
+  --lch-color-rust: lch(36.97% 55.26 56.02);
+  --lch-color-ginger: lch(49.53% 70.08 56.23);
+  --lch-color-tiger: lch(63.35% 89.67 53.36);
+  --lch-color-bronze: lch(47.75% 64.78 56.75);
+  --lch-color-cantaloupe: lch(74.97% 50.13 51.27);
+  --lch-color-apricot: lch(65.44% 79.4 61.35);
+  --lch-color-carrot: lch(62.28% 80.48 55.33);
+  --lch-color-squash: lch(52.6% 73.02 55.17);
+  --lch-color-spice: lch(32.63% 49.7 58.05);
+  --lch-color-marmalade: lch(54.82% 76.23 56.22);
+  --lch-color-amber: lch(33.68% 58.11 51.12);
+  --lch-color-sandstone: lch(58.76% 66.71 56.62);
+  --lch-color-yam: lch(52.32% 76.26 54.15);
+  
+  /* reds */
+    
+  --lch-color-red: lch(58.29% 87.98242495542446 36.237396880571154);
+  --lch-color-cherry: lch(33% 70.91 41.19);
+  --lch-color-rose: lch(49.96% 84.73 34.74);
+  --lch-color-jam: lch(19.9% 44.11 35.89);
+  --lch-color-merlot: lch(20.13% 29.52 32.27);
+  --lch-color-garnet: lch(19.1% 45.98 37.1);
+  --lch-color-crimson: lch(39.67% 79.97 39.69);
+  --lch-color-ruby: lch(30.2% 67.69 39.7);
+  --lch-color-scarlet: lch(30.89% 66.1 39.23);
+  --lch-color-redwine: lch(14.35% 37.05 33.32);
+  --lch-color-redapple: lch(37.18% 72.35 40.09);
+  --lch-color-mahogany: lch(12.72% 30.2 32.16);
+  --lch-color-blood: lch(23.49% 53.85 38.94);
+  --lch-color-sangria: lch(21.15% 38.91 34.89);
+  --lch-color-currant: lch(21.19% 48.69 37.18);
+  --lch-color-blush: lch(49.29% 49.87 32.89);
+  --lch-color-candy: lch(45.74% 90.4 41.37);
+  --lch-color-lipstick: lch(33.22% 71.3 41.2);
+  
+  /* pinks */
+    
+  --lch-color-pink: lch(74.43% 41.8 344.65);
+  --lch-color-fuchsia: lch(55.01% 89.4 338.98);
+  --lch-color-punch: lch(58.92% 65.57 12.96);
+  --lch-color-watermelon: lch(69.14% 51.6 9.6);
+  --lch-color-flamingo: lch(76.9% 35.9 6.59);
+  --lch-color-rouge: lch(63.42% 55.4 9.72);
+  --lch-color-salmon: lch(77.96% 35.53 32.59);
+  --lch-color-coral: lch(67.71% 60.82 36.46);
+  --lch-color-peach: lch(72.27% 46.76 34.7);
+  --lch-color-strawberry: lch(59.25% 78.14 30.65);
+  --lch-color-rosewood: lch(41.31% 44.9 27.49);
+  --lch-color-lemonade: lch(81.89% 25.61 2.14);
+  --lch-color-taffy: lch(70.48% 52.18 346.84);
+  --lch-color-bubblegum: lch(63.26% 67.12 354.29);
+  --lch-color-balletslipper: lch(74.08% 38.99 354.26);
+  --lch-color-crepe: lch(80.15% 23.27 2.43);
+  --lch-color-maroon: lch(29.78% 48.85 357.93);
+  --lch-color-hotpink: lch(56.76% 83.60770142271679 356.1066009291415);
+  
+  /* purples */
+  
+  --lch-color-purple: lch(43.67% 92.5 321.75);
+  --lch-color-mauve: lch(39.17% 39.9 317.33);
+  --lch-color-violet: lch(28.02% 75.41 317.46);
+  --lch-color-boysenberry: lch(20.47% 41.27 357.17);
+  --lch-color-lavender: lch(74.75% 49.09 317.55);
+  --lch-color-plum: lch(22.18% 33.84 0.58);
+  --lch-color-lilac: lch(54.36% 64.41 318.68);
+  --lch-color-periwinkle: lch(66.8% 37.19 313.16); 
+  --lch-color-eggplant: lch(11.76% 22.75 325.73);
+  --lch-color-iris: lch(51.72% 54.61 309.03);
+  --lch-color-heather: lch(56.77% 34.97 307.6);
+  --lch-color-amethyst: lch(52.74% 75.54 309.53);
+  --lch-color-raisin: lch(6.66% 17.76 358.69);
+  --lch-color-orchid: lch(56.93% 73.88 309.41);
+  --lch-color-mulberry: lch(14.3% 34.67 7.03);
+  
+  /* greens */
+    
+  --lch-color-green: lch(72.37% 82.26 138.18);
+  --lch-color-chartreuse: lch(91.83% 89.71 119.62);
+  --lch-color-juniper: lch(32.14% 37.8 119.53);
+  --lch-color-sage: lch(55.48% 21.52 133.58);
+  --lch-color-lime: lch(88.29% 90.76 144.65);
+  --lch-color-fern: lch(68.94% 55.86 140.72);
+  --lch-color-olive: lch(72.96% 48.03 121.13);
+  --lch-color-emerald: lch(49.48% 68.73 135.8);
+  --lch-color-pear: lch(67.71% 69.13 123.12);
+  --lch-color-moss: lch(41.91% 44.7 122.96);
+  --lch-color-shamrock: lch(61.34% 82.12 135.4);
+  --lch-color-seafoam: lch(83.44% 66.5 154.42);
+  --lch-color-pine: lch(29.97% 34.3 135.36);
+  --lch-color-parakeet: lch(68.18% 76.13 142.7);
+  --lch-color-mint: lch(87.21% 35.15 160.9);
+  --lch-color-seaweed: lch(29.23% 26.67 124.78);
+  --lch-color-pickle: lch(48.51% 40.66 123.51);
+  --lch-color-pistachio: lch(81.75% 14.91 160.01);
+  --lch-color-basil: lch(37.16% 35.79 136.49);
+  --lch-color-crocodile: lch(48.58% 37.6 121.47);
+  
+  /* browns */
+    
+  --lch-color-brown: lch(9.18% 11.42 62.37);
+  --lch-color-coffee: lch(24.87% 21.38 72.2);
+  --lch-color-mocha: lch(18.45% 22.16 72.47);
+  --lch-color-peanut: lch(41.43% 28.88 72.85);
+  --lch-color-carob: lch(16.56% 18.31 74.18);
+  --lch-color-hickory: lch(14.19% 18.59 49.88);
+  --lch-color-pecan: lch(19.58% 26.29 50.98);
+  --lch-color-walnut: lch(18.96% 23.17 59.39);
+  --lch-color-caramel: lch(28.46% 38.06 58.8);
+  --lch-color-gingerbread: lch(24.48% 39.17 57.59);
+  --lch-color-chocolate: lch(10.12% 17.27 54.62);
+  --lch-color-tortilla: lch(53.88% 29.9 74.2);
+  --lch-color-umber: lch(16.02% 14.95 63.18);
+  --lch-color-tawny: lch(36.92% 40.7 59.88);
+  --lch-color-brunette: lch(14.7% 22.44 57.98);
+  --lch-color-cinammon: lch(25.54% 39.64 51.06);
+  --lch-color-penny: lch(21.99% 28.25 50.09);
+  
+  /* greys */
+    
+  --lch-color-grey: lch(69.61% 0 0);
+  --lch-color-shadow: lch(23.07% 0 0);
+  --lch-color-graphite: lch(34.24% 9.48 316.83);
+  --lch-color-iron: lch(19.24% 3.8 336.09);
+  --lch-color-pewter: lch(44.86% 13.96 290.18);
+  --lch-color-cloud: lch(79.77% 5.73 285.68);
+  --lch-color-silver: lch(88.12% 0 0);
+  --lch-color-smoke: lch(35.63% 8.94 309.09);
+  --lch-color-anchor: lch(28.26% 6.32 286.28);
+  --lch-color-ash: lch(33.25% 4.11 11.82);
+  --lch-color-porpoise: lch(32.88% 9.84 289.18);
+  --lch-color-dove: lch(48.2% 10.96 318.05);
+  --lch-color-fog: lch(39.32% 8.49 323.6);
+  --lch-color-flint: lch(52.98% 18.06 288.36);
+  --lch-color-pebble: lch(21.25% 0 0);
+  --lch-color-lead: lch(27.2% 9.51 289.47);
+  --lch-color-coin: lch(62.99% 9.82 288.4);
+  --lch-color-fossil: lch(48.69% 3.27 335.69);
+    
+  /* blacks */
+    
+  --lch-color-black: lch(5.06% 0 0);
+  --lch-color-ebony: lch(1.29% 1.72 63.15);
+  --lch-color-crow: lch(13.48% 2.74 69.53);
+  --lch-color-charcoal: lch(12.57% 2.27 312.31);
+}
+.color-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+.lch-color-item {
+  align-items: center;
+  border: 2px solid var(--lch-color-charcoal);
+  display: flex;
+  flex-flow: column;
+  height: 300px;
+  justify-content: center;
+  width: 300px;
+}
+/* Colors taken from The New Defaults */
+/* whites */
+.white {background-color: var(--lch-color-white);}
+.pearl {background-color: var(--lch-color-pearl);}
+.alabaster {background-color: var(--lch-color-alabaster);}
+.snow {background-color: var(--lch-color-snow);}
+.ivory {background-color: var(--lch-color-ivory);}
+.cream {background-color: var(--lch-color-cream);}
+.eggshell {background-color: var(--lch-color-eggshell);}
+.cotton {background-color: var(--lch-color-cotton);}
+.chiffon {background-color: var(--lch-color-chiffon);}
+.salt {background-color: var(--lch-color-salt);}
+.lace {background-color: var(--lch-color-lace);}
+.coconut {background-color: var(--lch-color-coconut);}
+.linen {background-color: var(--lch-color-linen);}
+.bone {background-color: var(--lch-color-bone);}
+.porcelain {background-color: var(--lch-color-porcelain);}
+.parchment {background-color: var(--lch-color-parchment);}
+.rice {background-color: var(--lch-color-rice);}
+/* blues */
+.blue { background-color: var(--lch-color-blue);color: white;}
+.navy { background-color: var(--lch-color-navy);color: white;}
+.aqua { background-color: var(--lch-color-aqua);color: white;}
+.sky { background-color: var(--lch-color-sky);color: white;}
+.teal { background-color: var(--lch-color-teal);color: white;}
+.slate { background-color: var(--lch-color-slate);color: white;}
+.indigo { background-color: var(--lch-color-indigo);color: white;}
+.cobalt { background-color: var(--lch-color-cobalt);color: white;}
+.ocean { background-color: var(--lch-color-ocean);color: white;}
+.peacock { background-color: var(--lch-color-peacock);color: white;}
+.azure { background-color: var(--lch-color-azure);color: white;}
+.cerulean { background-color: var(--lch-color-cerulean);color: white;}
+.lapis { background-color: var(--lch-color-lapis);color: white;}
+.spruce { background-color: var(--lch-color-spruce);color: white;}
+.stone { background-color: var(--lch-color-stone);color: white;}
+.aegean { background-color: var(--lch-color-aegean);color: white;}
+.berry { background-color: var(--lch-color-berry);color: white;}
+.denim { background-color: var(--lch-color-denim);color: white;}
+.admiral { background-color: var(--lch-color-admiral);color: white;}
+.sapphire { background-color: var(--lch-color-sapphire);color: white;}
+.arctic { background-color: var(--lch-color-arctic);color: white;}
+/* browns */
+.tan {background-color: var(--lch-color-tan);}
+.beige {background-color: var(--lch-color-beige);}
+.macaroon {background-color: var(--lch-color-macaroon);}
+.hazelwood {background-color: var(--lch-color-hazelwood);}
+.granola {background-color: var(--lch-color-granola);}
+.oat {background-color: var(--lch-color-oat);}
+.eggnog {background-color: var(--lch-color-eggnog);}
+.fawn {background-color: var(--lch-color-fawn);}
+.sugarcookie {background-color: var(--lch-color-sugarcookie);}
+.sand {background-color: var(--lch-color-sand);}
+.sepia {background-color: var(--lch-color-sepia);}
+.latte {background-color: var(--lch-color-latte);}
+.oyster {background-color: var(--lch-color-oyster);}
+.biscotti {background-color: var(--lch-color-biscotti);}
+.parmesean {background-color: var(--lch-color-parmesean);}
+.hazelnut {background-color: var(--lch-color-hazelnut);}
+.sandcastle {background-color: var(--lch-color-sandcastle);}
+.buttermilk {background-color: var(--lch-color-buttermilk);}
+.sanddollar {background-color: var(--lch-color-sanddollar);}
+.shortbread {background-color: var(--lch-color-shortbread);}
+/* yellows */
+.yellow {background-color: var(--lch-color-yellow);}
+.canary {background-color: var(--lch-color-canary);}
+.gold {background-color: var(--lch-color-gold);}
+.daffodil {background-color: var(--lch-color-daffodil);}
+.flaxen {background-color: var(--lch-color-flaxen);}
+.butter {background-color: var(--lch-color-butter);}
+.lemon {background-color: var(--lch-color-lemon);}
+.mustard {background-color: var(--lch-color-mustard);}
+.corn {background-color: var(--lch-color-corn);}
+.medallion {background-color: var(--lch-color-medallion);}
+.dandelion {background-color: var(--lch-color-dandelion);}
+.bumblebee {background-color: var(--lch-color-bumblebee);}
+.banana {background-color: var(--lch-color-banana);}
+.butterscotch {background-color: var(--lch-color-butterscotch);}
+.dijon {background-color: var(--lch-color-dijon);}
+.honey {background-color: var(--lch-color-honey);}
+.blonde {background-color: var(--lch-color-blonde);}
+.pineapple {background-color: var(--lch-color-pineapple);}
+.tuscansun {background-color: var(--lch-color-tuscansun);}
+/* oranges */
+.orange {background-color: var(--lch-color-orange);}
+.tangerine {background-color: var(--lch-color-tangerine);}
+.merigold {background-color: var(--lch-color-merigold);}
+.cider {background-color: var(--lch-color-cider);}
+.rust {background-color: var(--lch-color-rust);}
+.ginger {background-color: var(--lch-color-ginger);}
+.tiger {background-color: var(--lch-color-tiger);}
+.bronze {background-color: var(--lch-color-bronze);}
+.cantaloupe {background-color: var(--lch-color-cantaloupe);}
+.apricot {background-color: var(--lch-color-apricot);}
+.carrot {background-color: var(--lch-color-carrot);}
+.squash {background-color: var(--lch-color-squash);}
+.spice {background-color: var(--lch-color-spice);}
+.marmalade {background-color: var(--lch-color-marmalade);}
+.amber {background-color: var(--lch-color-amber);}
+.sandstone {background-color: var(--lch-color-sandstone);}
+.yam {background-color: var(--lch-color-yam);}
+/* reds */
+.red {background-color: var(--lch-color-red);color: white;}
+.cherry {background-color: var(--lch-color-cherry);color: white;}
+.rose {background-color: var(--lch-color-rose);color: white;}
+.jam {background-color: var(--lch-color-jam);color: white;}
+.merlot {background-color: var(--lch-color-merlot);color: white;}
+.garnet {background-color: var(--lch-color-garnet);color: white;}
+.crimson {background-color: var(--lch-color-crimson);color: white;}
+.ruby {background-color: var(--lch-color-ruby);color: white;}
+.scarlet {background-color: var(--lch-color-scarlet);color: white;}
+.redwine {background-color: var(--lch-color-redwine);color: white;}
+.redapple {background-color: var(--lch-color-redapple);color: white;}
+.mahogany {background-color: var(--lch-color-mahogany);color: white;}
+.blood {background-color: var(--lch-color-blood);color: white;}
+.sangria {background-color: var(--lch-color-sangria);color: white;}
+.currant {background-color: var(--lch-color-currant);color: white;}
+.blush {background-color: var(--lch-color-blush);color: white;}
+.candy {background-color: var(--lch-color-candy);color: white;}
+.lipstick {background-color: var(--lch-color-lipstick);color: white;}
+/* pinks */
+.pink { background-color: var(--lch-color-pink);color: white;}
+.fuchsia { background-color: var(--lch-color-fuchsia);color: white;}
+.punch { background-color: var(--lch-color-punch);color: white;}
+.watermelon { background-color: var(--lch-color-watermelon);color: white;}
+.flamingo { background-color: var(--lch-color-flamingo);color: white;}
+.rouge { background-color: var(--lch-color-rouge);color: white;}
+.salmon { background-color: var(--lch-color-salmon);color: white;}
+.coral { background-color: var(--lch-color-coral);color: white;}
+.peach { background-color: var(--lch-color-peach);color: white;}
+.strawberry { background-color: var(--lch-color-strawberry);color: white;}
+.rosewood { background-color: var(--lch-color-rosewood);color: white;}
+.lemonade { background-color: var(--lch-color-lemonade);color: white;}
+.taffy { background-color: var(--lch-color-taffy);color: white;}
+.bubblegum { background-color: var(--lch-color-bubblegum);color: white;}
+.balletslipper { background-color: var(--lch-color-balletslipper);color: white;}
+.crepe { background-color: var(--lch-color-crepe);color: white;}
+.maroon { background-color: var(--lch-color-maroon);color: white;}
+.hotpink { background-color: var(--lch-color-hotpink);color: white;}
+/* purples */
+.purple { background-color: var(--lch-color-purple);color: white;}
+.mauve { background-color: var(--lch-color-mauve);color: white;}
+.violet { background-color: var(--lch-color-violet);color: white;}
+.boysenberry { background-color: var(--lch-color-boysenberry);color: white;}
+.lavender { background-color: var(--lch-color-lavender);color: white;}
+.plum { background-color: var(--lch-color-plum);color: white;}
+.lilac { background-color: var(--lch-color-lilac);color: white;}
+.periwinkle { background-color: var(--lch-color-periwinkle);color: white;}
+.eggplant { background-color: var(--lch-color-eggplant);color: white;}
+.iris { background-color: var(--lch-color-iris);color: white;}
+.heather { background-color: var(--lch-color-heather);color: white;}
+.amethyst { background-color: var(--lch-color-amethyst);color: white;}
+.raisin { background-color: var(--lch-color-raisin);color: white;}
+.orchid { background-color: var(--lch-color-orchid);color: white;}
+.mulberry { background-color: var(--lch-color-mulberry);color: white;}
+/* greens */
+.green { background-color: var(--lch-color-green);color: white;}
+.chartreuse { background-color: var(--lch-color-chartreuse);color: white;}
+.juniper { background-color: var(--lch-color-juniper);color: white;}
+.sage { background-color: var(--lch-color-sage);color: white;}
+.lime { background-color: var(--lch-color-lime);color: white;}
+.fern { background-color: var(--lch-color-fern);color: white;}
+.olive { background-color: var(--lch-color-olive);color: white;}
+.emerald { background-color: var(--lch-color-emerald);color: white;}
+.pear { background-color: var(--lch-color-pear);color: white;}
+.moss { background-color: var(--lch-color-moss);color: white;}
+.shamrock { background-color: var(--lch-color-shamrock);color: white;}
+.seafoam { background-color: var(--lch-color-seafoam);color: white;}
+.pine { background-color: var(--lch-color-pine);color: white;}
+.parakeet { background-color: var(--lch-color-parakeet);color: white;}
+.mint { background-color: var(--lch-color-mint);color: white;}
+.seaweed { background-color: var(--lch-color-seaweed);color: white;}
+.pickle { background-color: var(--lch-color-pickle);color: white;}
+.pistachio { background-color: var(--lch-color-pistachio);color: white;}
+.basil { background-color: var(--lch-color-basil);color: white;}
+.crocodile { background-color: var(--lch-color-crocodile);color: white;}
+/* browns */
+.brown { background-color: var(--lch-color-brown);color: white;}
+.coffee { background-color: var(--lch-color-coffee);color: white;}
+.mocha { background-color: var(--lch-color-mocha);color: white;}
+.peanut { background-color: var(--lch-color-peanut);color: white;}
+.carob { background-color: var(--lch-color-carob);color: white;}
+.hickory { background-color: var(--lch-color-hickory);color: white;}
+.pecan { background-color: var(--lch-color-pecan);color: white;}
+.walnut { background-color: var(--lch-color-walnut);color: white;}
+.caramel { background-color: var(--lch-color-caramel);color: white;}
+.gingerbread { background-color: var(--lch-color-gingerbread);color: white;}
+.chocolate { background-color: var(--lch-color-chocolate);color: white;}
+.tortilla { background-color: var(--lch-color-tortilla);color: white;}
+.umber { background-color: var(--lch-color-umber);color: white;}
+.tawny { background-color: var(--lch-color-tawny);color: white;}
+.brunette { background-color: var(--lch-color-brunette);color: white;}
+.cinammon { background-color: var(--lch-color-cinammon);color: white;}
+.penny { background-color: var(--lch-color-penny);color: white;}
+/* greys */
+.grey { background-color: var(--lch-color-grey);color: white;}
+.shadow { background-color: var(--lch-color-shadow);color: white;}
+.graphite { background-color: var(--lch-color-graphite);color: white;}
+.iron { background-color: var(--lch-color-iron);color: white;}
+.pewter { background-color: var(--lch-color-pewter);color: white;}
+.cloud { background-color: var(--lch-color-cloud);color: white;}
+.silver { background-color: var(--lch-color-silver);color: white;}
+.smoke { background-color: var(--lch-color-smoke);color: white;}
+.anchor { background-color: var(--lch-color-anchor);color: white;}
+.ash { background-color: var(--lch-color-ash);color: white;}
+.porpoise { background-color: var(--lch-color-porpoise);color: white;}
+.dove { background-color: var(--lch-color-dove);color: white;}
+.fog { background-color: var(--lch-color-fog);color: white;}
+.flint { background-color: var(--lch-color-flint);color: white;}
+.pebble { background-color: var(--lch-color-pebble);color: white;}
+.lead { background-color: var(--lch-color-lead);color: white;}
+.coin { background-color: var(--lch-color-coin);color: white;}
+.fossil { background-color: var(--lch-color-fossil);color: white;}
+/* blacks */
+.black { background-color: var(--lch-color-black);color: white;}
+.ebony { background-color: var(--lch-color-ebony);color: white;}
+.crow { background-color: var(--lch-color-crow);color: white;}
+.charcoal { background-color: var(--lch-color-charcoal);color: white;}
+figure {
+  counter-increment: figure_count;
+  margin: 2em auto;
+  max-width: 60vw;
+}
+figure img {
+	object-fit: contain;
+	width: 100%;
+  }
+figure figcaption {
+    color: var(--color-charcoal);
+  }
+figure figcaption::before {
+	content: 'Figure ' counter(figure_count) ': ';
+  }
+.rounded {
+  border-radius: 50%;
+}
+:root {
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-low:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
+    0.8px 1px 1.4px -1.2px hsl(var(--shadow-color) / 0.1),
+    1.9px 2.5px 3.5px -2.5px hsl(var(--shadow-color) / 0.1);
+  --shadow-elevation-medium:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.11),
+    1.6px 2px 2.9px -0.8px hsl(var(--shadow-color) / 0.11),
+    4px 5.1px 7.3px -1.7px hsl(var(--shadow-color) / 0.11),
+    9.6px 12.5px 17.7px -2.5px hsl(var(--shadow-color) / 0.11);
+  --shadow-elevation-high:
+    0.5px 0.6px 0.9px hsl(var(--shadow-color) / 0.1),
+    2.8px 3.6px 5.1px -0.4px hsl(var(--shadow-color) / 0.1),
+    5.3px 6.8px 9.7px -0.7px hsl(var(--shadow-color) / 0.1),
+    8.6px 11.1px 15.8px -1.1px hsl(var(--shadow-color) / 0.1),
+    13.8px 17.8px 25.3px -1.4px hsl(var(--shadow-color) / 0.1),
+    21.5px 27.8px 39.5px -1.8px hsl(var(--shadow-color) / 0.1),
+    32.8px 42.3px 60.2px -2.1px hsl(var(--shadow-color) / 0.1),
+    48.2px 62.3px 88.6px -2.5px hsl(var(--shadow-color) / 0.1);
+}
+div[class^="shadow"] {
+  border: 1px solid var(--color-charcoal);
+  height: 300px;
+  width: 300px;
+}
+.shadow--low {
+  box-shadow: var(--shadow-elevation-low);
+}
+.shadow--medium {
+  box-shadow: var(--shadow-elevation-medium);
+}
+.shadow--high {
+  box-shadow: var(--shadow-elevation-high);
+}
+video,
+object {
+  clear: both;
+  display: block;
+  height: auto !important;
+  margin: 1em auto;
+  max-width: 100% !important;
+}
+div.video iframe {
+  clear: both;
+  display: block;
+  margin: 1em auto;
+  max-width: inherit;
+  text-align: center;
+}
+div.video p {
+  font-style: italic;
+  font-weight: 700;
+  margin-top: -.125em;
+}
+iframe {
+  margin: 1.5em 0;
+}
+.message {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5em;
+  width: 50vw;
+}
+.message.message--info {
+    background-color: rgba(173, 216, 230, .2);
+  }
+.message.message--warning {
+    background-color: rgba(255, 255, 224, .5);
+  }
+.message.message--danger {
+    background-color: rgba(255, 85, 0, .2);
+  }
+.message--title {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
+.postit {
+  background-color:#ffc;
+  color: var(--color-charcoal);
+  height:300px;
+  list-style: none;
+  margin: 1rem;
+  width:300px;
+}
+.postit a {
+    color: var(--color-charcoal);
+    display: block;
+    text-decoration:none;
+  }
+.postit h5 {
+    text-align: center;
+  }
+.postit p {
+    font-family: 'Pacifico', cursive;
+    padding: 1rem;
+  }
+table {
+  margin: 0 1.5rem;
+  table-layout: fixed;
+  width: 100%;
+}
+table,
+th,
+tr,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: .5em;
+}
+.table--no-borders {
+  border: none;
+  border-collapse: collapse;
+  padding: .5em;
+}
+.table--no-borders th,
+  .table--no-borders tr,
+  .table--no-borders td {
+    border: none;
+  }
+.table--centered th,
+  .table--centered tr,
+  .table--centered td {
+    text-align: center;
+  }
+.table--cell-center {
+  text-align: center;
+}
+.table--cell-left {
+  text-align: left;
+}
+.table--cell-right {
+  text-align: right;
+}
+.header h1 {
+    text-align: center;
+  }
+.header h2 {
+    text-align: center;
+  }
+.header h3 {
+    text-align: center;
+
+  }
+.header hr {
+    border: 1px solid var(--color-charcoal);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+.header p.article-summary {
+    margin: 0 auto;
+    text-align: justify;
+    width: 60%;
+  }
+.grid-item {
+  background-color: var(--color-anchor);
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 150%;
+  height: 200px;
+  padding: 20px;
+}
+.grid-item:nth-child(even) {
+    background-color: var(--color-cloud);
+    color: var(--color-charcoal);
+  }
+.grid--default,
+.grid--four {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--six {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid--eight {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(8, 1fr);
+}
+.grid--twelve {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid--fifteen {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(15, 1fr);
+}
+.grid--compound12 {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+}
+.grid--three-uneven-center {
+  display: grid;
+  gap: 0 2rem;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+.grid--three-uneven {
+  display: grid;
+  gap: 0 2rem;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 4fr 1fr;
+
+}
+.grid--three-uneven > .video {
+    grid-column: 2 / 2;
+  }
+.grid-item {
+  background-color: var(--color-anchor);
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 150%;
+  height: 200px;
+  padding: 20px;
+}
+.grid-item:nth-child(even) {
+    background-color: var(--color-cloud);
+    color: var(--color-charcoal);
+  }
+.grid-default,
+.grid--compound23 {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+}
+.grid--compound34 {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: 3fr 1fr 2fr 2fr 1fr 3fr;
+}
+.grid--compound46 {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: row;
+  grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+}
+.grid-item {
+  background-color: var(--color-anchor);
+  border-radius: 5px;
+  color: var(--color-white);
+  font-size: 150%;
+  height: 200px;
+  padding: 20px;
+}
+.grid-item:nth-child(even) {
+    background-color: var(--color-cloud);
+    color: var(--color-charcoal);
+  }
+.grid--three-uneven {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+.grid--three-uneven.video {
+    grid-column: 2;
+    grid-row: 3;
+  }
+h1, p {
+  margin: 0 0 1em 0;
+}
+.grid--blog {
+  display: grid;
+  grid-gap: 10px;
+  margin: 0 20px;
+  max-width: 940px;
+}
+.grid--blog > * {
+    background-color: var(--color-silver);
+    border-radius: 5px;
+    color: var(--color-charcoal);
+    font-size: 200%;
+    padding: 20px;
+  }
+@media screen and (min-width: 600px) {
+  .grid--blog {
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0 auto;
+  }
+  
+    .grid--blog .header,
+    .grid--blog .footer {
+      grid-column: 1 / -2;
+    }
+      
+    .grid--blog .block-a {
+      grid-column: 7;
+      grid-row: 2;
+    }
+    
+    .grid--blog .block-b {
+      grid-column: 7;
+      grid-row: 4;
+    }
+    
+    .grid--blog .block-c {
+      grid-column: 7;
+      grid-row: 6;
+    }
+    
+    .grid--blog .content {
+      grid-column: 1 / 3;
+      grid-row: 2 / 7;
+    }
+}
+.grid--blog-v2 {
+  background-color: #fff;
+  color: #444;
+  display: grid;
+  grid-auto-rows: 100px;
+  grid-gap: 1em;
+  grid-template-areas:
+    "... header header header header ..."
+    "... header header header header ..."
+    "sidebar content content content content sidebar2"
+    "sidebar content content content content sidebar2"
+    "footer footer footer footer footer footer"
+    "footer footer footer footer footer footer";
+  grid-template-columns: repeat(6, 1fr);
+  
+}
+.grid--blog-v2 .box {
+    background-color: #444;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 150%;
+    padding: 20px;
+  }
+.grid--blog-v2 .sidebar {
+    grid-area: sidebar;
+  }
+.grid--blog-v2 .sidebar2 {
+    grid-area: sidebar2;
+  }
+.grid--blog-v2 .content {
+    grid-area: content;
+  }
+.grid--blog-v2 .header {
+    grid-area: header;
+  }
+.grid--blog-v2 .footer {
+    grid-area: footer;
+  }
+.grid--blog-v2 .header {
+    background-color: #663399;
+  }
+.grid--blog-v2 .footer {
+    background-color: #2632c2;
+  }
+article {
+  margin: 0 auto;
+  width: 60vw;
+}
+.article--content p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 1.1rem;
+  }
+.article--two-cols {
+  width: 100%; 
+}
+.article--two-cols >.article--content {
+    columns: 2 auto;
+  }
+.article--two-cols p {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 1.1rem;
+  }
+.postit-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+}
+.postit-list .postit:nth-child(2n){
+    transform: rotate(20deg);
+  }
+.postit-list .postit:nth-child(2n+1){
+    background-color: var(--color-aqua);
+    transform: rotate(-20deg);
+  }
 /*# sourceMappingURL=main.css.map */

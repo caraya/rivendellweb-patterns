@@ -1,6 +1,8 @@
 # Ordered/numbered lists
 
-The lists in this example leverage the `counter-style` at-rule to create customized numbering schemes. 
+> **The decimal list with leading 0 needs to start from 1, not 0**
+
+The lists in this example leverage the `counter-style` at-rule to create customized numbering schemes.
 
 ## Links and Information
 

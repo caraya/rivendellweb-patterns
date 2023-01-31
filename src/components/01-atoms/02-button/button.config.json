@@ -1,12 +1,14 @@
 {
   "name": "Button",
+  "status": "draft",
   "context": {
-      "defaultText": "Default 23",
+      "defaultText": "Default",
       "hoverText": "Hover",
       "activeText": "Active",
       "focusText": "Focus",
       "disabledText": "Disabled",
-      "unstyledText": "Unstyled Button"
+      "unstyledText": "Unstyled Button",
+      "bigText": "Big Button"
   },
   "collated": true
 }

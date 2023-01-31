@@ -719,21 +719,53 @@ body {
     var(--recursive-titl), 
     var(--recursive-zero);
 }
-.button {
+button.button {
   padding-block: 10px;
   padding-inline: 30px;
 }
-.button--hover:hover {
+button.button--hover:hover {
   background-color: var(--color-cerulean);
   color: var(--color-white);
 }
-.focus:focus {
+button.button--focus:focus {
   border: 8px solid var(--color-cerulean);
 }
-.button--unstyled {
+button.button--unstyled {
   background-color: transparent;
   border: 0;
   text-decoration: underline;
+}
+/* Outline button styles */
+.button.button--outline {
+  background-color: transparent;
+  box-shadow: 1px 2px 1px var(--lch-color-charcoal);
+  color: var(--lch-color-cerulean);
+}
+.button--outline.button--hover:hover {
+  background-color: var(--lch-color-cerulean);
+  color: var(--lch-color-white);
+}
+.button--outline.button--active:active {
+  background-color: var(--lch-color-cerulean);
+}
+/* Inverse button styles */
+.button--inverse {
+  background-color: var(--lch-color-charcoal);
+  color: var(--lch-color-white);
+}
+.button--inverse.button--unstyled {
+  background-color: transparent;
+  border: 0;
+  color: var(--lch-color-charcoal);
+}
+.button--inverse.button--hover:hover {
+  background-color: var(--lch-color-cloud);
+}
+.button--inverse.button--active:active {
+  background-color: var(--lch-color-cloud); 
+}
+.button--inverse.focus {
+  border: 6px solid var(--lch-color-red);
 }
 ul
 ul li::marker {

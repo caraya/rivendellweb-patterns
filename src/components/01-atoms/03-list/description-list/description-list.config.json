@@ -1,5 +1,6 @@
 {
   "name": "description",
+  "status": "done",
   "label": "Description",
   "context": {
       "listItems": [

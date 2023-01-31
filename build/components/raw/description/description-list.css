@@ -1,8 +1,25 @@
 dt {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
+dd {
+  margin-inline-start: 2em;
+}
+
 dd:not(:last-child) {
-  margin-block-end: 1.25rem;
+  margin-block-end: 2rem;
+}
+
+.font-desc {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  & dd {
+    margin-inline-start: 2em;
+  }
+  
+  & dd:not(:last-child) {
+    margin-block-end: 2rem;
+  }
 }
