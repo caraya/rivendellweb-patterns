@@ -102,6 +102,70 @@ svg:not(:root) {
   fill: currentColor;
   overflow: hidden;
 }
+.container {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 1.5rem auto;
+}
+summary {
+  background-color: var(--lch-color-cerulean);
+  border-radius: 0.5rem;
+  color: var(--lch-color-white);
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-margin-after: 1.2rem;
+          margin-block-end: 1.2rem;
+  padding: 1.2rem;
+}
+.accordion--item {
+	-webkit-margin-after: 1.5em;
+	        margin-block-end: 1.5em;
+}
+.accordion--item:first-child {
+	-webkit-margin-before: 2em;
+	        margin-block-start: 2em;
+}
+.accordion--item:last-child {
+	-webkit-margin-after: 2em;
+	        margin-block-end: 2em;
+}
+.accordion--title {
+	background-color: var(--lch-color-stone);  
+	background-image: url(https://assets.codepen.io/32795/remove.svg), linear-gradient(transparent, transparent);
+	background-position: right 1.25rem center;
+	background-repeat: no-repeat;
+	background-size: 1.5rem;
+  border-radius: 15px;
+  color: var(--lch-color-white);
+	cursor: pointer;
+	font-weight: 700;
+	padding: 1rem 3.5rem 1rem 1.25rem;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.accordion--content {
+	inline-size: 80ch;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+	margin-inline: 2em;
+}
+.accordion--content-bordered {
+	-webkit-margin-start: 0;
+	        margin-inline-start: 0;
+}
+.accordion--title + .accordion--content-bordered {
+	display: none;
+}
+.accordion--title.is-open + .accordion--content-bordered {
+	display: block;
+}
+.accordion--content-bordered {
+	border-bottom: 0.5rem solid lch(48.64% 16.94 244.34);
+	border-left: 0.5rem solid lch(48.64% 16.94 244.34);
+	border-right: 0.5rem solid lch(48.64% 16.94 244.34);
+	padding: 1em;
+}
 @font-face {
   font-family: 'Marvin Visions';
   src: url('/fonts/MarvinVisionsBig-Bold.woff2') format('woff2');

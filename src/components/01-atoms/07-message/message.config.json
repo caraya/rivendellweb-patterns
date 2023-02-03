@@ -1,0 +1,34 @@
+{
+  "name": "message",
+  "collated": false,
+  "variants": [
+    {
+      "name": "normal",
+      "context": {
+        "name": "normal",
+        "title": "Message:"
+      }
+    },
+    {
+      "name": "info",
+      "context": {
+        "name": "info",
+        "title": "Note:"
+      }
+    },
+    {
+      "name": "danger",
+      "context": {
+        "name": "danger",
+        "title": "Careful:"
+      }
+    },
+    {
+      "name": "warning",
+      "context": {
+        "name": "warning",
+        "title": "Warning:"
+      }
+    }
+  ]
+}

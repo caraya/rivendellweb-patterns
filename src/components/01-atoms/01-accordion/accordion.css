@@ -1,0 +1,67 @@
+.container {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 1.5rem auto;
+}
+
+summary {
+  font-weight: 600;
+  color: var(--lch-color-white);
+  background-color: var(--lch-color-cerulean);
+  padding: 1.2rem;
+  margin-block-end: 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.accordion--item {
+	margin-block-end: 1.5em;
+}
+
+.accordion--item:first-child {
+	margin-block-start: 2em;
+}
+
+.accordion--item:last-child {
+	margin-block-end: 2em;
+}
+
+.accordion--title {
+	cursor: pointer;
+	user-select: none;
+	background-color: var(--lch-color-stone);
+  color: var(--lch-color-white);  
+	background-image: url(https://assets.codepen.io/32795/remove.svg), linear-gradient(transparent, transparent);
+	background-repeat: no-repeat;
+	background-position: right 1.25rem center;
+	background-size: 1.5rem;
+  border-radius: 15px;
+	font-weight: 700;
+	padding: 1rem 3.5rem 1rem 1.25rem;
+}
+
+.accordion--content {
+  margin-block-start: 1em;
+	margin-inline: 2em;
+	inline-size: 80ch;
+}
+
+
+
+.accordion--content-bordered {
+	margin-inline-start: 0;
+}
+
+.accordion--title + .accordion--content-bordered {
+	display: none;
+}
+
+.accordion--title.is-open + .accordion--content-bordered {
+	display: block;
+}
+
+.accordion--content-bordered {
+	border-bottom: 0.5rem solid lch(48.64% 16.94 244.34);
+	border-left: 0.5rem solid lch(48.64% 16.94 244.34);
+	border-right: 0.5rem solid lch(48.64% 16.94 244.34);
+	padding: 1em;
+}

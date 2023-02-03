@@ -1,0 +1,24 @@
+.message {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 50vw;
+  padding: 1.5em;
+
+  &.message--info {
+    background-color: rgba(173, 216, 230, .2);
+  }
+
+  &.message--warning {
+    background-color: rgba(255, 255, 224, .5);
+  }
+
+  &.message--danger {
+    background-color: rgba(255, 85, 0, .2);
+  }
+}
+
+.message--title {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
