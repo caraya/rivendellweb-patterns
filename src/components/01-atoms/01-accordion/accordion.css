@@ -6,7 +6,7 @@
 summary {
   font-weight: 600;
   color: var(--lch-color-white);
-  background-color: var(--lch-color-cerulean);
+  background-color: var(--lch-color-steel);
   padding: 1.2rem;
   margin-block-end: 1.2rem;
   border-radius: 0.5rem;
@@ -42,10 +42,15 @@ summary {
 .accordion--content {
   margin-block-start: 1em;
 	margin-inline: 2em;
-	inline-size: 80ch;
 }
 
+.accordion--title + .accordion--content {
+	display: none;
+}
 
+.accordion--title.is-open + .accordion--content {
+	display: block;
+}
 
 .accordion--content-bordered {
 	margin-inline-start: 0;

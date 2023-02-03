@@ -107,7 +107,7 @@ svg:not(:root) {
   margin: 1.5rem auto;
 }
 summary {
-  background-color: var(--lch-color-cerulean);
+  background-color: var(--lch-color-steel);
   border-radius: 0.5rem;
   color: var(--lch-color-white);
   cursor: pointer;
@@ -145,10 +145,15 @@ summary {
 	        user-select: none;
 }
 .accordion--content {
-	inline-size: 80ch;
   -webkit-margin-before: 1em;
           margin-block-start: 1em;
 	margin-inline: 2em;
+}
+.accordion--title + .accordion--content {
+	display: none;
+}
+.accordion--title.is-open + .accordion--content {
+	display: block;
 }
 .accordion--content-bordered {
 	-webkit-margin-start: 0;
