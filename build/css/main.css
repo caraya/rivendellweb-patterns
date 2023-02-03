@@ -102,6 +102,75 @@ svg:not(:root) {
   fill: currentColor;
   overflow: hidden;
 }
+.container {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 1.5rem auto;
+}
+summary {
+  background-color: var(--lch-color-steel);
+  border-radius: 0.5rem;
+  color: var(--lch-color-white);
+  cursor: pointer;
+  font-weight: 600;
+  -webkit-margin-after: 1.2rem;
+          margin-block-end: 1.2rem;
+  padding: 1.2rem;
+}
+.accordion--item {
+	-webkit-margin-after: 1.5em;
+	        margin-block-end: 1.5em;
+}
+.accordion--item:first-child {
+	-webkit-margin-before: 2em;
+	        margin-block-start: 2em;
+}
+.accordion--item:last-child {
+	-webkit-margin-after: 2em;
+	        margin-block-end: 2em;
+}
+.accordion--title {
+	background-color: var(--lch-color-stone);  
+	background-image: url(https://assets.codepen.io/32795/remove.svg), linear-gradient(transparent, transparent);
+	background-position: right 1.25rem center;
+	background-repeat: no-repeat;
+	background-size: 1.5rem;
+  border-radius: 15px;
+  color: var(--lch-color-white);
+	cursor: pointer;
+	font-weight: 700;
+	padding: 1rem 3.5rem 1rem 1.25rem;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.accordion--content {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+	margin-inline: 2em;
+}
+.accordion--title + .accordion--content {
+	display: none;
+}
+.accordion--title.is-open + .accordion--content {
+	display: block;
+}
+.accordion--content-bordered {
+	-webkit-margin-start: 0;
+	        margin-inline-start: 0;
+}
+.accordion--title + .accordion--content-bordered {
+	display: none;
+}
+.accordion--title.is-open + .accordion--content-bordered {
+	display: block;
+}
+.accordion--content-bordered {
+	border-bottom: 0.5rem solid lch(48.64% 16.94 244.34);
+	border-left: 0.5rem solid lch(48.64% 16.94 244.34);
+	border-right: 0.5rem solid lch(48.64% 16.94 244.34);
+	padding: 1em;
+}
 @font-face {
   font-family: 'Marvin Visions';
   src: url('/fonts/MarvinVisionsBig-Bold.woff2') format('woff2');
@@ -719,21 +788,53 @@ body {
     var(--recursive-titl), 
     var(--recursive-zero);
 }
-.button {
+button.button {
   padding-block: 10px;
   padding-inline: 30px;
 }
-.button--hover:hover {
+button.button--hover:hover {
   background-color: var(--color-cerulean);
   color: var(--color-white);
 }
-.focus:focus {
+button.button--focus:focus {
   border: 8px solid var(--color-cerulean);
 }
-.button--unstyled {
+button.button--unstyled {
   background-color: transparent;
   border: 0;
   text-decoration: underline;
+}
+/* Outline button styles */
+.button.button--outline {
+  background-color: transparent;
+  box-shadow: 1px 2px 1px var(--lch-color-charcoal);
+  color: var(--lch-color-cerulean);
+}
+.button--outline.button--hover:hover {
+  background-color: var(--lch-color-cerulean);
+  color: var(--lch-color-white);
+}
+.button--outline.button--active:active {
+  background-color: var(--lch-color-cerulean);
+}
+/* Inverse button styles */
+.button--inverse {
+  background-color: var(--lch-color-charcoal);
+  color: var(--lch-color-white);
+}
+.button--inverse.button--unstyled {
+  background-color: transparent;
+  border: 0;
+  color: var(--lch-color-charcoal);
+}
+.button--inverse.button--hover:hover {
+  background-color: var(--lch-color-cloud);
+}
+.button--inverse.button--active:active {
+  background-color: var(--lch-color-cloud); 
+}
+.button--inverse.focus {
+  border: 6px solid var(--lch-color-red);
 }
 ul
 ul li::marker {
@@ -2089,26 +2190,6 @@ div.video p {
 iframe {
   margin: 1.5em 0;
 }
-.message {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1.5em;
-  width: 50vw;
-}
-.message.message--info {
-    background-color: rgba(173, 216, 230, .2);
-  }
-.message.message--warning {
-    background-color: rgba(255, 255, 224, .5);
-  }
-.message.message--danger {
-    background-color: rgba(255, 85, 0, .2);
-  }
-.message--title {
-  font-size: 2em;
-  font-weight: 700;
-  margin: 0;
-}
 .postit {
   background-color:#ffc;
   color: var(--color-charcoal);
@@ -2129,6 +2210,26 @@ iframe {
     font-family: 'Pacifico', cursive;
     padding: 1rem;
   }
+.message {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5em;
+  width: 50vw;
+}
+.message.message--info {
+    background-color: rgba(173, 216, 230, .2);
+  }
+.message.message--warning {
+    background-color: rgba(255, 255, 224, .5);
+  }
+.message.message--danger {
+    background-color: rgba(255, 85, 0, .2);
+  }
+.message--title {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
 table {
   margin: 0 1.5rem;
   table-layout: fixed;

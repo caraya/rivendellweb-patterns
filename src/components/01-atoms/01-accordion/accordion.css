@@ -1,16 +1,16 @@
 .container {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 1.5rem auto;
 }
 
 summary {
-  font-weight: 600;
+  background-color: var(--lch-color-cerulean);
   color: var(--lch-color-white);
-  background-color: var(--lch-color-steel);
   padding: 1.2rem;
   margin-block-end: 1.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  font-size: 1.5em;
+  font-weight: 600;
 }
 
 .accordion--item {
