@@ -34,9 +34,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* PrismJS 1.25.0
 https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript+apacheconf+bash+c+clojure+cmake+css-extras+dart+ejs+elixir+elm+glsl+go+graphql+handlebars+java+javadoc+javadoclike+jsdoc+js-extras+json+jsonp+js-templates+julia+kotlin+latex+liquid+lisp+makefile+markdown+markup-templating+nginx+ocaml+perl+php+phpdoc+php-extras+processing+protobuf+pug+puppet+python+r+jsx+tsx+ruby+rust+sass+scss+shell-session+smalltalk+soy+stylus+toml+typescript+wasm+wiki+xquery+yaml&plugins=show-language+toolbar */
-code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;}
-code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#073642;}
-code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection{background:#073642;}
+code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;}
 code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#073642;}
 pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em;}
 :not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3;}
@@ -106,7 +104,7 @@ svg:not(:root) {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 summary {
-  background-color: var(--lch-color-cerulean);
+  background-color: var(--lch-color-black);
   border-radius: 0.5rem;
   color: var(--lch-color-white);
   cursor: pointer;
@@ -140,8 +138,6 @@ summary {
 	font-weight: 700;
 	padding: 1rem 3.5rem 1rem 1.25rem;
 	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
 	        user-select: none;
 }
 .accordion--content {
@@ -192,8 +188,7 @@ h5 {font-size: 1.333rem;}
 small, .text_small {font-size: 0.75rem;}
 .vertical {
   float: left;
-  -webkit-writing-mode: vertical-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 .marvin {
   color: #e65f1d;

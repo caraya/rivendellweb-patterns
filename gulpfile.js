@@ -9,6 +9,11 @@ const squoosh = require('gulp-libsquoosh');
 // Babel
 const babel = require('gulp-babel');
 
+// Experimenting with Fractal directly in Gulp
+const fractal = require("./fractal.js");
+// make use of Fractal's console object for logging
+const logger = fractal.cli.console;
+
 // PostCSS plugins
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -129,10 +134,50 @@ gulp.task('imageCompress', () => {
     .pipe(gulp.dest('dist/images'));
 });
 
+// Fractal 
+
+// Taken from https://github.com/alarisprime/fractal-starter-kit/blob/master/gulpfile.js
+gulp.task('fractal:start', function () {
+	const server = fractal.web.server({
+		sync: true
+	});
+	server.on('error', err => logger.error(err.message));
+	return server.start().then(() => {
+		logger.success(`Fractal server is now running at ${server.urls.sync.local}`);
+	});
+});
+
+/*
+* An example of a Gulp task that to run a static export of the web UI.
+*/
+
+gulp.task('fractal:build', function () {
+	const builder = fractal.web.builder();
+	builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
+	builder.on('error', err => logger.error(err.message));
+	return builder.start().then(() => {
+		logger.success('Fractal build completed!');
+	});
+});
+
 // Watch
 gulp.task('watch', () =>{
-  gulp.watch(`src/**/*.js`, gulp.series('babel'));
-  gulp.watch(`src/**/*.css`, gulp.series('css'));
+  gulp.watch(
+    `src/**/*.js`,
+    gulp.series('babel')
+  );
+  gulp.watch(
+    `src/**/*.css`,
+    gulp.series('css')
+  );
 })
 
-gulp.task('dev', gulp.series('css', 'babel', 'watch'));
+gulp.task('dev', gulp.series(
+  'css', 
+  'babel', 
+  'fractal:build', 
+  'fractal:start',
+  'watch'
+));
+
+gulp.task('default', gulp.series('dev'));

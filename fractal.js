@@ -2,9 +2,9 @@
 
 const hbs = require('@frctl/handlebars')({
   helpers: {
-      uppercase: function(str) {
-          return str.toUpperCase();
-      }
+    uppercase: function(str) {
+      return str.toUpperCase();
+    }
   }
   /* other configuration options here */
 });
@@ -28,24 +28,24 @@ fractal.components.set('default.status', 'idea');
 // different status levels for components
 fractal.components.set('statuses', {
   idea: {
-      label: "Idea",
-      description: "Somethign I'm thinking about",
-      color: '#f0f'
+    label: "Idea",
+    description: "Somethign I'm thinking about",
+    color: '#f0f'
   },
   draft: {
-      label: "Draft",
-      description: "First implementation",
-      color: '#663399'
+    label: "Draft",
+    description: "First implementation",
+    color: '#663399'
   },
   review: {
-      label: "Review",
-      description: "Ready for review",
-      color: '#0f0'
+    label: "Review",
+    description: "Ready for review",
+    color: '#0f0'
   },
   done: {
-      label: "Done",
-      description: "I'm done with this.",
-      color: "#00f"
+    label: "Done",
+    description: "I'm done with this.",
+    color: "#00f"
   }
 });
 

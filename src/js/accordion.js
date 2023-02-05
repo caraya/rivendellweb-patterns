@@ -1,3 +1,4 @@
+// Script for borderless and bordered  accordions
 const accordionTitles = document.querySelectorAll(".accordion--title");
 
 accordionTitles.forEach((accordionTitle) => {
@@ -13,3 +14,5 @@ accordionTitles.forEach((accordionTitle) => {
 		}
 	});
 });
+
+// Script for multiple selection

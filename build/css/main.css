@@ -34,9 +34,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* PrismJS 1.25.0
 https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript+apacheconf+bash+c+clojure+cmake+css-extras+dart+ejs+elixir+elm+glsl+go+graphql+handlebars+java+javadoc+javadoclike+jsdoc+js-extras+json+jsonp+js-templates+julia+kotlin+latex+liquid+lisp+makefile+markdown+markup-templating+nginx+ocaml+perl+php+phpdoc+php-extras+processing+protobuf+pug+puppet+python+r+jsx+tsx+ruby+rust+sass+scss+shell-session+smalltalk+soy+stylus+toml+typescript+wasm+wiki+xquery+yaml&plugins=show-language+toolbar */
-code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;}
-code[class*=language-] ::-moz-selection,code[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:#073642;}
-code[class*=language-] ::-moz-selection, code[class*=language-]::-moz-selection, pre[class*=language-] ::-moz-selection, pre[class*=language-]::-moz-selection{background:#073642;}
+code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;}
 code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#073642;}
 pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em;}
 :not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3;}
@@ -104,13 +102,13 @@ svg:not(:root) {
 }
 .container {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 1.5rem auto;
 }
 summary {
-  background-color: var(--lch-color-steel);
+  background-color: var(--lch-color-black);
   border-radius: 0.5rem;
   color: var(--lch-color-white);
   cursor: pointer;
+  font-size: 1.5em;
   font-weight: 600;
   -webkit-margin-after: 1.2rem;
           margin-block-end: 1.2rem;
@@ -140,8 +138,6 @@ summary {
 	font-weight: 700;
 	padding: 1rem 3.5rem 1rem 1.25rem;
 	-webkit-user-select: none;
-	   -moz-user-select: none;
-	    -ms-user-select: none;
 	        user-select: none;
 }
 .accordion--content {
@@ -192,8 +188,7 @@ h5 {font-size: 1.333rem;}
 small, .text_small {font-size: 0.75rem;}
 .vertical {
   float: left;
-  -webkit-writing-mode: vertical-rl;
-          writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
 }
 .marvin {
   color: #e65f1d;
@@ -2190,26 +2185,6 @@ div.video p {
 iframe {
   margin: 1.5em 0;
 }
-.postit {
-  background-color:#ffc;
-  color: var(--color-charcoal);
-  height:300px;
-  list-style: none;
-  margin: 1rem;
-  width:300px;
-}
-.postit a {
-    color: var(--color-charcoal);
-    display: block;
-    text-decoration:none;
-  }
-.postit h5 {
-    text-align: center;
-  }
-.postit p {
-    font-family: 'Pacifico', cursive;
-    padding: 1rem;
-  }
 .message {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -2230,6 +2205,26 @@ iframe {
   font-weight: 700;
   margin: 0;
 }
+.postit {
+  background-color:#ffc;
+  color: var(--color-charcoal);
+  height:300px;
+  list-style: none;
+  margin: 1rem;
+  width:300px;
+}
+.postit a {
+    color: var(--color-charcoal);
+    display: block;
+    text-decoration:none;
+  }
+.postit h5 {
+    text-align: center;
+  }
+.postit p {
+    font-family: 'Pacifico', cursive;
+    padding: 1rem;
+  }
 table {
   margin: 0 1.5rem;
   table-layout: fixed;

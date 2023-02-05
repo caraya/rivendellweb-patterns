@@ -1,12 +1,13 @@
 "use strict";
 
-var accordionTitles = document.querySelectorAll(".accordion--title");
+// Script for borderless and bordered  accordions
+const accordionTitles = document.querySelectorAll(".accordion--title");
 accordionTitles.forEach(accordionTitle => {
   accordionTitle.addEventListener("click", () => {
     if (accordionTitle.classList.contains("is-open")) {
       accordionTitle.classList.remove("is-open");
     } else {
-      var accordionTitlesWithIsOpen = document.querySelectorAll(".is-open");
+      const accordionTitlesWithIsOpen = document.querySelectorAll(".is-open");
       accordionTitlesWithIsOpen.forEach(accordionTitleWithIsOpen => {
         accordionTitleWithIsOpen.classList.remove("is-open");
       });
@@ -14,4 +15,6 @@ accordionTitles.forEach(accordionTitle => {
     }
   });
 });
+
+// Script for multiple selection
 //# sourceMappingURL=accordion.js.map

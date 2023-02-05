@@ -12,7 +12,7 @@
   function m() {
     for (; g.length;) g[0](), g.shift();
   }
-  f = function f() {
+  f = function () {
     setTimeout(m);
   };
   function n(a) {

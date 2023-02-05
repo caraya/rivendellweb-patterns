@@ -14,10 +14,10 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
           encode: function e(n) {
             return n instanceof W ? new W(n.type, e(n.content), n.alias) : Array.isArray(n) ? n.map(e) : n.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/\u00a0/g, " ");
           },
-          type: function type(e) {
+          type: function (e) {
             return Object.prototype.toString.call(e).slice(8, -1);
           },
-          objId: function objId(e) {
+          objId: function (e) {
             return e.__id || Object.defineProperty(e, "__id", {
               value: ++n
             }), e.__id;
@@ -37,7 +37,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
                 return e;
             }
           },
-          getLanguage: function getLanguage(e) {
+          getLanguage: function (e) {
             for (; e;) {
               var n = t.exec(e.className);
               if (n) return n[1].toLowerCase();
@@ -45,10 +45,10 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
             }
             return "none";
           },
-          setLanguage: function setLanguage(e, n) {
+          setLanguage: function (e, n) {
             e.className = e.className.replace(RegExp(t, "gi"), ""), e.classList.add("language-" + n);
           },
-          currentScript: function currentScript() {
+          currentScript: function () {
             if ("undefined" == typeof document) return null;
             if ("currentScript" in document) return document.currentScript;
             try {
@@ -62,7 +62,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
               return null;
             }
           },
-          isActive: function isActive(e, n, t) {
+          isActive: function (e, n, t) {
             for (var r = "no-" + n; e;) {
               var a = e.classList;
               if (a.contains(n)) return !0;
@@ -77,12 +77,12 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
           plaintext: e,
           text: e,
           txt: e,
-          extend: function extend(e, n) {
+          extend: function (e, n) {
             var t = M.util.clone(M.languages[e]);
             for (var r in n) t[r] = n[r];
             return t;
           },
-          insertBefore: function insertBefore(t, e, n, r) {
+          insertBefore: function (t, e, n, r) {
             var a = (r = r || M.languages)[t],
               i = {};
             for (var l in a) if (a.hasOwnProperty(l)) {
@@ -106,10 +106,10 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
           }
         },
         plugins: {},
-        highlightAll: function highlightAll(e, n) {
+        highlightAll: function (e, n) {
           M.highlightAllUnder(document, e, n);
         },
-        highlightAllUnder: function highlightAllUnder(e, n, t) {
+        highlightAllUnder: function (e, n, t) {
           var r = {
             callback: t,
             container: e,
@@ -118,7 +118,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
           M.hooks.run("before-highlightall", r), r.elements = Array.prototype.slice.apply(r.container.querySelectorAll(r.selector)), M.hooks.run("before-all-elements-highlight", r);
           for (var a, i = 0; a = r.elements[i++];) M.highlightElement(a, !0 === n, r.callback);
         },
-        highlightElement: function highlightElement(e, n, t) {
+        highlightElement: function (e, n, t) {
           var r = M.util.getLanguage(e),
             a = M.languages[r];
           M.util.setLanguage(e, r);
@@ -147,7 +147,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
             } else o(M.highlight(l.code, l.grammar, l.language));
           } else o(M.util.encode(l.code));
         },
-        highlight: function highlight(e, n, t) {
+        highlight: function (e, n, t) {
           var r = {
             code: e,
             grammar: n,
@@ -155,7 +155,7 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
           };
           return M.hooks.run("before-tokenize", r), r.tokens = M.tokenize(r.code, r.grammar), M.hooks.run("after-tokenize", r), W.stringify(M.util.encode(r.tokens), r.language);
         },
-        tokenize: function tokenize(e, n) {
+        tokenize: function (e, n) {
           var t = n.rest;
           if (t) {
             for (var r in t) n[r] = t[r];
@@ -222,11 +222,11 @@ var _self = "undefined" != typeof window ? window : "undefined" != typeof Worker
         },
         hooks: {
           all: {},
-          add: function add(e, n) {
+          add: function (e, n) {
             var t = M.hooks.all;
             t[e] = t[e] || [], t[e].push(n);
           },
-          run: function run(e, n) {
+          run: function (e, n) {
             var t = M.hooks.all[e];
             if (t && t.length) for (var r, a = 0; r = t[a++];) r(n);
           }
@@ -379,7 +379,7 @@ Prism.languages.markup = {
 }, Prism.languages.markup.tag.inside["attr-value"].inside.entity = Prism.languages.markup.entity, Prism.languages.markup.doctype.inside["internal-subset"].inside = Prism.languages.markup, Prism.hooks.add("wrap", function (a) {
   "entity" === a.type && (a.attributes.title = a.content.replace(/&amp;/, "&"));
 }), Object.defineProperty(Prism.languages.markup.tag, "addInlined", {
-  value: function value(a, e) {
+  value: function (a, e) {
     var s = {};
     s["language-" + e] = {
       pattern: /(^<!\[CDATA\[)[\s\S]+?(?=\]\]>$)/i,
@@ -407,7 +407,7 @@ Prism.languages.markup = {
     }, Prism.languages.insertBefore("markup", "cdata", n);
   }
 }), Object.defineProperty(Prism.languages.markup.tag, "addAttribute", {
-  value: function value(a, e) {
+  value: function (a, e) {
     Prism.languages.markup.tag.inside["special-attr"].push({
       pattern: RegExp("(^|[\"'\\s])(?:" + a + ")\\s*=\\s*(?:\"[^\"]*\"|'[^']*'|[^\\s'\">=]+(?=[\\s>]))", "i"),
       lookbehind: !0,
@@ -1062,7 +1062,7 @@ Prism.languages.cmake = {
   }
   Object.defineProperties(h.languages["markup-templating"] = {}, {
     buildPlaceholders: {
-      value: function value(a, r, e, o) {
+      value: function (a, r, e, o) {
         if (a.language === r) {
           var c = a.tokenStack = [];
           a.code = a.code.replace(e, function (e) {
@@ -1074,7 +1074,7 @@ Prism.languages.cmake = {
       }
     },
     tokenizePlaceholders: {
-      value: function value(p, k) {
+      value: function (p, k) {
         if (p.language === k && p.tokenStack) {
           p.grammar = h.languages[k];
           var m = 0,
@@ -1729,7 +1729,7 @@ Prism.languages.graphql = {
     punctuation: /[{}]/
   };
   Object.defineProperty(a, "addSupport", {
-    value: function value(a, e) {
+    value: function (a, e) {
       "string" == typeof a && (a = [a]), a.forEach(function (a) {
         !function (a, e) {
           var n = "doc-comment",
@@ -3356,10 +3356,10 @@ Prism.languages.r = {
       alias: "language-javascript"
     }
   }, o.languages.jsx.tag);
-  var i = function i(t) {
+  var i = function (t) {
       return t ? "string" == typeof t ? t : "string" == typeof t.content ? t.content : t.content.map(i).join("") : "";
     },
-    r = function r(t) {
+    r = function (t) {
       for (var n = [], e = 0; e < t.length; e++) {
         var a = t[e],
           s = !1;
@@ -4115,10 +4115,10 @@ Prism.languages.wiki = Prism.languages.extend("markup", {
     inside: r.languages.xquery,
     alias: "language-xquery"
   };
-  var s = function s(e) {
+  var s = function (e) {
       return "string" == typeof e ? e : "string" == typeof e.content ? e.content : e.content.map(s).join("");
     },
-    l = function l(e) {
+    l = function (e) {
       for (var t = [], n = 0; n < e.length; n++) {
         var a = e[n],
           o = !1;
@@ -4210,7 +4210,7 @@ Prism.languages.wiki = Prism.languages.extend("markup", {
   if ("undefined" != typeof Prism && "undefined" != typeof document) {
     var i = [],
       l = {},
-      d = function d() {};
+      d = function () {};
     Prism.plugins.toolbar = {};
     var e = Prism.plugins.toolbar.registerButton = function (e, n) {
         var t;

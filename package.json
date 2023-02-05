@@ -37,9 +37,7 @@
     "postcss-sorting": "^7.0.1"
   },
   "browserslist": [
-    "Chrome 58",
-    "Edge 16",
-    "Firefox 53",
-    "Safari 10.1"
+    "defaults and supports es6-module",
+    "maintained node versions"
   ]
 }
