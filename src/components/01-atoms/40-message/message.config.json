@@ -6,28 +6,28 @@
       "name": "normal",
       "context": {
         "name": "normal",
-        "title": "Message:"
+        "admonition": "Message:"
       }
     },
     {
       "name": "info",
       "context": {
         "name": "info",
-        "title": "Note:"
+        "admonition": "Note:"
       }
     },
     {
       "name": "danger",
       "context": {
         "name": "danger",
-        "title": "Careful:"
+        "admonition": "Careful:"
       }
     },
     {
       "name": "warning",
       "context": {
         "name": "warning",
-        "title": "Warning:"
+        "admonition": "Warning:"
       }
     }
   ]

@@ -40,6 +40,12 @@
     "maintained node versions"
   ],
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "eslint": "^8.38.0",
+    "eslint-config-google": "^0.14.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-eslint-new": "^1.7.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "typescript": "^5.0.4"
   }
 }
