@@ -1,10 +1,11 @@
 /* eslint-disable max-len */
 /* eslint-disable quote-props */
+
 const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 
 // Image Processing
-// We need path for the task to work when detecting extesions
+// We need path for the task to detect extesions
 const path = require('path');
 const squoosh = require('gulp-libsquoosh');
 
@@ -166,24 +167,27 @@ gulp.task('ts:build', function() {
   return gulp.src('src/ts/**/*.ts')
       .pipe(ts({
         'target': 'ESNext',
-        'lib': ['ESNext', 'DOM', 'WebWorker'],
+        'lib': [
+          'ESNext',
+          'DOM',
+        ],
       // Additional Typescript configuration goes here
       }))
       .pipe(gulp.dest('build/js'));
 });
 
 // ESLint before version 9.0
-gulp.task('js:lint', () => {
-  return src('src/js/**/*.js')
+gulp.task('js:lint', function(cb) {
+  return gulp.src('src/js/**/*.js')
       .pipe(eslint())
-      // format one at time since this stream may fail before it can format them all at the end
+      // format one at time
       .pipe(eslint.formatEach())
-      // failOnError will emit an error (fail) immediately upon the first file that has an error
+      // fails immediately upon the error
       .pipe(eslint.failOnError())
-      // need to do something before the process exits? Try this:
       .on('error', (error) => {
-        fancyLog('Stream Exiting With Error: ' + error.message);
+        console.log('Stream Exiting With Error: ' + error.message);
       });
+  cb();
 });
 
 

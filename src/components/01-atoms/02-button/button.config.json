@@ -8,7 +8,11 @@
       "focusText": "Focus",
       "disabledText": "Disabled",
       "unstyledText": "Unstyled Button",
-      "bigText": "Big Button"
+      "bigText": "Big Button",
+      "previousText": "Previous",
+      "nextText": "Next",
+      "proceedText": "Confirm",
+      "cancelText": "Cancel"
   },
   "collated": false
 }
