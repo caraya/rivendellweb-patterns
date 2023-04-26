@@ -34,7 +34,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /* PrismJS 1.25.0
 https://prismjs.com/download.html#themes=prism-solarizedlight&languages=markup+css+clike+javascript+apacheconf+bash+c+clojure+cmake+css-extras+dart+ejs+elixir+elm+glsl+go+graphql+handlebars+java+javadoc+javadoclike+jsdoc+js-extras+json+jsonp+js-templates+julia+kotlin+latex+liquid+lisp+makefile+markdown+markup-templating+nginx+ocaml+perl+php+phpdoc+php-extras+processing+protobuf+pug+puppet+python+r+jsx+tsx+ruby+rust+sass+scss+shell-session+smalltalk+soy+stylus+toml+typescript+wasm+wiki+xquery+yaml&plugins=show-language+toolbar */
-code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;}
+code[class*=language-],pre[class*=language-]{color:#657b83;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;font-size:1em;-webkit-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;tab-size:4;text-align:left;white-space:pre;word-break:normal;word-spacing:normal;word-wrap:normal;}
 code[class*=language-] ::selection,code[class*=language-]::selection,pre[class*=language-] ::selection,pre[class*=language-]::selection{background:#073642;}
 pre[class*=language-]{border-radius:.3em;margin:.5em 0;overflow:auto;padding:1em;}
 :not(pre)>code[class*=language-],pre[class*=language-]{background-color:#fdf6e3;}
@@ -783,126 +783,255 @@ body {
     var(--recursive-titl), 
     var(--recursive-zero);
 }
-button.button {
-  padding-block: 10px;
-  padding-inline: 30px;
+button {
+  background: var(--lab-color-white);
+  color: var(--lab-color-cerulean);
+  height: 3rem;
+  margin-inline: 10px;
+  width: 10rem;
 }
-button.button--hover:hover {
-  background-color: var(--color-cerulean);
-  color: var(--color-white);
+button:focus,
+.button--focus:focus {
+  outline: 2px solid var(--lab-color-cherry);
 }
-button.button--focus:focus {
-  border: 8px solid var(--color-cerulean);
+.button--hover:hover,
+.button--outline-inverse-hover:hover {
+  background-color: var(--lab-color-cerulean);
+  color: var(--lab-color-white);
+
 }
-button.button--unstyled {
-  background-color: transparent;
+.button--unstyled,
+.button--unstyled {
+  background: initial;
   border: 0;
-  text-decoration: underline;
 }
-/* Outline button styles */
-.button.button--outline {
-  background-color: transparent;
-  box-shadow: 1px 2px 1px var(--lch-color-charcoal);
-  color: var(--lch-color-cerulean);
+button:active,
+.button--active:active {
+  box-shadow: 4px 4px 10px var(--lab-color-charcoal);
 }
-.button--outline.button--hover:hover {
-  background-color: var(--lch-color-cerulean);
-  color: var(--lch-color-white);
+.button--nav-uppercase {
+  text-transform: uppercase;
 }
-.button--outline.button--active:active {
-  background-color: var(--lch-color-cerulean);
+.button--nav-uppercase-previous::before,
+.button--nav-previous::before {
+  content: '\2190  ';
 }
-/* Inverse button styles */
-.button--inverse {
-  background-color: var(--lch-color-charcoal);
-  color: var(--lch-color-white);
+.button--nav-uppercase-next::after,
+.button--nav-next::after {
+  content: '  \2192';
 }
-.button--inverse.button--unstyled {
-  background-color: transparent;
+.button--action-confirm {
+  background: color-mix(in lab, var(--lab-color-green) 10%, white);
+  color: var(--lab-color-charcoal);
+}
+.button--action-cancel {
+  background: color-mix(in lab, var(--lab-color-red) 10%, white);
+  color: var(--lab-color-charcoal);
+}
+/*
+Outline Styles
+*/
+.button--outline {
+  background: var(--lab-color-white);
+  color: var(--lab-color-charcoal);
+}
+.button--outline:hover,
+.button--outline-hover:hover {
+  background: var(--lab-color-dove);
+  color: var(--lab-color-white);
+}
+.button--outline-unstyled {
+  border: initial;
+  color: var(--lab-color-charcoal);
+}
+.button--outline-hover,
+.button--outline-active {
+  color: var(--lab-color-charcoal);
+}
+/*
+Inverse Outline
+*/
+.button--outline-inverse {
+  background: var(--lab-color-charcoal);
+  color: var(--lab-color-white);
+}
+.button--outline-inverse:hover,
+.button--outline-inverse-hover:hover {
+  background: var(--lab-color-dove);
+}
+.button--outline-inverse-hover,
+.button--outline-inverse-active {
+  color: var(--lab-color-charcoal);
+}
+.button--outline-inverse {
+  background: var(--lab-color-charcoal);
+  color: var(--lab-color-white);
+}
+button[disabled],
+.button--outline-inverse-disabled {
+  
+}
+.button--outline-inverse-unstyled {
+  background: transparent;
+  border: initial;
+  color: var(--lab-color-charcoal);
+}
+.button--outline-inverse-action-confirm {
+  background: color-mix(in lab, var(--lab-color-green) 10%, white);
+  color: var(--lab-color-charcoal);
+}
+.button--outline-inverse-action-cancel {
+  background: color-mix(in lab, var(--lab-color-red) 10%, white);
+  color: var(--lab-color-charcoal);
+}
+.button--outline-inverse:focus,
+.button--outline-inverse-focus:focus {
+  outline: 2px solid var(--lab-color-hemi-orange);
+}
+/*
+Cool palette
+
+lapis
+*/
+.button--cool {
+  background: var(--lab-color-lapis);
+  color: var(--lab-color-white);
+  height: 3rem;
+  width: 10rem;
+}
+.button--cool:focus,
+.button--cool-focus:focus {
+  outline: 2px solid var(--lab-color-cherry);
+  outline-offset: 2px;
+}
+.button--cool:hover,
+.button--cool-hover:hover {
+  background-color: var(--lab-color-admiral);
+  color: var(--lab-color-white);
+
+}
+.button--cool-unstyled {
+  background: initial;
   border: 0;
-  color: var(--lch-color-charcoal);
+  color: var(--lab-color-lapis);
 }
-.button--inverse.button--hover:hover {
-  background-color: var(--lch-color-cloud);
+.button--cool-active:active {
+  box-shadow: 4px 4px 10px var(--lab-color-dove);
 }
-.button--inverse.button--active:active {
-  background-color: var(--lch-color-cloud); 
+.button--cool-nav-uppercase {
+  text-transform: uppercase;
 }
-.button--inverse.focus {
-  border: 6px solid var(--lch-color-red);
+.button--cool-nav-uppercase-previous::before,
+.button--cool-nav-previous::before {
+  content: '\2190  ';
 }
-ul
-ul li::marker {
-  color: rebeccapurple;
+.button--cool-nav-uppercase-next::after,
+.button--cool-nav-next::after {
+  content: '  \2192';
 }
-ul li {
-  font-size: 125%;
-  list-style: disc;
+.button--cool-action-confirm {
+  background: var(--lab-color-lapis);
+  color: var(--lab-color-white);
 }
-dt {
-  font-size: 1.5rem;
-  font-weight: 700;
+.button--cool-action-cancel {
+  background: var(--lab-color-candy);
+  color: var(--lab-color-white);
 }
-dd {
-  -webkit-margin-start: 2em;
-          margin-inline-start: 2em;
+.button--cool-action-cancel:hover {
+  background: var(--lab-color-lipstick);
+  color: var(--lab-color-white);
 }
-dd:not(:last-child) {
-  -webkit-margin-after: 2rem;
-          margin-block-end: 2rem;
+/*
+warm palette
+
+crimson
+*/
+.button--warm {
+  background: var(--lab-color-crimson);
+  color: var(--lab-color-white);
+  height: 3rem;
+  width: 10rem;
 }
-.font-desc {
-  font-size: 1.5rem;
-  font-weight: 700;
+.button--warm:focus,
+.button--warm-focus:focus {
+  outline: 2px solid var(--lab-color-cherry);
+  outline-offset: 2px;
 }
-.font-desc dd {
-    -webkit-margin-start: 2em;
-            margin-inline-start: 2em;
-  }
-.font-desc dd:not(:last-child) {
-    -webkit-margin-after: 2rem;
-            margin-block-end: 2rem;
-  }
-@counter-style circled-decimal {
-  suffix: ' ';
-  symbols: '\24EA' '\2460' '\2461' '\2462' '\2463' '\2464' '\2465' '\2466' '\2467' '\2468' '\2469' '\246A' '\246B' '\246C' '\246D' '\246E' '\246F' '\2470' '\2471' '\2472' '\2473' '\3251' '\3252' '\3253' '\3254' '\3255' '\3256' '\3257' '\3258' '\3259' '\325a' '\325b' '\325c' '\325d' '\325e' '\325f' '\32b1' '\32b2' '\32b3' '\32b4' '\32b5' '\32b6' '\32b7' '\32b8' '\32b9' '\32ba' '\32bb' '\32bc' '\32bd' '\32be' '\32bf';
-  system: fixed 0;
-  }
-@counter-style decimal-leading-zero {
-  symbols: '\30\30' '\30\31' '\30\32' '\30\33' '\30\34' '\30\35' '\30\36' '\30\37' '\30\38' '\30\39';
-  system: fixed;
+.button--warm:hover,
+.button--warm-hover:hover {
+  background-color: var(--lab-color-ruby);
+  color: var(--lab-color-white);
+
 }
-@counter-style dotted-decimal {
-  suffix: ' ';
-  symbols: '\2488' '\2489' '\248A' '\248B' '\248C' '\248D' '\248E' '\248F' '\2490' '\2491' '\2492' '\2493' '\2494' '\2495' '\2496' '\2497' '\2498' '\2499' '\249A' '\249B';
-  system: fixed;
+.button--warm-unstyled {
+  background: initial;
+  border: 0;
+  color: var(--lab-color-crimson);
 }
-@counter-style filled-circled-decimal {
-suffix: ' ';
-symbols: '\2776' '\2777' '\2778' '\2779' '\277a' '\277b' '\277c' '\277d' '\277e' '\277f' '\24EB' '\24EC' '\24ED' '\24EE' '\24EF' '\24F0' '\24F1' '\24F2' '\24F3' '\24F4';
-system: fixed;
+.button--warm-disabled {
+  color: var(--lab-color-crimson);
 }
-ol {
-  list-style: decimal;
+.button--warm-active:active {
+  box-shadow: 4px 4px 10px var(--lab-color-dove);
 }
-ol li::marker {
-  color: var(--color-violet);
-  font-size: 125%;
+.button--warm-nav-uppercase {
+  text-transform: uppercase;
 }
-.list--circled-decimal {
-  list-style-type: circled-decimal;
+.button--warm-nav-uppercase-previous::before,
+.button--warm-nav-previous::before {
+  content: '\2190  ';
 }
-.list--decimal-leading-zero {
-  list-style-type: decimal-leading-zero;
+.button--warm-nav-uppercase-next::after,
+.button--warm-nav-next::after {
+  content: '  \2192';
 }
-.list--dotted-decimal {
-  list-style-type: dotted-decimal;
+.button--warm-action-confirm {
+  background: var(--lab-color-crimson);
+  color: var(--lab-color-white);
 }
-.list--filled-circled-decimal {
-  list-style-type: filled-circled-decimal;
-  }
-ol {
-  list-style: decimal;
+.button--warm-action-cancel {
+  background: var(--lab-color-candy);
+  color: var(--lab-color-white);
+}
+.button--warm-action-cancel:hover {
+  background: var(--lab-color-lipstick);
+  color: var(--lab-color-white);
+}
+/*
+Big buttons
+*/
+.button--big {
+  background: var(--lab-color-white);
+  color: var(--lab-color-charcoal);
+  height: 10rem;
+  -webkit-margin-after: 4rem;
+          margin-block-end: 4rem;
+  margin-inline: 4rem;
+  width: 15rem;
+}
+.button--big:focus {
+  outline: 4px solid var(--lab-color-cherry);
+  outline-offset: 4px;
+}
+.button--big-unstyled {
+  background: initial;
+  border: 0;
+  color: var(--lab-color-charcoal);
+}
+.button--big-nav-uppercase {
+  text-transform: uppercase;
+}
+.button--big-nav-uppercase-previous::before,
+.button--big-nav-previous::before {
+  content: '\2190  ';
+}
+.button--big-nav-uppercase-next::after,
+.button--big-nav-next::after {
+  content: '  \2192';
+}
+.button--big-cta {
+  height: 6rem;
+  width: 20rem;
 }
 /* color-mix() experiment: lighten a charcoal black */
 :root {
@@ -1520,124 +1649,6 @@ ol {
 .citron-yella {  background-color: var(--color-citron-yella); color: white; }
 .panther-pink {  background-color: var(--color-panther-pink); color: white; }
 .rebeccapurple {  background-color: var(--color-rebeccapurple); color: white; }
-/* color-mix() experiment: lighten a charcoal black */
-:root {
-  /* lightening charcoal */
-  --text1: color-mix(in lch, var(--lch-color-charcoal) 10%, white);
-  --text2: color-mix(in lch, var(--lch-color-charcoal) 20%, white);
-  --text3: color-mix(in lch, var(--lch-color-charcoal) 30%, white);
-  --text4: color-mix(in lch, var(--lch-color-charcoal) 40%, white);
-  --text5: color-mix(in lch, var(--lch-color-charcoal) 50%, white);
-  --text6: color-mix(in lch, var(--lch-color-charcoal) 60%, white);
-  --text7: color-mix(in lch, var(--lch-color-charcoal) 70%, white);
-  --text8: color-mix(in lch, var(--lch-color-charcoal) 80%, white);
-  --text9: color-mix(in lch, var(--lch-color-charcoal) 90%, white);
-}
-.light-text1 {
-  background-color: var(--text1);
-}
-.light-text2 {
-  background-color: var(--text2);
-}
-.light-text3 {
-  background-color: var(--text3);
-}
-.light-text4 {
-  background-color: var(--text4);
-}
-.light-text5 {
-  background-color: var(--text5);
-}
-.light-text6 {
-  background-color: var(--text6);
-}
-.light-text7 {
-  background-color: var(--text7);
-}
-.light-text8 {
-  background-color: var(--text8);
-}
-.light-text9 {
-  background-color: var(--text9);
-  color: #fff;
-}
-/* color-mix() experiment: darken a dark green mint color  */
-:root {
-  --dark-text1: color-mix(in lch, var(--lch-color-mint) 10%, black);
-  --dark-text2: color-mix(in lch, var(--lch-color-mint) 20%, black);
-  --dark-text3: color-mix(in lch, var(--lch-color-mint) 30%, black);
-  --dark-text4: color-mix(in lch, var(--lch-color-mint) 40%, black);
-  --dark-text5: color-mix(in lch, var(--lch-color-mint) 50%, black);
-  --dark-text6: color-mix(in lch, var(--lch-color-mint) 60%, black);
-  --dark-text7: color-mix(in lch, var(--lch-color-mint) 70%, black);
-  --dark-text8: color-mix(in lch, var(--lch-color-mint) 80%, black);
-  --dark-text9: color-mix(in lch, var(--lch-color-mint) 90%, black);
-}
-.dark-text1 {
-  background-color: var(--dark-text1);
-  color: #fff;
-}
-.dark-text2 {
-  background-color: var(--dark-text2);
-  color: #fff;
-}
-.dark-text3 {
-  background-color: var(--dark-text3);
-  color: #fff;
-}
-.dark-text4 {
-  background-color: var(--dark-text4);
-  color: #fff;
-}
-.dark-text5 {
-  background-color: var(--dark-text5);
-  color: #fff;
-}
-.dark-text6 {
-  background-color: var(--dark-text6);
-  color: #fff;
-}
-.dark-text7 {
-  background-color: var(--dark-text7);
-  color: #fff;
-}
-.dark-text8 {
-  background-color: var(--dark-text8);
-  color: #fff;
-}
-.dark-text9 {
-  background-color: var(--dark-text9);
-  color: #fff;
-}
-:root {
-  --lch-color-hemi-orange: lch(64.61% 76.27 53.74);
-  --lch-color-plum-crazy: lch(30.92% 102.31 308.18);
-  --lch-color-cherry: lch(45.06% 80.92 30.16);
-  --lch-color-black-cherry: lch(21.8% 23.72 351.88);
-  --lch-color-panther-pink: lch(48.91% 61.35 337.97);
-  --lch-color-green-go: lch(56.42% 54.4 143.72);
-  --lch-color-sublime-green: lch(82.65% 78.73 119.22);
-  --lch-color-go-mango: lch(54.05% 64.94 34.21);
-  --lch-color-butterscotch: lch(63.69% 64.99 67.73);
-  --lch-color-bright-green: lch(89.23% 106.96289251655789 129.28218977653546);
-  --lch-color-top-banana: lch(93.19% 75.44 94.73);
-  --lch-color-citron-yella: lch(66.7% 64.31 103.9);
-  --lch-color-rebeccapurple: lch(32.39% 61.24 308.86);
-}
-.hemi-orange {  background-color: var(--lch-color-hemi-orange); color: white; }
-.plum-crazy {  background-color: var(--lch-color-plum-crazy); color: white; }
-.cherry {  background-color: var(--lch-color-cherry:); color: white; }
-.black-cherry {  background-color: var(--lch-color-black-cherry); color: white; }
-.panther-pink {  background-color: var(--lch-color-panther-pink); color: white; }
-.green-go {  background-color: var(--lch-color-green-go); color: white; }
-.sublime-green {  background-color: var(--lch-color-sublime-green); color: white; }
-.go-mango {  background-color: var(--lch-color-go-mango); color: white; }
-.butterscotch: {  background-color: var(--lch-color-butterscotch); color: white; }
-.bright-green {  background-color: var(--lch-color-bright-green); color: white; }
-.top-banana {  background-color: var(--lch-color-top-banana); color: white; }
-.citron-yella {  background-color: var(--lch-color-citron-yella); color: white; }
-.panther-pink {  background-color: var(--lch-color-panther-pink); color: white; }
-.rebeccapurple {  background-color: var(--lch-color-rebeccapurple); color: white; }
 /* CSS HSL */
 :root {
   /* whites */
@@ -2109,6 +2120,786 @@ ol {
 .ebony { background-color: var(--lch-color-ebony);color: white;}
 .crow { background-color: var(--lch-color-crow);color: white;}
 .charcoal { background-color: var(--lch-color-charcoal);color: white;}
+/* color-mix() experiment: lighten a charcoal black */
+:root {
+  /* lightening charcoal */
+  --text1: color-mix(in lch, var(--lch-color-charcoal) 10%, white);
+  --text2: color-mix(in lch, var(--lch-color-charcoal) 20%, white);
+  --text3: color-mix(in lch, var(--lch-color-charcoal) 30%, white);
+  --text4: color-mix(in lch, var(--lch-color-charcoal) 40%, white);
+  --text5: color-mix(in lch, var(--lch-color-charcoal) 50%, white);
+  --text6: color-mix(in lch, var(--lch-color-charcoal) 60%, white);
+  --text7: color-mix(in lch, var(--lch-color-charcoal) 70%, white);
+  --text8: color-mix(in lch, var(--lch-color-charcoal) 80%, white);
+  --text9: color-mix(in lch, var(--lch-color-charcoal) 90%, white);
+}
+.light-text1 {
+  background-color: var(--text1);
+}
+.light-text2 {
+  background-color: var(--text2);
+}
+.light-text3 {
+  background-color: var(--text3);
+}
+.light-text4 {
+  background-color: var(--text4);
+}
+.light-text5 {
+  background-color: var(--text5);
+}
+.light-text6 {
+  background-color: var(--text6);
+}
+.light-text7 {
+  background-color: var(--text7);
+}
+.light-text8 {
+  background-color: var(--text8);
+}
+.light-text9 {
+  background-color: var(--text9);
+  color: #fff;
+}
+/* color-mix() experiment: darken a dark green mint color  */
+:root {
+  --dark-text1: color-mix(in lch, var(--lch-color-mint) 10%, black);
+  --dark-text2: color-mix(in lch, var(--lch-color-mint) 20%, black);
+  --dark-text3: color-mix(in lch, var(--lch-color-mint) 30%, black);
+  --dark-text4: color-mix(in lch, var(--lch-color-mint) 40%, black);
+  --dark-text5: color-mix(in lch, var(--lch-color-mint) 50%, black);
+  --dark-text6: color-mix(in lch, var(--lch-color-mint) 60%, black);
+  --dark-text7: color-mix(in lch, var(--lch-color-mint) 70%, black);
+  --dark-text8: color-mix(in lch, var(--lch-color-mint) 80%, black);
+  --dark-text9: color-mix(in lch, var(--lch-color-mint) 90%, black);
+}
+.dark-text1 {
+  background-color: var(--dark-text1);
+  color: #fff;
+}
+.dark-text2 {
+  background-color: var(--dark-text2);
+  color: #fff;
+}
+.dark-text3 {
+  background-color: var(--dark-text3);
+  color: #fff;
+}
+.dark-text4 {
+  background-color: var(--dark-text4);
+  color: #fff;
+}
+.dark-text5 {
+  background-color: var(--dark-text5);
+  color: #fff;
+}
+.dark-text6 {
+  background-color: var(--dark-text6);
+  color: #fff;
+}
+.dark-text7 {
+  background-color: var(--dark-text7);
+  color: #fff;
+}
+.dark-text8 {
+  background-color: var(--dark-text8);
+  color: #fff;
+}
+.dark-text9 {
+  background-color: var(--dark-text9);
+  color: #fff;
+}
+:root {
+  --lch-color-hemi-orange: lch(64.61% 76.27 53.74);
+  --lch-color-plum-crazy: lch(30.92% 102.31 308.18);
+  --lch-color-cherry: lch(45.06% 80.92 30.16);
+  --lch-color-black-cherry: lch(21.8% 23.72 351.88);
+  --lch-color-panther-pink: lch(48.91% 61.35 337.97);
+  --lch-color-green-go: lch(56.42% 54.4 143.72);
+  --lch-color-sublime-green: lch(82.65% 78.73 119.22);
+  --lch-color-go-mango: lch(54.05% 64.94 34.21);
+  --lch-color-butterscotch: lch(63.69% 64.99 67.73);
+  --lch-color-bright-green: lch(89.23% 106.96289251655789 129.28218977653546);
+  --lch-color-top-banana: lch(93.19% 75.44 94.73);
+  --lch-color-citron-yella: lch(66.7% 64.31 103.9);
+  --lch-color-rebeccapurple: lch(32.39% 61.24 308.86);
+}
+.hemi-orange {  background-color: var(--lch-color-hemi-orange); color: white; }
+.plum-crazy {  background-color: var(--lch-color-plum-crazy); color: white; }
+.cherry {  background-color: var(--lch-color-cherry:); color: white; }
+.black-cherry {  background-color: var(--lch-color-black-cherry); color: white; }
+.panther-pink {  background-color: var(--lch-color-panther-pink); color: white; }
+.green-go {  background-color: var(--lch-color-green-go); color: white; }
+.sublime-green {  background-color: var(--lch-color-sublime-green); color: white; }
+.go-mango {  background-color: var(--lch-color-go-mango); color: white; }
+.butterscotch: {  background-color: var(--lch-color-butterscotch); color: white; }
+.bright-green {  background-color: var(--lch-color-bright-green); color: white; }
+.top-banana {  background-color: var(--lch-color-top-banana); color: white; }
+.citron-yella {  background-color: var(--lch-color-citron-yella); color: white; }
+.panther-pink {  background-color: var(--lch-color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--lch-color-rebeccapurple); color: white; }
+/* color-mix() experiment: lighten a charcoal black */
+:root {
+  /* lightening charcoal */
+  --text1: color-mix(in lab, var(--lab-color-charcoal) 10%, white);
+  --text2: color-mix(in lab, var(--lab-color-charcoal) 20%, white);
+  --text3: color-mix(in lab, var(--lab-color-charcoal) 30%, white);
+  --text4: color-mix(in lab, var(--lab-color-charcoal) 40%, white);
+  --text5: color-mix(in lab, var(--lab-color-charcoal) 50%, white);
+  --text6: color-mix(in lab, var(--lab-color-charcoal) 60%, white);
+  --text7: color-mix(in lab, var(--lab-color-charcoal) 70%, white);
+  --text8: color-mix(in lab, var(--lab-color-charcoal) 80%, white);
+  --text9: color-mix(in lab, var(--lab-color-charcoal) 90%, white);
+}
+.light-text1 {
+  background-color: var(--text1);
+}
+.light-text2 {
+  background-color: var(--text2);
+}
+.light-text3 {
+  background-color: var(--text3);
+}
+.light-text4 {
+  background-color: var(--text4);
+}
+.light-text5 {
+  background-color: var(--text5);
+}
+.light-text6 {
+  background-color: var(--text6);
+}
+.light-text7 {
+  background-color: var(--text7);
+}
+.light-text8 {
+  background-color: var(--text8);
+}
+.light-text9 {
+  background-color: var(--text9);
+  color: #fff;
+}
+/* color-mix() experiment: darken a dark green mint color  */
+:root {
+  --dark-text1: color-mix(in lab, var(--lab-color-mint) 10%, black);
+  --dark-text2: color-mix(in lab, var(--lab-color-mint) 20%, black);
+  --dark-text3: color-mix(in lab, var(--lab-color-mint) 30%, black);
+  --dark-text4: color-mix(in lab, var(--lab-color-mint) 40%, black);
+  --dark-text5: color-mix(in lab, var(--lab-color-mint) 50%, black);
+  --dark-text6: color-mix(in lab, var(--lab-color-mint) 60%, black);
+  --dark-text7: color-mix(in lab, var(--lab-color-mint) 70%, black);
+  --dark-text8: color-mix(in lab, var(--lab-color-mint) 80%, black);
+  --dark-text9: color-mix(in lab, var(--lab-color-mint) 90%, black);
+}
+.dark-text1 {
+  background-color: var(--dark-text1);
+  color: #fff;
+}
+.dark-text2 {
+  background-color: var(--dark-text2);
+  color: #fff;
+}
+.dark-text3 {
+  background-color: var(--dark-text3);
+  color: #fff;
+}
+.dark-text4 {
+  background-color: var(--dark-text4);
+  color: #fff;
+}
+.dark-text5 {
+  background-color: var(--dark-text5);
+  color: #fff;
+}
+.dark-text6 {
+  background-color: var(--dark-text6);
+  color: #fff;
+}
+.dark-text7 {
+  background-color: var(--dark-text7);
+  color: #fff;
+}
+.dark-text8 {
+  background-color: var(--dark-text8);
+  color: #fff;
+}
+.dark-text9 {
+  background-color: var(--dark-text9);
+  color: #fff;
+}
+/* CSS HSL */
+:root {
+  /* whites */
+  --lab-color-white: lab(99.75 0.47 -0.36);
+  --lab-color-alabaster: lab(98.38 0.11 5.31);
+  --lab-color-snow: lab(98.38 0.11 5.31);
+  --lab-color-ivory: lab(97.42 0.2 9.56);
+  --lab-color-cream: lab(98.3 -2.59 16.39);
+  --lab-color-eggshell: lab(97.88 -0.98 11.23);
+  --lab-color-cotton: lab(98.78 -0.99 2.27);
+  --lab-color-chiffon: lab(98.09 -1.16 4.33);
+  --lab-color-salt: lab(95.1 2.75 2.59);
+  --lab-color-lace: lab(95.1 2.75 2.59);
+  --lab-color-coconut: lab(96.04 3.53 7.11);
+  --lab-color-linen: lab(93.13 -0.49 12.58);
+  --lab-color-bone: lch(89.08% 10.38 87.43);
+  --lab-color-porcelain: lab(99.94 -0.39 1.43);
+  --lab-color-parchment: lab(96.9 -0.74 11.87);
+  --lab-color-rice: lab(97.13 0.83 3.99);
+    
+  /* blues */
+    
+  --lab-color-blue: lab(47.91 2.96 -60.44);
+  --lab-color-navy: lab(11.16 0.04 -24.11);
+  --lab-color-aqua: lab(82.68 -21.41 -26.63);
+  --lab-color-sky: lab(68 -17.9 -49.53);
+  --lab-color-teal: lab(74.74 -38.98 -11.71);
+  --lab-color-slate: lab(51.41 -0.37 -7.37);
+  --lab-color-indigo: lab(15.83 19.9 -36.9);
+  --lab-color-cobalt: lab(29.6 31.16 -74.08);
+  --lab-color-ocean: lab(36.28 -23.79 -8.98);
+  --lab-color-peacock: lab(16.07 -11.84 -10.84);
+  --lab-color-azure: lab(22.23 37.55 -72.56);
+  --lab-color-cerulean: lab(56 -20.12 -34.69);
+  --lab-color-lapis: lab(29.38 37.66 -77.36);
+  --lab-color-spruce: lab(25.08 -4.54 -10.4);
+  --lab-color-stone: lab(48.64 -7.34 -15.27);
+  --lab-color-aegean: lab(28.12 -2.6 -28.32);
+  --lab-color-berry: lab(14.72 30.12 -50.55);
+  --lab-color-denim: lab(11.69 4.1 -21.08);
+  --lab-color-admiral: lab(16.54 39.97 -71.05);
+  --lab-color-sapphire: lab(67.27 -26.38 -16.23);
+  --lab-color-arctic: lab(87.79 -29.22 -17.9);
+  
+  /* browns */
+    
+  --lab-color-tan: lab(87.35 -1.83 24.51);
+  --lab-color-beige: lab(87.92 -1.37 35.07);
+  --lab-color-macaroon: lab(89.24 -1.02 54.38);
+  --lab-color-hazelwood: lab(76.49 -0.46 25.12);
+  --lab-color-granola: lab(75.78 3.46 50.68);
+  --lab-color-oat: lab(81.66 1.1 34.33);
+  --lab-color-eggnog: lab(90.79 1.91 37.06);
+  --lab-color-fawn: lab(70.63 3.69 48.69);
+  --lab-color-sugarcookie: lab(92.59 -4.07 31.23);
+  --lab-color-sand: lab(76.47 3.39 47.24);
+  --lab-color-sepia: lab(77.14 11.18 37.95);
+  --lab-color-latte: lab(80.49 8.32 40.73);
+  --lab-color-oyster: lab(85.11 -4.13 28.06);
+  --lab-color-biscotti: lab(80.69 2.54 51.47);
+  --lab-color-parmesean: lab(92.68 -1.03 44.43);
+  --lab-color-hazelnut: lab(68.72 2.19 40.38);
+  --lab-color-sandcastle: lab(79.43 2.31 38.06);
+  --lab-color-buttermilk: lab(94.5 -1.72 31.41);
+  --lab-color-sanddollar: lab(91.1 -4 23.02);
+  --lab-color-shortbread: lab(91.98 -1.01 44.49);
+  
+  /* yellows */
+    
+  --lab-color-yellow: lab(88.71 0.51 87.36);
+  --lab-color-canary: lab(83.27 8.09 83.45);
+  --lab-color-gold: lab(75.09 24.55 78.15);
+  --lab-color-daffodil: lab(93.81 -4.15 51.07);
+  --lab-color-flaxen: lab(75.43 3.54 50.26);
+  --lab-color-butter: lab(90.18 -2.41 83.61);
+  --lab-color-lemon: lab(96.13 -19.22 70.93);
+  --lab-color-mustard: lab(77.65 9.23 72.06);
+  --lab-color-corn: lab(82.4 -3.62 81.38);
+  --lab-color-medallion: lab(75.32 10.15 76.78);
+  --lab-color-dandelion: lab(85.12 6.85 78.74);
+  --lab-color-bumblebee: lab(89.95 -3.56 87.58);
+  --lab-color-banana: lab(95.47 -5.75 40.09);
+  --lab-color-butterscotch: lab(80.6 13.53 81.45);
+  --lab-color-dijon: lab(63.84 11.14 67.63);
+  --lab-color-honey: lab(70.08 26.67 73.56);
+  --lab-color-blonde: lab(92.79 -4.3 58.58);
+  --lab-color-pineapple: lab(90.52 -2.46 83.71);
+  --lab-color-tuscansun: lab(85.76 4.97 79.19);
+  
+  /* oranges */
+  
+  --lab-color-orange: lab(68.85 43.33 70.71);
+  --lab-color-tangerine: lab(67.43 42.63 65.29);
+  --lab-color-merigold: lab(77.44 22.44 76.02);
+  --lab-color-cider: lab(52.35 28.5 48.46);
+  --lab-color-rust: lab(36.97 30.89 45.82);
+  --lab-color-ginger: lab(49.53 38.95 58.26);
+  --lab-color-tiger: lab(63.35 53.51 71.95);
+  --lab-color-bronze: lab(47.75 35.52 54.17);
+  --lab-color-cantaloupe: lab(74.97 31.36 39.11);
+  --lab-color-apricot: lab(65.44 38.07 69.68);
+  --lab-color-carrot: lab(62.28 45.78 66.19);
+  --lab-color-squash: lab(52.6 41.7 59.94);
+  --lab-color-spice: lab(32.63 26.3 42.17);
+  --lab-color-marmalade: lab(54.82 42.38 63.36);
+  --lab-color-amber: lab(33.68 36.48 45.24);
+  --lab-color-sandstone: lab(58.76 36.7 55.71);
+  --lab-color-yam: lab(52.32 44.66 61.81);
+  
+  /* reds */
+    
+  --lab-color-red: lab(58.29 70.96 52.01);
+  --lab-color-cherry: lab(33 53.36 46.7);
+  --lab-color-rose: lab(49.96 69.63 48.28);
+  --lab-color-jam: lab(19.9 35.74 25.86);
+  --lab-color-merlot: lab(20.13 24.96 15.76);
+  --lab-color-garnet: lab(19.1 36.67 27.74);
+  --lab-color-crimson: lab(39.67 61.54 51.07);
+  --lab-color-ruby: lab(30.2 52.08 43.24);
+  --lab-color-scarlet: lab(30.89 51.2 41.8);
+  --lab-color-redwine: lab(14.35 30.96 20.35);
+  --lab-color-redapple: lab(37.18 55.35 46.59);
+  --lab-color-mahogany: lab(12.72 25.53 16.05);
+  --lab-color-blood: lab(23.49 41.88 33.85);
+  --lab-color-sangria: lab(21.15 31.92 22.26);
+  --lab-color-currant: lab(21.19 38.79 29.42);
+  --lab-color-blush: lab(49.29 41.88 27.08);
+  --lab-color-candy: lab(45.74 67.84 59.75);
+  --lab-color-lipstick: lab(33.22 53.65 46.96);
+  
+  /* pinks */
+    
+  --lab-color-pink: lab(74.43 40.31 -11.07);
+  --lab-color-fuchsia: lab(55.01 83.45 -32.07);
+  --lab-color-punch: lab(58.92 63.9 14.71);
+  --lab-color-watermelon: lab(69.14 50.88 8.61);
+  --lab-color-flamingo: lab(76.9 35.66 4.12);
+  --lab-color-rouge: lab(63.42 54.6 9.35);
+  --lab-color-salmon: lab(77.96 29.94 19.14);
+  --lab-color-coral: lab(67.71 48.92 36.14);
+  --lab-color-peach: lab(72.27 38.44 26.62);
+  --lab-color-strawberry: lab(59.25 67.22 39.84);
+  --lab-color-rosewood: lab(41.31 39.83 20.73);
+  --lab-color-lemonade: lab(81.89 25.59 0.96);
+  --lab-color-taffy: lab(70.48 50.81 -11.88);
+  --lab-color-bubblegum: lab(63.26 66.79 -6.68);
+  --lab-color-balletslipper: lab(74.08 38.79 -3.9);
+  --lab-color-crepe: lab(80.15 23.25 0.99);
+  --lab-color-maroon: lab(29.78 48.82 -1.76);
+  --lab-color-hotpink: lab(56.76 83.41 -5.68);
+  
+  /* purples */
+  
+  --lab-color-purple: lab(43.67 72.64 -57.27);
+  --lab-color-mauve: lab(39.17 29.34 -27.04);
+  --lab-color-violet: lab(28.02 55.56 -50.99);
+  --lab-color-boysenberry: lab(20.47 41.22 -2.04);
+  --lab-color-lavender: lab(74.75 36.22 -33.13);
+  --lab-color-plum: lab(22.18 33.84 0.34);
+  --lab-color-lilac: lab(54.36 48.37 -42.53);
+  --lab-color-periwinkle: lab(66.8 25.44 -27.13); 
+  --lab-color-eggplant: lab(11.76 18.8 -12.81);
+  --lab-color-iris: lab(51.72 34.39 -42.42);
+  --lab-color-heather: lab(56.77 21.34 -27.71);
+  --lab-color-amethyst: lab(52.74 48.08 -58.26);
+  --lab-color-raisin: lab(6.66 17.76 -0.41);
+  --lab-color-orchid: lab(56.93 46.9 -57.08);
+  --lab-color-mulberry: lab(14.3 34.41 4.24);
+  
+  /* greens */
+    
+  --lab-color-green: lab(72.37 -61.3 54.85);
+  --lab-color-chartreuse: lab(91.83 -44.34 77.99);
+  --lab-color-juniper: lab(32.14 -18.63 32.89);
+  --lab-color-sage: lab(55.48 -14.84 15.59);
+  --lab-color-lime: lab(88.29 -74.03 52.51);
+  --lab-color-fern: lab(68.94 -43.24 35.37);
+  --lab-color-olive: lab(72.96 -24.83 41.11);
+  --lab-color-emerald: lab(49.48 -49.27 47.92);
+  --lab-color-pear: lab(67.71 -37.77 57.9);
+  --lab-color-moss: lab(41.91 -24.32 37.51);
+  --lab-color-shamrock: lab(61.34 -58.47 57.66);
+  --lab-color-seafoam: lab(83.44 -59.98 28.71);
+  --lab-color-pine: lab(29.97 -24.41 24.1);
+  --lab-color-parakeet: lab(68.18 -60.56 46.13);
+  --lab-color-mint: lab(87.21 -33.21 11.5);
+  --lab-color-seaweed: lab(29.23 -15.21 21.91);
+  --lab-color-pickle: lab(48.51 -22.45 33.9);
+  --lab-color-pistachio: lab(81.75 -14.01 5.1);
+  --lab-color-basil: lab(37.16 -25.96 24.64);
+  --lab-color-crocodile: lab(48.58 -19.63 32.07);
+  
+  /* browns */
+    
+  --lab-color-brown: lab(9.18 5.3 10.12);
+  --lab-color-coffee: lab(24.87 6.54 20.36);
+  --lab-color-mocha: lab(18.45 6.67 21.13);
+  --lab-color-peanut: lab(41.43 8.52 27.6);
+  --lab-color-carob: lab(16.56 4.99 17.62);
+  --lab-color-hickory: lab(14.19 11.98 14.22);
+  --lab-color-pecan: lab(19.58 16.55 20.43);
+  --lab-color-walnut: lab(18.96 11.8 19.94);
+  --lab-color-caramel: lab(28.46 19.72 32.56);
+  --lab-color-gingerbread: lab(24.48 20.99 33.07);
+  --lab-color-chocolate: lab(10.12 10 14.08);
+  --lab-color-tortilla: lab(53.88 8.14 28.77);
+  --lab-color-umber: lab(16.02 6.75 13.34);
+  --lab-color-tawny: lab(36.92 20.42 35.2);
+  --lab-color-brunette: lab(14.7 11.9 19.03);
+  --lab-color-cinammon: lab(25.54 24.91 30.83);
+  --lab-color-penny: lab(21.99 18.12 21.67);
+  
+  /* greys */
+    
+  --lab-color-grey: lab(69.61 0 0);
+  --lab-color-shadow: lab(23.07 0 0);
+  --lab-color-graphite: lab(34.24 6.91 -6.49);
+  --lab-color-iron: lab(19.24 3.47 -1.54);
+  --lab-color-pewter: lab(44.86 4.82 -13.1);
+  --lab-color-cloud: lab(79.77 1.55 -5.52);
+  --lab-color-silver: lab(88.12 0 0);
+  --lab-color-smoke: lab(35.63 5.64 -6.94);
+  --lab-color-anchor: lab(28.26 1.77 -6.07);
+  --lab-color-ash: lab(33.25 4.02 0.84);
+  --lab-color-porpoise: lab(32.88 3.23 -9.29);
+  --lab-color-dove: lab(48.2 8.15 -7.33);
+  --lab-color-fog: lab(39.32 6.83 -5.04);
+  --lab-color-flint: lab(52.98 5.69 -17.14);
+  --lab-color-pebble: lab(21.25 0 0);
+  --lab-color-lead: lab(21.25 0 0);
+  --lab-color-coin: lab(62.99 3.1 -9.32);
+  --lab-color-fossil: lab(48.69 2.98 -1.35);
+    
+  /* blacks */
+    
+  --lab-color-black: lab(5.06 0 0);
+  --lab-color-ebony: lab(1.29 0.78 1.53);
+  --lab-color-crow: lab(13.48 0.96 2.57);
+  --lab-color-charcoal: lab(12.57 1.53 -1.68);
+}
+/* .color-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+} */
+.lab-color-item {
+  align-items: center;
+  border: 2px solid var(--lab-color-charcoal);
+  display: flex;
+  flex-flow: column;
+  height: 300px;
+  justify-content: center;
+  width: 300px;
+}
+/* Colors taken from The New Defaults */
+/* whites */
+.white {background-color: var(--lab-color-white);}
+.pearl {background-color: var(--lab-color-pearl);}
+.alabaster {background-color: var(--lab-color-alabaster);}
+.snow {background-color: var(--lab-color-snow);}
+.ivory {background-color: var(--lab-color-ivory);}
+.cream {background-color: var(--lab-color-cream);}
+.eggshell {background-color: var(--lab-color-eggshell);}
+.cotton {background-color: var(--lab-color-cotton);}
+.chiffon {background-color: var(--lab-color-chiffon);}
+.salt {background-color: var(--lab-color-salt);}
+.lace {background-color: var(--lab-color-lace);}
+.coconut {background-color: var(--lab-color-coconut);}
+.linen {background-color: var(--lab-color-linen);}
+.bone {background-color: var(--lab-color-bone);}
+.porcelain {background-color: var(--lab-color-porcelain);}
+.parchment {background-color: var(--lab-color-parchment);}
+.rice {background-color: var(--lab-color-rice);}
+/* blues */
+.blue { background-color: var(--lab-color-blue);color: white;}
+.navy { background-color: var(--lab-color-navy);color: white;}
+.aqua { background-color: var(--lab-color-aqua);color: white;}
+.sky { background-color: var(--lab-color-sky);color: white;}
+.teal { background-color: var(--lab-color-teal);color: white;}
+.slate { background-color: var(--lab-color-slate);color: white;}
+.indigo { background-color: var(--lab-color-indigo);color: white;}
+.cobalt { background-color: var(--lab-color-cobalt);color: white;}
+.ocean { background-color: var(--lab-color-ocean);color: white;}
+.peacock { background-color: var(--lab-color-peacock);color: white;}
+.azure { background-color: var(--lab-color-azure);color: white;}
+.cerulean { background-color: var(--lab-color-cerulean);color: white;}
+.lapis { background-color: var(--lab-color-lapis);color: white;}
+.spruce { background-color: var(--lab-color-spruce);color: white;}
+.stone { background-color: var(--lab-color-stone);color: white;}
+.aegean { background-color: var(--lab-color-aegean);color: white;}
+.berry { background-color: var(--lab-color-berry);color: white;}
+.denim { background-color: var(--lab-color-denim);color: white;}
+.admiral { background-color: var(--lab-color-admiral);color: white;}
+.sapphire { background-color: var(--lab-color-sapphire);color: white;}
+.arctic { background-color: var(--lab-color-arctic);color: white;}
+/* browns */
+.tan {background-color: var(--lab-color-tan);}
+.beige {background-color: var(--lab-color-beige);}
+.macaroon {background-color: var(--lab-color-macaroon);}
+.hazelwood {background-color: var(--lab-color-hazelwood);}
+.granola {background-color: var(--lab-color-granola);}
+.oat {background-color: var(--lab-color-oat);}
+.eggnog {background-color: var(--lab-color-eggnog);}
+.fawn {background-color: var(--lab-color-fawn);}
+.sugarcookie {background-color: var(--lab-color-sugarcookie);}
+.sand {background-color: var(--lab-color-sand);}
+.sepia {background-color: var(--lab-color-sepia);}
+.latte {background-color: var(--lab-color-latte);}
+.oyster {background-color: var(--lab-color-oyster);}
+.biscotti {background-color: var(--lab-color-biscotti);}
+.parmesean {background-color: var(--lab-color-parmesean);}
+.hazelnut {background-color: var(--lab-color-hazelnut);}
+.sandcastle {background-color: var(--lab-color-sandcastle);}
+.buttermilk {background-color: var(--lab-color-buttermilk);}
+.sanddollar {background-color: var(--lab-color-sanddollar);}
+.shortbread {background-color: var(--lab-color-shortbread);}
+/* yellows */
+.yellow {background-color: var(--lab-color-yellow);}
+.canary {background-color: var(--lab-color-canary);}
+.gold {background-color: var(--lab-color-gold);}
+.daffodil {background-color: var(--lab-color-daffodil);}
+.flaxen {background-color: var(--lab-color-flaxen);}
+.butter {background-color: var(--lab-color-butter);}
+.lemon {background-color: var(--lab-color-lemon);}
+.mustard {background-color: var(--lab-color-mustard);}
+.corn {background-color: var(--lab-color-corn);}
+.medallion {background-color: var(--lab-color-medallion);}
+.dandelion {background-color: var(--lab-color-dandelion);}
+.bumblebee {background-color: var(--lab-color-bumblebee);}
+.banana {background-color: var(--lab-color-banana);}
+.butterscotch {background-color: var(--lab-color-butterscotch);}
+.dijon {background-color: var(--lab-color-dijon);}
+.honey {background-color: var(--lab-color-honey);}
+.blonde {background-color: var(--lab-color-blonde);}
+.pineapple {background-color: var(--lab-color-pineapple);}
+.tuscansun {background-color: var(--lab-color-tuscansun);}
+/* oranges */
+.orange {background-color: var(--lab-color-orange);}
+.tangerine {background-color: var(--lab-color-tangerine);}
+.merigold {background-color: var(--lab-color-merigold);}
+.cider {background-color: var(--lab-color-cider);}
+.rust {background-color: var(--lab-color-rust);}
+.ginger {background-color: var(--lab-color-ginger);}
+.tiger {background-color: var(--lab-color-tiger);}
+.bronze {background-color: var(--lab-color-bronze);}
+.cantaloupe {background-color: var(--lab-color-cantaloupe);}
+.apricot {background-color: var(--lab-color-apricot);}
+.carrot {background-color: var(--lab-color-carrot);}
+.squash {background-color: var(--lab-color-squash);}
+.spice {background-color: var(--lab-color-spice);}
+.marmalade {background-color: var(--lab-color-marmalade);}
+.amber {background-color: var(--lab-color-amber);}
+.sandstone {background-color: var(--lab-color-sandstone);}
+.yam {background-color: var(--lab-color-yam);}
+/* reds */
+.red {background-color: var(--lab-color-red);color: white;}
+.cherry {background-color: var(--lab-color-cherry);color: white;}
+.rose {background-color: var(--lab-color-rose);color: white;}
+.jam {background-color: var(--lab-color-jam);color: white;}
+.merlot {background-color: var(--lab-color-merlot);color: white;}
+.garnet {background-color: var(--lab-color-garnet);color: white;}
+.crimson {background-color: var(--lab-color-crimson);color: white;}
+.ruby {background-color: var(--lab-color-ruby);color: white;}
+.scarlet {background-color: var(--lab-color-scarlet);color: white;}
+.redwine {background-color: var(--lab-color-redwine);color: white;}
+.redapple {background-color: var(--lab-color-redapple);color: white;}
+.mahogany {background-color: var(--lab-color-mahogany);color: white;}
+.blood {background-color: var(--lab-color-blood);color: white;}
+.sangria {background-color: var(--lab-color-sangria);color: white;}
+.currant {background-color: var(--lab-color-currant);color: white;}
+.blush {background-color: var(--lab-color-blush);color: white;}
+.candy {background-color: var(--lab-color-candy);color: white;}
+.lipstick {background-color: var(--lab-color-lipstick);color: white;}
+/* pinks */
+.pink { background-color: var(--lab-color-pink);color: white;}
+.fuchsia { background-color: var(--lab-color-fuchsia);color: white;}
+.punch { background-color: var(--lab-color-punch);color: white;}
+.watermelon { background-color: var(--lab-color-watermelon);color: white;}
+.flamingo { background-color: var(--lab-color-flamingo);color: white;}
+.rouge { background-color: var(--lab-color-rouge);color: white;}
+.salmon { background-color: var(--lab-color-salmon);color: white;}
+.coral { background-color: var(--lab-color-coral);color: white;}
+.peach { background-color: var(--lab-color-peach);color: white;}
+.strawberry { background-color: var(--lab-color-strawberry);color: white;}
+.rosewood { background-color: var(--lab-color-rosewood);color: white;}
+.lemonade { background-color: var(--lab-color-lemonade);color: white;}
+.taffy { background-color: var(--lab-color-taffy);color: white;}
+.bubblegum { background-color: var(--lab-color-bubblegum);color: white;}
+.balletslipper { background-color: var(--lab-color-balletslipper);color: white;}
+.crepe { background-color: var(--lab-color-crepe);color: white;}
+.maroon { background-color: var(--lab-color-maroon);color: white;}
+.hotpink { background-color: var(--lab-color-hotpink);color: white;}
+/* purples */
+.purple { background-color: var(--lab-color-purple);color: white;}
+.mauve { background-color: var(--lab-color-mauve);color: white;}
+.violet { background-color: var(--lab-color-violet);color: white;}
+.boysenberry { background-color: var(--lab-color-boysenberry);color: white;}
+.lavender { background-color: var(--lab-color-lavender);color: white;}
+.plum { background-color: var(--lab-color-plum);color: white;}
+.lilac { background-color: var(--lab-color-lilac);color: white;}
+.periwinkle { background-color: var(--lab-color-periwinkle);color: white;}
+.eggplant { background-color: var(--lab-color-eggplant);color: white;}
+.iris { background-color: var(--lab-color-iris);color: white;}
+.heather { background-color: var(--lab-color-heather);color: white;}
+.amethyst { background-color: var(--lab-color-amethyst);color: white;}
+.raisin { background-color: var(--lab-color-raisin);color: white;}
+.orchid { background-color: var(--lab-color-orchid);color: white;}
+.mulberry { background-color: var(--lab-color-mulberry);color: white;}
+/* greens */
+.green { background-color: var(--lab-color-green);color: white;}
+.chartreuse { background-color: var(--lab-color-chartreuse);color: white;}
+.juniper { background-color: var(--lab-color-juniper);color: white;}
+.sage { background-color: var(--lab-color-sage);color: white;}
+.lime { background-color: var(--lab-color-lime);color: white;}
+.fern { background-color: var(--lab-color-fern);color: white;}
+.olive { background-color: var(--lab-color-olive);color: white;}
+.emerald { background-color: var(--lab-color-emerald);color: white;}
+.pear { background-color: var(--lab-color-pear);color: white;}
+.moss { background-color: var(--lab-color-moss);color: white;}
+.shamrock { background-color: var(--lab-color-shamrock);color: white;}
+.seafoam { background-color: var(--lab-color-seafoam);color: white;}
+.pine { background-color: var(--lab-color-pine);color: white;}
+.parakeet { background-color: var(--lab-color-parakeet);color: white;}
+.mint { background-color: var(--lab-color-mint);color: white;}
+.seaweed { background-color: var(--lab-color-seaweed);color: white;}
+.pickle { background-color: var(--lab-color-pickle);color: white;}
+.pistachio { background-color: var(--lab-color-pistachio);color: white;}
+.basil { background-color: var(--lab-color-basil);color: white;}
+.crocodile { background-color: var(--lab-color-crocodile);color: white;}
+/* browns */
+.brown { background-color: var(--lab-color-brown);color: white;}
+.coffee { background-color: var(--lab-color-coffee);color: white;}
+.mocha { background-color: var(--lab-color-mocha);color: white;}
+.peanut { background-color: var(--lab-color-peanut);color: white;}
+.carob { background-color: var(--lab-color-carob);color: white;}
+.hickory { background-color: var(--lab-color-hickory);color: white;}
+.pecan { background-color: var(--lab-color-pecan);color: white;}
+.walnut { background-color: var(--lab-color-walnut);color: white;}
+.caramel { background-color: var(--lab-color-caramel);color: white;}
+.gingerbread { background-color: var(--lab-color-gingerbread);color: white;}
+.chocolate { background-color: var(--lab-color-chocolate);color: white;}
+.tortilla { background-color: var(--lab-color-tortilla);color: white;}
+.umber { background-color: var(--lab-color-umber);color: white;}
+.tawny { background-color: var(--lab-color-tawny);color: white;}
+.brunette { background-color: var(--lab-color-brunette);color: white;}
+.cinammon { background-color: var(--lab-color-cinammon);color: white;}
+.penny { background-color: var(--lab-color-penny);color: white;}
+/* greys */
+.grey { background-color: var(--lab-color-grey);color: white;}
+.shadow { background-color: var(--lab-color-shadow);color: white;}
+.graphite { background-color: var(--lab-color-graphite);color: white;}
+.iron { background-color: var(--lab-color-iron);color: white;}
+.pewter { background-color: var(--lab-color-pewter);color: white;}
+.cloud { background-color: var(--lab-color-cloud);color: white;}
+.silver { background-color: var(--lab-color-silver);color: white;}
+.smoke { background-color: var(--lab-color-smoke);color: white;}
+.anchor { background-color: var(--lab-color-anchor);color: white;}
+.ash { background-color: var(--lab-color-ash);color: white;}
+.porpoise { background-color: var(--lab-color-porpoise);color: white;}
+.dove { background-color: var(--lab-color-dove);color: white;}
+.fog { background-color: var(--lab-color-fog);color: white;}
+.flint { background-color: var(--lab-color-flint);color: white;}
+.pebble { background-color: var(--lab-color-pebble);color: white;}
+.lead { background-color: var(--lab-color-lead);color: white;}
+.coin { background-color: var(--lab-color-coin);color: white;}
+.fossil { background-color: var(--lab-color-fossil);color: white;}
+/* blacks */
+.black { background-color: var(--lab-color-black);color: white;}
+.ebony { background-color: var(--lab-color-ebony);color: white;}
+.crow { background-color: var(--lab-color-crow);color: white;}
+.charcoal { background-color: var(--lab-color-charcoal);color: white;}
+:root {
+  --lab-color-hemi-orange: lab(64.61 45.11 61.5);
+  --lab-color-plum-crazy: lab(30.92 63.24 -80.42);
+  --lab-color-cherry: lab(45.06 69.97 40.66);
+  --lab-color-black-cherry: lab(21.8 23.48 -3.35);
+  --lab-color-panther-pink: lab(48.91 56.87 -23.01);
+  --lab-color-green-go: lab(56.42 -43.85 32.19);
+  --lab-color-sublime-green: lab(82.65 -38.43 68.71);
+  --lab-color-go-mango: lab(54.05 53.7 36.51);
+  --lab-color-butterscotch: lab(63.69 24.63 60.14);
+  --lab-color-bright-green: lab(89.23 -67.72 82.79);
+  --lab-color-top-banana: lab(93.19 -6.22 75.18);
+  --lab-color-citron-yella: lab(66.7 -15.45 62.43);
+  --lab-color-rebeccapurple: lab(32.39 38.42 -47.69);
+}
+.hemi-orange {  background-color: var(--lab-color-hemi-orange); color: white; }
+.plum-crazy {  background-color: var(--lab-color-plum-crazy); color: white; }
+.cherry {  background-color: var(--lab-color-cherry:); color: white; }
+.black-cherry {  background-color: var(--lab-color-black-cherry); color: white; }
+.panther-pink {  background-color: var(--lab-color-panther-pink); color: white; }
+.green-go {  background-color: var(--lab-color-green-go); color: white; }
+.sublime-green {  background-color: var(--lab-color-sublime-green); color: white; }
+.go-mango {  background-color: var(--lab-color-go-mango); color: white; }
+.butterscotch: {  background-color: var(--lab-color-butterscotch); color: white; }
+.bright-green {  background-color: var(--lab-color-bright-green); color: white; }
+.top-banana {  background-color: var(--lab-color-top-banana); color: white; }
+.citron-yella {  background-color: var(--lab-color-citron-yella); color: white; }
+.panther-pink {  background-color: var(--lab-color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--lab-color-rebeccapurple); color: white; }
+ul
+ul li::marker {
+  color: rebeccapurple;
+}
+ul li {
+  font-size: 125%;
+  list-style: disc;
+}
+dt {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+dd {
+  -webkit-margin-start: 2em;
+          margin-inline-start: 2em;
+}
+dd:not(:last-child) {
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+.font-desc {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.font-desc dd {
+    -webkit-margin-start: 2em;
+            margin-inline-start: 2em;
+  }
+.font-desc dd:not(:last-child) {
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
+  }
+@counter-style circled-decimal {
+  suffix: ' ';
+  symbols: '\24EA' '\2460' '\2461' '\2462' '\2463' '\2464' '\2465' '\2466' '\2467' '\2468' '\2469' '\246A' '\246B' '\246C' '\246D' '\246E' '\246F' '\2470' '\2471' '\2472' '\2473' '\3251' '\3252' '\3253' '\3254' '\3255' '\3256' '\3257' '\3258' '\3259' '\325a' '\325b' '\325c' '\325d' '\325e' '\325f' '\32b1' '\32b2' '\32b3' '\32b4' '\32b5' '\32b6' '\32b7' '\32b8' '\32b9' '\32ba' '\32bb' '\32bc' '\32bd' '\32be' '\32bf';
+  system: fixed 0;
+  }
+@counter-style decimal-leading-zero {
+  symbols: '\30\30' '\30\31' '\30\32' '\30\33' '\30\34' '\30\35' '\30\36' '\30\37' '\30\38' '\30\39';
+  system: fixed;
+}
+@counter-style dotted-decimal {
+  suffix: ' ';
+  symbols: '\2488' '\2489' '\248A' '\248B' '\248C' '\248D' '\248E' '\248F' '\2490' '\2491' '\2492' '\2493' '\2494' '\2495' '\2496' '\2497' '\2498' '\2499' '\249A' '\249B';
+  system: fixed;
+}
+@counter-style filled-circled-decimal {
+suffix: ' ';
+symbols: '\2776' '\2777' '\2778' '\2779' '\277a' '\277b' '\277c' '\277d' '\277e' '\277f' '\24EB' '\24EC' '\24ED' '\24EE' '\24EF' '\24F0' '\24F1' '\24F2' '\24F3' '\24F4';
+system: fixed;
+}
+ol {
+  list-style: decimal;
+}
+ol li::marker {
+  color: var(--color-violet);
+  font-size: 125%;
+}
+.list--circled-decimal {
+  list-style-type: circled-decimal;
+}
+.list--decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+.list--dotted-decimal {
+  list-style-type: dotted-decimal;
+}
+.list--filled-circled-decimal {
+  list-style-type: filled-circled-decimal;
+  }
+ol {
+  list-style: decimal;
+}
 figure {
   counter-increment: figure_count;
   margin: 2em auto;
@@ -2201,7 +2992,6 @@ iframe {
     background-color: rgba(255, 85, 0, .2);
   }
 .message--title {
-  font-size: 2em;
   font-weight: 700;
   margin: 0;
 }
@@ -2225,6 +3015,26 @@ iframe {
     font-family: 'Pacifico', cursive;
     padding: 1rem;
   }
+.message {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5em;
+  width: 50vw;
+}
+.message.message--info {
+    background-color: rgba(173, 216, 230, .2);
+  }
+.message.message--warning {
+    background-color: rgba(255, 255, 224, .5);
+  }
+.message.message--danger {
+    background-color: rgba(255, 85, 0, .2);
+  }
+.message--title {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0;
+}
 table {
   margin: 0 1.5rem;
   table-layout: fixed;
@@ -2505,7 +3315,8 @@ article {
   width: 100%; 
 }
 .article--two-cols >.article--content {
-    columns: 2 auto;
+    -moz-columns: 2 auto;
+         columns: 2 auto;
   }
 .article--two-cols p {
     font-size: 1rem;

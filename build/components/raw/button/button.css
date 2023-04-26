@@ -1,7 +1,305 @@
 button {
-  border-radius: 1.5rem;
-  background-color: rebeccapurple;
-  color: white;
-  height: 30px;
-  width: 45px;
+  background: var(--lab-color-white);
+  color: var(--lab-color-cerulean);
+  height: 3rem;
+  width: 10rem;
+  margin-inline: 10px;
+}
+
+button:focus,
+.button--focus:focus {
+  outline: 2px solid var(--lab-color-cherry);
+}
+
+.button--hover:hover,
+.button--outline-inverse-hover:hover {
+  color: var(--lab-color-white);
+  background-color: var(--lab-color-cerulean);
+
+}
+
+.button--unstyled,
+.button--unstyled {
+  border: 0;
+  background: initial;
+}
+
+button:active,
+.button--active:active {
+  box-shadow: 4px 4px 10px var(--lab-color-charcoal);
+}
+
+.button--nav-uppercase {
+  text-transform: uppercase;
+}
+
+.button--nav-uppercase-previous::before,
+.button--nav-previous::before {
+  content: '\2190  '
+}
+
+.button--nav-uppercase-next::after,
+.button--nav-next::after {
+  content: '  \2192'
+}
+
+.button--action-confirm {
+  color: var(--lab-color-charcoal);
+  background: color-mix(in lab, var(--lab-color-green) 10%, white)
+}
+
+.button--action-cancel {
+  color: var(--lab-color-charcoal);
+  background: color-mix(in lab, var(--lab-color-red) 10%, white)
+}
+
+/*
+Outline Styles
+*/
+
+.button--outline {
+  background: var(--lab-color-white);
+  color: var(--lab-color-charcoal);
+}
+
+.button--outline:hover,
+.button--outline-hover:hover {
+  color: var(--lab-color-white);
+  background: var(--lab-color-dove);
+}
+
+.button--outline-unstyled {
+  border: initial;
+  color: var(--lab-color-charcoal);
+}
+
+.button--outline-hover,
+.button--outline-active {
+  color: var(--lab-color-charcoal);
+}
+
+/*
+Inverse Outline
+*/
+
+.button--outline-inverse {
+  color: var(--lab-color-white);
+  background: var(--lab-color-charcoal);
+}
+
+.button--outline-inverse:hover,
+.button--outline-inverse-hover:hover {
+  background: var(--lab-color-dove);
+}
+
+.button--outline-inverse-hover,
+.button--outline-inverse-active {
+  color: var(--lab-color-charcoal);
+}
+
+.button--outline-inverse {
+  background: var(--lab-color-charcoal);
+  color: var(--lab-color-white);
+}
+
+button[disabled],
+.button--outline-inverse-disabled {
+  
+}
+
+.button--outline-inverse-unstyled {
+  border: initial;
+  background: transparent;
+  color: var(--lab-color-charcoal);
+}
+
+.button--outline-inverse-action-confirm {
+  color: var(--lab-color-charcoal);
+  background: color-mix(in lab, var(--lab-color-green) 10%, white)
+}
+
+.button--outline-inverse-action-cancel {
+  color: var(--lab-color-charcoal);
+  background: color-mix(in lab, var(--lab-color-red) 10%, white)
+}
+
+.button--outline-inverse:focus,
+.button--outline-inverse-focus:focus {
+  outline: 2px solid var(--lab-color-hemi-orange);
+}
+
+/*
+Cool palette
+
+lapis
+*/
+
+.button--cool {
+  background: var(--lab-color-lapis);
+  color: var(--lab-color-white);
+  height: 3rem;
+  width: 10rem;
+}
+
+.button--cool:focus,
+.button--cool-focus:focus {
+  outline: 2px solid var(--lab-color-cherry);
+  outline-offset: 2px;
+}
+
+.button--cool:hover,
+.button--cool-hover:hover {
+  color: var(--lab-color-white);
+  background-color: var(--lab-color-admiral);
+
+}
+
+.button--cool-unstyled {
+  border: 0;
+  color: var(--lab-color-lapis);
+  background: initial;
+}
+
+.button--cool-active:active {
+  box-shadow: 4px 4px 10px var(--lab-color-dove);
+}
+
+.button--cool-nav-uppercase {
+  text-transform: uppercase;
+}
+
+.button--cool-nav-uppercase-previous::before,
+.button--cool-nav-previous::before {
+  content: '\2190  '
+}
+
+.button--cool-nav-uppercase-next::after,
+.button--cool-nav-next::after {
+  content: '  \2192'
+}
+
+.button--cool-action-confirm {
+  color: var(--lab-color-white);
+  background: var(--lab-color-lapis)
+}
+
+.button--cool-action-cancel {
+  color: var(--lab-color-white);
+  background: var(--lab-color-candy)
+}
+
+.button--cool-action-cancel:hover {
+  color: var(--lab-color-white);
+  background: var(--lab-color-lipstick)
+}
+
+/*
+warm palette
+
+crimson
+*/
+
+.button--warm {
+  background: var(--lab-color-crimson);
+  color: var(--lab-color-white);
+  height: 3rem;
+  width: 10rem;
+}
+
+.button--warm:focus,
+.button--warm-focus:focus {
+  outline: 2px solid var(--lab-color-cherry);
+  outline-offset: 2px;
+}
+
+.button--warm:hover,
+.button--warm-hover:hover {
+  color: var(--lab-color-white);
+  background-color: var(--lab-color-ruby);
+
+}
+
+.button--warm-unstyled {
+  border: 0;
+  color: var(--lab-color-crimson);
+  background: initial;
+}
+
+.button--warm-disabled {
+  color: var(--lab-color-crimson);
+}
+
+.button--warm-active:active {
+  box-shadow: 4px 4px 10px var(--lab-color-dove);
+}
+
+.button--warm-nav-uppercase {
+  text-transform: uppercase;
+}
+
+.button--warm-nav-uppercase-previous::before,
+.button--warm-nav-previous::before {
+  content: '\2190  '
+}
+
+.button--warm-nav-uppercase-next::after,
+.button--warm-nav-next::after {
+  content: '  \2192'
+}
+
+.button--warm-action-confirm {
+  color: var(--lab-color-white);
+  background: var(--lab-color-crimson)
+}
+
+.button--warm-action-cancel {
+  color: var(--lab-color-white);
+  background: var(--lab-color-candy)
+}
+
+.button--warm-action-cancel:hover {
+  color: var(--lab-color-white);
+  background: var(--lab-color-lipstick)
+}
+
+/*
+Big buttons
+*/
+
+.button--big {
+  background: var(--lab-color-white);
+  color: var(--lab-color-charcoal);
+  height: 10rem;
+  width: 15rem;
+  margin-block-end: 4rem;
+  margin-inline: 4rem;
+}
+
+.button--big:focus {
+  outline: 4px solid var(--lab-color-cherry);
+  outline-offset: 4px;
+}
+.button--big-unstyled {
+  border: 0;
+  color: var(--lab-color-charcoal);
+  background: initial;
+}
+
+.button--big-nav-uppercase {
+  text-transform: uppercase;
+}
+
+.button--big-nav-uppercase-previous::before,
+.button--big-nav-previous::before {
+  content: '\2190  '
+}
+
+.button--big-nav-uppercase-next::after,
+.button--big-nav-next::after {
+  content: '  \2192'
+}
+
+.button--big-cta {
+  height: 6rem;
+  width: 20rem;
 }
