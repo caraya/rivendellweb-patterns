@@ -1,0 +1,25 @@
+.card {
+  border: 2px solid var(--lab-color-charcoal);
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+
+  width: 50rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+svg {
+  height: 6rem;
+  width: 6rem;
+}
+
+.facebook {
+  fill: "#1877F2"
+}
+

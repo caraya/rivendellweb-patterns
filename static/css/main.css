@@ -167,622 +167,6 @@ summary {
 	border-right: 0.5rem solid lch(48.64% 16.94 244.34);
 	padding: 1em;
 }
-@font-face {
-  font-family: 'Marvin Visions';
-  src: url('/fonts/MarvinVisionsBig-Bold.woff2') format('woff2');
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Recursive', sans-serif;
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
-  line-height: 1.3;
-  margin: 3rem 0 1.38rem;
-}
-h1 {
-  font-size: 4.209rem;
-  margin-top: 0;
-}
-h2 {font-size: 3.157rem;}
-h3 {font-size: 2.369rem;}
-h4 {font-size: 1.777rem;}
-h5 {font-size: 1.333rem;}
-small, .text_small {font-size: 0.75rem;}
-.vertical {
-  float: left;
-  writing-mode: vertical-rl;
-}
-.marvin {
-  color: #e65f1d;
-  font-family: 'Marvin Visions', Helvetica, Arial, sans-serif;
-  font-size: 16rem;
-  font-weight: bold;
-  line-height: 1;
-  margin: 0;
-  text-shadow: 6px 6px 2px rgb(0 0 0 / 80%);
-}
-/* Variable instances */
-.recursive-mono-linear-light {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-linear-light-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-casual-light {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-casual-light-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-linear {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-linear-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-casual {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-casual-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-linear-medium {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-linear-medium-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-casual-medium {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-casual-medium-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-linear-semibold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-linear-semibold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-casual-semibold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-casual-semibold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-linear-bold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-linear-bold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-casual-bold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-casual-bold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-linear-extrabold {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-linear-extrabold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-casual-extrabold {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-casual-extrabold-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-linear-black {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-linear-black-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-casual-black {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-casual-black-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-linear-extrablack {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-linear-extrablack-italic {
-  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-.recursive-mono-casual-extrablack {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-mono-casual-extrablack-italic {
-  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-.recursive {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-casual-light {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-casual-light-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-linear {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-linear-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-casual {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-casual-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-linear-medium {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-linear-medium-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-casual-medium {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-casual-medium-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-linear-semibold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-linear-semibold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-casual-semibold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-casual-semibold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-linear-bold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-linear-bold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-casual-bold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-casual-bold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-linear-extrabold {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-linear-extrabold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-casual-extrabold {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-casual-extrabold-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-linear-black {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-linear-black-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-casual-black {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-casual-black-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-linear-extrablack {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-linear-extrablack-italic {
-  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-.recursive-sans-casual-extrablack {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
-}
-.recursive-sans-casual-extrablack-italic {
-  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
-}
-p {margin-bottom: 1rem;}
-.leading {
-  font-size: 1.25em;
-  width: 80vw;
-  width: 80ch;
-}
-.narrow {
-  font-size: 1em;
-  width: 30vw;
-  width: 30ch;
-}
-a {
-  color: #cd2653;
-  text-decoration: none;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-a:visited {
-  text-decoration: underline;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-a:hover, a:focus, a:active {
-  text-decoration: underline;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-a:focus {
-  outline: thin dotted;
-}
-.blockquote--normal {
-  -webkit-border-start: 5px solid var(--color-azure);
-          border-inline-start: 5px solid var(--color-azure);
-  -webkit-padding-start: 1.5em;
-          padding-inline-start: 1.5em;
-}
-.cite {
-  font-weight: 700;
-  margin-top: 1em;
-}
-.blockquote--center {
-  -webkit-border-after: 5px solid var(--color-azure);
-          border-block-end: 5px solid var(--color-azure);
-
-  -webkit-border-before: 5px solid var(--color-azure);
-
-          border-block-start: 5px solid var(--color-azure);
-  margin: 0 auto;
-  text-align: center;
-
-  width: 80%;
-  width: 80ch;
-}
-.blockquote--center p:first-child {
-    -webkit-margin-before: 1em;
-            margin-block-start: 1em;
-  }
-.blockquote--center p:last-child {
-    -webkit-margin-after: 1em;
-            margin-block-end: 1em;
-  }
-.blockquote--large {
-  font-size: 1.5rem;
-  width: 60ch;
-}
-.blockquote--single-top {
-  -webkit-border-before: 5px solid var(--color-azure);
-          border-block-start: 5px solid var(--color-azure);
-}
-.blockquote--single-top p:first-child {
-    -webkit-margin-before: 1rem;
-            margin-block-start: 1rem;
-  }
-.blockquote--single-bottom {
-  -webkit-border-after: 5px solid var(--color-azure);
-          border-block-end: 5px solid var(--color-azure);
-}
-.blockquote--single-bottom p:last-child {
-    -webkit-margin-after: 1rem;
-            margin-block-end: 1rem;
-  }
-.blockquote--single-both {
-  -webkit-border-after: 5px solid var(--color-azure);
-          border-block-end: 5px solid var(--color-azure);
-  -webkit-border-before: 5px solid var(--color-azure);
-          border-block-start: 5px solid var(--color-azure);
-}
-.blockquote--single-both p:first-child {
-    -webkit-margin-before: 1em;
-            margin-block-start: 1em;
-  }
-.blockquote--single-both p:last-child {
-    -webkit-margin-after: 1em;
-            margin-block-end: 1em;
-  }
-.blockquote--double-both {
-  border-bottom: 10px double var(--color-azure);
-  border-top: 10px double var(--color-azure);
-}
-.blockquote--double-both p:first-child {
-    -webkit-margin-before: 1em;
-            margin-block-start: 1em;
-  }
-.blockquote--double-both p:last-child {
-    -webkit-margin-after: 1em;
-            margin-block-end: 1em;
-  }
-pre {
-  font-family: "Recursive", sans-serif;
-  font-size: 1.25rem;
-  font-variation-settings: 
-    "MONO" 1,
-    "CASL" 0,
-    "wght" 300,
-    "slnt" 0,
-    "CRSV" 0.5;
-}
-article,
-footer {
-  margin: 1em auto;
-  width: 60vw;
-}
-article h2 + p:nth-of-type(1)::first-letter {
-  /* font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; */
-  color: #cd2653;
-  float: left;
-  font-size: 12rem;
-  line-height: 0.65;
-  margin: 0.1em 0.1em 0.2em 0;
-}
-/* .dropcap {
-  background: #303030;
-  color: #FDF9F2;
-  float: left;
-  font-size: 6rem;
-  line-height: 1;
-  margin: 0.1em 0.1em 0.2em 0;
-  padding: 0.1em;
-}
-.dropcap:before,
-.dropcap:after {
-  content: "";
-  display: block;
-}
-.dropcap:before {
-  margin-top: -0.2em;
-}
-.dropcap:after {
-  margin-bottom: -0.15em;
-} */
-@font-face {
-  font-family: 'Recursive';
-  font-weight: 300 1000;
-  src: url('/fonts/recursive.woff2') format('woff2');
-}
-body {
-  font-family: 'Recursive', sans-serif;
-  font-size: 100%;
-  line-height: 1.3;
-  margin: 2em;
-}
-/**
- * CSS for Recursive
- * Generated by Wakamai Fondue - https://wakamaifondue.com
- * by Roel Nieskens/PixelAmbacht - https://pixelambacht.nl
- */
-/* Set custom properties for each layout feature */
-:root {
-  --recursive-aalt: "aalt" off;
-  --recursive-afrc: "afrc" off;
-  --recursive-case: "case" off;
-  --recursive-dlig: "dlig" off;
-  --recursive-dnom: "dnom" off;
-  --recursive-frac: "frac" off;
-  --recursive-numr: "numr" off;
-  --recursive-ordn: "ordn" off;
-  --recursive-pnum: "pnum" off;
-  --recursive-sinf: "sinf" off;
-  /* --recursive-ss01: "ss01" off;
-  --recursive-ss02: "ss02" off;
-  --recursive-ss03: "ss03" off;
-  --recursive-ss04: "ss04" off;
-  --recursive-ss05: "ss05" off;
-  --recursive-ss06: "ss06" off;
-  --recursive-ss07: "ss07" off;
-  --recursive-ss08: "ss08" off;
-  --recursive-ss09: "ss09" off;
-  --recursive-ss10: "ss10" off;
-  --recursive-ss11: "ss11" off;
-  --recursive-ss12: "ss12" off;
-  --recursive-ss20: "ss20" off; */
-  --recursive-sups: "sups" off;
-  --recursive-titl: "titl" off;
-  --recursive-zero: "zero" off;
-}
-/* If class is applied, update custom property and
- apply modern font-variant-* when supported */
-.recursive-aalt {
-  --recursive-aalt: "aalt" on;
-}
-.recursive-afrc {
-  --recursive-afrc: "afrc" on;
-}
-@supports (font-variant-numeric: stacked-fractions) {
-  .recursive-afrc {
-      --recursive-afrc: "____";
-      font-variant-numeric: stacked-fractions;
-  }
-}
-.recursive-case {
-  --recursive-case: "case" on;
-}
-.recursive-dlig {
-  --recursive-dlig: "dlig" on;
-}
-@supports (font-variant-ligatures: discretionary-ligatures) {
-  .recursive-dlig {
-      --recursive-dlig: "____";
-      font-variant-ligatures: discretionary-ligatures;
-  }
-}
-.recursive-dnom {
-  --recursive-dnom: "dnom" on;
-}
-.recursive-frac {
-  --recursive-frac: "frac" on;
-}
-@supports (font-variant-numeric: diagonal-fractions) {
-  .recursive-frac {
-      --recursive-frac: "____";
-      font-variant-numeric: diagonal-fractions;
-  }
-}
-.recursive-numr {
-  --recursive-numr: "numr" on;
-}
-.recursive-ordn {
-  --recursive-ordn: "ordn" on;
-}
-@supports (font-variant-numeric: ordinal) {
-  .recursive-ordn {
-      --recursive-ordn: "____";
-      font-variant-numeric: ordinal;
-  }
-}
-.recursive-pnum {
-  --recursive-pnum: "pnum" on;
-}
-@supports (font-variant-numeric: proportional-nums) {
-  .recursive-pnum {
-      --recursive-pnum: "____";
-      font-variant-numeric: proportional-nums;
-  }
-}
-.recursive-sinf {
-  --recursive-sinf: "sinf" on;
-}
-/* .recursive-ss01 {
-  --recursive-ss01: "ss01" on;
-}
-
-.recursive-ss02 {
-  --recursive-ss02: "ss02" on;
-}
-
-.recursive-ss03 {
-  --recursive-ss03: "ss03" on;
-}
-
-.recursive-ss04 {
-  --recursive-ss04: "ss04" on;
-}
-
-.recursive-ss05 {
-  --recursive-ss05: "ss05" on;
-}
-
-.recursive-ss06 {
-  --recursive-ss06: "ss06" on;
-}
-
-.recursive-ss07 {
-  --recursive-ss07: "ss07" on;
-}
-
-.recursive-ss08 {
-  --recursive-ss08: "ss08" on;
-}
-
-.recursive-ss09 {
-  --recursive-ss09: "ss09" on;
-}
-
-.recursive-ss10 {
-  --recursive-ss10: "ss10" on;
-}
-
-.recursive-ss11 {
-  --recursive-ss11: "ss11" on;
-}
-
-.recursive-ss12 {
-  --recursive-ss12: "ss12" on;
-}
-
-.recursive-ss20 {
-  --recursive-ss20: "ss20" on;
-} */
-.recursive-sups {
-  --recursive-sups: "sups" on;
-}
-@supports (font-variant-position: super) {
-  .recursive-sups {
-      --recursive-sups: "____";
-      font-variant-position: super;
-  }
-}
-.recursive-titl {
-  --recursive-titl: "titl" on;
-}
-@supports (font-variant-caps: titling-caps) {
-  .recursive-titl {
-      --recursive-titl: "____";
-      font-variant-caps: titling-caps;
-  }
-}
-.recursive-zero {
-  --recursive-zero: "zero" on;
-}
-@supports (font-variant-numeric: slashed-zero) {
-  .recursive-zero {
-      --recursive-zero: "____";
-      font-variant-numeric: slashed-zero;
-  }
-}
-/* Apply current state of all custom properties
- whenever a class is being applied */
-.recursive-aalt,
-.recursive-afrc,
-.recursive-case,
-.recursive-dlig,
-.recursive-dnom,
-.recursive-frac,
-.recursive-numr,
-.recursive-ordn,
-.recursive-pnum,
-.recursive-sinf,
-/* .recursive-ss01,
-.recursive-ss02,
-.recursive-ss03,
-.recursive-ss04,
-.recursive-ss05,
-.recursive-ss06,
-.recursive-ss07,
-.recursive-ss08,
-.recursive-ss09,
-.recursive-ss10,
-.recursive-ss11,
-.recursive-ss12,
-.recursive-ss20, */
-.recursive-sups,
-.recursive-titl,
-.recursive-zero {
-  font-feature-settings: 
-    var(--recursive-aalt),
-    var(--recursive-afrc), 
-    var(--recursive-case), 
-    var(--recursive-dlig), 
-    var(--recursive-dnom), 
-    var(--recursive-frac), 
-    var(--recursive-numr), 
-    var(--recursive-ordn), 
-    var(--recursive-pnum), 
-    var(--recursive-sinf), 
-    /* var(--recursive-ss01), 
-    var(--recursive-ss02), 
-    var(--recursive-ss03), 
-    var(--recursive-ss04), 
-    var(--recursive-ss05), 
-    var(--recursive-ss06), 
-    var(--recursive-ss07), 
-    var(--recursive-ss08), 
-    var(--recursive-ss09), 
-    var(--recursive-ss10), 
-    var(--recursive-ss11), 
-    var(--recursive-ss12), 
-    var(--recursive-ss20),  */
-    var(--recursive-sups), 
-    var(--recursive-titl), 
-    var(--recursive-zero);
-}
 button {
   background: var(--lab-color-white);
   color: var(--lab-color-cerulean);
@@ -2827,6 +2211,622 @@ Big buttons
 .citron-yella {  background-color: var(--lab-color-citron-yella); color: white; }
 .panther-pink {  background-color: var(--lab-color-panther-pink); color: white; }
 .rebeccapurple {  background-color: var(--lab-color-rebeccapurple); color: white; }
+@font-face {
+  font-family: 'Marvin Visions';
+  src: url('/fonts/MarvinVisionsBig-Bold.woff2') format('woff2');
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Recursive', sans-serif;
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+  line-height: 1.3;
+  margin: 3rem 0 1.38rem;
+}
+h1 {
+  font-size: 4.209rem;
+  margin-top: 0;
+}
+h2 {font-size: 3.157rem;}
+h3 {font-size: 2.369rem;}
+h4 {font-size: 1.777rem;}
+h5 {font-size: 1.333rem;}
+small, .text_small {font-size: 0.75rem;}
+.vertical {
+  float: left;
+  writing-mode: vertical-rl;
+}
+.marvin {
+  color: #e65f1d;
+  font-family: 'Marvin Visions', Helvetica, Arial, sans-serif;
+  font-size: 16rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  text-shadow: 6px 6px 2px rgb(0 0 0 / 80%);
+}
+/* Variable instances */
+.recursive-mono-linear-light {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-light-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-light {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-light-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-medium {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-medium-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-medium {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-medium-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-semibold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-semibold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-semibold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-semibold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-bold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-bold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-bold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-bold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-extrabold {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-extrabold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-extrabold {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-extrabold-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-black {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-black-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-black {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-black-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-linear-extrablack {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-linear-extrablack-italic {
+  font-variation-settings: "MONO" 1, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+.recursive-mono-casual-extrablack {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-mono-casual-extrablack-italic {
+  font-variation-settings: "MONO" 1, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+.recursive {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-light {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-light-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 300, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 400, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-medium {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-medium {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-medium-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 500, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-semibold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-semibold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 600, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-bold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-bold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-bold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 700, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-extrabold {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-extrabold-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 800, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-black {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-black {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-black-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 900, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-linear-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-linear-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 0, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+.recursive-sans-casual-extrablack {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" 0, "CRSV" 0.5;
+}
+.recursive-sans-casual-extrablack-italic {
+  font-variation-settings: "MONO" 0, "CASL" 1, "wght" 1000, "slnt" -15, "CRSV" 1;
+}
+p {margin-bottom: 1rem;}
+.leading {
+  font-size: 1.25em;
+  width: 80vw;
+  width: 80ch;
+}
+.narrow {
+  font-size: 1em;
+  width: 30vw;
+  width: 30ch;
+}
+a {
+  color: #cd2653;
+  text-decoration: none;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+a:visited {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+a:focus {
+  outline: thin dotted;
+}
+.blockquote--normal {
+  -webkit-border-start: 5px solid var(--color-azure);
+          border-inline-start: 5px solid var(--color-azure);
+  -webkit-padding-start: 1.5em;
+          padding-inline-start: 1.5em;
+}
+.cite {
+  font-weight: 700;
+  margin-top: 1em;
+}
+.blockquote--center {
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
+
+  -webkit-border-before: 5px solid var(--color-azure);
+
+          border-block-start: 5px solid var(--color-azure);
+  margin: 0 auto;
+  text-align: center;
+
+  width: 80%;
+  width: 80ch;
+}
+.blockquote--center p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
+.blockquote--center p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
+.blockquote--large {
+  font-size: 1.5rem;
+  width: 60ch;
+}
+.blockquote--single-top {
+  -webkit-border-before: 5px solid var(--color-azure);
+          border-block-start: 5px solid var(--color-azure);
+}
+.blockquote--single-top p:first-child {
+    -webkit-margin-before: 1rem;
+            margin-block-start: 1rem;
+  }
+.blockquote--single-bottom {
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
+}
+.blockquote--single-bottom p:last-child {
+    -webkit-margin-after: 1rem;
+            margin-block-end: 1rem;
+  }
+.blockquote--single-both {
+  -webkit-border-after: 5px solid var(--color-azure);
+          border-block-end: 5px solid var(--color-azure);
+  -webkit-border-before: 5px solid var(--color-azure);
+          border-block-start: 5px solid var(--color-azure);
+}
+.blockquote--single-both p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
+.blockquote--single-both p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
+.blockquote--double-both {
+  border-bottom: 10px double var(--color-azure);
+  border-top: 10px double var(--color-azure);
+}
+.blockquote--double-both p:first-child {
+    -webkit-margin-before: 1em;
+            margin-block-start: 1em;
+  }
+.blockquote--double-both p:last-child {
+    -webkit-margin-after: 1em;
+            margin-block-end: 1em;
+  }
+pre {
+  font-family: "Recursive", sans-serif;
+  font-size: 1.25rem;
+  font-variation-settings: 
+    "MONO" 1,
+    "CASL" 0,
+    "wght" 300,
+    "slnt" 0,
+    "CRSV" 0.5;
+}
+article,
+footer {
+  margin: 1em auto;
+  width: 60vw;
+}
+article h2 + p:nth-of-type(1)::first-letter {
+  /* font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; */
+  color: #cd2653;
+  float: left;
+  font-size: 12rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
+/* .dropcap {
+  background: #303030;
+  color: #FDF9F2;
+  float: left;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0.1em 0.1em 0.2em 0;
+  padding: 0.1em;
+}
+.dropcap:before,
+.dropcap:after {
+  content: "";
+  display: block;
+}
+.dropcap:before {
+  margin-top: -0.2em;
+}
+.dropcap:after {
+  margin-bottom: -0.15em;
+} */
+@font-face {
+  font-family: 'Recursive';
+  font-weight: 300 1000;
+  src: url('/fonts/recursive.woff2') format('woff2');
+}
+body {
+  font-family: 'Recursive', sans-serif;
+  font-size: 100%;
+  line-height: 1.3;
+  margin: 2em;
+}
+/**
+ * CSS for Recursive
+ * Generated by Wakamai Fondue - https://wakamaifondue.com
+ * by Roel Nieskens/PixelAmbacht - https://pixelambacht.nl
+ */
+/* Set custom properties for each layout feature */
+:root {
+  --recursive-aalt: "aalt" off;
+  --recursive-afrc: "afrc" off;
+  --recursive-case: "case" off;
+  --recursive-dlig: "dlig" off;
+  --recursive-dnom: "dnom" off;
+  --recursive-frac: "frac" off;
+  --recursive-numr: "numr" off;
+  --recursive-ordn: "ordn" off;
+  --recursive-pnum: "pnum" off;
+  --recursive-sinf: "sinf" off;
+  /* --recursive-ss01: "ss01" off;
+  --recursive-ss02: "ss02" off;
+  --recursive-ss03: "ss03" off;
+  --recursive-ss04: "ss04" off;
+  --recursive-ss05: "ss05" off;
+  --recursive-ss06: "ss06" off;
+  --recursive-ss07: "ss07" off;
+  --recursive-ss08: "ss08" off;
+  --recursive-ss09: "ss09" off;
+  --recursive-ss10: "ss10" off;
+  --recursive-ss11: "ss11" off;
+  --recursive-ss12: "ss12" off;
+  --recursive-ss20: "ss20" off; */
+  --recursive-sups: "sups" off;
+  --recursive-titl: "titl" off;
+  --recursive-zero: "zero" off;
+}
+/* If class is applied, update custom property and
+ apply modern font-variant-* when supported */
+.recursive-aalt {
+  --recursive-aalt: "aalt" on;
+}
+.recursive-afrc {
+  --recursive-afrc: "afrc" on;
+}
+@supports (font-variant-numeric: stacked-fractions) {
+  .recursive-afrc {
+      --recursive-afrc: "____";
+      font-variant-numeric: stacked-fractions;
+  }
+}
+.recursive-case {
+  --recursive-case: "case" on;
+}
+.recursive-dlig {
+  --recursive-dlig: "dlig" on;
+}
+@supports (font-variant-ligatures: discretionary-ligatures) {
+  .recursive-dlig {
+      --recursive-dlig: "____";
+      font-variant-ligatures: discretionary-ligatures;
+  }
+}
+.recursive-dnom {
+  --recursive-dnom: "dnom" on;
+}
+.recursive-frac {
+  --recursive-frac: "frac" on;
+}
+@supports (font-variant-numeric: diagonal-fractions) {
+  .recursive-frac {
+      --recursive-frac: "____";
+      font-variant-numeric: diagonal-fractions;
+  }
+}
+.recursive-numr {
+  --recursive-numr: "numr" on;
+}
+.recursive-ordn {
+  --recursive-ordn: "ordn" on;
+}
+@supports (font-variant-numeric: ordinal) {
+  .recursive-ordn {
+      --recursive-ordn: "____";
+      font-variant-numeric: ordinal;
+  }
+}
+.recursive-pnum {
+  --recursive-pnum: "pnum" on;
+}
+@supports (font-variant-numeric: proportional-nums) {
+  .recursive-pnum {
+      --recursive-pnum: "____";
+      font-variant-numeric: proportional-nums;
+  }
+}
+.recursive-sinf {
+  --recursive-sinf: "sinf" on;
+}
+/* .recursive-ss01 {
+  --recursive-ss01: "ss01" on;
+}
+
+.recursive-ss02 {
+  --recursive-ss02: "ss02" on;
+}
+
+.recursive-ss03 {
+  --recursive-ss03: "ss03" on;
+}
+
+.recursive-ss04 {
+  --recursive-ss04: "ss04" on;
+}
+
+.recursive-ss05 {
+  --recursive-ss05: "ss05" on;
+}
+
+.recursive-ss06 {
+  --recursive-ss06: "ss06" on;
+}
+
+.recursive-ss07 {
+  --recursive-ss07: "ss07" on;
+}
+
+.recursive-ss08 {
+  --recursive-ss08: "ss08" on;
+}
+
+.recursive-ss09 {
+  --recursive-ss09: "ss09" on;
+}
+
+.recursive-ss10 {
+  --recursive-ss10: "ss10" on;
+}
+
+.recursive-ss11 {
+  --recursive-ss11: "ss11" on;
+}
+
+.recursive-ss12 {
+  --recursive-ss12: "ss12" on;
+}
+
+.recursive-ss20 {
+  --recursive-ss20: "ss20" on;
+} */
+.recursive-sups {
+  --recursive-sups: "sups" on;
+}
+@supports (font-variant-position: super) {
+  .recursive-sups {
+      --recursive-sups: "____";
+      font-variant-position: super;
+  }
+}
+.recursive-titl {
+  --recursive-titl: "titl" on;
+}
+@supports (font-variant-caps: titling-caps) {
+  .recursive-titl {
+      --recursive-titl: "____";
+      font-variant-caps: titling-caps;
+  }
+}
+.recursive-zero {
+  --recursive-zero: "zero" on;
+}
+@supports (font-variant-numeric: slashed-zero) {
+  .recursive-zero {
+      --recursive-zero: "____";
+      font-variant-numeric: slashed-zero;
+  }
+}
+/* Apply current state of all custom properties
+ whenever a class is being applied */
+.recursive-aalt,
+.recursive-afrc,
+.recursive-case,
+.recursive-dlig,
+.recursive-dnom,
+.recursive-frac,
+.recursive-numr,
+.recursive-ordn,
+.recursive-pnum,
+.recursive-sinf,
+/* .recursive-ss01,
+.recursive-ss02,
+.recursive-ss03,
+.recursive-ss04,
+.recursive-ss05,
+.recursive-ss06,
+.recursive-ss07,
+.recursive-ss08,
+.recursive-ss09,
+.recursive-ss10,
+.recursive-ss11,
+.recursive-ss12,
+.recursive-ss20, */
+.recursive-sups,
+.recursive-titl,
+.recursive-zero {
+  font-feature-settings: 
+    var(--recursive-aalt),
+    var(--recursive-afrc), 
+    var(--recursive-case), 
+    var(--recursive-dlig), 
+    var(--recursive-dnom), 
+    var(--recursive-frac), 
+    var(--recursive-numr), 
+    var(--recursive-ordn), 
+    var(--recursive-pnum), 
+    var(--recursive-sinf), 
+    /* var(--recursive-ss01), 
+    var(--recursive-ss02), 
+    var(--recursive-ss03), 
+    var(--recursive-ss04), 
+    var(--recursive-ss05), 
+    var(--recursive-ss06), 
+    var(--recursive-ss07), 
+    var(--recursive-ss08), 
+    var(--recursive-ss09), 
+    var(--recursive-ss10), 
+    var(--recursive-ss11), 
+    var(--recursive-ss12), 
+    var(--recursive-ss20),  */
+    var(--recursive-sups), 
+    var(--recursive-titl), 
+    var(--recursive-zero);
+}
 ul
 ul li::marker {
   color: rebeccapurple;
@@ -2917,6 +2917,36 @@ figure figcaption::before {
   }
 .rounded {
   border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.thumb {
+  height: 200px;
+  width: 200px;
+}
+.small {
+  height: 180px;
+  width: 320px;
+}
+.medium {
+  height: 360px;
+  width: 640px;
+}
+.large {
+  height: 540px;
+  width: 960px;
+}
+.xlarge {
+  height: 720px;
+  width: 1280px;
+}
+.banner {
+  height: 400px;
+  width: 1600px;
+}
+.hero {
+  height: 1080px;
+  width: 1920px;
 }
 :root {
   --shadow-color: 0deg 0% 0%;
@@ -3092,6 +3122,136 @@ td {
     text-align: justify;
     width: 60%;
   }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.media {
+  border: 2px solid var(--lab-color-charcoal);
+  margin-bottom: 2em;
+  padding: 10px;
+}
+.media {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-areas:
+    "title"
+    "img"
+    "bd"
+    "ft";
+}
+.media > .title { grid-area: title; }
+.media > .img { grid-area: img; }
+.media > .content { grid-area: bd; }
+.media > .footer { grid-area: ft; }
+@media (min-width: 600px) {
+
+  @supports(display: grid ) {
+    /* override */
+    .media > *,
+    .media.media-flip > * {
+      margin: 0;
+    }
+    .media .img,
+    .media.media-flip .img {
+      margin: 0;
+      width: auto;
+    }
+    .media:after {
+      content: none;
+    }
+
+    .media {
+      display: grid;
+      grid-column-gap: 20px;
+      grid-template-areas:
+        "img title"
+        "img bd"
+        "ft ft";
+      grid-template-columns: 150px 3fr;
+      grid-template-rows: auto 1fr auto;
+    }
+
+    .media.media-flip {
+      grid-template-areas:
+        "title img"
+        "bd img"
+        "ft ft";
+      grid-template-columns: 3fr 150px ;
+    }
+
+    .media.img-flexie {
+      grid-template-columns: minmax(150px, 1fr) 3fr;
+    }
+
+    .media.media-flip.img-flexie {
+      grid-template-columns: 3fr minmax(150px, 1fr);
+    }
+
+    /* nested */
+    .media > .media {
+      grid-column: 2 / -1 ;
+      margin: 0; /* override */
+      margin-top: 1em;
+    }
+  }
+
+  /* clearfix*/
+  .media:after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+
+  .media > .media {
+    clear: both;
+    margin-left: 160px;
+  }
+
+  .media .img {
+    float: left;
+    margin: 0 10px 0 0;
+    width: 150px;
+  }
+  
+  .media.media-flip .img {
+    float: right;
+    margin: 0 0 0 10px;
+  }
+
+  .media > * {
+    margin: 0 0 0 160px;
+  }
+
+  .media.media-flip > * {
+    margin: 0 160px 0 0;
+  }
+}
+.card {
+  align-items: center;
+  border: 2px solid var(--lab-color-charcoal);
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+  justify-content: center;
+
+  width: 50rem;
+}
+.social-icons {
+  display: flex;
+  flex-flow: row wrap;
+}
+svg {
+  height: 6rem;
+  width: 6rem;
+}
+.facebook {
+  fill: "#1877F2";
+}
 .grid-item {
   background-color: var(--color-anchor);
   border-radius: 5px;
