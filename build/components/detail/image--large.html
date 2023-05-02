@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.3" type="text/css">
 
 
-<title>Image: 04-large | rivendellweb pattern library</title>
+<title>Image Variations: Large | rivendellweb pattern library</title>
 
 </head>
 <body>
@@ -68,7 +68,7 @@
     <div class="Pen-panel Pen-header">
     <h1 class="Pen-title">
         <a class="Pen-previewLink" href="../preview/image--large.html" title="Preview">
-            Image: 04-large
+            Image Variations: Large
             <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
@@ -177,7 +177,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-ea61f8f210b228605726acc75ca77112-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image--&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://via.placeholder.com/960x540&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;placeholder image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;960px&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;540px&quot;</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">&quot;lazy&quot;</span> /&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image small&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://via.placeholder.com/960x540&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;placeholder image&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;960&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;540&quot;</span> /&gt;</span></pre>
         
     </code>
 </div>
@@ -185,12 +185,19 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-ea61f8f210b228605726acc75ca77112-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">image</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image--</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">name</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">src</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">alt</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-  <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">width</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-  <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">height</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>
-  <span class="hljs-attr">loading</span>=<span class="hljs-string">&quot;lazy&quot;</span>  /&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image small&quot;</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://via.placeholder.com/960x540&quot;</span>
+  <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;placeholder image&quot;</span>
+  <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;960&quot;</span>
+  <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;540&quot;</span>/&gt;</span>
+</span><span class="hljs-comment">{{!-- 
+      &quot;context&quot;: {
+        &quot;src&quot;: &quot;&quot;,
+        &quot;alt&quot;: &quot;placeholder image&quot;,
+        &quot;width&quot;: &quot;960px&quot;,
+        &quot;height&quot;: &quot;540px&quot;
+      }
+ --}}</span></pre>
     </code>
 </div>
 
@@ -199,12 +206,7 @@
     <code class="Code Code--lang-json hljs">
         
             
-            <pre>{
-  <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;http://via.placeholder.com/960x540&quot;</span>,
-  <span class="hljs-attr">&quot;alt&quot;</span>: <span class="hljs-string">&quot;placeholder image&quot;</span>,
-  <span class="hljs-attr">&quot;width&quot;</span>: <span class="hljs-string">&quot;960px&quot;</span>,
-  <span class="hljs-attr">&quot;height&quot;</span>: <span class="hljs-string">&quot;540px&quot;</span>
-}</pre>
+            <pre><span class="hljs-comment">/* No context defined. */</span></pre>
             
         
     </code>
@@ -237,6 +239,43 @@
                             <code class="Code Code--lang-CSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.rounded</span> {
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+}
+
+<span class="hljs-selector-class">.thumb</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+}
+
+<span class="hljs-selector-class">.small</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">320px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">180px</span>;
+}
+
+<span class="hljs-selector-class">.medium</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">640px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">360px</span>;
+}
+
+<span class="hljs-selector-class">.large</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">960px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">540px</span>;
+}
+
+<span class="hljs-selector-class">.xlarge</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">1280px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">720px</span>;
+}
+
+<span class="hljs-selector-class">.banner</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">1600px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">400px</span>;
+}
+
+<span class="hljs-selector-class">.hero</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">1920px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">1080px</span>;
 }</pre>
                             </code>
                             
@@ -253,7 +292,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">34 Bytes</span>
+                    <span class="Meta-value">388 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -277,39 +316,43 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(8)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(9)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="./image--default.html">
                     <span>Default</span>
                 </a>, 
             
+                <a href="./image--rounded.html">
+                    <span>Round Thumb</span>
+                </a>, 
+            
                 <a href="./image--thumb.html">
-                    <span>01-thumb</span>
+                    <span>Thumb</span>
                 </a>, 
             
                 <a href="./image--small.html">
-                    <span>02-small</span>
+                    <span>Small</span>
                 </a>, 
             
                 <a href="./image--medium.html">
-                    <span>03-medium</span>
+                    <span>Medium</span>
                 </a>, 
             
                 <a href="./image--large.html">
-                    <span>04-large</span>
+                    <span>Large</span>
                 </a>, 
             
                 <a href="./image--xlarge.html">
-                    <span>05-xlarge</span>
+                    <span>Extra Large</span>
                 </a>, 
             
                 <a href="./image--banner.html">
-                    <span>06-banner</span>
+                    <span>Banner</span>
                 </a>, 
             
                 <a href="./image--hero.html">
-                    <span>07-hero</span>
+                    <span>Hero</span>
                 </a>
             
             </span>
@@ -335,7 +378,7 @@
         </li>
         <li class="Meta-item">
             <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">src/components/01-atoms/30-media/image/image.hbs</span>
+            <span class="Meta-value">src/components/01-atoms/30-media/image/05-image--large.hbs</span>
         </li>
         
         
@@ -2621,7 +2664,7 @@
             
             <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-image">
                 <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-image-items">
-                    Image
+                    Image Variations
                 </button>
                 <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-image-items">
                 
@@ -2670,6 +2713,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./image--rounded.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="image--rounded"
+                data-handle="image--rounded"
+            >
+                <span>Round Thumb</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./image--thumb.html"
                 data-role="tree-link"
                 
@@ -2677,7 +2754,7 @@
                 data-test="image--thumb"
                 data-handle="image--thumb"
             >
-                <span>01-thumb</span>
+                <span>Thumb</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2711,7 +2788,7 @@
                 data-test="image--small"
                 data-handle="image--small"
             >
-                <span>02-small</span>
+                <span>Small</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2745,7 +2822,7 @@
                 data-test="image--medium"
                 data-handle="image--medium"
             >
-                <span>03-medium</span>
+                <span>Medium</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2779,7 +2856,7 @@
                 data-test="image--large"
                 data-handle="image--large"
             >
-                <span>04-large</span>
+                <span>Large</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2813,7 +2890,7 @@
                 data-test="image--xlarge"
                 data-handle="image--xlarge"
             >
-                <span>05-xlarge</span>
+                <span>Extra Large</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2847,7 +2924,7 @@
                 data-test="image--banner"
                 data-handle="image--banner"
             >
-                <span>06-banner</span>
+                <span>Banner</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2881,7 +2958,7 @@
                 data-test="image--hero"
                 data-handle="image--hero"
             >
-                <span>07-hero</span>
+                <span>Hero</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4161,6 +4238,74 @@
         </li>
         
     
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./media-object.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="media-object"
+                data-handle="media-object"
+            >
+                <span>Media Object</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./card.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="card"
+                data-handle="card"
+            >
+                <span>Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
                 </ul>
             </li>
@@ -5014,8 +5159,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-04-26T07:05:24.537Z">
-                                4/26/2023
+                            <time datetime="2023-05-01T17:02:56.031Z">
+                                5/1/2023
                             </time>
                         
                     </dd>

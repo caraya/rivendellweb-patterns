@@ -1,3 +1,40 @@
 .rounded {
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.thumb {
+  width: 200px;
+  height: 200px;
+}
+
+.small {
+  width: 320px;
+  height: 180px;
+}
+
+.medium {
+  width: 640px;
+  height: 360px;
+}
+
+.large {
+  width: 960px;
+  height: 540px;
+}
+
+.xlarge {
+  width: 1280px;
+  height: 720px;
+}
+
+.banner {
+  width: 1600px;
+  height: 400px;
+}
+
+.hero {
+  width: 1920px;
+  height: 1080px;
 }
