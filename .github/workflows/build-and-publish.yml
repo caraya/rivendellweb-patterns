@@ -48,14 +48,14 @@ jobs:
       with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: unnecessary
+    - name: Install SSH Key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: unnecessary
 
-      - name: Adding Known Hosts
-        run: ssh-keyscan -p ${{ secrets.SSH_PORT}} -H ${{ secrets.SSH_HOST }}  >> ~/.ssh/known_hosts
+    - name: Adding Known Hosts
+      run: ssh-keyscan -p ${{ secrets.SSH_PORT}} -H ${{ secrets.SSH_HOST }}  >> ~/.ssh/known_hosts
 
-      - name: Deploy with rsync
-        run: rsync -avz build/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:patterns.rivendellweb.net
+    - name: Deploy with rsync
+      run: rsync -avz build/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:patterns.rivendellweb.net
