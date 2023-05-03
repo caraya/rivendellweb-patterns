@@ -209,8 +209,6 @@ gulp.task('watch', function() {
 gulp.task('dev', gulp.series(
     'css',
     'babel',
-    'fractal:build',
-    'fractal:start',
     'watch',
 ));
 

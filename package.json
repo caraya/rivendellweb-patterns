@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "fractal start --sync",
-    "build": "fractal build"
+    "build": "fractal build",
+    "prepub": "gulp css && gulp babel && fractal build"
   },
   "keywords": [],
   "author": "Carlos Araya <carlos.araya@gmail.com> (https://publishing-project.rivendellweb.net/)",
