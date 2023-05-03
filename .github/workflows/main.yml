@@ -23,8 +23,10 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Build
-      run: npm run prepub
-      
+      run: |
+        npm install
+        npm run prepub
+
     - name: Adding Known Hosts
       run: |
         mkdir ~/.ssh/
