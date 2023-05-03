@@ -58,4 +58,4 @@ jobs:
         known_hosts: unnecessary
 
     - name: Deploy with rsync
-      run: rsync -avz build/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:patterns.rivendellweb.net
+      run: rsync -avz build/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}
