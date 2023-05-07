@@ -38,4 +38,4 @@ jobs:
         known_hosts: unnecessary
 
     - name: Deploy with rsync
-      run: rsync -avz build/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}
+      run: rsync -avz build/ ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}
