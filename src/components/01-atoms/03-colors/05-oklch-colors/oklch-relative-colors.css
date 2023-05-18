@@ -1,0 +1,210 @@
+:root {
+  --theme-primary: #663399;
+  --theme-primary-900: lab(from var(--theme-primary) 10% a b);
+  --theme-primary-800: lab(from var(--theme-primary) 20% a b);
+  --theme-primary-700: lab(from var(--theme-primary) 30% a b);
+  --theme-primary-600: lab(from var(--theme-primary) 40% a b);
+  --theme-primary-500: lab(from var(--theme-primary) 50% a b);
+  --theme-primary-400: lab(from var(--theme-primary) 60% a b);
+  --theme-primary-300: lab(from var(--theme-primary) 70% a b);
+  --theme-primary-200: lab(from var(--theme-primary) 80% a b);
+  --theme-primary-100: lab(from var(--theme-primary) 90% a b);
+
+  --theme-secondary: #2632c2;
+  --theme-secondary-900: lab(from var(--theme-secondary) 10% a b);
+  --theme-secondary-800: lab(from var(--theme-secondary) 20% a b);
+  --theme-secondary-700: lab(from var(--theme-secondary) 30% a b);
+  --theme-secondary-600: lab(from var(--theme-secondary) 40% a b);
+  --theme-secondary-500: lab(from var(--theme-secondary) 50% a b);
+  --theme-secondary-400: lab(from var(--theme-secondary) 60% a b);
+  --theme-secondary-300: lab(from var(--theme-secondary) 70% a b);
+  --theme-secondary-200: lab(from var(--theme-secondary) 80% a b);
+  --theme-secondary-100: lab(from var(--theme-secondary) 90% a b);
+
+  --theme-tertiary: #d2042d;
+  --theme-tertiary-100: lab(from var(--theme-tertiary) 90% a b);
+  --theme-tertiary-200: lab(from var(--theme-tertiary) 80% a b);
+  --theme-tertiary-300: lab(from var(--theme-tertiary) 70% a b);
+  --theme-tertiary-400: lab(from var(--theme-tertiary) 60% a b);
+  --theme-tertiary-500: lab(from var(--theme-tertiary) 50% a b);
+  --theme-tertiary-600: lab(from var(--theme-tertiary) 40% a b);
+  --theme-tertiary-700: lab(from var(--theme-tertiary) 30% a b);
+  --theme-tertiary-800: lab(from var(--theme-tertiary) 20% a b);
+  --theme-tertiary-900: lab(from var(--theme-tertiary) 10% a b);
+}
+
+html {
+  font-family: Raleway, sans-serif;
+}
+
+.outside-container {
+  margin-inline: 10rem;
+  margin-block-start: 4rem;
+}
+
+.explainer {
+  width: 80ch;
+  font-size: 1.5rem;
+  margin-block-end: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+}
+
+.box {
+  border: 4px solid black;
+  margin-inline-end: 5px;
+  margin-block: 10px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  font-size: 2rem;
+}
+
+.warning {
+  color: red;
+}
+
+/* Classes for themes */
+
+/* Primary theme */
+.theme-900 {
+  background: var(--theme-primary-900);
+  color: color-contrast(var(--theme-primary-900) vs black, white);
+}
+
+.theme-800 {
+  background: var(--theme-primary-800);
+  color: color-contrast(var(--theme-primary-800) vs white, black);
+}
+
+.theme-700 {
+  background: var(--theme-primary-700);
+  color: color-contrast(var(--theme-primary-700) vs white, black);
+}
+
+.theme-600 {
+  background: var(--theme-primary-600);
+  color: color-contrast(var(--theme-primary-600) vs white, black);
+}
+
+.theme-500 {
+  background: var(--theme-primary-500);
+  color: color-contrast(var(--theme-primary-500) vs white, black);
+}
+
+.theme-400 {
+  background: var(--theme-primary-400);
+  color: color-contrast(var(--theme-primary-400) vs white, black);
+}
+
+.theme-300 {
+  background: var(--theme-primary-300);
+  color: color-contrast(var(--theme-primary-300) vs white, black);
+}
+
+.theme-200 {
+  background: var(--theme-primary-200);
+  color: color-contrast(var(--theme-primary-200) vs white, black);
+}
+
+.theme-100 {
+  background: var(--theme-primary-100);
+  color: color-contrast(var(--theme-primary-100) vs white, black);
+}
+
+/* Secondary theme */
+.theme-secondary-900 {
+  background: var(--theme-secondary-900);
+  color: color-contrast(var(--theme-secondary-900) vs black, white);
+}
+
+.theme-secondary-800 {
+  background: var(--theme-secondary-800);
+  color: color-contrast(var(--theme-secondary-800) vs white, black);
+}
+
+.theme-secondary-700 {
+  background: var(--theme-secondary-700);
+  color: color-contrast(var(--theme-secondary-700) vs white, black);
+}
+
+.theme-secondary-600 {
+  background: var(--theme-secondary-600);
+  color: color-contrast(var(--theme-secondary-600) vs white, black);
+}
+
+.theme-secondary-500 {
+  background: var(--theme-secondary-500);
+  color: color-contrast(var(--theme-secondary-500) vs white, black);
+}
+
+.theme-secondary-400 {
+  background: var(--theme-secondary-400);
+  color: color-contrast(var(--theme-secondary-400) vs white, black);
+}
+
+.theme-secondary-300 {
+  background: var(--theme-secondary-300);
+  color: color-contrast(var(--theme-secondary-300) vs white, black);
+}
+
+.theme-secondary-200 {
+  background: var(--theme-secondary-200);
+  color: color-contrast(var(--theme-secondary-200) vs white, black);
+}
+
+.theme-secondary-100 {
+  background: var(--theme-secondary-100);
+  color: color-contrast(var(--theme-secondary-100) vs white, black);
+}
+
+/* Tertiary theme */
+.theme-tertiary-900 {
+  background: var(--theme-tertiary-900);
+  color: color-contrast(var(--theme-tertiary-900) vs black, white);
+}
+
+.theme-tertiary-800 {
+  background: var(--theme-tertiary-800);
+  color: color-contrast(var(--theme-tertiary-800) vs white, black);
+}
+
+.theme-tertiary-700 {
+  background: var(--theme-tertiary-700);
+  color: color-contrast(var(--theme-tertiary-700) vs white, black);
+}
+
+.theme-tertiary-600 {
+  background: var(--theme-tertiary-600);
+  color: color-contrast(var(--theme-tertiary-600) vs white, black);
+}
+
+.theme-tertiary-500 {
+  background: var(--theme-tertiary-500);
+  color: color-contrast(var(--theme-tertiary-500) vs white, black);
+}
+
+.theme-tertiary-400 {
+  background: var(--theme-tertiary-400);
+  color: color-contrast(var(--theme-tertiary-400) vs white, black);
+}
+
+.theme-tertiary-300 {
+  background: var(--theme-tertiary-300);
+  color: color-contrast(var(--theme-tertiary-300) vs white, black);
+}
+
+.theme-tertiary-200 {
+  background: var(--theme-tertiary-200);
+  color: color-contrast(var(--theme-tertiary-200) vs white, black);
+}
+
+.theme-tertiary-100 {
+  background: var(--theme-tertiary-100);
+  color: color-contrast(var(--theme-tertiary-100) vs white, black);
+}
