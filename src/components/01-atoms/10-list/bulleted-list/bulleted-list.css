@@ -1,6 +1,6 @@
 ul
 ul li::marker {
-  color: rebeccapurple;
+  color: oklch(0.44 0.16 303);
 }
 
 ul li {

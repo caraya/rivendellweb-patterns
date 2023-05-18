@@ -1,6 +1,6 @@
 .blockquote--normal {
   padding-inline-start: 1.5em;
-  border-inline-start: 5px solid var(--color-azure);
+  border-inline-start: 5px solid var(--oklch-color-azure);
 }
 
 .cite {
@@ -15,8 +15,8 @@
   width: 80%;
   width: 80ch;
 
-  border-block-start: 5px solid var(--color-azure);
-  border-block-end: 5px solid var(--color-azure);
+  border-block-start: 5px solid var(--oklch-color-azure);
+  border-block-end: 5px solid var(--oklch-color-azure);
 
   & p:first-child {
     margin-block-start: 1em;
@@ -34,7 +34,7 @@
 }
 
 .blockquote--single-top {
-  border-block-start: 5px solid var(--color-azure);
+  border-block-start: 5px solid var(--oklch-color-azure);
 
   & p:first-child {
     margin-block-start: 1rem;
@@ -42,7 +42,7 @@
 }
 
 .blockquote--single-bottom {
-  border-block-end: 5px solid var(--color-azure);
+  border-block-end: 5px solid var(--oklch-color-azure);
 
   & p:last-child {
     margin-block-end: 1rem;
@@ -50,8 +50,8 @@
 }
 
 .blockquote--single-both {
-  border-block-start: 5px solid var(--color-azure);
-  border-block-end: 5px solid var(--color-azure);
+  border-block-start: 5px solid var(--oklch-color-azure);
+  border-block-end: 5px solid var(--oklch-color-azure);
 
   & p:first-child {
     margin-block-start: 1em;
@@ -63,8 +63,8 @@
 }
 
 .blockquote--double-both {
-  border-top: 10px double var(--color-azure);
-  border-bottom: 10px double var(--color-azure);
+  border-top: 10px double var(--oklch-color-azure);
+  border-bottom: 10px double var(--oklch-color-azure);
 
   & p:first-child {
     margin-block-start: 1em;

@@ -3,8 +3,8 @@
 }
 
 summary {
-  background-color: var(--lch-color-black);
-  color: var(--lch-color-white);
+  background-color: var(--oklch-color-black);
+  color: var(--oklch-color-white);
   padding: 1.2rem;
   margin-block-end: 1.2rem;
   border-radius: 0.5rem;
@@ -28,8 +28,8 @@ summary {
 .accordion--title {
 	cursor: pointer;
 	user-select: none;
-	background-color: var(--lch-color-stone);
-  color: var(--lch-color-white);  
+	background-color: var(--oklch-color-stone);
+  color: var(--oklch-color-white);  
 	background-image: url(https://assets.codepen.io/32795/remove.svg), linear-gradient(transparent, transparent);
 	background-repeat: no-repeat;
 	background-position: right 1.25rem center;

@@ -1,0 +1,58 @@
+/* color-mix() experiment: darken a dark green mint color  */
+
+:root {
+  --lch-dark-text1: color-mix(in lab, var(--lab-color-mint) 10%, black);
+  --lch-dark-text2: color-mix(in lab, var(--lab-color-mint) 20%, black);
+  --lch-dark-text3: color-mix(in lab, var(--lab-color-mint) 30%, black);
+  --lch-dark-text4: color-mix(in lab, var(--lab-color-mint) 40%, black);
+  --lch-dark-text5: color-mix(in lab, var(--lab-color-mint) 50%, black);
+  --lch-dark-text6: color-mix(in lab, var(--lab-color-mint) 60%, black);
+  --lch-dark-text7: color-mix(in lab, var(--lab-color-mint) 70%, black);
+  --lch-dark-text8: color-mix(in lab, var(--lab-color-mint) 80%, black);
+  --lch-dark-text9: color-mix(in lab, var(--lab-color-mint) 90%, black);
+}
+
+.lch-dark-text1 {
+  background-color: var(--lch-dark-text1);
+  color: #fff;
+}
+
+.lch-dark-text2 {
+  background-color: var(--lch-dark-text2);
+  color: #fff;
+}
+
+.lch-dark-text3 {
+  background-color: var(--lch-dark-text3);
+  color: #fff;
+}
+
+.lch-dark-text4 {
+  background-color: var(--lch-dark-text4);
+  color: #fff;
+}
+
+.lch-dark-text5 {
+  background-color: var(--lch-dark-text5);
+  color: #fff;
+}
+
+.lch-dark-text6 {
+  background-color: var(--lch-dark-text6);
+  color: #fff;
+}
+
+.lch-dark-text7 {
+  background-color: var(--lch-dark-text7);
+  color: #fff;
+}
+
+.lch-dark-text8 {
+  background-color: var(--lch-dark-text8);
+  color: #fff;
+}
+
+.lch-dark-text9 {
+  background-color: var(--lch-dark-text9);
+  color: #fff;
+}

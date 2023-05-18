@@ -7,7 +7,7 @@ footer {
 
 article h2 + p:nth-of-type(1)::first-letter {
   /* font-family: "Source Sans Pro", Arial, Helvetica, sans-serif; */
-  color: #cd2653;
+  color: var(--oklch-color-candy);
   float: left;
   font-size: 12rem;
   line-height: 0.65;

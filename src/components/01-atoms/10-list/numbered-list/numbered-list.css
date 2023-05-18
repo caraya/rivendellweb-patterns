@@ -27,7 +27,7 @@ ol {
 
 ol li::marker {
   font-size: 125%;
-  color: var(--color-violet);
+  color: var(--oklch-color-violet);
 }
 
 .list--circled-decimal {

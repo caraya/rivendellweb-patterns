@@ -1,0 +1,51 @@
+/* color-mix() experiment: lighten a charcoal black */
+
+:root {
+  /* lightening charcoal */
+  --oklch-text1: color-mix(in oklch, var(--oklch-color-charcoal) 10%, white);
+  --oklch-text2: color-mix(in oklch, var(--oklch-color-charcoal) 20%, white);
+  --oklch-text3: color-mix(in oklch, var(--oklch-color-charcoal) 30%, white);
+  --oklch-text4: color-mix(in oklch, var(--oklch-color-charcoal) 40%, white);
+  --oklch-text5: color-mix(in oklch, var(--oklch-color-charcoal) 50%, white);
+  --oklch-text6: color-mix(in oklch, var(--oklch-color-charcoal) 60%, white);
+  --oklch-text7: color-mix(in oklch, var(--oklch-color-charcoal) 70%, white);
+  --oklch-text8: color-mix(in oklch, var(--oklch-color-charcoal) 80%, white);
+  --oklch-text9: color-mix(in oklch, var(--oklch-color-charcoal) 90%, white);
+}
+
+.lch-light-text1 {
+  background-color: var(--text1);
+}
+
+.lch-light-text2 {
+  background-color: var(--text2);
+}
+
+.lch-light-text3 {
+  background-color: var(--text3);
+}
+
+.lch-light-text4 {
+  background-color: var(--text4);
+}
+
+.lch-light-text5 {
+  background-color: var(--text5);
+}
+
+.lch-light-text6 {
+  background-color: var(--text6);
+}
+
+.lch-light-text7 {
+  background-color: var(--text7);
+}
+
+.lch-light-text8 {
+  background-color: var(--text8);
+}
+
+.lch-light-text9 {
+  background-color: var(--text9);
+  color: #fff;
+}
