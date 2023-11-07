@@ -241,21 +241,21 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-7fde3d785210a00f662c06886965f355">oklch-color-mix01.css</option>
+                <option value="file-e4d46eb71ec2ab6df59b7d67b9850556">oklch-color-mix01.css</option>
                 
-                <option value="file-7e39951cb1ee586adf305ce6ade82bbf">oklch-color-mix02.css</option>
+                <option value="file-0a34884029cbaa29816ad97b4dde697f">oklch-color-mix02.css</option>
                 
-                <option value="file-522509f581549cdb68b56f176c5aee27">oklch-colors.css</option>
+                <option value="file-576d8de5b641537044b983ff988ddf23">oklch-colors.css</option>
                 
-                <option value="file-b54c52b7a35c2aa46f4cfff6ae78d7bf">oklch-funk.css</option>
+                <option value="file-e64e4e6b3680b7515f221504c325ed6c">oklch-funk.css</option>
                 
-                <option value="file-f130a529138cdd9e7072a3dbb831e28d">oklch-relative-colors.css</option>
+                <option value="file-cd1c83d961cb936fcdbfd0e2542cb28d">oklch-relative-colors.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-7fde3d785210a00f662c06886965f355" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-e4d46eb71ec2ab6df59b7d67b9850556" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -334,7 +334,7 @@
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-7e39951cb1ee586adf305ce6ade82bbf" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-0a34884029cbaa29816ad97b4dde697f" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -420,7 +420,7 @@
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-522509f581549cdb68b56f176c5aee27" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-576d8de5b641537044b983ff988ddf23" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -634,261 +634,259 @@
   --oklch-<span class="hljs-attribute">color</span>-charcoal: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.25</span> <span class="hljs-number">0.01</span> <span class="hljs-number">315</span>);
 }
 
-<span class="hljs-comment">/* .color-container {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1em;
-} */</span>
+<span class="hljs-selector-class">.color-container</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-flow</span>: row wrap;
+  gap: <span class="hljs-number">1em</span>;
+}
 
-<span class="hljs-selector-class">.oklch-color-item</span> {
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-built_in">var</span>(--oklch-color-charcoal);
+<span class="hljs-selector-class">.color-item</span> {
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-built_in">var</span>(--oklch-color-black);
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">flex-flow</span>: column;
   <span class="hljs-attribute">justify-content</span>: center;
   <span class="hljs-attribute">align-items</span>: center;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">300px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
 }
 
-<span class="hljs-comment">/* Colors taken from The New Defaults */</span>
-  <span class="hljs-comment">/* whites */</span>
-  <span class="hljs-selector-class">.white</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-white);}
-  <span class="hljs-selector-class">.pearl</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pearl);}
-  <span class="hljs-selector-class">.alabaster</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-alabaster);}
-  <span class="hljs-selector-class">.snow</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-snow);}
-  <span class="hljs-selector-class">.ivory</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ivory);}
-  <span class="hljs-selector-class">.cream</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cream);}
-  <span class="hljs-selector-class">.eggshell</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-eggshell);}
-  <span class="hljs-selector-class">.cotton</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cotton);}
-  <span class="hljs-selector-class">.chiffon</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-chiffon);}
-  <span class="hljs-selector-class">.salt</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-salt);}
-  <span class="hljs-selector-class">.lace</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lace);}
-  <span class="hljs-selector-class">.coconut</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-coconut);}
-  <span class="hljs-selector-class">.linen</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-linen);}
-  <span class="hljs-selector-class">.bone</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bone);}
-  <span class="hljs-selector-class">.porcelain</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-porcelain);}
-  <span class="hljs-selector-class">.parchment</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-parchment);}
-  <span class="hljs-selector-class">.rice</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rice);}
-      
-    <span class="hljs-comment">/* blues */</span>
-      
-  <span class="hljs-selector-class">.blue</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-blue);}
-  <span class="hljs-selector-class">.navy</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-navy);}
-  <span class="hljs-selector-class">.aqua</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-aqua);}
-  <span class="hljs-selector-class">.sky</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sky);}
-  <span class="hljs-selector-class">.teal</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-teal);}
-  <span class="hljs-selector-class">.slate</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-slate);}
-  <span class="hljs-selector-class">.indigo</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-indigo);}
-  <span class="hljs-selector-class">.cobalt</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cobalt);}
-  <span class="hljs-selector-class">.ocean</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ocean);}
-  <span class="hljs-selector-class">.peacock</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-peacock);}
-  <span class="hljs-selector-class">.azure</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-azure);}
-  <span class="hljs-selector-class">.cerulean</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cerulean);}
-  <span class="hljs-selector-class">.lapis</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lapis);}
-  <span class="hljs-selector-class">.spruce</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-spruce);}
-  <span class="hljs-selector-class">.stone</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-stone);}
-  <span class="hljs-selector-class">.aegean</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-aegean);}
-  <span class="hljs-selector-class">.berry</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-berry);}
-  <span class="hljs-selector-class">.denim</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-denim);}
-  <span class="hljs-selector-class">.admiral</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-admiral);}
-  <span class="hljs-selector-class">.sapphire</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sapphire);}
-  <span class="hljs-selector-class">.arctic</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-arctic);}
+<span class="hljs-selector-class">.white</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-white);}
+<span class="hljs-selector-class">.pearl</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pearl);}
+<span class="hljs-selector-class">.alabaster</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-alabaster);}
+<span class="hljs-selector-class">.snow</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-snow);}
+<span class="hljs-selector-class">.ivory</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ivory);}
+<span class="hljs-selector-class">.cream</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cream);}
+<span class="hljs-selector-class">.eggshell</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-eggshell);}
+<span class="hljs-selector-class">.cotton</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cotton);}
+<span class="hljs-selector-class">.chiffon</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-chiffon);}
+<span class="hljs-selector-class">.salt</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-salt);}
+<span class="hljs-selector-class">.lace</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lace);}
+<span class="hljs-selector-class">.coconut</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-coconut);}
+<span class="hljs-selector-class">.linen</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-linen);}
+<span class="hljs-selector-class">.bone</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bone);}
+<span class="hljs-selector-class">.porcelain</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-porcelain);}
+<span class="hljs-selector-class">.parchment</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-parchment);}
+<span class="hljs-selector-class">.rice</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rice);}
     
-    <span class="hljs-comment">/* browns */</span>
-      
-  <span class="hljs-selector-class">.tan</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tan);}
-  <span class="hljs-selector-class">.beige</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-beige);}
-  <span class="hljs-selector-class">.macaroon</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-macaroon);}
-  <span class="hljs-selector-class">.hazelwood</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hazelwood);}
-  <span class="hljs-selector-class">.granola</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-granola);}
-  <span class="hljs-selector-class">.oat</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-oat);}
-  <span class="hljs-selector-class">.eggnog</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-eggnog);}
-  <span class="hljs-selector-class">.fawn</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fawn);}
-  <span class="hljs-selector-class">.sugarcookie</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sugarcookie);}
-  <span class="hljs-selector-class">.sand</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sand);}
-  <span class="hljs-selector-class">.sepia</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sepia);}
-  <span class="hljs-selector-class">.latte</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-latte);}
-  <span class="hljs-selector-class">.oyster</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-oyster);}
-  <span class="hljs-selector-class">.biscotti</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-biscotti);}
-  <span class="hljs-selector-class">.parmesean</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-parmesean);}
-  <span class="hljs-selector-class">.hazelnut</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hazelnut);}
-  <span class="hljs-selector-class">.sandcastle</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sandcastle);}
-  <span class="hljs-selector-class">.buttermilk</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-buttermilk);}
-  <span class="hljs-selector-class">.sanddollar</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sanddollar);}
-  <span class="hljs-selector-class">.shortbread</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-shortbread);}
+  <span class="hljs-comment">/* blues */</span>
     
-    <span class="hljs-comment">/* yellows */</span>
-      
-  <span class="hljs-selector-class">.yellow</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-yellow);}
-  <span class="hljs-selector-class">.canary</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-canary);}
-  <span class="hljs-selector-class">.gold</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-gold);}
-  <span class="hljs-selector-class">.daffodil</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-daffodil);}
-  <span class="hljs-selector-class">.flaxen</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-flaxen);}
-  <span class="hljs-selector-class">.butter</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-butter);}
-  <span class="hljs-selector-class">.lemon</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lemon);}
-  <span class="hljs-selector-class">.mustard</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mustard);}
-  <span class="hljs-selector-class">.corn</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-corn);}
-  <span class="hljs-selector-class">.medallion</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-medallion);}
-  <span class="hljs-selector-class">.dandelion</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-dandelion);}
-  <span class="hljs-selector-class">.bumblebee</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bumblebee);}
-  <span class="hljs-selector-class">.banana</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-banana);}
-  <span class="hljs-selector-class">.butterscotch</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-butterscotch);}
-  <span class="hljs-selector-class">.dijon</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-dijon);}
-  <span class="hljs-selector-class">.honey</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-honey);}
-  <span class="hljs-selector-class">.blonde</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-blonde);}
-  <span class="hljs-selector-class">.pineapple</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pineapple);}
-  <span class="hljs-selector-class">.tuscansun</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tuscansun);}
+<span class="hljs-selector-class">.blue</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-blue);}
+<span class="hljs-selector-class">.navy</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-navy);}
+<span class="hljs-selector-class">.aqua</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-aqua);}
+<span class="hljs-selector-class">.sky</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sky);}
+<span class="hljs-selector-class">.teal</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-teal);}
+<span class="hljs-selector-class">.slate</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-slate);}
+<span class="hljs-selector-class">.indigo</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-indigo);}
+<span class="hljs-selector-class">.cobalt</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cobalt);}
+<span class="hljs-selector-class">.ocean</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ocean);}
+<span class="hljs-selector-class">.peacock</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-peacock);}
+<span class="hljs-selector-class">.azure</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-azure);}
+<span class="hljs-selector-class">.cerulean</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cerulean);}
+<span class="hljs-selector-class">.lapis</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lapis);}
+<span class="hljs-selector-class">.spruce</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-spruce);}
+<span class="hljs-selector-class">.stone</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-stone);}
+<span class="hljs-selector-class">.aegean</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-aegean);}
+<span class="hljs-selector-class">.berry</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-berry);}
+<span class="hljs-selector-class">.denim</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-denim);}
+<span class="hljs-selector-class">.admiral</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-admiral);}
+<span class="hljs-selector-class">.sapphire</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sapphire);}
+<span class="hljs-selector-class">.arctic</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-arctic);}
+  
+  <span class="hljs-comment">/* browns */</span>
     
-    <span class="hljs-comment">/* oranges */</span>
+<span class="hljs-selector-class">.tan</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tan);}
+<span class="hljs-selector-class">.beige</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-beige);}
+<span class="hljs-selector-class">.macaroon</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-macaroon);}
+<span class="hljs-selector-class">.hazelwood</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hazelwood);}
+<span class="hljs-selector-class">.granola</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-granola);}
+<span class="hljs-selector-class">.oat</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-oat);}
+<span class="hljs-selector-class">.eggnog</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-eggnog);}
+<span class="hljs-selector-class">.fawn</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fawn);}
+<span class="hljs-selector-class">.sugarcookie</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sugarcookie);}
+<span class="hljs-selector-class">.sand</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sand);}
+<span class="hljs-selector-class">.sepia</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sepia);}
+<span class="hljs-selector-class">.latte</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-latte);}
+<span class="hljs-selector-class">.oyster</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-oyster);}
+<span class="hljs-selector-class">.biscotti</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-biscotti);}
+<span class="hljs-selector-class">.parmesean</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-parmesean);}
+<span class="hljs-selector-class">.hazelnut</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hazelnut);}
+<span class="hljs-selector-class">.sandcastle</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sandcastle);}
+<span class="hljs-selector-class">.buttermilk</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-buttermilk);}
+<span class="hljs-selector-class">.sanddollar</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sanddollar);}
+<span class="hljs-selector-class">.shortbread</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-shortbread);}
+  
+  <span class="hljs-comment">/* yellows */</span>
     
-  <span class="hljs-selector-class">.orange</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-orange);}
-  <span class="hljs-selector-class">.tangerine</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tangerine);}
-  <span class="hljs-selector-class">.merigold</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-merigold);}
-  <span class="hljs-selector-class">.cider</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cider);}
-  <span class="hljs-selector-class">.rust</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rust);}
-  <span class="hljs-selector-class">.ginger</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ginger);}
-  <span class="hljs-selector-class">.tiger</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tiger);}
-  <span class="hljs-selector-class">.bronze</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bronze);}
-  <span class="hljs-selector-class">.cantaloupe</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cantaloupe);}
-  <span class="hljs-selector-class">.apricot</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-apricot);}
-  <span class="hljs-selector-class">.carrot</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-carrot);}
-  <span class="hljs-selector-class">.squash</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-squash);}
-  <span class="hljs-selector-class">.spice</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-spice);}
-  <span class="hljs-selector-class">.marmalade</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-marmalade);}
-  <span class="hljs-selector-class">.amber</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-amber);}
-  <span class="hljs-selector-class">.sandstone</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sandstone);}
-  <span class="hljs-selector-class">.yam</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-yam);}
+<span class="hljs-selector-class">.yellow</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-yellow);}
+<span class="hljs-selector-class">.canary</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-canary);}
+<span class="hljs-selector-class">.gold</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-gold);}
+<span class="hljs-selector-class">.daffodil</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-daffodil);}
+<span class="hljs-selector-class">.flaxen</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-flaxen);}
+<span class="hljs-selector-class">.butter</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-butter);}
+<span class="hljs-selector-class">.lemon</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lemon);}
+<span class="hljs-selector-class">.mustard</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mustard);}
+<span class="hljs-selector-class">.corn</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-corn);}
+<span class="hljs-selector-class">.medallion</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-medallion);}
+<span class="hljs-selector-class">.dandelion</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-dandelion);}
+<span class="hljs-selector-class">.bumblebee</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bumblebee);}
+<span class="hljs-selector-class">.banana</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-banana);}
+<span class="hljs-selector-class">.butterscotch</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-butterscotch);}
+<span class="hljs-selector-class">.dijon</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-dijon);}
+<span class="hljs-selector-class">.honey</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-honey);}
+<span class="hljs-selector-class">.blonde</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-blonde);}
+<span class="hljs-selector-class">.pineapple</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pineapple);}
+<span class="hljs-selector-class">.tuscansun</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tuscansun);}
+  
+  <span class="hljs-comment">/* oranges */</span>
+  
+<span class="hljs-selector-class">.orange</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-orange);}
+<span class="hljs-selector-class">.tangerine</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tangerine);}
+<span class="hljs-selector-class">.merigold</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-merigold);}
+<span class="hljs-selector-class">.cider</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cider);}
+<span class="hljs-selector-class">.rust</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rust);}
+<span class="hljs-selector-class">.ginger</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ginger);}
+<span class="hljs-selector-class">.tiger</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tiger);}
+<span class="hljs-selector-class">.bronze</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bronze);}
+<span class="hljs-selector-class">.cantaloupe</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cantaloupe);}
+<span class="hljs-selector-class">.apricot</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-apricot);}
+<span class="hljs-selector-class">.carrot</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-carrot);}
+<span class="hljs-selector-class">.squash</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-squash);}
+<span class="hljs-selector-class">.spice</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-spice);}
+<span class="hljs-selector-class">.marmalade</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-marmalade);}
+<span class="hljs-selector-class">.amber</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-amber);}
+<span class="hljs-selector-class">.sandstone</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sandstone);}
+<span class="hljs-selector-class">.yam</span> {<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-yam);}
+  
+  <span class="hljs-comment">/* reds */</span>
     
-    <span class="hljs-comment">/* reds */</span>
-      
-  <span class="hljs-selector-class">.red</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-red);}
-  <span class="hljs-selector-class">.cherry</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cherry);}
-  <span class="hljs-selector-class">.rose</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rose);}
-  <span class="hljs-selector-class">.jam</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-jam);}
-  <span class="hljs-selector-class">.merlot</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-merlot);}
-  <span class="hljs-selector-class">.garnet</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-garnet);}
-  <span class="hljs-selector-class">.crimson</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-crimson);}
-  <span class="hljs-selector-class">.ruby</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ruby);}
-  <span class="hljs-selector-class">.scarlet</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-scarlet);}
-  <span class="hljs-selector-class">.redwine</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-redwine);}
-  <span class="hljs-selector-class">.redapple</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-redapple);}
-  <span class="hljs-selector-class">.mahogany</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mahogany);}
-  <span class="hljs-selector-class">.blood</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-blood);}
-  <span class="hljs-selector-class">.sangria</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sangria);}
-  <span class="hljs-selector-class">.currant</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-currant);}
-  <span class="hljs-selector-class">.blush</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-blush);}
-  <span class="hljs-selector-class">.candy</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-candy);}
-  <span class="hljs-selector-class">.lipstick</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lipstick);}
+<span class="hljs-selector-class">.red</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-red);}
+<span class="hljs-selector-class">.cherry</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cherry);}
+<span class="hljs-selector-class">.rose</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rose);}
+<span class="hljs-selector-class">.jam</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-jam);}
+<span class="hljs-selector-class">.merlot</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-merlot);}
+<span class="hljs-selector-class">.garnet</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-garnet);}
+<span class="hljs-selector-class">.crimson</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-crimson);}
+<span class="hljs-selector-class">.ruby</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ruby);}
+<span class="hljs-selector-class">.scarlet</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-scarlet);}
+<span class="hljs-selector-class">.redwine</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-redwine);}
+<span class="hljs-selector-class">.redapple</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-redapple);}
+<span class="hljs-selector-class">.mahogany</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mahogany);}
+<span class="hljs-selector-class">.blood</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-blood);}
+<span class="hljs-selector-class">.sangria</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sangria);}
+<span class="hljs-selector-class">.currant</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-currant);}
+<span class="hljs-selector-class">.blush</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-blush);}
+<span class="hljs-selector-class">.candy</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-candy);}
+<span class="hljs-selector-class">.lipstick</span> {<span class="hljs-attribute">color</span>: white;<span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lipstick);}
+  
+  <span class="hljs-comment">/* pinks */</span>
     
-    <span class="hljs-comment">/* pinks */</span>
-      
-  <span class="hljs-selector-class">.pink</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pink);}
-  <span class="hljs-selector-class">.fuchsia</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fuchsia);}
-  <span class="hljs-selector-class">.punch</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-punch);}
-  <span class="hljs-selector-class">.watermelon</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-watermelon);}
-  <span class="hljs-selector-class">.flamingo</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-flamingo);}
-  <span class="hljs-selector-class">.rouge</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rouge);}
-  <span class="hljs-selector-class">.salmon</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-salmon);}
-  <span class="hljs-selector-class">.coral</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-coral);}
-  <span class="hljs-selector-class">.peach</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-peach);}
-  <span class="hljs-selector-class">.strawberry</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-strawberry);}
-  <span class="hljs-selector-class">.rosewood</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rosewood);}
-  <span class="hljs-selector-class">.lemonade</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lemonade);}
-  <span class="hljs-selector-class">.taffy</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-taffy);}
-  <span class="hljs-selector-class">.bubblegum</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bubblegum);}
-  <span class="hljs-selector-class">.balletslipper</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-balletslipper);}
-  <span class="hljs-selector-class">.crepe</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-crepe);}
-  <span class="hljs-selector-class">.maroon</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-maroon);}
-  <span class="hljs-selector-class">.hotpink</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hotpink);}
+<span class="hljs-selector-class">.pink</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pink);}
+<span class="hljs-selector-class">.fuchsia</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fuchsia);}
+<span class="hljs-selector-class">.punch</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-punch);}
+<span class="hljs-selector-class">.watermelon</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-watermelon);}
+<span class="hljs-selector-class">.flamingo</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-flamingo);}
+<span class="hljs-selector-class">.rouge</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rouge);}
+<span class="hljs-selector-class">.salmon</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-salmon);}
+<span class="hljs-selector-class">.coral</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-coral);}
+<span class="hljs-selector-class">.peach</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-peach);}
+<span class="hljs-selector-class">.strawberry</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-strawberry);}
+<span class="hljs-selector-class">.rosewood</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rosewood);}
+<span class="hljs-selector-class">.lemonade</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lemonade);}
+<span class="hljs-selector-class">.taffy</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-taffy);}
+<span class="hljs-selector-class">.bubblegum</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bubblegum);}
+<span class="hljs-selector-class">.balletslipper</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-balletslipper);}
+<span class="hljs-selector-class">.crepe</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-crepe);}
+<span class="hljs-selector-class">.maroon</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-maroon);}
+<span class="hljs-selector-class">.hotpink</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hotpink);}
+  
+  <span class="hljs-comment">/* purples */</span>
+  
+<span class="hljs-selector-class">.purple</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-purple);}
+<span class="hljs-selector-class">.mauve</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mauve);}
+<span class="hljs-selector-class">.violet</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-violet);}
+<span class="hljs-selector-class">.boysenberry</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-boysenberry);}
+<span class="hljs-selector-class">.lavender</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lavender);}
+<span class="hljs-selector-class">.plum</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-plum);}
+<span class="hljs-selector-class">.lilac</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lilac);}
+<span class="hljs-selector-class">.periwinkle</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-periwinkle);}
+<span class="hljs-selector-class">.eggplant</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-eggplant);}
+<span class="hljs-selector-class">.iris</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-iris);}
+<span class="hljs-selector-class">.heather</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-heather);}
+<span class="hljs-selector-class">.amethyst</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-amethyst);}
+<span class="hljs-selector-class">.raisin</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-raisin);}
+<span class="hljs-selector-class">.orchid</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-orchid);}
+<span class="hljs-selector-class">.mulberry</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mulberry);}
+  
+  <span class="hljs-comment">/* greens */</span>
     
-    <span class="hljs-comment">/* purples */</span>
+<span class="hljs-selector-class">.green</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-green);}
+<span class="hljs-selector-class">.chartreuse</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-chartreuse);}
+<span class="hljs-selector-class">.juniper</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-juniper);}
+<span class="hljs-selector-class">.sage</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sage);}
+<span class="hljs-selector-class">.lime</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lime);}
+<span class="hljs-selector-class">.fern</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fern);}
+<span class="hljs-selector-class">.olive</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-olive);}
+<span class="hljs-selector-class">.emerald</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-emerald);}
+<span class="hljs-selector-class">.pear</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pear);}
+<span class="hljs-selector-class">.moss</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-moss);}
+<span class="hljs-selector-class">.shamrock</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-shamrock);}
+<span class="hljs-selector-class">.seafoam</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-seafoam);}
+<span class="hljs-selector-class">.pine</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pine);}
+<span class="hljs-selector-class">.parakeet</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-parakeet);}
+<span class="hljs-selector-class">.mint</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mint);}
+<span class="hljs-selector-class">.seaweed</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-seaweed);}
+<span class="hljs-selector-class">.pickle</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pickle);}
+<span class="hljs-selector-class">.pistachio</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pistachio);}
+<span class="hljs-selector-class">.basil</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-basil);}
+<span class="hljs-selector-class">.crocodile</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-crocodile);}
+  
+  <span class="hljs-comment">/* browns */</span>
     
-  <span class="hljs-selector-class">.purple</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-purple);}
-  <span class="hljs-selector-class">.mauve</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mauve);}
-  <span class="hljs-selector-class">.violet</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-violet);}
-  <span class="hljs-selector-class">.boysenberry</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-boysenberry);}
-  <span class="hljs-selector-class">.lavender</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lavender);}
-  <span class="hljs-selector-class">.plum</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-plum);}
-  <span class="hljs-selector-class">.lilac</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lilac);}
-  <span class="hljs-selector-class">.periwinkle</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-periwinkle);}
-  <span class="hljs-selector-class">.eggplant</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-eggplant);}
-  <span class="hljs-selector-class">.iris</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-iris);}
-  <span class="hljs-selector-class">.heather</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-heather);}
-  <span class="hljs-selector-class">.amethyst</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-amethyst);}
-  <span class="hljs-selector-class">.raisin</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-raisin);}
-  <span class="hljs-selector-class">.orchid</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-orchid);}
-  <span class="hljs-selector-class">.mulberry</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mulberry);}
+<span class="hljs-selector-class">.brown</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-brown);}
+<span class="hljs-selector-class">.coffee</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-coffee);}
+<span class="hljs-selector-class">.mocha</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mocha);}
+<span class="hljs-selector-class">.peanut</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-peanut);}
+<span class="hljs-selector-class">.carob</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-carob);}
+<span class="hljs-selector-class">.hickory</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hickory);}
+<span class="hljs-selector-class">.pecan</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pecan);}
+<span class="hljs-selector-class">.walnut</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-walnut);}
+<span class="hljs-selector-class">.caramel</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-caramel);}
+<span class="hljs-selector-class">.gingerbread</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-gingerbread);}
+<span class="hljs-selector-class">.chocolate</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-chocolate);}
+<span class="hljs-selector-class">.tortilla</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tortilla);}
+<span class="hljs-selector-class">.umber</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-umber);}
+<span class="hljs-selector-class">.tawny</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tawny);}
+<span class="hljs-selector-class">.brunette</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-brunette);}
+<span class="hljs-selector-class">.cinammon</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cinammon);}
+<span class="hljs-selector-class">.penny</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-penny);}
+  
+  <span class="hljs-comment">/* greys */</span>
     
-    <span class="hljs-comment">/* greens */</span>
-      
-  <span class="hljs-selector-class">.green</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-green);}
-  <span class="hljs-selector-class">.chartreuse</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-chartreuse);}
-  <span class="hljs-selector-class">.juniper</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-juniper);}
-  <span class="hljs-selector-class">.sage</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sage);}
-  <span class="hljs-selector-class">.lime</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lime);}
-  <span class="hljs-selector-class">.fern</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fern);}
-  <span class="hljs-selector-class">.olive</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-olive);}
-  <span class="hljs-selector-class">.emerald</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-emerald);}
-  <span class="hljs-selector-class">.pear</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pear);}
-  <span class="hljs-selector-class">.moss</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-moss);}
-  <span class="hljs-selector-class">.shamrock</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-shamrock);}
-  <span class="hljs-selector-class">.seafoam</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-seafoam);}
-  <span class="hljs-selector-class">.pine</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pine);}
-  <span class="hljs-selector-class">.parakeet</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-parakeet);}
-  <span class="hljs-selector-class">.mint</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mint);}
-  <span class="hljs-selector-class">.seaweed</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-seaweed);}
-  <span class="hljs-selector-class">.pickle</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pickle);}
-  <span class="hljs-selector-class">.pistachio</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pistachio);}
-  <span class="hljs-selector-class">.basil</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-basil);}
-  <span class="hljs-selector-class">.crocodile</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-crocodile);}
+<span class="hljs-selector-class">.grey</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-grey);}
+<span class="hljs-selector-class">.shadow</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-shadow);}
+<span class="hljs-selector-class">.graphite</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-graphite);}
+<span class="hljs-selector-class">.iron</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-iron);}
+<span class="hljs-selector-class">.pewter</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pewter);}
+<span class="hljs-selector-class">.cloud</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cloud);}
+<span class="hljs-selector-class">.silver</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-silver);}
+<span class="hljs-selector-class">.smoke</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-smoke);}
+<span class="hljs-selector-class">.anchor</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-anchor);}
+<span class="hljs-selector-class">.ash</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ash);}
+<span class="hljs-selector-class">.porpoise</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-porpoise);}
+<span class="hljs-selector-class">.dove</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-dove);}
+<span class="hljs-selector-class">.fog</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fog);}
+<span class="hljs-selector-class">.flint</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-flint);}
+<span class="hljs-selector-class">.pebble</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pebble);}
+<span class="hljs-selector-class">.lead</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lead);}
+<span class="hljs-selector-class">.coin</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-coin);}
+<span class="hljs-selector-class">.fossil</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fossil);}
     
-    <span class="hljs-comment">/* browns */</span>
-      
-  <span class="hljs-selector-class">.brown</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-brown);}
-  <span class="hljs-selector-class">.coffee</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-coffee);}
-  <span class="hljs-selector-class">.mocha</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-mocha);}
-  <span class="hljs-selector-class">.peanut</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-peanut);}
-  <span class="hljs-selector-class">.carob</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-carob);}
-  <span class="hljs-selector-class">.hickory</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hickory);}
-  <span class="hljs-selector-class">.pecan</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pecan);}
-  <span class="hljs-selector-class">.walnut</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-walnut);}
-  <span class="hljs-selector-class">.caramel</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-caramel);}
-  <span class="hljs-selector-class">.gingerbread</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-gingerbread);}
-  <span class="hljs-selector-class">.chocolate</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-chocolate);}
-  <span class="hljs-selector-class">.tortilla</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tortilla);}
-  <span class="hljs-selector-class">.umber</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-umber);}
-  <span class="hljs-selector-class">.tawny</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-tawny);}
-  <span class="hljs-selector-class">.brunette</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-brunette);}
-  <span class="hljs-selector-class">.cinammon</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cinammon);}
-  <span class="hljs-selector-class">.penny</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-penny);}
+  <span class="hljs-comment">/* blacks */</span>
     
-    <span class="hljs-comment">/* greys */</span>
-      
-  <span class="hljs-selector-class">.grey</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-grey);}
-  <span class="hljs-selector-class">.shadow</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-shadow);}
-  <span class="hljs-selector-class">.graphite</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-graphite);}
-  <span class="hljs-selector-class">.iron</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-iron);}
-  <span class="hljs-selector-class">.pewter</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pewter);}
-  <span class="hljs-selector-class">.cloud</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cloud);}
-  <span class="hljs-selector-class">.silver</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-silver);}
-  <span class="hljs-selector-class">.smoke</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-smoke);}
-  <span class="hljs-selector-class">.anchor</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-anchor);}
-  <span class="hljs-selector-class">.ash</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ash);}
-  <span class="hljs-selector-class">.porpoise</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-porpoise);}
-  <span class="hljs-selector-class">.dove</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-dove);}
-  <span class="hljs-selector-class">.fog</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fog);}
-  <span class="hljs-selector-class">.flint</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-flint);}
-  <span class="hljs-selector-class">.pebble</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-pebble);}
-  <span class="hljs-selector-class">.lead</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-lead);}
-  <span class="hljs-selector-class">.coin</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-coin);}
-  <span class="hljs-selector-class">.fossil</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-fossil);}
-      
-    <span class="hljs-comment">/* blacks */</span>
-      
-  <span class="hljs-selector-class">.black</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-black);}
-  <span class="hljs-selector-class">.ebony</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ebony);}
-  <span class="hljs-selector-class">.crow</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-crow);}
-  <span class="hljs-selector-class">.charcoal</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-charcoal);}
+<span class="hljs-selector-class">.black</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-black);}
+<span class="hljs-selector-class">.ebony</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-ebony);}
+<span class="hljs-selector-class">.crow</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-crow);}
+<span class="hljs-selector-class">.charcoal</span> {<span class="hljs-attribute">color</span>: white; <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-charcoal);}
 </pre>
                             </code>
                             
@@ -905,12 +903,12 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">23.6 KB</span>
+                    <span class="Meta-value">23.1 KB</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-b54c52b7a35c2aa46f4cfff6ae78d7bf" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-e64e4e6b3680b7515f221504c325ed6c" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -919,18 +917,35 @@
                             
                             <code class="Code Code--lang-CSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-pseudo">:root</span> {
-  --oklch-<span class="hljs-attribute">color</span>-hemi-orange: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.7</span> <span class="hljs-number">0.17</span> <span class="hljs-number">48.1</span>);
   --oklch-<span class="hljs-attribute">color</span>-plum-crazy: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.45</span> <span class="hljs-number">0.25</span> <span class="hljs-number">294</span>);
+  --oklch-<span class="hljs-attribute">color</span>-cherry: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.55</span> <span class="hljs-number">0.22</span> <span class="hljs-number">22.6</span>);
   --oklch-<span class="hljs-attribute">color</span>-black-cherry: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.33</span> <span class="hljs-number">0.07</span> <span class="hljs-number">352</span>);
   --oklch-<span class="hljs-attribute">color</span>-panther-pink: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.58</span> <span class="hljs-number">0.19</span> <span class="hljs-number">340</span>);
   --oklch-<span class="hljs-attribute">color</span>-green-go: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.61</span> <span class="hljs-number">0.15</span> <span class="hljs-number">148</span>);
   --oklch-<span class="hljs-attribute">color</span>-sublime-green: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.83</span> <span class="hljs-number">0.2</span> <span class="hljs-number">129</span>);
   --oklch-<span class="hljs-attribute">color</span>-go-mango: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.62</span> <span class="hljs-number">0.17</span> <span class="hljs-number">28.2</span>);
+  --oklch-<span class="hljs-attribute">color</span>-butterscotch: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.69</span> <span class="hljs-number">0.14</span> <span class="hljs-number">67</span>);
   --oklch-<span class="hljs-attribute">color</span>-bright-green: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.88</span> <span class="hljs-number">0.28</span> <span class="hljs-number">138</span>);
   --oklch-<span class="hljs-attribute">color</span>-<span class="hljs-attribute">top</span>-banana: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.93</span> <span class="hljs-number">0.17</span> <span class="hljs-number">103</span>);
   --oklch-<span class="hljs-attribute">color</span>-citron-yella: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.7</span> <span class="hljs-number">0.15</span> <span class="hljs-number">114</span>);
   --oklch-<span class="hljs-attribute">color</span>-rebeccapurple: <span class="hljs-built_in">oklch</span>(<span class="hljs-number">0.44</span> <span class="hljs-number">0.16</span> <span class="hljs-number">303</span>);
 }
+
+
+<span class="hljs-selector-class">.hemi-orange</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hemi-orange); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.plum-crazy</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-plum-crazy); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.cherry</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-cherry:); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.black-cherry</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-black-cherry); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.panther-pink</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-panther-pink); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.green-go</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-green-go); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.sublime-green</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-sublime-green); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.go-mango</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-go-mango); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.butterscotch</span>: {  background-color: <span class="hljs-built_in">var</span>(--oklch-color-butterscotch); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.bright-green</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-bright-green); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.top-banana</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-top-banana); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.citron-yella</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-citron-yella); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.panther-pink</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-panther-pink); <span class="hljs-attribute">color</span>: white; }
+<span class="hljs-selector-class">.rebeccapurple</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-rebeccapurple); <span class="hljs-attribute">color</span>: white; }
 
 <span class="hljs-selector-class">.lch-hemi-orange</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-hemi-orange); <span class="hljs-attribute">color</span>: white; }
 <span class="hljs-selector-class">.lch-plum-crazy</span> {  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--oklch-color-plum-crazy); <span class="hljs-attribute">color</span>: white; }
@@ -961,12 +976,12 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.8 KB</span>
+                    <span class="Meta-value">3 KB</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-f130a529138cdd9e7072a3dbb831e28d" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-cd1c83d961cb936fcdbfd0e2542cb28d" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -1224,59 +1239,11 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(17)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="./oklch-colors--default.html">
                     <span>Default</span>
-                </a>, 
-            
-                <a href="./oklch-colors--whites.html">
-                    <span>Whites</span>
-                </a>, 
-            
-                <a href="./oklch-colors--blues.html">
-                    <span>Blues</span>
-                </a>, 
-            
-                <a href="./oklch-colors--browns.html">
-                    <span>Browns</span>
-                </a>, 
-            
-                <a href="./oklch-colors--yellows.html">
-                    <span>Yellows</span>
-                </a>, 
-            
-                <a href="./oklch-colors--oranges.html">
-                    <span>Oranges</span>
-                </a>, 
-            
-                <a href="./oklch-colors--reds.html">
-                    <span>Reds</span>
-                </a>, 
-            
-                <a href="./oklch-colors--pinks.html">
-                    <span>Pinks</span>
-                </a>, 
-            
-                <a href="./oklch-colors--purples.html">
-                    <span>Purples</span>
-                </a>, 
-            
-                <a href="./oklch-colors--greens.html">
-                    <span>Greens</span>
-                </a>, 
-            
-                <a href="./oklch-colors--browns.html">
-                    <span>Browns</span>
-                </a>, 
-            
-                <a href="./oklch-colors--greys.html">
-                    <span>Greys</span>
-                </a>, 
-            
-                <a href="./oklch-colors--blakcs.html">
-                    <span>Blakcs</span>
                 </a>, 
             
                 <a href="./oklch-colors--relative.html">
@@ -2385,414 +2352,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./oklch-colors--whites.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--whites"
-                data-handle="oklch-colors--whites"
-            >
-                <span>Whites</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--blues.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--blues"
-                data-handle="oklch-colors--blues"
-            >
-                <span>Blues</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--browns.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--browns"
-                data-handle="oklch-colors--browns"
-            >
-                <span>Browns</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--yellows.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--yellows"
-                data-handle="oklch-colors--yellows"
-            >
-                <span>Yellows</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--oranges.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--oranges"
-                data-handle="oklch-colors--oranges"
-            >
-                <span>Oranges</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--reds.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--reds"
-                data-handle="oklch-colors--reds"
-            >
-                <span>Reds</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--pinks.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--pinks"
-                data-handle="oklch-colors--pinks"
-            >
-                <span>Pinks</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--purples.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--purples"
-                data-handle="oklch-colors--purples"
-            >
-                <span>Purples</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--greens.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--greens"
-                data-handle="oklch-colors--greens"
-            >
-                <span>Greens</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--browns.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--browns"
-                data-handle="oklch-colors--browns"
-            >
-                <span>Browns</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--greys.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--greys"
-                data-handle="oklch-colors--greys"
-            >
-                <span>Greys</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./oklch-colors--blakcs.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="oklch-colors--blakcs"
-                data-handle="oklch-colors--blakcs"
-            >
-                <span>Blakcs</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
                 href="./oklch-colors--relative.html"
                 data-role="tree-link"
                 
@@ -2901,6 +2460,570 @@
                 data-pjax
                 data-test="oklch-colors--darker"
                 data-handle="oklch-colors--darker"
+            >
+                <span>Darker</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-lab-colors">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-lab-colors-items">
+                    LAB Colors
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-lab-colors-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--default"
+                data-handle="lab-colors--default"
+            >
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--whites.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--whites"
+                data-handle="lab-colors--whites"
+            >
+                <span>Whites</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--blues.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--blues"
+                data-handle="lab-colors--blues"
+            >
+                <span>Blues</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--browns.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--browns"
+                data-handle="lab-colors--browns"
+            >
+                <span>Browns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--yellows.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--yellows"
+                data-handle="lab-colors--yellows"
+            >
+                <span>Yellows</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--oranges.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--oranges"
+                data-handle="lab-colors--oranges"
+            >
+                <span>Oranges</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--reds.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--reds"
+                data-handle="lab-colors--reds"
+            >
+                <span>Reds</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--pinks.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--pinks"
+                data-handle="lab-colors--pinks"
+            >
+                <span>Pinks</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--purples.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--purples"
+                data-handle="lab-colors--purples"
+            >
+                <span>Purples</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--greens.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--greens"
+                data-handle="lab-colors--greens"
+            >
+                <span>Greens</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--browns.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--browns"
+                data-handle="lab-colors--browns"
+            >
+                <span>Browns</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--greys.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--greys"
+                data-handle="lab-colors--greys"
+            >
+                <span>Greys</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--blacks.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--blacks"
+                data-handle="lab-colors--blacks"
+            >
+                <span>Blacks</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--funky.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--funky"
+                data-handle="lab-colors--funky"
+            >
+                <span>Funky</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--lighter.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--lighter"
+                data-handle="lab-colors--lighter"
+            >
+                <span>Lighter</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #f0f;" title="Idea"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./lab-colors--darker.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="lab-colors--darker"
+                data-handle="lab-colors--darker"
             >
                 <span>Darker</span>
                 
@@ -6915,8 +7038,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-05-18T18:30:55.538Z">
-                                5/18/2023
+                            <time datetime="2023-10-10T08:20:26.164Z">
+                                10/10/2023
                             </time>
                         
                     </dd>

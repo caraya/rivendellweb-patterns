@@ -204,258 +204,256 @@
   --oklch-color-charcoal: oklch(0.25 0.01 315);
 }
 
-/* .color-container {
+.color-container {
   display: flex;
   flex-flow: row wrap;
   gap: 1em;
-} */
+}
 
-.oklch-color-item {
-  border: 2px solid var(--oklch-color-charcoal);
+.color-item {
+  border: 2px solid var(--oklch-color-black);
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
-/* Colors taken from The New Defaults */
-  /* whites */
-  .white {background-color: var(--oklch-color-white);}
-  .pearl {background-color: var(--oklch-color-pearl);}
-  .alabaster {background-color: var(--oklch-color-alabaster);}
-  .snow {background-color: var(--oklch-color-snow);}
-  .ivory {background-color: var(--oklch-color-ivory);}
-  .cream {background-color: var(--oklch-color-cream);}
-  .eggshell {background-color: var(--oklch-color-eggshell);}
-  .cotton {background-color: var(--oklch-color-cotton);}
-  .chiffon {background-color: var(--oklch-color-chiffon);}
-  .salt {background-color: var(--oklch-color-salt);}
-  .lace {background-color: var(--oklch-color-lace);}
-  .coconut {background-color: var(--oklch-color-coconut);}
-  .linen {background-color: var(--oklch-color-linen);}
-  .bone {background-color: var(--oklch-color-bone);}
-  .porcelain {background-color: var(--oklch-color-porcelain);}
-  .parchment {background-color: var(--oklch-color-parchment);}
-  .rice {background-color: var(--oklch-color-rice);}
-      
-    /* blues */
-      
-  .blue {color: white; background-color: var(--oklch-color-blue);}
-  .navy {color: white; background-color: var(--oklch-color-navy);}
-  .aqua {color: white; background-color: var(--oklch-color-aqua);}
-  .sky {color: white; background-color: var(--oklch-color-sky);}
-  .teal {color: white; background-color: var(--oklch-color-teal);}
-  .slate {color: white; background-color: var(--oklch-color-slate);}
-  .indigo {color: white; background-color: var(--oklch-color-indigo);}
-  .cobalt {color: white; background-color: var(--oklch-color-cobalt);}
-  .ocean {color: white; background-color: var(--oklch-color-ocean);}
-  .peacock {color: white; background-color: var(--oklch-color-peacock);}
-  .azure {color: white; background-color: var(--oklch-color-azure);}
-  .cerulean {color: white; background-color: var(--oklch-color-cerulean);}
-  .lapis {color: white; background-color: var(--oklch-color-lapis);}
-  .spruce {color: white; background-color: var(--oklch-color-spruce);}
-  .stone {color: white; background-color: var(--oklch-color-stone);}
-  .aegean {color: white; background-color: var(--oklch-color-aegean);}
-  .berry {color: white; background-color: var(--oklch-color-berry);}
-  .denim {color: white; background-color: var(--oklch-color-denim);}
-  .admiral {color: white; background-color: var(--oklch-color-admiral);}
-  .sapphire {color: white; background-color: var(--oklch-color-sapphire);}
-  .arctic {color: white; background-color: var(--oklch-color-arctic);}
+.white {background-color: var(--oklch-color-white);}
+.pearl {background-color: var(--oklch-color-pearl);}
+.alabaster {background-color: var(--oklch-color-alabaster);}
+.snow {background-color: var(--oklch-color-snow);}
+.ivory {background-color: var(--oklch-color-ivory);}
+.cream {background-color: var(--oklch-color-cream);}
+.eggshell {background-color: var(--oklch-color-eggshell);}
+.cotton {background-color: var(--oklch-color-cotton);}
+.chiffon {background-color: var(--oklch-color-chiffon);}
+.salt {background-color: var(--oklch-color-salt);}
+.lace {background-color: var(--oklch-color-lace);}
+.coconut {background-color: var(--oklch-color-coconut);}
+.linen {background-color: var(--oklch-color-linen);}
+.bone {background-color: var(--oklch-color-bone);}
+.porcelain {background-color: var(--oklch-color-porcelain);}
+.parchment {background-color: var(--oklch-color-parchment);}
+.rice {background-color: var(--oklch-color-rice);}
     
-    /* browns */
-      
-  .tan {background-color: var(--oklch-color-tan);}
-  .beige {background-color: var(--oklch-color-beige);}
-  .macaroon {background-color: var(--oklch-color-macaroon);}
-  .hazelwood {background-color: var(--oklch-color-hazelwood);}
-  .granola {background-color: var(--oklch-color-granola);}
-  .oat {background-color: var(--oklch-color-oat);}
-  .eggnog {background-color: var(--oklch-color-eggnog);}
-  .fawn {background-color: var(--oklch-color-fawn);}
-  .sugarcookie {background-color: var(--oklch-color-sugarcookie);}
-  .sand {background-color: var(--oklch-color-sand);}
-  .sepia {background-color: var(--oklch-color-sepia);}
-  .latte {background-color: var(--oklch-color-latte);}
-  .oyster {background-color: var(--oklch-color-oyster);}
-  .biscotti {background-color: var(--oklch-color-biscotti);}
-  .parmesean {background-color: var(--oklch-color-parmesean);}
-  .hazelnut {background-color: var(--oklch-color-hazelnut);}
-  .sandcastle {background-color: var(--oklch-color-sandcastle);}
-  .buttermilk {background-color: var(--oklch-color-buttermilk);}
-  .sanddollar {background-color: var(--oklch-color-sanddollar);}
-  .shortbread {background-color: var(--oklch-color-shortbread);}
+  /* blues */
     
-    /* yellows */
-      
-  .yellow {background-color: var(--oklch-color-yellow);}
-  .canary {background-color: var(--oklch-color-canary);}
-  .gold {background-color: var(--oklch-color-gold);}
-  .daffodil {background-color: var(--oklch-color-daffodil);}
-  .flaxen {background-color: var(--oklch-color-flaxen);}
-  .butter {background-color: var(--oklch-color-butter);}
-  .lemon {background-color: var(--oklch-color-lemon);}
-  .mustard {background-color: var(--oklch-color-mustard);}
-  .corn {background-color: var(--oklch-color-corn);}
-  .medallion {background-color: var(--oklch-color-medallion);}
-  .dandelion {background-color: var(--oklch-color-dandelion);}
-  .bumblebee {background-color: var(--oklch-color-bumblebee);}
-  .banana {background-color: var(--oklch-color-banana);}
-  .butterscotch {background-color: var(--oklch-color-butterscotch);}
-  .dijon {background-color: var(--oklch-color-dijon);}
-  .honey {background-color: var(--oklch-color-honey);}
-  .blonde {background-color: var(--oklch-color-blonde);}
-  .pineapple {background-color: var(--oklch-color-pineapple);}
-  .tuscansun {background-color: var(--oklch-color-tuscansun);}
+.blue {color: white; background-color: var(--oklch-color-blue);}
+.navy {color: white; background-color: var(--oklch-color-navy);}
+.aqua {color: white; background-color: var(--oklch-color-aqua);}
+.sky {color: white; background-color: var(--oklch-color-sky);}
+.teal {color: white; background-color: var(--oklch-color-teal);}
+.slate {color: white; background-color: var(--oklch-color-slate);}
+.indigo {color: white; background-color: var(--oklch-color-indigo);}
+.cobalt {color: white; background-color: var(--oklch-color-cobalt);}
+.ocean {color: white; background-color: var(--oklch-color-ocean);}
+.peacock {color: white; background-color: var(--oklch-color-peacock);}
+.azure {color: white; background-color: var(--oklch-color-azure);}
+.cerulean {color: white; background-color: var(--oklch-color-cerulean);}
+.lapis {color: white; background-color: var(--oklch-color-lapis);}
+.spruce {color: white; background-color: var(--oklch-color-spruce);}
+.stone {color: white; background-color: var(--oklch-color-stone);}
+.aegean {color: white; background-color: var(--oklch-color-aegean);}
+.berry {color: white; background-color: var(--oklch-color-berry);}
+.denim {color: white; background-color: var(--oklch-color-denim);}
+.admiral {color: white; background-color: var(--oklch-color-admiral);}
+.sapphire {color: white; background-color: var(--oklch-color-sapphire);}
+.arctic {color: white; background-color: var(--oklch-color-arctic);}
+  
+  /* browns */
     
-    /* oranges */
+.tan {background-color: var(--oklch-color-tan);}
+.beige {background-color: var(--oklch-color-beige);}
+.macaroon {background-color: var(--oklch-color-macaroon);}
+.hazelwood {background-color: var(--oklch-color-hazelwood);}
+.granola {background-color: var(--oklch-color-granola);}
+.oat {background-color: var(--oklch-color-oat);}
+.eggnog {background-color: var(--oklch-color-eggnog);}
+.fawn {background-color: var(--oklch-color-fawn);}
+.sugarcookie {background-color: var(--oklch-color-sugarcookie);}
+.sand {background-color: var(--oklch-color-sand);}
+.sepia {background-color: var(--oklch-color-sepia);}
+.latte {background-color: var(--oklch-color-latte);}
+.oyster {background-color: var(--oklch-color-oyster);}
+.biscotti {background-color: var(--oklch-color-biscotti);}
+.parmesean {background-color: var(--oklch-color-parmesean);}
+.hazelnut {background-color: var(--oklch-color-hazelnut);}
+.sandcastle {background-color: var(--oklch-color-sandcastle);}
+.buttermilk {background-color: var(--oklch-color-buttermilk);}
+.sanddollar {background-color: var(--oklch-color-sanddollar);}
+.shortbread {background-color: var(--oklch-color-shortbread);}
+  
+  /* yellows */
     
-  .orange {background-color: var(--oklch-color-orange);}
-  .tangerine {background-color: var(--oklch-color-tangerine);}
-  .merigold {background-color: var(--oklch-color-merigold);}
-  .cider {background-color: var(--oklch-color-cider);}
-  .rust {background-color: var(--oklch-color-rust);}
-  .ginger {background-color: var(--oklch-color-ginger);}
-  .tiger {background-color: var(--oklch-color-tiger);}
-  .bronze {background-color: var(--oklch-color-bronze);}
-  .cantaloupe {background-color: var(--oklch-color-cantaloupe);}
-  .apricot {background-color: var(--oklch-color-apricot);}
-  .carrot {background-color: var(--oklch-color-carrot);}
-  .squash {background-color: var(--oklch-color-squash);}
-  .spice {background-color: var(--oklch-color-spice);}
-  .marmalade {background-color: var(--oklch-color-marmalade);}
-  .amber {background-color: var(--oklch-color-amber);}
-  .sandstone {background-color: var(--oklch-color-sandstone);}
-  .yam {background-color: var(--oklch-color-yam);}
+.yellow {background-color: var(--oklch-color-yellow);}
+.canary {background-color: var(--oklch-color-canary);}
+.gold {background-color: var(--oklch-color-gold);}
+.daffodil {background-color: var(--oklch-color-daffodil);}
+.flaxen {background-color: var(--oklch-color-flaxen);}
+.butter {background-color: var(--oklch-color-butter);}
+.lemon {background-color: var(--oklch-color-lemon);}
+.mustard {background-color: var(--oklch-color-mustard);}
+.corn {background-color: var(--oklch-color-corn);}
+.medallion {background-color: var(--oklch-color-medallion);}
+.dandelion {background-color: var(--oklch-color-dandelion);}
+.bumblebee {background-color: var(--oklch-color-bumblebee);}
+.banana {background-color: var(--oklch-color-banana);}
+.butterscotch {background-color: var(--oklch-color-butterscotch);}
+.dijon {background-color: var(--oklch-color-dijon);}
+.honey {background-color: var(--oklch-color-honey);}
+.blonde {background-color: var(--oklch-color-blonde);}
+.pineapple {background-color: var(--oklch-color-pineapple);}
+.tuscansun {background-color: var(--oklch-color-tuscansun);}
+  
+  /* oranges */
+  
+.orange {background-color: var(--oklch-color-orange);}
+.tangerine {background-color: var(--oklch-color-tangerine);}
+.merigold {background-color: var(--oklch-color-merigold);}
+.cider {background-color: var(--oklch-color-cider);}
+.rust {background-color: var(--oklch-color-rust);}
+.ginger {background-color: var(--oklch-color-ginger);}
+.tiger {background-color: var(--oklch-color-tiger);}
+.bronze {background-color: var(--oklch-color-bronze);}
+.cantaloupe {background-color: var(--oklch-color-cantaloupe);}
+.apricot {background-color: var(--oklch-color-apricot);}
+.carrot {background-color: var(--oklch-color-carrot);}
+.squash {background-color: var(--oklch-color-squash);}
+.spice {background-color: var(--oklch-color-spice);}
+.marmalade {background-color: var(--oklch-color-marmalade);}
+.amber {background-color: var(--oklch-color-amber);}
+.sandstone {background-color: var(--oklch-color-sandstone);}
+.yam {background-color: var(--oklch-color-yam);}
+  
+  /* reds */
     
-    /* reds */
-      
-  .red {color: white;background-color: var(--oklch-color-red);}
-  .cherry {color: white;background-color: var(--oklch-color-cherry);}
-  .rose {color: white;background-color: var(--oklch-color-rose);}
-  .jam {color: white;background-color: var(--oklch-color-jam);}
-  .merlot {color: white;background-color: var(--oklch-color-merlot);}
-  .garnet {color: white;background-color: var(--oklch-color-garnet);}
-  .crimson {color: white;background-color: var(--oklch-color-crimson);}
-  .ruby {color: white;background-color: var(--oklch-color-ruby);}
-  .scarlet {color: white;background-color: var(--oklch-color-scarlet);}
-  .redwine {color: white;background-color: var(--oklch-color-redwine);}
-  .redapple {color: white;background-color: var(--oklch-color-redapple);}
-  .mahogany {color: white;background-color: var(--oklch-color-mahogany);}
-  .blood {color: white;background-color: var(--oklch-color-blood);}
-  .sangria {color: white;background-color: var(--oklch-color-sangria);}
-  .currant {color: white;background-color: var(--oklch-color-currant);}
-  .blush {color: white;background-color: var(--oklch-color-blush);}
-  .candy {color: white;background-color: var(--oklch-color-candy);}
-  .lipstick {color: white;background-color: var(--oklch-color-lipstick);}
+.red {color: white;background-color: var(--oklch-color-red);}
+.cherry {color: white;background-color: var(--oklch-color-cherry);}
+.rose {color: white;background-color: var(--oklch-color-rose);}
+.jam {color: white;background-color: var(--oklch-color-jam);}
+.merlot {color: white;background-color: var(--oklch-color-merlot);}
+.garnet {color: white;background-color: var(--oklch-color-garnet);}
+.crimson {color: white;background-color: var(--oklch-color-crimson);}
+.ruby {color: white;background-color: var(--oklch-color-ruby);}
+.scarlet {color: white;background-color: var(--oklch-color-scarlet);}
+.redwine {color: white;background-color: var(--oklch-color-redwine);}
+.redapple {color: white;background-color: var(--oklch-color-redapple);}
+.mahogany {color: white;background-color: var(--oklch-color-mahogany);}
+.blood {color: white;background-color: var(--oklch-color-blood);}
+.sangria {color: white;background-color: var(--oklch-color-sangria);}
+.currant {color: white;background-color: var(--oklch-color-currant);}
+.blush {color: white;background-color: var(--oklch-color-blush);}
+.candy {color: white;background-color: var(--oklch-color-candy);}
+.lipstick {color: white;background-color: var(--oklch-color-lipstick);}
+  
+  /* pinks */
     
-    /* pinks */
-      
-  .pink {color: white; background-color: var(--oklch-color-pink);}
-  .fuchsia {color: white; background-color: var(--oklch-color-fuchsia);}
-  .punch {color: white; background-color: var(--oklch-color-punch);}
-  .watermelon {color: white; background-color: var(--oklch-color-watermelon);}
-  .flamingo {color: white; background-color: var(--oklch-color-flamingo);}
-  .rouge {color: white; background-color: var(--oklch-color-rouge);}
-  .salmon {color: white; background-color: var(--oklch-color-salmon);}
-  .coral {color: white; background-color: var(--oklch-color-coral);}
-  .peach {color: white; background-color: var(--oklch-color-peach);}
-  .strawberry {color: white; background-color: var(--oklch-color-strawberry);}
-  .rosewood {color: white; background-color: var(--oklch-color-rosewood);}
-  .lemonade {color: white; background-color: var(--oklch-color-lemonade);}
-  .taffy {color: white; background-color: var(--oklch-color-taffy);}
-  .bubblegum {color: white; background-color: var(--oklch-color-bubblegum);}
-  .balletslipper {color: white; background-color: var(--oklch-color-balletslipper);}
-  .crepe {color: white; background-color: var(--oklch-color-crepe);}
-  .maroon {color: white; background-color: var(--oklch-color-maroon);}
-  .hotpink {color: white; background-color: var(--oklch-color-hotpink);}
+.pink {color: white; background-color: var(--oklch-color-pink);}
+.fuchsia {color: white; background-color: var(--oklch-color-fuchsia);}
+.punch {color: white; background-color: var(--oklch-color-punch);}
+.watermelon {color: white; background-color: var(--oklch-color-watermelon);}
+.flamingo {color: white; background-color: var(--oklch-color-flamingo);}
+.rouge {color: white; background-color: var(--oklch-color-rouge);}
+.salmon {color: white; background-color: var(--oklch-color-salmon);}
+.coral {color: white; background-color: var(--oklch-color-coral);}
+.peach {color: white; background-color: var(--oklch-color-peach);}
+.strawberry {color: white; background-color: var(--oklch-color-strawberry);}
+.rosewood {color: white; background-color: var(--oklch-color-rosewood);}
+.lemonade {color: white; background-color: var(--oklch-color-lemonade);}
+.taffy {color: white; background-color: var(--oklch-color-taffy);}
+.bubblegum {color: white; background-color: var(--oklch-color-bubblegum);}
+.balletslipper {color: white; background-color: var(--oklch-color-balletslipper);}
+.crepe {color: white; background-color: var(--oklch-color-crepe);}
+.maroon {color: white; background-color: var(--oklch-color-maroon);}
+.hotpink {color: white; background-color: var(--oklch-color-hotpink);}
+  
+  /* purples */
+  
+.purple {color: white; background-color: var(--oklch-color-purple);}
+.mauve {color: white; background-color: var(--oklch-color-mauve);}
+.violet {color: white; background-color: var(--oklch-color-violet);}
+.boysenberry {color: white; background-color: var(--oklch-color-boysenberry);}
+.lavender {color: white; background-color: var(--oklch-color-lavender);}
+.plum {color: white; background-color: var(--oklch-color-plum);}
+.lilac {color: white; background-color: var(--oklch-color-lilac);}
+.periwinkle {color: white; background-color: var(--oklch-color-periwinkle);}
+.eggplant {color: white; background-color: var(--oklch-color-eggplant);}
+.iris {color: white; background-color: var(--oklch-color-iris);}
+.heather {color: white; background-color: var(--oklch-color-heather);}
+.amethyst {color: white; background-color: var(--oklch-color-amethyst);}
+.raisin {color: white; background-color: var(--oklch-color-raisin);}
+.orchid {color: white; background-color: var(--oklch-color-orchid);}
+.mulberry {color: white; background-color: var(--oklch-color-mulberry);}
+  
+  /* greens */
     
-    /* purples */
+.green {color: white; background-color: var(--oklch-color-green);}
+.chartreuse {color: white; background-color: var(--oklch-color-chartreuse);}
+.juniper {color: white; background-color: var(--oklch-color-juniper);}
+.sage {color: white; background-color: var(--oklch-color-sage);}
+.lime {color: white; background-color: var(--oklch-color-lime);}
+.fern {color: white; background-color: var(--oklch-color-fern);}
+.olive {color: white; background-color: var(--oklch-color-olive);}
+.emerald {color: white; background-color: var(--oklch-color-emerald);}
+.pear {color: white; background-color: var(--oklch-color-pear);}
+.moss {color: white; background-color: var(--oklch-color-moss);}
+.shamrock {color: white; background-color: var(--oklch-color-shamrock);}
+.seafoam {color: white; background-color: var(--oklch-color-seafoam);}
+.pine {color: white; background-color: var(--oklch-color-pine);}
+.parakeet {color: white; background-color: var(--oklch-color-parakeet);}
+.mint {color: white; background-color: var(--oklch-color-mint);}
+.seaweed {color: white; background-color: var(--oklch-color-seaweed);}
+.pickle {color: white; background-color: var(--oklch-color-pickle);}
+.pistachio {color: white; background-color: var(--oklch-color-pistachio);}
+.basil {color: white; background-color: var(--oklch-color-basil);}
+.crocodile {color: white; background-color: var(--oklch-color-crocodile);}
+  
+  /* browns */
     
-  .purple {color: white; background-color: var(--oklch-color-purple);}
-  .mauve {color: white; background-color: var(--oklch-color-mauve);}
-  .violet {color: white; background-color: var(--oklch-color-violet);}
-  .boysenberry {color: white; background-color: var(--oklch-color-boysenberry);}
-  .lavender {color: white; background-color: var(--oklch-color-lavender);}
-  .plum {color: white; background-color: var(--oklch-color-plum);}
-  .lilac {color: white; background-color: var(--oklch-color-lilac);}
-  .periwinkle {color: white; background-color: var(--oklch-color-periwinkle);}
-  .eggplant {color: white; background-color: var(--oklch-color-eggplant);}
-  .iris {color: white; background-color: var(--oklch-color-iris);}
-  .heather {color: white; background-color: var(--oklch-color-heather);}
-  .amethyst {color: white; background-color: var(--oklch-color-amethyst);}
-  .raisin {color: white; background-color: var(--oklch-color-raisin);}
-  .orchid {color: white; background-color: var(--oklch-color-orchid);}
-  .mulberry {color: white; background-color: var(--oklch-color-mulberry);}
+.brown {color: white; background-color: var(--oklch-color-brown);}
+.coffee {color: white; background-color: var(--oklch-color-coffee);}
+.mocha {color: white; background-color: var(--oklch-color-mocha);}
+.peanut {color: white; background-color: var(--oklch-color-peanut);}
+.carob {color: white; background-color: var(--oklch-color-carob);}
+.hickory {color: white; background-color: var(--oklch-color-hickory);}
+.pecan {color: white; background-color: var(--oklch-color-pecan);}
+.walnut {color: white; background-color: var(--oklch-color-walnut);}
+.caramel {color: white; background-color: var(--oklch-color-caramel);}
+.gingerbread {color: white; background-color: var(--oklch-color-gingerbread);}
+.chocolate {color: white; background-color: var(--oklch-color-chocolate);}
+.tortilla {color: white; background-color: var(--oklch-color-tortilla);}
+.umber {color: white; background-color: var(--oklch-color-umber);}
+.tawny {color: white; background-color: var(--oklch-color-tawny);}
+.brunette {color: white; background-color: var(--oklch-color-brunette);}
+.cinammon {color: white; background-color: var(--oklch-color-cinammon);}
+.penny {color: white; background-color: var(--oklch-color-penny);}
+  
+  /* greys */
     
-    /* greens */
-      
-  .green {color: white; background-color: var(--oklch-color-green);}
-  .chartreuse {color: white; background-color: var(--oklch-color-chartreuse);}
-  .juniper {color: white; background-color: var(--oklch-color-juniper);}
-  .sage {color: white; background-color: var(--oklch-color-sage);}
-  .lime {color: white; background-color: var(--oklch-color-lime);}
-  .fern {color: white; background-color: var(--oklch-color-fern);}
-  .olive {color: white; background-color: var(--oklch-color-olive);}
-  .emerald {color: white; background-color: var(--oklch-color-emerald);}
-  .pear {color: white; background-color: var(--oklch-color-pear);}
-  .moss {color: white; background-color: var(--oklch-color-moss);}
-  .shamrock {color: white; background-color: var(--oklch-color-shamrock);}
-  .seafoam {color: white; background-color: var(--oklch-color-seafoam);}
-  .pine {color: white; background-color: var(--oklch-color-pine);}
-  .parakeet {color: white; background-color: var(--oklch-color-parakeet);}
-  .mint {color: white; background-color: var(--oklch-color-mint);}
-  .seaweed {color: white; background-color: var(--oklch-color-seaweed);}
-  .pickle {color: white; background-color: var(--oklch-color-pickle);}
-  .pistachio {color: white; background-color: var(--oklch-color-pistachio);}
-  .basil {color: white; background-color: var(--oklch-color-basil);}
-  .crocodile {color: white; background-color: var(--oklch-color-crocodile);}
+.grey {color: white; background-color: var(--oklch-color-grey);}
+.shadow {color: white; background-color: var(--oklch-color-shadow);}
+.graphite {color: white; background-color: var(--oklch-color-graphite);}
+.iron {color: white; background-color: var(--oklch-color-iron);}
+.pewter {color: white; background-color: var(--oklch-color-pewter);}
+.cloud {color: white; background-color: var(--oklch-color-cloud);}
+.silver {color: white; background-color: var(--oklch-color-silver);}
+.smoke {color: white; background-color: var(--oklch-color-smoke);}
+.anchor {color: white; background-color: var(--oklch-color-anchor);}
+.ash {color: white; background-color: var(--oklch-color-ash);}
+.porpoise {color: white; background-color: var(--oklch-color-porpoise);}
+.dove {color: white; background-color: var(--oklch-color-dove);}
+.fog {color: white; background-color: var(--oklch-color-fog);}
+.flint {color: white; background-color: var(--oklch-color-flint);}
+.pebble {color: white; background-color: var(--oklch-color-pebble);}
+.lead {color: white; background-color: var(--oklch-color-lead);}
+.coin {color: white; background-color: var(--oklch-color-coin);}
+.fossil {color: white; background-color: var(--oklch-color-fossil);}
     
-    /* browns */
-      
-  .brown {color: white; background-color: var(--oklch-color-brown);}
-  .coffee {color: white; background-color: var(--oklch-color-coffee);}
-  .mocha {color: white; background-color: var(--oklch-color-mocha);}
-  .peanut {color: white; background-color: var(--oklch-color-peanut);}
-  .carob {color: white; background-color: var(--oklch-color-carob);}
-  .hickory {color: white; background-color: var(--oklch-color-hickory);}
-  .pecan {color: white; background-color: var(--oklch-color-pecan);}
-  .walnut {color: white; background-color: var(--oklch-color-walnut);}
-  .caramel {color: white; background-color: var(--oklch-color-caramel);}
-  .gingerbread {color: white; background-color: var(--oklch-color-gingerbread);}
-  .chocolate {color: white; background-color: var(--oklch-color-chocolate);}
-  .tortilla {color: white; background-color: var(--oklch-color-tortilla);}
-  .umber {color: white; background-color: var(--oklch-color-umber);}
-  .tawny {color: white; background-color: var(--oklch-color-tawny);}
-  .brunette {color: white; background-color: var(--oklch-color-brunette);}
-  .cinammon {color: white; background-color: var(--oklch-color-cinammon);}
-  .penny {color: white; background-color: var(--oklch-color-penny);}
+  /* blacks */
     
-    /* greys */
-      
-  .grey {color: white; background-color: var(--oklch-color-grey);}
-  .shadow {color: white; background-color: var(--oklch-color-shadow);}
-  .graphite {color: white; background-color: var(--oklch-color-graphite);}
-  .iron {color: white; background-color: var(--oklch-color-iron);}
-  .pewter {color: white; background-color: var(--oklch-color-pewter);}
-  .cloud {color: white; background-color: var(--oklch-color-cloud);}
-  .silver {color: white; background-color: var(--oklch-color-silver);}
-  .smoke {color: white; background-color: var(--oklch-color-smoke);}
-  .anchor {color: white; background-color: var(--oklch-color-anchor);}
-  .ash {color: white; background-color: var(--oklch-color-ash);}
-  .porpoise {color: white; background-color: var(--oklch-color-porpoise);}
-  .dove {color: white; background-color: var(--oklch-color-dove);}
-  .fog {color: white; background-color: var(--oklch-color-fog);}
-  .flint {color: white; background-color: var(--oklch-color-flint);}
-  .pebble {color: white; background-color: var(--oklch-color-pebble);}
-  .lead {color: white; background-color: var(--oklch-color-lead);}
-  .coin {color: white; background-color: var(--oklch-color-coin);}
-  .fossil {color: white; background-color: var(--oklch-color-fossil);}
-      
-    /* blacks */
-      
-  .black {color: white; background-color: var(--oklch-color-black);}
-  .ebony {color: white; background-color: var(--oklch-color-ebony);}
-  .crow {color: white; background-color: var(--oklch-color-crow);}
-  .charcoal {color: white; background-color: var(--oklch-color-charcoal);}
+.black {color: white; background-color: var(--oklch-color-black);}
+.ebony {color: white; background-color: var(--oklch-color-ebony);}
+.crow {color: white; background-color: var(--oklch-color-crow);}
+.charcoal {color: white; background-color: var(--oklch-color-charcoal);}

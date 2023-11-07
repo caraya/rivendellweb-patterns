@@ -110,21 +110,17 @@ summary {
   cursor: pointer;
   font-size: 1.5em;
   font-weight: 600;
-  -webkit-margin-after: 1.2rem;
-          margin-block-end: 1.2rem;
+  margin-block-end: 1.2rem;
   padding: 1.2rem;
 }
 .accordion--item {
-	-webkit-margin-after: 1.5em;
-	        margin-block-end: 1.5em;
+	margin-block-end: 1.5em;
 }
 .accordion--item:first-child {
-	-webkit-margin-before: 2em;
-	        margin-block-start: 2em;
+	margin-block-start: 2em;
 }
 .accordion--item:last-child {
-	-webkit-margin-after: 2em;
-	        margin-block-end: 2em;
+	margin-block-end: 2em;
 }
 .accordion--title {
 	background-color: var(--oklch-color-stone);  
@@ -141,8 +137,7 @@ summary {
 	        user-select: none;
 }
 .accordion--content {
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
+  margin-block-start: 1em;
 	margin-inline: 2em;
 }
 .accordion--title + .accordion--content {
@@ -152,8 +147,7 @@ summary {
 	display: block;
 }
 .accordion--content-bordered {
-	-webkit-margin-start: 0;
-	        margin-inline-start: 0;
+	margin-inline-start: 0;
 }
 .accordion--title + .accordion--content-bordered {
 	display: none;
@@ -388,8 +382,7 @@ Big buttons
   background: var(--oklch-color-white);
   color: var(--oklch-color-charcoal);
   height: 10rem;
-  -webkit-margin-after: 4rem;
-          margin-block-end: 4rem;
+  margin-block-end: 4rem;
   margin-inline: 4rem;
   width: 15rem;
 }
@@ -416,6 +409,1322 @@ Big buttons
 .button--big-cta {
   height: 6rem;
   width: 20rem;
+}
+/* color-mix() experiment: lighten a charcoal black */
+:root {
+  /* lightening charcoal */
+  --text1: color-mix(in srgb, var(--color-charcoal) 10%, white);
+  --text2: color-mix(in srgb, var(--color-charcoal) 20%, white);
+  --text3: color-mix(in srgb, var(--color-charcoal) 30%, white);
+  --text4: color-mix(in srgb, var(--color-charcoal) 40%, white);
+  --text5: color-mix(in srgb, var(--color-charcoal) 50%, white);
+  --text6: color-mix(in srgb, var(--color-charcoal) 60%, white);
+  --text7: color-mix(in srgb, var(--color-charcoal) 70%, white);
+  --text8: color-mix(in srgb, var(--color-charcoal) 80%, white);
+  --text9: color-mix(in srgb, var(--color-charcoal) 90%, white);
+}
+.light-text1 {
+  background-color: var(--text1);
+}
+.light-text2 {
+  background-color: var(--text2);
+}
+.light-text3 {
+  background-color: var(--text3);
+}
+.light-text4 {
+  background-color: var(--text4);
+}
+.light-text5 {
+  background-color: var(--text5);
+}
+.light-text6 {
+  background-color: var(--text6);
+}
+.light-text7 {
+  background-color: var(--text7);
+}
+.light-text8 {
+  background-color: var(--text8);
+}
+.light-text9 {
+  background-color: var(--text9);
+  color: #fff;
+}
+/* color-mix() experiment: darken a dark green mint color  */
+:root {
+  --dark-text1: color-mix(in srgb, var(--color-mint) 10%, black);
+  --dark-text2: color-mix(in srgb, var(--color-mint) 20%, black);
+  --dark-text3: color-mix(in srgb, var(--color-mint) 30%, black);
+  --dark-text4: color-mix(in srgb, var(--color-mint) 40%, black);
+  --dark-text5: color-mix(in srgb, var(--color-mint) 50%, black);
+  --dark-text6: color-mix(in srgb, var(--color-mint) 60%, black);
+  --dark-text7: color-mix(in srgb, var(--color-mint) 70%, black);
+  --dark-text8: color-mix(in srgb, var(--color-mint) 80%, black);
+  --dark-text9: color-mix(in srgb, var(--color-mint) 90%, black);
+}
+.dark-text1 {
+  background-color: var(--dark-text1);
+  color: #fff;
+}
+.dark-text2 {
+  background-color: var(--dark-text2);
+  color: #fff;
+}
+.dark-text3 {
+  background-color: var(--dark-text3);
+  color: #fff;
+}
+.dark-text4 {
+  background-color: var(--dark-text4);
+  color: #fff;
+}
+.dark-text5 {
+  background-color: var(--dark-text5);
+  color: #fff;
+}
+.dark-text6 {
+  background-color: var(--dark-text6);
+  color: #fff;
+}
+.dark-text7 {
+  background-color: var(--dark-text7);
+  color: #fff;
+}
+.dark-text8 {
+  background-color: var(--dark-text8);
+  color: #fff;
+}
+.dark-text9 {
+  background-color: var(--dark-text9);
+  color: #fff;
+}
+:root {
+
+  /* whites */
+  --color-white: #fffeff;
+  --color-alabaster: #fefaf0;
+  --color-snow: #f4fefd;
+  --color-ivory: #fef7e5;
+  --color-cream: #fffbda;
+  --color-eggshell: #fef9e3;
+  --color-cotton: #fbfcf7;
+  --color-chiffon: #fafaf1;
+  --color-salt: #f8efec;
+  --color-lace: #faf3ea;
+  --color-coconut: #fff1e6;
+  --color-linen: #f2ebd3;
+  --color-bone: #e7dfcc;
+  --color-porcelain: #fffffc;
+  --color-parchment: #fcf6df;
+  --color-rice: #fbf6ef;
+    
+  /* blues */
+    
+  --color-blue: #0074d9;
+  --color-navy: #001f3f;
+  --color-aqua: #7fdbff;
+  --color-sky: #00b2ff;
+  --color-teal: #39cccc;
+  --color-slate: #757b87;
+  --color-indigo: #281e5d;
+  --color-cobalt: #1438bd;
+  --color-ocean: #026063;
+  --color-peacock: #002d37;
+  --color-azure: #1621a6;
+  --color-cerulean: #0592c2;
+  --color-lapis: #2632c2;
+  --color-spruce: #2c3e4b;
+  --color-stone: #59788d;
+  --color-aegean: #1e456e;
+  --color-berry: #24146f;
+  --color-denim: #141e3c;
+  --color-admiral: #061094;
+  --color-sapphire: #52b2c0;
+  --color-arctic: #82edfd;
+  
+  /* browns */
+    
+  --color-tan: #e5dbac;
+  --color-beige: #ecdc99;
+  --color-macaroon: #f7df75;
+  --color-hazelwood: #c9bc8e;
+  --color-granola: #d6b75a;
+  --color-oat: #dec98a;
+  --color-eggnog: #fbe29d;
+  --color-fawn: #c7a951;
+  --color-sugarcookie: #f3ebad;
+  --color-sand: #d7b963;
+  --color-sepia: #e3b678;
+  --color-latte: #e9c17b;
+  --color-oyster: #dcd69f;
+  --color-biscotti: #e3c565;
+  --color-parmesean: #fee993;
+  --color-hazelnut: #bda55d;
+  --color-sandcastle: #dbc27d;
+  --color-buttermilk: #fdefb2;
+  --color-sanddollar: #ebe7b9;
+  --color-shortbread: #fce791;
+  
+  /* yellows */
+    
+  --color-yellow: #ffdc00;
+  --color-canary: #fac801;
+  --color-gold: #f9a602;
+  --color-daffodil: #feee88;
+  --color-flaxen: #d5b65a;
+  --color-butter: #fee226;
+  --color-lemon: #effd5f;
+  --color-mustard: #e9b829;
+  --color-corn: #e4cd04;
+  --color-medallion: #e4b103;
+  --color-dandelion: #fdce2a;
+  --color-bumblebee: #fce206;
+  --color-banana: #fcf4a3;
+  --color-butterscotch: #fabd04;
+  --color-dijon: #c29200;
+  --color-honey: #ec9707;
+  --color-blonde: #fdeb75;
+  --color-pineapple: #ffe327;
+  --color-tuscansun: #fcd12a;
+  
+  /* oranges */
+  
+  --color-orange: #ff851b;
+  --color-tangerine: #f98228;
+  --color-merigold: #fdae1d;
+  --color-cider: #b66827;
+  --color-rust: #8c4005;
+  --color-ginger: #bc5703;
+  --color-tiger: #fb6b02;
+  --color-bronze: #b2560c;
+  --color-cantaloupe: #fca172;
+  --color-apricot: #ed810f;
+  --color-carrot: #ed7116;
+  --color-squash: #c95c09;
+  --color-spice: #7a3a03;
+  --color-marmalade: #d16102;
+  --color-amber: #893201;
+  --color-sandstone: #d57128;
+  --color-yam: #cc5801;
+  
+  /* reds */
+    
+  --color-red: #ff4136;
+  --color-cherry: #9a0f02;
+  --color-rose: #e2252a;
+  --color-jam: #600f0b;
+  --color-merlot: #541f1b;
+  --color-garnet: #5f0a04;
+  --color-crimson: #b8100a;
+  --color-ruby: #900503;
+  --color-scarlet: #910d08;
+  --color-redwine: #4c0805;
+  --color-redapple: #a91b0d;
+  --color-mahogany: #420d09;
+  --color-blood: #710c04;
+  --color-sangria: #5f1914;
+  --color-currant: #670c07;
+  --color-blush: #bb544a;
+  --color-candy: #d31603;
+  --color-lipstick: #9b0f02;
+  
+  /* pinks */
+    
+  --color-pink: #f69acd;
+  --color-fuchsia: #f012be;
+  --color-punch: #f25278;
+  --color-watermelon: #fe809c;
+  --color-flamingo: #fda4b8;
+  --color-rouge: #f26c8c;
+  --color-salmon: #fdab9f;
+  --color-coral: #fe7d67;
+  --color-peach: #fb9483;
+  --color-strawberry: #fc4c4e;
+  --color-rosewood: #a04242;
+  --color-lemonade: #fabacb;
+  --color-taffy: #fa85c4;
+  --color-bubblegum: #fd5ca8;
+  --color-balletslipper: #f69abf;
+  --color-crepe: #f1b7c6;
+  --color-maroon: #85144b;
+  --color-hotpink: #ff1696;
+  
+  /* purples */
+  
+  --color-purple: #b10dc9;
+  --color-mauve: #7a4a89;
+  --color-violet: #710193;
+  --color-boysenberry: #630536;
+  --color-lavender: #e3a0f6;
+  --color-plum: #601a36;
+  --color-lilac: #b65fcd;
+  --color-periwinkle: #be93d4; 
+  --color-eggplant: #311431;
+  --color-iris: #9866c5;
+  --color-heather: #9b7cb9;
+  --color-amethyst: #a45de4;
+  --color-raisin: #290916;
+  --color-orchid: #af69ee;
+  --color-mulberry: #4d0220;
+  
+  /* greens */
+    
+  --color-green: #2ecc40;
+  --color-chartreuse: #b0fd38;
+  --color-juniper: #395311;
+  --color-sage: #728c69;
+  --color-lime: #01ff70;
+  --color-fern: #5dbc64;
+  --color-olive: #98bf64;
+  --color-emerald: #038911;
+  --color-pear: #74b62d;
+  --color-moss: #476d1e;
+  --color-shamrock: #03ac13;
+  --color-seafoam: #3cec96;
+  --color-pine: #24501e;
+  --color-parakeet: #02c04a;
+  --color-mint: #98ecc3;
+  --color-seaweed: #354b21;
+  --color-pickle: #5a7d36;
+  --color-pistachio: #b2d3c1;
+  --color-basil: #32622d;
+  --color-crocodile: #5f7c3a;
+  
+  /* browns */
+    
+  --color-brown: #241709;
+  --color-coffee: #4b371c;
+  --color-mocha: #3c290d;
+  --color-peanut: #795c34;
+  --color-carob: #35260f;
+  --color-hickory: #371d10;
+  --color-pecan: #4a2512;
+  --color-walnut: #432711;
+  --color-caramel: #66360f;
+  --color-gingerbread: #5d2c04;
+  --color-chocolate: #2c1603;
+  --color-tortilla: #9a7b4f;
+  --color-umber: #352415;
+  --color-tawny: #7e491d;
+  --color-brunette: #391e07;
+  --color-cinammon: #642b0d;
+  --color-penny: #522915;
+  
+  /* greys */
+    
+  --color-grey: #aaaaaa;
+  --color-shadow: #373737;
+  --color-graphite: #584d5b;
+  --color-iron: #332d31;
+  --color-pewter: #6a6880;
+  --color-cloud: #c5c5d0;
+  --color-silver: #dddddd;
+  --color-smoke: #59515f;
+  --color-anchor: #42424c;
+  --color-ash: #554c4d;
+  --color-porpoise: #4d4c5c;
+  --color-dove: #7c6e7f;
+  --color-fog: #655965;
+  --color-flint: #7d7c9c;
+  --color-pebble: #333333;
+  --color-lead: #403f4e;
+  --color-coin: #9897a9;
+  --color-fossil: #787276;
+    
+  /* blacks */
+    
+  --color-black: #111111;
+  --color-ebony: #080401;
+  --color-crow: #25221F;
+  --color-charcoal: #222023;
+}
+.color-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+.color-item {
+  align-items: center;
+  border: 2px solid var(--color-black);
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+/* Colors taken from The New Defaults */
+/* whites */
+.white {background-color: var(--color-white);}
+.pearl {background-color: var(--color-pearl);}
+.alabaster {background-color: var(--color-alabaster);}
+.snow {background-color: var(--color-snow);}
+.ivory {background-color: var(--color-ivory);}
+.cream {background-color: var(--color-cream);}
+.eggshell {background-color: var(--color-eggshell);}
+.cotton {background-color: var(--color-cotton);}
+.chiffon {background-color: var(--color-chiffon);}
+.salt {background-color: var(--color-salt);}
+.lace {background-color: var(--color-lace);}
+.coconut {background-color: var(--color-coconut);}
+.linen {background-color: var(--color-linen);}
+.bone {background-color: var(--color-bone);}
+.porcelain {background-color: var(--color-porcelain);}
+.parchment {background-color: var(--color-parchment);}
+.rice {background-color: var(--color-rice);}
+/* blues */
+.blue { background-color: var(--color-blue);color: white;}
+.navy { background-color: var(--color-navy);color: white;}
+.aqua { background-color: var(--color-aqua);color: white;}
+.sky { background-color: var(--color-sky);color: white;}
+.teal { background-color: var(--color-teal);color: white;}
+.slate { background-color: var(--color-slate);color: white;}
+.indigo { background-color: var(--color-indigo);color: white;}
+.cobalt { background-color: var(--color-cobalt);color: white;}
+.ocean { background-color: var(--color-ocean);color: white;}
+.peacock { background-color: var(--color-peacock);color: white;}
+.azure { background-color: var(--color-azure);color: white;}
+.cerulean { background-color: var(--color-cerulean);color: white;}
+.lapis { background-color: var(--color-lapis);color: white;}
+.spruce { background-color: var(--color-spruce);color: white;}
+.stone { background-color: var(--color-stone);color: white;}
+.aegean { background-color: var(--color-aegean);color: white;}
+.berry { background-color: var(--color-berry);color: white;}
+.denim { background-color: var(--color-denim);color: white;}
+.admiral { background-color: var(--color-admiral);color: white;}
+.sapphire { background-color: var(--color-sapphire);color: white;}
+.arctic { background-color: var(--color-arctic);color: white;}
+/* browns */
+.tan {background-color: var(--color-tan);}
+.beige {background-color: var(--color-beige);}
+.macaroon {background-color: var(--color-macaroon);}
+.hazelwood {background-color: var(--color-hazelwood);}
+.granola {background-color: var(--color-granola);}
+.oat {background-color: var(--color-oat);}
+.eggnog {background-color: var(--color-eggnog);}
+.fawn {background-color: var(--color-fawn);}
+.sugarcookie {background-color: var(--color-sugarcookie);}
+.sand {background-color: var(--color-sand);}
+.sepia {background-color: var(--color-sepia);}
+.latte {background-color: var(--color-latte);}
+.oyster {background-color: var(--color-oyster);}
+.biscotti {background-color: var(--color-biscotti);}
+.parmesean {background-color: var(--color-parmesean);}
+.hazelnut {background-color: var(--color-hazelnut);}
+.sandcastle {background-color: var(--color-sandcastle);}
+.buttermilk {background-color: var(--color-buttermilk);}
+.sanddollar {background-color: var(--color-sanddollar);}
+.shortbread {background-color: var(--color-shortbread);}
+/* yellows */
+.yellow {background-color: var(--color-yellow);}
+.canary {background-color: var(--color-canary);}
+.gold {background-color: var(--color-gold);}
+.daffodil {background-color: var(--color-daffodil);}
+.flaxen {background-color: var(--color-flaxen);}
+.butter {background-color: var(--color-butter);}
+.lemon {background-color: var(--color-lemon);}
+.mustard {background-color: var(--color-mustard);}
+.corn {background-color: var(--color-corn);}
+.medallion {background-color: var(--color-medallion);}
+.dandelion {background-color: var(--color-dandelion);}
+.bumblebee {background-color: var(--color-bumblebee);}
+.banana {background-color: var(--color-banana);}
+.butterscotch {background-color: var(--color-butterscotch);}
+.dijon {background-color: var(--color-dijon);}
+.honey {background-color: var(--color-honey);}
+.blonde {background-color: var(--color-blonde);}
+.pineapple {background-color: var(--color-pineapple);}
+.tuscansun {background-color: var(--color-tuscansun);}
+/* oranges */
+.orange {background-color: var(--color-orange);}
+.tangerine {background-color: var(--color-tangerine);}
+.merigold {background-color: var(--color-merigold);}
+.cider {background-color: var(--color-cider);}
+.rust {background-color: var(--color-rust);}
+.ginger {background-color: var(--color-ginger);}
+.tiger {background-color: var(--color-tiger);}
+.bronze {background-color: var(--color-bronze);}
+.cantaloupe {background-color: var(--color-cantaloupe);}
+.apricot {background-color: var(--color-apricot);}
+.carrot {background-color: var(--color-carrot);}
+.squash {background-color: var(--color-squash);}
+.spice {background-color: var(--color-spice);}
+.marmalade {background-color: var(--color-marmalade);}
+.amber {background-color: var(--color-amber);}
+.sandstone {background-color: var(--color-sandstone);}
+.yam {background-color: var(--color-yam);}
+/* reds */
+.red {background-color: var(--color-red);color: white;}
+.cherry {background-color: var(--color-cherry);color: white;}
+.rose {background-color: var(--color-rose);color: white;}
+.jam {background-color: var(--color-jam);color: white;}
+.merlot {background-color: var(--color-merlot);color: white;}
+.garnet {background-color: var(--color-garnet);color: white;}
+.crimson {background-color: var(--color-crimson);color: white;}
+.ruby {background-color: var(--color-ruby);color: white;}
+.scarlet {background-color: var(--color-scarlet);color: white;}
+.redwine {background-color: var(--color-redwine);color: white;}
+.redapple {background-color: var(--color-redapple);color: white;}
+.mahogany {background-color: var(--color-mahogany);color: white;}
+.blood {background-color: var(--color-blood);color: white;}
+.sangria {background-color: var(--color-sangria);color: white;}
+.currant {background-color: var(--color-currant);color: white;}
+.blush {background-color: var(--color-blush);color: white;}
+.candy {background-color: var(--color-candy);color: white;}
+.lipstick {background-color: var(--color-lipstick);color: white;}
+/* pinks */
+.pink { background-color: var(--color-pink);color: white;}
+.fuchsia { background-color: var(--color-fuchsia);color: white;}
+.punch { background-color: var(--color-punch);color: white;}
+.watermelon { background-color: var(--color-watermelon);color: white;}
+.flamingo { background-color: var(--color-flamingo);color: white;}
+.rouge { background-color: var(--color-rouge);color: white;}
+.salmon { background-color: var(--color-salmon);color: white;}
+.coral { background-color: var(--color-coral);color: white;}
+.peach { background-color: var(--color-peach);color: white;}
+.strawberry { background-color: var(--color-strawberry);color: white;}
+.rosewood { background-color: var(--color-rosewood);color: white;}
+.lemonade { background-color: var(--color-lemonade);color: white;}
+.taffy { background-color: var(--color-taffy);color: white;}
+.bubblegum { background-color: var(--color-bubblegum);color: white;}
+.balletslipper { background-color: var(--color-balletslipper);color: white;}
+.crepe { background-color: var(--color-crepe);color: white;}
+.maroon { background-color: var(--color-maroon);color: white;}
+.hotpink { background-color: var(--color-hotpink);color: white;}
+/* purples */
+.purple { background-color: var(--color-purple);color: white;}
+.mauve { background-color: var(--color-mauve);color: white;}
+.violet { background-color: var(--color-violet);color: white;}
+.boysenberry { background-color: var(--color-boysenberry);color: white;}
+.lavender { background-color: var(--color-lavender);color: white;}
+.plum { background-color: var(--color-plum);color: white;}
+.lilac { background-color: var(--color-lilac);color: white;}
+.periwinkle { background-color: var(--color-periwinkle);color: white;}
+.eggplant { background-color: var(--color-eggplant);color: white;}
+.iris { background-color: var(--color-iris);color: white;}
+.heather { background-color: var(--color-heather);color: white;}
+.amethyst { background-color: var(--color-amethyst);color: white;}
+.raisin { background-color: var(--color-raisin);color: white;}
+.orchid { background-color: var(--color-orchid);color: white;}
+.mulberry { background-color: var(--color-mulberry);color: white;}
+/* greens */
+.green { background-color: var(--color-green);color: white;}
+.chartreuse { background-color: var(--color-chartreuse);color: white;}
+.juniper { background-color: var(--color-juniper);color: white;}
+.sage { background-color: var(--color-sage);color: white;}
+.lime { background-color: var(--color-lime);color: white;}
+.fern { background-color: var(--color-fern);color: white;}
+.olive { background-color: var(--color-olive);color: white;}
+.emerald { background-color: var(--color-emerald);color: white;}
+.pear { background-color: var(--color-pear);color: white;}
+.moss { background-color: var(--color-moss);color: white;}
+.shamrock { background-color: var(--color-shamrock);color: white;}
+.seafoam { background-color: var(--color-seafoam);color: white;}
+.pine { background-color: var(--color-pine);color: white;}
+.parakeet { background-color: var(--color-parakeet);color: white;}
+.mint { background-color: var(--color-mint);color: white;}
+.seaweed { background-color: var(--color-seaweed);color: white;}
+.pickle { background-color: var(--color-pickle);color: white;}
+.pistachio { background-color: var(--color-pistachio);color: white;}
+.basil { background-color: var(--color-basil);color: white;}
+.crocodile { background-color: var(--color-crocodile);color: white;}
+/* browns */
+.brown { background-color: var(--color-brown);color: white;}
+.coffee { background-color: var(--color-coffee);color: white;}
+.mocha { background-color: var(--color-mocha);color: white;}
+.peanut { background-color: var(--color-peanut);color: white;}
+.carob { background-color: var(--color-carob);color: white;}
+.hickory { background-color: var(--color-hickory);color: white;}
+.pecan { background-color: var(--color-pecan);color: white;}
+.walnut { background-color: var(--color-walnut);color: white;}
+.caramel { background-color: var(--color-caramel);color: white;}
+.gingerbread { background-color: var(--color-gingerbread);color: white;}
+.chocolate { background-color: var(--color-chocolate);color: white;}
+.tortilla { background-color: var(--color-tortilla);color: white;}
+.umber { background-color: var(--color-umber);color: white;}
+.tawny { background-color: var(--color-tawny);color: white;}
+.brunette { background-color: var(--color-brunette);color: white;}
+.cinammon { background-color: var(--color-cinammon);color: white;}
+.penny { background-color: var(--color-penny);color: white;}
+/* greys */
+.grey { background-color: var(--color-grey);color: white;}
+.shadow { background-color: var(--color-shadow);color: white;}
+.graphite { background-color: var(--color-graphite);color: white;}
+.iron { background-color: var(--color-iron);color: white;}
+.pewter { background-color: var(--color-pewter);color: white;}
+.cloud { background-color: var(--color-cloud);color: white;}
+.silver { background-color: var(--color-silver);color: white;}
+.smoke { background-color: var(--color-smoke);color: white;}
+.anchor { background-color: var(--color-anchor);color: white;}
+.ash { background-color: var(--color-ash);color: white;}
+.porpoise { background-color: var(--color-porpoise);color: white;}
+.dove { background-color: var(--color-dove);color: white;}
+.fog { background-color: var(--color-fog);color: white;}
+.flint { background-color: var(--color-flint);color: white;}
+.pebble { background-color: var(--color-pebble);color: white;}
+.lead { background-color: var(--color-lead);color: white;}
+.coin { background-color: var(--color-coin);color: white;}
+.fossil { background-color: var(--color-fossil);color: white;}
+/* blacks */
+.black { background-color: var(--color-black);color: white;}
+.ebony { background-color: var(--color-ebony);color: white;}
+.crow { background-color: var(--color-crow);color: white;}
+.charcoal { background-color: var(--color-charcoal);color: white;}
+:root {
+  --color-hemi-orange: #f3782b;
+  --color-plum-crazy: #6600cc;
+  --color-cherry: #d2042d;
+  --color-black-cherry: #52253a;
+  --color-panther-pink: #be439d;
+  --color-green-go: #339a4b;
+  --color-sublime-green: #a0e03a;
+  --color-go-mango: #da5246;
+  --color-butterscotch: #d48827;
+  --color-bright-green: #66ff00;
+  --color-top-banana: #ffed4d;
+  --color-citron-yella: #9fa91f;
+  --color-rebeccapurple: #663399;
+}
+.hemi-orange {  background-color: var(--color-hemi-orange); color: white; }
+.plum-crazy {  background-color: var(--color-plum-crazy); color: white; }
+.cherry {  background-color: var(--color-cherry:); color: white; }
+.black-cherry {  background-color: var(--color-black-cherry); color: white; }
+.panther-pink {  background-color: var(--color-panther-pink); color: white; }
+.green-go {  background-color: var(--color-green-go); color: white; }
+.sublime-green {  background-color: var(--color-sublime-green); color: white; }
+.go-mango {  background-color: var(--color-go-mango); color: white; }
+.butterscotch: {  background-color: var(--color-butterscotch); color: white; }
+.bright-green {  background-color: var(--color-bright-green); color: white; }
+.top-banana {  background-color: var(--color-top-banana); color: white; }
+.citron-yella {  background-color: var(--color-citron-yella); color: white; }
+.panther-pink {  background-color: var(--color-panther-pink); color: white; }
+.rebeccapurple {  background-color: var(--color-rebeccapurple); color: white; }
+/* color-mix() experiment: lighten a charcoal black */
+:root {
+  /* lightening charcoal */
+  --oklch-text1: color-mix(in oklch, var(--oklch-color-charcoal) 10%, white);
+  --oklch-text2: color-mix(in oklch, var(--oklch-color-charcoal) 20%, white);
+  --oklch-text3: color-mix(in oklch, var(--oklch-color-charcoal) 30%, white);
+  --oklch-text4: color-mix(in oklch, var(--oklch-color-charcoal) 40%, white);
+  --oklch-text5: color-mix(in oklch, var(--oklch-color-charcoal) 50%, white);
+  --oklch-text6: color-mix(in oklch, var(--oklch-color-charcoal) 60%, white);
+  --oklch-text7: color-mix(in oklch, var(--oklch-color-charcoal) 70%, white);
+  --oklch-text8: color-mix(in oklch, var(--oklch-color-charcoal) 80%, white);
+  --oklch-text9: color-mix(in oklch, var(--oklch-color-charcoal) 90%, white);
+}
+.lch-light-text1 {
+  background-color: var(--text1);
+}
+.lch-light-text2 {
+  background-color: var(--text2);
+}
+.lch-light-text3 {
+  background-color: var(--text3);
+}
+.lch-light-text4 {
+  background-color: var(--text4);
+}
+.lch-light-text5 {
+  background-color: var(--text5);
+}
+.lch-light-text6 {
+  background-color: var(--text6);
+}
+.lch-light-text7 {
+  background-color: var(--text7);
+}
+.lch-light-text8 {
+  background-color: var(--text8);
+}
+.lch-light-text9 {
+  background-color: var(--text9);
+  color: #fff;
+}
+/* color-mix() experiment: darken a dark green mint color  */
+:root {
+  --lch-dark-text1: color-mix(in lab, var(--lab-color-mint) 10%, black);
+  --lch-dark-text2: color-mix(in lab, var(--lab-color-mint) 20%, black);
+  --lch-dark-text3: color-mix(in lab, var(--lab-color-mint) 30%, black);
+  --lch-dark-text4: color-mix(in lab, var(--lab-color-mint) 40%, black);
+  --lch-dark-text5: color-mix(in lab, var(--lab-color-mint) 50%, black);
+  --lch-dark-text6: color-mix(in lab, var(--lab-color-mint) 60%, black);
+  --lch-dark-text7: color-mix(in lab, var(--lab-color-mint) 70%, black);
+  --lch-dark-text8: color-mix(in lab, var(--lab-color-mint) 80%, black);
+  --lch-dark-text9: color-mix(in lab, var(--lab-color-mint) 90%, black);
+}
+.lch-dark-text1 {
+  background-color: var(--lch-dark-text1);
+  color: #fff;
+}
+.lch-dark-text2 {
+  background-color: var(--lch-dark-text2);
+  color: #fff;
+}
+.lch-dark-text3 {
+  background-color: var(--lch-dark-text3);
+  color: #fff;
+}
+.lch-dark-text4 {
+  background-color: var(--lch-dark-text4);
+  color: #fff;
+}
+.lch-dark-text5 {
+  background-color: var(--lch-dark-text5);
+  color: #fff;
+}
+.lch-dark-text6 {
+  background-color: var(--lch-dark-text6);
+  color: #fff;
+}
+.lch-dark-text7 {
+  background-color: var(--lch-dark-text7);
+  color: #fff;
+}
+.lch-dark-text8 {
+  background-color: var(--lch-dark-text8);
+  color: #fff;
+}
+.lch-dark-text9 {
+  background-color: var(--lch-dark-text9);
+  color: #fff;
+}
+:root {
+  --oklch-color-white: oklch(1 0 326);
+  --oklch-color-alabaster: oklch(0.99 0.01 88.7);
+  --oklch-color-snow: oklch(0.99 0.01 190);
+  --oklch-color-ivory: oklch(0.98 0.02 89.2);
+  --oklch-color-cream: oklch(0.98 0.04 101);
+  --oklch-color-eggshell: oklch(0.98 0.03 96.4);
+  --oklch-color-cotton: oklch(0.99 0.01 116);
+  --oklch-color-chiffon: oklch(0.98 0.01 107);
+  --oklch-color-salt: oklch(0.96 0.01 39.4);
+  --oklch-color-lace: oklch(0.97 0.01 74.4);
+  --oklch-color-coconut: oklch(0.97 0.02 60.8);
+  --oklch-color-linen: oklch(0.94 0.03 93.5);
+  --oklch-color-bone: oklch(0.9 0.03 87.9);
+  --oklch-color-porcelain: oklch(1 0 106);
+  --oklch-color-parchment: oklch(0.97 0.03 94.9);
+  --oklch-color-rice: oklch(0.98 0.01 76.6);
+  --oklch-color-blue: oklch(0.56 0.18 254);
+  --oklch-color-navy: oklch(0.24 0.07 252);
+  --oklch-color-aqua: oklch(0.85 0.1 225);
+  --oklch-color-sky: oklch(0.73 0.16 238);
+  --oklch-color-teal: oklch(0.77 0.12 195);
+  --oklch-color-slate: oklch(0.58 0.02 264);
+  --oklch-color-indigo: oklch(0.29 0.11 285);
+  --oklch-color-cobalt: oklch(0.42 0.21 265);
+  --oklch-color-ocean: oklch(0.44 0.07 199);
+  --oklch-color-peacock: oklch(0.27 0.05 217);
+  --oklch-color-azure: oklch(0.36 0.2 268);
+  --oklch-color-cerulean: oklch(0.62 0.12 231);
+  --oklch-color-lapis: oklch(0.42 0.22 269);
+  --oklch-color-spruce: oklch(0.35 0.03 240);
+  --oklch-color-stone: oklch(0.56 0.05 238);
+  --oklch-color-aegean: oklch(0.38 0.08 252);
+  --oklch-color-berry: oklch(0.29 0.14 280);
+  --oklch-color-denim: oklch(0.24 0.06 268);
+  --oklch-color-admiral: oklch(0.31 0.2 265);
+  --oklch-color-sapphire: oklch(0.71 0.09 208);
+  --oklch-color-arctic: oklch(0.89 0.1 208);
+  --oklch-color-tan: oklch(0.89 0.06 97.4);
+  --oklch-color-beige: oklch(0.89 0.09 96.3);
+  --oklch-color-macaroon: oklch(0.9 0.13 96.8);
+  --oklch-color-hazelwood: oklch(0.79 0.06 94.2);
+  --oklch-color-granola: oklch(0.79 0.12 91.1);
+  --oklch-color-oat: oklch(0.84 0.08 91.8);
+  --oklch-color-eggnog: oklch(0.92 0.09 90.4);
+  --oklch-color-fawn: oklch(0.74 0.11 90.6);
+  --oklch-color-sugarcookie: oklch(0.93 0.08 102);
+  --oklch-color-sand: oklch(0.79 0.11 90.5);
+  --oklch-color-sepia: oklch(0.8 0.09 74.7);
+  --oklch-color-latte: oklch(0.83 0.1 80.7);
+  --oklch-color-oyster: oklch(0.87 0.07 103);
+  --oklch-color-biscotti: oklch(0.83 0.12 92.3);
+  --oklch-color-parmesean: oklch(0.93 0.11 96.1);
+  --oklch-color-hazelnut: oklch(0.73 0.1 91.5);
+  --oklch-color-sandcastle: oklch(0.82 0.09 90.3);
+  --oklch-color-buttermilk: oklch(0.95 0.08 96.7);
+  --oklch-color-sanddollar: oklch(0.92 0.06 103);
+  --oklch-color-shortbread: oklch(0.93 0.11 96.1);
+  --oklch-color-yellow: oklch(0.9 0.19 97.4);
+  --oklch-color-canary: oklch(0.85 0.17 90.4);
+  --oklch-color-gold: oklch(0.79 0.17 73.3);
+  --oklch-color-daffodil: oklch(0.94 0.12 101);
+  --oklch-color-flaxen: oklch(0.78 0.12 90.9);
+  --oklch-color-butter: oklch(0.91 0.18 99.7);
+  --oklch-color-lemon: oklch(0.96 0.18 114);
+  --oklch-color-mustard: oklch(0.8 0.15 87.8);
+  --oklch-color-corn: oklch(0.84 0.18 101);
+  --oklch-color-medallion: oklch(0.78 0.16 87.6);
+  --oklch-color-dandelion: oklch(0.87 0.17 91);
+  --oklch-color-bumblebee: oklch(0.91 0.19 101);
+  --oklch-color-banana: oklch(0.96 0.1 103);
+  --oklch-color-butterscotch: oklch(0.83 0.17 84.9);
+  --oklch-color-dijon: oklch(0.69 0.14 85);
+  --oklch-color-honey: oklch(0.75 0.16 69.6);
+  --oklch-color-blonde: oklch(0.93 0.14 101);
+  --oklch-color-pineapple: oklch(0.91 0.18 99.8);
+  --oklch-color-tuscansun: oklch(0.87 0.17 92.8);
+  --oklch-color-orange: oklch(0.74 0.18 53.5);
+  --oklch-color-tangerine: oklch(0.73 0.17 51.9);
+  --oklch-color-merigold: oklch(0.81 0.16 74.9);
+  --oklch-color-cider: oklch(0.59 0.13 56.2);
+  --oklch-color-rust: oklch(0.46 0.12 49.7);
+  --oklch-color-ginger: oklch(0.57 0.15 49.7);
+  --oklch-color-tiger: oklch(0.7 0.2 45.6);
+  --oklch-color-bronze: oklch(0.56 0.14 50.9);
+  --oklch-color-cantaloupe: oklch(0.79 0.13 47.7);
+  --oklch-color-apricot: oklch(0.71 0.17 57.1);
+  --oklch-color-carrot: oklch(0.68 0.18 49.1);
+  --oklch-color-squash: oklch(0.6 0.16 48.5);
+  --oklch-color-spice: oklch(0.42 0.11 52.4);
+  --oklch-color-marmalade: oklch(0.62 0.16 49.6);
+  --oklch-color-amber: oklch(0.44 0.13 42.7);
+  --oklch-color-sandstone: oklch(0.65 0.15 52);
+  --oklch-color-yam: oklch(0.6 0.17 46.7);
+  --oklch-color-red: oklch(0.66 0.23 28.4);
+  --oklch-color-cherry: oklch(0.44 0.17 30.4);
+  --oklch-color-rose: oklch(0.59 0.22 26.5);
+  --oklch-color-jam: oklch(0.32 0.11 28.5);
+  --oklch-color-merlot: oklch(0.32 0.08 26.9);
+  --oklch-color-garnet: oklch(0.31 0.12 30);
+  --oklch-color-crimson: oklch(0.5 0.2 29.2);
+  --oklch-color-ruby: oklch(0.41 0.17 29.2);
+  --oklch-color-scarlet: oklch(0.42 0.16 29.1);
+  --oklch-color-redwine: oklch(0.27 0.1 29);
+  --oklch-color-redapple: oklch(0.47 0.18 30.2);
+  --oklch-color-mahogany: oklch(0.25 0.08 28.6);
+  --oklch-color-blood: oklch(0.35 0.13 30.2);
+  --oklch-color-sangria: oklch(0.33 0.1 28.1);
+  --oklch-color-currant: oklch(0.33 0.12 29.2);
+  --oklch-color-blush: oklch(0.57 0.14 27.7);
+  --oklch-color-candy: oklch(0.55 0.22 30.2);
+  --oklch-color-lipstick: oklch(0.44 0.17 30.4);
+  --oklch-color-pink: oklch(0.79 0.13 346);
+  --oklch-color-fuchsia: oklch(0.65 0.27 341);
+  --oklch-color-punch: oklch(0.67 0.2 10);
+  --oklch-color-watermelon: oklch(0.75 0.15 7.5);
+  --oklch-color-flamingo: oklch(0.81 0.11 5.11);
+  --oklch-color-rouge: oklch(0.7 0.17 7.51);
+  --oklch-color-salmon: oklch(0.82 0.1 28.6);
+  --oklch-color-coral: oklch(0.73 0.16 31.2);
+  --oklch-color-peach: oklch(0.77 0.13 30.2);
+  --oklch-color-strawberry: oklch(0.67 0.21 24.5);
+  --oklch-color-rosewood: oklch(0.51 0.13 22.7);
+  --oklch-color-lemonade: oklch(0.85 0.08 1.31);
+  --oklch-color-taffy: oklch(0.76 0.16 348);
+  --oklch-color-bubblegum: oklch(0.71 0.21 355);
+  --oklch-color-balletslipper: oklch(0.79 0.12 354);
+  --oklch-color-crepe: oklch(0.84 0.07 1.58);
+  --oklch-color-maroon: oklch(0.41 0.15 358);
+  --oklch-color-hotpink: oklch(0.66 0.26 356);
+  --oklch-color-purple: oklch(0.55 0.26 321);
+  --oklch-color-mauve: oklch(0.49 0.11 318);
+  --oklch-color-violet: oklch(0.41 0.2 315);
+  --oklch-color-boysenberry: oklch(0.33 0.13 357);
+  --oklch-color-lavender: oklch(0.8 0.14 319);
+  --oklch-color-plum: oklch(0.34 0.1 360);
+  --oklch-color-lilac: oklch(0.63 0.18 319);
+  --oklch-color-periwinkle: oklch(0.73 0.1 314);
+  --oklch-color-eggplant: oklch(0.25 0.07 327);
+  --oklch-color-iris: oklch(0.6 0.15 307);
+  --oklch-color-heather: oklch(0.64 0.1 307);
+  --oklch-color-amethyst: oklch(0.62 0.2 306);
+  --oklch-color-raisin: oklch(0.2 0.06 358);
+  --oklch-color-orchid: oklch(0.66 0.2 306);
+  --oklch-color-mulberry: oklch(0.27 0.11 4.92);
+  --oklch-color-green: oklch(0.74 0.22 144);
+  --oklch-color-chartreuse: oklch(0.91 0.23 129);
+  --oklch-color-juniper: oklch(0.41 0.1 129);
+  --oklch-color-sage: oklch(0.61 0.06 138);
+  --oklch-color-lime: oklch(0.87 0.25 149);
+  --oklch-color-fern: oklch(0.72 0.15 145);
+  --oklch-color-olive: oklch(0.76 0.13 128);
+  --oklch-color-emerald: oklch(0.55 0.18 143);
+  --oklch-color-pear: oklch(0.71 0.18 132);
+  --oklch-color-moss: oklch(0.49 0.12 132);
+  --oklch-color-shamrock: oklch(0.65 0.22 143);
+  --oklch-color-seafoam: oklch(0.84 0.18 156);
+  --oklch-color-pine: oklch(0.39 0.09 141);
+  --oklch-color-parakeet: oklch(0.7 0.21 147);
+  --oklch-color-mint: oklch(0.88 0.1 162);
+  --oklch-color-seaweed: oklch(0.38 0.07 132);
+  --oklch-color-pickle: oklch(0.55 0.11 131);
+  --oklch-color-pistachio: oklch(0.84 0.04 161);
+  --oklch-color-basil: oklch(0.45 0.1 142);
+  --oklch-color-crocodile: oklch(0.55 0.1 129);
+  --oklch-color-brown: oklch(0.22 0.03 66.9);
+  --oklch-color-coffee: oklch(0.35 0.05 73.3);
+  --oklch-color-mocha: oklch(0.3 0.05 74.1);
+  --oklch-color-peanut: oklch(0.5 0.07 74);
+  --oklch-color-carob: oklch(0.28 0.04 76.2);
+  --oklch-color-hickory: oklch(0.26 0.05 46.6);
+  --oklch-color-pecan: oklch(0.31 0.06 46.5);
+  --oklch-color-walnut: oklch(0.3 0.05 56.9);
+  --oklch-color-caramel: oklch(0.39 0.08 55);
+  --oklch-color-gingerbread: oklch(0.35 0.09 52.9);
+  --oklch-color-chocolate: oklch(0.23 0.05 59.9);
+  --oklch-color-tortilla: oklch(0.6 0.07 75.4);
+  --oklch-color-umber: oklch(0.28 0.04 61.9);
+  --oklch-color-tawny: oklch(0.46 0.09 56.9);
+  --oklch-color-brunette: oklch(0.27 0.05 57.6);
+  --oklch-color-cinammon: oklch(0.36 0.09 44.9);
+  --oklch-color-penny: oklch(0.33 0.07 45.4);
+  --oklch-color-grey: oklch(0.74 0 0);
+  --oklch-color-shadow: oklch(0.34 0 0);
+  --oklch-color-graphite: oklch(0.44 0.03 319);
+  --oklch-color-iron: oklch(0.31 0.01 338);
+  --oklch-color-pewter: oklch(0.53 0.04 289);
+  --oklch-color-cloud: oklch(0.83 0.02 286);
+  --oklch-color-silver: oklch(0.9 0 0);
+  --oklch-color-smoke: oklch(0.45 0.02 311);
+  --oklch-color-anchor: oklch(0.38 0.02 286);
+  --oklch-color-ash: oklch(0.43 0.01 9.96);
+  --oklch-color-porpoise: oklch(0.42 0.03 288);
+  --oklch-color-dove: oklch(0.56 0.03 320);
+  --oklch-color-fog: oklch(0.48 0.02 326);
+  --oklch-color-flint: oklch(0.6 0.05 286);
+  --oklch-color-pebble: oklch(0.32 0 0);
+  --oklch-color-lead: oklch(0.37 0.03 288);
+  --oklch-color-coin: oklch(0.68 0.03 288);
+  --oklch-color-fossil: oklch(0.56 0.01 338);
+  --oklch-color-black: oklch(0.18 0 0);
+  --oklch-color-ebony: oklch(0.11 0.02 71.8);
+  --oklch-color-crow: oklch(0.25 0.01 67.5);
+  --oklch-color-charcoal: oklch(0.25 0.01 315);
+}
+.color-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1em;
+}
+.color-item {
+  align-items: center;
+  border: 2px solid var(--oklch-color-black);
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+.white {background-color: var(--oklch-color-white);}
+.pearl {background-color: var(--oklch-color-pearl);}
+.alabaster {background-color: var(--oklch-color-alabaster);}
+.snow {background-color: var(--oklch-color-snow);}
+.ivory {background-color: var(--oklch-color-ivory);}
+.cream {background-color: var(--oklch-color-cream);}
+.eggshell {background-color: var(--oklch-color-eggshell);}
+.cotton {background-color: var(--oklch-color-cotton);}
+.chiffon {background-color: var(--oklch-color-chiffon);}
+.salt {background-color: var(--oklch-color-salt);}
+.lace {background-color: var(--oklch-color-lace);}
+.coconut {background-color: var(--oklch-color-coconut);}
+.linen {background-color: var(--oklch-color-linen);}
+.bone {background-color: var(--oklch-color-bone);}
+.porcelain {background-color: var(--oklch-color-porcelain);}
+.parchment {background-color: var(--oklch-color-parchment);}
+.rice {background-color: var(--oklch-color-rice);}
+/* blues */
+.blue { background-color: var(--oklch-color-blue);color: white;}
+.navy { background-color: var(--oklch-color-navy);color: white;}
+.aqua { background-color: var(--oklch-color-aqua);color: white;}
+.sky { background-color: var(--oklch-color-sky);color: white;}
+.teal { background-color: var(--oklch-color-teal);color: white;}
+.slate { background-color: var(--oklch-color-slate);color: white;}
+.indigo { background-color: var(--oklch-color-indigo);color: white;}
+.cobalt { background-color: var(--oklch-color-cobalt);color: white;}
+.ocean { background-color: var(--oklch-color-ocean);color: white;}
+.peacock { background-color: var(--oklch-color-peacock);color: white;}
+.azure { background-color: var(--oklch-color-azure);color: white;}
+.cerulean { background-color: var(--oklch-color-cerulean);color: white;}
+.lapis { background-color: var(--oklch-color-lapis);color: white;}
+.spruce { background-color: var(--oklch-color-spruce);color: white;}
+.stone { background-color: var(--oklch-color-stone);color: white;}
+.aegean { background-color: var(--oklch-color-aegean);color: white;}
+.berry { background-color: var(--oklch-color-berry);color: white;}
+.denim { background-color: var(--oklch-color-denim);color: white;}
+.admiral { background-color: var(--oklch-color-admiral);color: white;}
+.sapphire { background-color: var(--oklch-color-sapphire);color: white;}
+.arctic { background-color: var(--oklch-color-arctic);color: white;}
+/* browns */
+.tan {background-color: var(--oklch-color-tan);}
+.beige {background-color: var(--oklch-color-beige);}
+.macaroon {background-color: var(--oklch-color-macaroon);}
+.hazelwood {background-color: var(--oklch-color-hazelwood);}
+.granola {background-color: var(--oklch-color-granola);}
+.oat {background-color: var(--oklch-color-oat);}
+.eggnog {background-color: var(--oklch-color-eggnog);}
+.fawn {background-color: var(--oklch-color-fawn);}
+.sugarcookie {background-color: var(--oklch-color-sugarcookie);}
+.sand {background-color: var(--oklch-color-sand);}
+.sepia {background-color: var(--oklch-color-sepia);}
+.latte {background-color: var(--oklch-color-latte);}
+.oyster {background-color: var(--oklch-color-oyster);}
+.biscotti {background-color: var(--oklch-color-biscotti);}
+.parmesean {background-color: var(--oklch-color-parmesean);}
+.hazelnut {background-color: var(--oklch-color-hazelnut);}
+.sandcastle {background-color: var(--oklch-color-sandcastle);}
+.buttermilk {background-color: var(--oklch-color-buttermilk);}
+.sanddollar {background-color: var(--oklch-color-sanddollar);}
+.shortbread {background-color: var(--oklch-color-shortbread);}
+/* yellows */
+.yellow {background-color: var(--oklch-color-yellow);}
+.canary {background-color: var(--oklch-color-canary);}
+.gold {background-color: var(--oklch-color-gold);}
+.daffodil {background-color: var(--oklch-color-daffodil);}
+.flaxen {background-color: var(--oklch-color-flaxen);}
+.butter {background-color: var(--oklch-color-butter);}
+.lemon {background-color: var(--oklch-color-lemon);}
+.mustard {background-color: var(--oklch-color-mustard);}
+.corn {background-color: var(--oklch-color-corn);}
+.medallion {background-color: var(--oklch-color-medallion);}
+.dandelion {background-color: var(--oklch-color-dandelion);}
+.bumblebee {background-color: var(--oklch-color-bumblebee);}
+.banana {background-color: var(--oklch-color-banana);}
+.butterscotch {background-color: var(--oklch-color-butterscotch);}
+.dijon {background-color: var(--oklch-color-dijon);}
+.honey {background-color: var(--oklch-color-honey);}
+.blonde {background-color: var(--oklch-color-blonde);}
+.pineapple {background-color: var(--oklch-color-pineapple);}
+.tuscansun {background-color: var(--oklch-color-tuscansun);}
+/* oranges */
+.orange {background-color: var(--oklch-color-orange);}
+.tangerine {background-color: var(--oklch-color-tangerine);}
+.merigold {background-color: var(--oklch-color-merigold);}
+.cider {background-color: var(--oklch-color-cider);}
+.rust {background-color: var(--oklch-color-rust);}
+.ginger {background-color: var(--oklch-color-ginger);}
+.tiger {background-color: var(--oklch-color-tiger);}
+.bronze {background-color: var(--oklch-color-bronze);}
+.cantaloupe {background-color: var(--oklch-color-cantaloupe);}
+.apricot {background-color: var(--oklch-color-apricot);}
+.carrot {background-color: var(--oklch-color-carrot);}
+.squash {background-color: var(--oklch-color-squash);}
+.spice {background-color: var(--oklch-color-spice);}
+.marmalade {background-color: var(--oklch-color-marmalade);}
+.amber {background-color: var(--oklch-color-amber);}
+.sandstone {background-color: var(--oklch-color-sandstone);}
+.yam {background-color: var(--oklch-color-yam);}
+/* reds */
+.red {background-color: var(--oklch-color-red);color: white;}
+.cherry {background-color: var(--oklch-color-cherry);color: white;}
+.rose {background-color: var(--oklch-color-rose);color: white;}
+.jam {background-color: var(--oklch-color-jam);color: white;}
+.merlot {background-color: var(--oklch-color-merlot);color: white;}
+.garnet {background-color: var(--oklch-color-garnet);color: white;}
+.crimson {background-color: var(--oklch-color-crimson);color: white;}
+.ruby {background-color: var(--oklch-color-ruby);color: white;}
+.scarlet {background-color: var(--oklch-color-scarlet);color: white;}
+.redwine {background-color: var(--oklch-color-redwine);color: white;}
+.redapple {background-color: var(--oklch-color-redapple);color: white;}
+.mahogany {background-color: var(--oklch-color-mahogany);color: white;}
+.blood {background-color: var(--oklch-color-blood);color: white;}
+.sangria {background-color: var(--oklch-color-sangria);color: white;}
+.currant {background-color: var(--oklch-color-currant);color: white;}
+.blush {background-color: var(--oklch-color-blush);color: white;}
+.candy {background-color: var(--oklch-color-candy);color: white;}
+.lipstick {background-color: var(--oklch-color-lipstick);color: white;}
+/* pinks */
+.pink { background-color: var(--oklch-color-pink);color: white;}
+.fuchsia { background-color: var(--oklch-color-fuchsia);color: white;}
+.punch { background-color: var(--oklch-color-punch);color: white;}
+.watermelon { background-color: var(--oklch-color-watermelon);color: white;}
+.flamingo { background-color: var(--oklch-color-flamingo);color: white;}
+.rouge { background-color: var(--oklch-color-rouge);color: white;}
+.salmon { background-color: var(--oklch-color-salmon);color: white;}
+.coral { background-color: var(--oklch-color-coral);color: white;}
+.peach { background-color: var(--oklch-color-peach);color: white;}
+.strawberry { background-color: var(--oklch-color-strawberry);color: white;}
+.rosewood { background-color: var(--oklch-color-rosewood);color: white;}
+.lemonade { background-color: var(--oklch-color-lemonade);color: white;}
+.taffy { background-color: var(--oklch-color-taffy);color: white;}
+.bubblegum { background-color: var(--oklch-color-bubblegum);color: white;}
+.balletslipper { background-color: var(--oklch-color-balletslipper);color: white;}
+.crepe { background-color: var(--oklch-color-crepe);color: white;}
+.maroon { background-color: var(--oklch-color-maroon);color: white;}
+.hotpink { background-color: var(--oklch-color-hotpink);color: white;}
+/* purples */
+.purple { background-color: var(--oklch-color-purple);color: white;}
+.mauve { background-color: var(--oklch-color-mauve);color: white;}
+.violet { background-color: var(--oklch-color-violet);color: white;}
+.boysenberry { background-color: var(--oklch-color-boysenberry);color: white;}
+.lavender { background-color: var(--oklch-color-lavender);color: white;}
+.plum { background-color: var(--oklch-color-plum);color: white;}
+.lilac { background-color: var(--oklch-color-lilac);color: white;}
+.periwinkle { background-color: var(--oklch-color-periwinkle);color: white;}
+.eggplant { background-color: var(--oklch-color-eggplant);color: white;}
+.iris { background-color: var(--oklch-color-iris);color: white;}
+.heather { background-color: var(--oklch-color-heather);color: white;}
+.amethyst { background-color: var(--oklch-color-amethyst);color: white;}
+.raisin { background-color: var(--oklch-color-raisin);color: white;}
+.orchid { background-color: var(--oklch-color-orchid);color: white;}
+.mulberry { background-color: var(--oklch-color-mulberry);color: white;}
+/* greens */
+.green { background-color: var(--oklch-color-green);color: white;}
+.chartreuse { background-color: var(--oklch-color-chartreuse);color: white;}
+.juniper { background-color: var(--oklch-color-juniper);color: white;}
+.sage { background-color: var(--oklch-color-sage);color: white;}
+.lime { background-color: var(--oklch-color-lime);color: white;}
+.fern { background-color: var(--oklch-color-fern);color: white;}
+.olive { background-color: var(--oklch-color-olive);color: white;}
+.emerald { background-color: var(--oklch-color-emerald);color: white;}
+.pear { background-color: var(--oklch-color-pear);color: white;}
+.moss { background-color: var(--oklch-color-moss);color: white;}
+.shamrock { background-color: var(--oklch-color-shamrock);color: white;}
+.seafoam { background-color: var(--oklch-color-seafoam);color: white;}
+.pine { background-color: var(--oklch-color-pine);color: white;}
+.parakeet { background-color: var(--oklch-color-parakeet);color: white;}
+.mint { background-color: var(--oklch-color-mint);color: white;}
+.seaweed { background-color: var(--oklch-color-seaweed);color: white;}
+.pickle { background-color: var(--oklch-color-pickle);color: white;}
+.pistachio { background-color: var(--oklch-color-pistachio);color: white;}
+.basil { background-color: var(--oklch-color-basil);color: white;}
+.crocodile { background-color: var(--oklch-color-crocodile);color: white;}
+/* browns */
+.brown { background-color: var(--oklch-color-brown);color: white;}
+.coffee { background-color: var(--oklch-color-coffee);color: white;}
+.mocha { background-color: var(--oklch-color-mocha);color: white;}
+.peanut { background-color: var(--oklch-color-peanut);color: white;}
+.carob { background-color: var(--oklch-color-carob);color: white;}
+.hickory { background-color: var(--oklch-color-hickory);color: white;}
+.pecan { background-color: var(--oklch-color-pecan);color: white;}
+.walnut { background-color: var(--oklch-color-walnut);color: white;}
+.caramel { background-color: var(--oklch-color-caramel);color: white;}
+.gingerbread { background-color: var(--oklch-color-gingerbread);color: white;}
+.chocolate { background-color: var(--oklch-color-chocolate);color: white;}
+.tortilla { background-color: var(--oklch-color-tortilla);color: white;}
+.umber { background-color: var(--oklch-color-umber);color: white;}
+.tawny { background-color: var(--oklch-color-tawny);color: white;}
+.brunette { background-color: var(--oklch-color-brunette);color: white;}
+.cinammon { background-color: var(--oklch-color-cinammon);color: white;}
+.penny { background-color: var(--oklch-color-penny);color: white;}
+/* greys */
+.grey { background-color: var(--oklch-color-grey);color: white;}
+.shadow { background-color: var(--oklch-color-shadow);color: white;}
+.graphite { background-color: var(--oklch-color-graphite);color: white;}
+.iron { background-color: var(--oklch-color-iron);color: white;}
+.pewter { background-color: var(--oklch-color-pewter);color: white;}
+.cloud { background-color: var(--oklch-color-cloud);color: white;}
+.silver { background-color: var(--oklch-color-silver);color: white;}
+.smoke { background-color: var(--oklch-color-smoke);color: white;}
+.anchor { background-color: var(--oklch-color-anchor);color: white;}
+.ash { background-color: var(--oklch-color-ash);color: white;}
+.porpoise { background-color: var(--oklch-color-porpoise);color: white;}
+.dove { background-color: var(--oklch-color-dove);color: white;}
+.fog { background-color: var(--oklch-color-fog);color: white;}
+.flint { background-color: var(--oklch-color-flint);color: white;}
+.pebble { background-color: var(--oklch-color-pebble);color: white;}
+.lead { background-color: var(--oklch-color-lead);color: white;}
+.coin { background-color: var(--oklch-color-coin);color: white;}
+.fossil { background-color: var(--oklch-color-fossil);color: white;}
+/* blacks */
+.black { background-color: var(--oklch-color-black);color: white;}
+.ebony { background-color: var(--oklch-color-ebony);color: white;}
+.crow { background-color: var(--oklch-color-crow);color: white;}
+.charcoal { background-color: var(--oklch-color-charcoal);color: white;}
+:root {
+  --oklch-color-plum-crazy: oklch(0.45 0.25 294);
+  --oklch-color-cherry: oklch(0.55 0.22 22.6);
+  --oklch-color-black-cherry: oklch(0.33 0.07 352);
+  --oklch-color-panther-pink: oklch(0.58 0.19 340);
+  --oklch-color-green-go: oklch(0.61 0.15 148);
+  --oklch-color-sublime-green: oklch(0.83 0.2 129);
+  --oklch-color-go-mango: oklch(0.62 0.17 28.2);
+  --oklch-color-butterscotch: oklch(0.69 0.14 67);
+  --oklch-color-bright-green: oklch(0.88 0.28 138);
+  --oklch-color-top-banana: oklch(0.93 0.17 103);
+  --oklch-color-citron-yella: oklch(0.7 0.15 114);
+  --oklch-color-rebeccapurple: oklch(0.44 0.16 303);
+}
+.lch-hemi-orange {  background-color: var(--oklch-color-hemi-orange); color: white; }
+.lch-plum-crazy {  background-color: var(--oklch-color-plum-crazy); color: white; }
+.lch-cherry {  background-color: var(--oklch-color-cherry:); color: white; }
+.lch-black-cherry {  background-color: var(--oklch-color-black-cherry); color: white; }
+.lch-panther-pink {  background-color: var(--oklch-color-panther-pink); color: white; }
+.lch-green-go {  background-color: var(--oklch-color-green-go); color: white; }
+.lch-sublime-green {  background-color: var(--oklch-color-sublime-green); color: white; }
+.lch-go-mango {  background-color: var(--oklch-color-go-mango); color: white; }
+.lch-butterscotch: {  background-color: var(--oklch-color-butterscotch); color: white; }
+.lch-bright-green {  background-color: var(--oklch-color-bright-green); color: white; }
+.lch-top-banana {  background-color: var(--oklch-color-top-banana); color: white; }
+.lch-citron-yella {  background-color: var(--oklch-color-citron-yella); color: white; }
+.lch-panther-pink {  background-color: var(--oklch-color-panther-pink); color: white; }
+.lch-rebeccapurple {  background-color: var(--oklch-color-rebeccapurple); color: white; }
+:root {
+  --theme-primary: #663399;
+  --theme-primary-900: lab(from var(--theme-primary) 10% a b);
+  --theme-primary-800: lab(from var(--theme-primary) 20% a b);
+  --theme-primary-700: lab(from var(--theme-primary) 30% a b);
+  --theme-primary-600: lab(from var(--theme-primary) 40% a b);
+  --theme-primary-500: lab(from var(--theme-primary) 50% a b);
+  --theme-primary-400: lab(from var(--theme-primary) 60% a b);
+  --theme-primary-300: lab(from var(--theme-primary) 70% a b);
+  --theme-primary-200: lab(from var(--theme-primary) 80% a b);
+  --theme-primary-100: lab(from var(--theme-primary) 90% a b);
+
+  --theme-secondary: #2632c2;
+  --theme-secondary-900: lab(from var(--theme-secondary) 10% a b);
+  --theme-secondary-800: lab(from var(--theme-secondary) 20% a b);
+  --theme-secondary-700: lab(from var(--theme-secondary) 30% a b);
+  --theme-secondary-600: lab(from var(--theme-secondary) 40% a b);
+  --theme-secondary-500: lab(from var(--theme-secondary) 50% a b);
+  --theme-secondary-400: lab(from var(--theme-secondary) 60% a b);
+  --theme-secondary-300: lab(from var(--theme-secondary) 70% a b);
+  --theme-secondary-200: lab(from var(--theme-secondary) 80% a b);
+  --theme-secondary-100: lab(from var(--theme-secondary) 90% a b);
+
+  --theme-tertiary: #d2042d;
+  --theme-tertiary-100: lab(from var(--theme-tertiary) 90% a b);
+  --theme-tertiary-200: lab(from var(--theme-tertiary) 80% a b);
+  --theme-tertiary-300: lab(from var(--theme-tertiary) 70% a b);
+  --theme-tertiary-400: lab(from var(--theme-tertiary) 60% a b);
+  --theme-tertiary-500: lab(from var(--theme-tertiary) 50% a b);
+  --theme-tertiary-600: lab(from var(--theme-tertiary) 40% a b);
+  --theme-tertiary-700: lab(from var(--theme-tertiary) 30% a b);
+  --theme-tertiary-800: lab(from var(--theme-tertiary) 20% a b);
+  --theme-tertiary-900: lab(from var(--theme-tertiary) 10% a b);
+}
+html {
+  font-family: Raleway, sans-serif;
+}
+.outside-container {
+  margin-block-start: 4rem;
+  margin-inline: 10rem;
+}
+.explainer {
+  font-size: 1.5rem;
+  margin-block-end: 2rem;
+  width: 80ch;
+}
+.container {
+  display: flex;
+  flex-flow: row;
+}
+.box {
+  border: 4px solid black;
+  display: flex;
+  font-size: 2rem;
+  height: 100px;
+  margin-block: 10px;
+  margin-inline-end: 5px;
+  place-content: center;
+  place-items: center;
+  width: 100px;
+}
+.warning {
+  color: red;
+}
+/* Classes for themes */
+/* Primary theme */
+.theme-900 {
+  background: var(--theme-primary-900);
+  color: color-contrast(var(--theme-primary-900) vs black, white);
+}
+.theme-800 {
+  background: var(--theme-primary-800);
+  color: color-contrast(var(--theme-primary-800) vs white, black);
+}
+.theme-700 {
+  background: var(--theme-primary-700);
+  color: color-contrast(var(--theme-primary-700) vs white, black);
+}
+.theme-600 {
+  background: var(--theme-primary-600);
+  color: color-contrast(var(--theme-primary-600) vs white, black);
+}
+.theme-500 {
+  background: var(--theme-primary-500);
+  color: color-contrast(var(--theme-primary-500) vs white, black);
+}
+.theme-400 {
+  background: var(--theme-primary-400);
+  color: color-contrast(var(--theme-primary-400) vs white, black);
+}
+.theme-300 {
+  background: var(--theme-primary-300);
+  color: color-contrast(var(--theme-primary-300) vs white, black);
+}
+.theme-200 {
+  background: var(--theme-primary-200);
+  color: color-contrast(var(--theme-primary-200) vs white, black);
+}
+.theme-100 {
+  background: var(--theme-primary-100);
+  color: color-contrast(var(--theme-primary-100) vs white, black);
+}
+/* Secondary theme */
+.theme-secondary-900 {
+  background: var(--theme-secondary-900);
+  color: color-contrast(var(--theme-secondary-900) vs black, white);
+}
+.theme-secondary-800 {
+  background: var(--theme-secondary-800);
+  color: color-contrast(var(--theme-secondary-800) vs white, black);
+}
+.theme-secondary-700 {
+  background: var(--theme-secondary-700);
+  color: color-contrast(var(--theme-secondary-700) vs white, black);
+}
+.theme-secondary-600 {
+  background: var(--theme-secondary-600);
+  color: color-contrast(var(--theme-secondary-600) vs white, black);
+}
+.theme-secondary-500 {
+  background: var(--theme-secondary-500);
+  color: color-contrast(var(--theme-secondary-500) vs white, black);
+}
+.theme-secondary-400 {
+  background: var(--theme-secondary-400);
+  color: color-contrast(var(--theme-secondary-400) vs white, black);
+}
+.theme-secondary-300 {
+  background: var(--theme-secondary-300);
+  color: color-contrast(var(--theme-secondary-300) vs white, black);
+}
+.theme-secondary-200 {
+  background: var(--theme-secondary-200);
+  color: color-contrast(var(--theme-secondary-200) vs white, black);
+}
+.theme-secondary-100 {
+  background: var(--theme-secondary-100);
+  color: color-contrast(var(--theme-secondary-100) vs white, black);
+}
+/* Tertiary theme */
+.theme-tertiary-900 {
+  background: var(--theme-tertiary-900);
+  color: color-contrast(var(--theme-tertiary-900) vs black, white);
+}
+.theme-tertiary-800 {
+  background: var(--theme-tertiary-800);
+  color: color-contrast(var(--theme-tertiary-800) vs white, black);
+}
+.theme-tertiary-700 {
+  background: var(--theme-tertiary-700);
+  color: color-contrast(var(--theme-tertiary-700) vs white, black);
+}
+.theme-tertiary-600 {
+  background: var(--theme-tertiary-600);
+  color: color-contrast(var(--theme-tertiary-600) vs white, black);
+}
+.theme-tertiary-500 {
+  background: var(--theme-tertiary-500);
+  color: color-contrast(var(--theme-tertiary-500) vs white, black);
+}
+.theme-tertiary-400 {
+  background: var(--theme-tertiary-400);
+  color: color-contrast(var(--theme-tertiary-400) vs white, black);
+}
+.theme-tertiary-300 {
+  background: var(--theme-tertiary-300);
+  color: color-contrast(var(--theme-tertiary-300) vs white, black);
+}
+.theme-tertiary-200 {
+  background: var(--theme-tertiary-200);
+  color: color-contrast(var(--theme-tertiary-200) vs white, black);
+}
+.theme-tertiary-100 {
+  background: var(--theme-tertiary-100);
+  color: color-contrast(var(--theme-tertiary-100) vs white, black);
 }
 /* color-mix() experiment: lighten a charcoal black */
 :root {
@@ -1006,1353 +2315,6 @@ Big buttons
 .citron-yella {  background-color: var(--lab-color-citron-yella); color: white; }
 .panther-pink {  background-color: var(--lab-color-panther-pink); color: white; }
 .rebeccapurple {  background-color: var(--lab-color-rebeccapurple); color: white; }
-/* color-mix() experiment: lighten a charcoal black */
-:root {
-  /* lightening charcoal */
-  --text1: color-mix(in srgb, var(--color-charcoal) 10%, white);
-  --text2: color-mix(in srgb, var(--color-charcoal) 20%, white);
-  --text3: color-mix(in srgb, var(--color-charcoal) 30%, white);
-  --text4: color-mix(in srgb, var(--color-charcoal) 40%, white);
-  --text5: color-mix(in srgb, var(--color-charcoal) 50%, white);
-  --text6: color-mix(in srgb, var(--color-charcoal) 60%, white);
-  --text7: color-mix(in srgb, var(--color-charcoal) 70%, white);
-  --text8: color-mix(in srgb, var(--color-charcoal) 80%, white);
-  --text9: color-mix(in srgb, var(--color-charcoal) 90%, white);
-}
-.light-text1 {
-  background-color: var(--text1);
-}
-.light-text2 {
-  background-color: var(--text2);
-}
-.light-text3 {
-  background-color: var(--text3);
-}
-.light-text4 {
-  background-color: var(--text4);
-}
-.light-text5 {
-  background-color: var(--text5);
-}
-.light-text6 {
-  background-color: var(--text6);
-}
-.light-text7 {
-  background-color: var(--text7);
-}
-.light-text8 {
-  background-color: var(--text8);
-}
-.light-text9 {
-  background-color: var(--text9);
-  color: #fff;
-}
-/* color-mix() experiment: darken a dark green mint color  */
-:root {
-  --dark-text1: color-mix(in srgb, var(--color-mint) 10%, black);
-  --dark-text2: color-mix(in srgb, var(--color-mint) 20%, black);
-  --dark-text3: color-mix(in srgb, var(--color-mint) 30%, black);
-  --dark-text4: color-mix(in srgb, var(--color-mint) 40%, black);
-  --dark-text5: color-mix(in srgb, var(--color-mint) 50%, black);
-  --dark-text6: color-mix(in srgb, var(--color-mint) 60%, black);
-  --dark-text7: color-mix(in srgb, var(--color-mint) 70%, black);
-  --dark-text8: color-mix(in srgb, var(--color-mint) 80%, black);
-  --dark-text9: color-mix(in srgb, var(--color-mint) 90%, black);
-}
-.dark-text1 {
-  background-color: var(--dark-text1);
-  color: #fff;
-}
-.dark-text2 {
-  background-color: var(--dark-text2);
-  color: #fff;
-}
-.dark-text3 {
-  background-color: var(--dark-text3);
-  color: #fff;
-}
-.dark-text4 {
-  background-color: var(--dark-text4);
-  color: #fff;
-}
-.dark-text5 {
-  background-color: var(--dark-text5);
-  color: #fff;
-}
-.dark-text6 {
-  background-color: var(--dark-text6);
-  color: #fff;
-}
-.dark-text7 {
-  background-color: var(--dark-text7);
-  color: #fff;
-}
-.dark-text8 {
-  background-color: var(--dark-text8);
-  color: #fff;
-}
-.dark-text9 {
-  background-color: var(--dark-text9);
-  color: #fff;
-}
-/* CSS HSL */
-:root {
-
-  /* whites */
-  --color-white: #fffeff;
-  --color-alabaster: #fefaf0;
-  --color-snow: #f4fefd;
-  --color-ivory: #fef7e5;
-  --color-cream: #fffbda;
-  --color-eggshell: #fef9e3;
-  --color-cotton: #fbfcf7;
-  --color-chiffon: #fafaf1;
-  --color-salt: #f8efec;
-  --color-lace: #faf3ea;
-  --color-coconut: #fff1e6;
-  --color-linen: #f2ebd3;
-  --color-bone: #e7dfcc;
-  --color-porcelain: #fffffc;
-  --color-parchment: #fcf6df;
-  --color-rice: #fbf6ef;
-    
-  /* blues */
-    
-  --color-blue: #0074d9;
-  --color-navy: #001f3f;
-  --color-aqua: #7fdbff;
-  --color-sky: #00b2ff;
-  --color-teal: #39cccc;
-  --color-slate: #757b87;
-  --color-indigo: #281e5d;
-  --color-cobalt: #1438bd;
-  --color-ocean: #026063;
-  --color-peacock: #002d37;
-  --color-azure: #1621a6;
-  --color-cerulean: #0592c2;
-  --color-lapis: #2632c2;
-  --color-spruce: #2c3e4b;
-  --color-stone: #59788d;
-  --color-aegean: #1e456e;
-  --color-berry: #24146f;
-  --color-denim: #141e3c;
-  --color-admiral: #061094;
-  --color-sapphire: #52b2c0;
-  --color-arctic: #82edfd;
-  
-  /* browns */
-    
-  --color-tan: #e5dbac;
-  --color-beige: #ecdc99;
-  --color-macaroon: #f7df75;
-  --color-hazelwood: #c9bc8e;
-  --color-granola: #d6b75a;
-  --color-oat: #dec98a;
-  --color-eggnog: #fbe29d;
-  --color-fawn: #c7a951;
-  --color-sugarcookie: #f3ebad;
-  --color-sand: #d7b963;
-  --color-sepia: #e3b678;
-  --color-latte: #e9c17b;
-  --color-oyster: #dcd69f;
-  --color-biscotti: #e3c565;
-  --color-parmesean: #fee993;
-  --color-hazelnut: #bda55d;
-  --color-sandcastle: #dbc27d;
-  --color-buttermilk: #fdefb2;
-  --color-sanddollar: #ebe7b9;
-  --color-shortbread: #fce791;
-  
-  /* yellows */
-    
-  --color-yellow: #ffdc00;
-  --color-canary: #fac801;
-  --color-gold: #f9a602;
-  --color-daffodil: #feee88;
-  --color-flaxen: #d5b65a;
-  --color-butter: #fee226;
-  --color-lemon: #effd5f;
-  --color-mustard: #e9b829;
-  --color-corn: #e4cd04;
-  --color-medallion: #e4b103;
-  --color-dandelion: #fdce2a;
-  --color-bumblebee: #fce206;
-  --color-banana: #fcf4a3;
-  --color-butterscotch: #fabd04;
-  --color-dijon: #c29200;
-  --color-honey: #ec9707;
-  --color-blonde: #fdeb75;
-  --color-pineapple: #ffe327;
-  --color-tuscansun: #fcd12a;
-  
-  /* oranges */
-  
-  --color-orange: #ff851b;
-  --color-tangerine: #f98228;
-  --color-merigold: #fdae1d;
-  --color-cider: #b66827;
-  --color-rust: #8c4005;
-  --color-ginger: #bc5703;
-  --color-tiger: #fb6b02;
-  --color-bronze: #b2560c;
-  --color-cantaloupe: #fca172;
-  --color-apricot: #ed810f;
-  --color-carrot: #ed7116;
-  --color-squash: #c95c09;
-  --color-spice: #7a3a03;
-  --color-marmalade: #d16102;
-  --color-amber: #893201;
-  --color-sandstone: #d57128;
-  --color-yam: #cc5801;
-  
-  /* reds */
-    
-  --color-red: #ff4136;
-  --color-cherry: #9a0f02;
-  --color-rose: #e2252a;
-  --color-jam: #600f0b;
-  --color-merlot: #541f1b;
-  --color-garnet: #5f0a04;
-  --color-crimson: #b8100a;
-  --color-ruby: #900503;
-  --color-scarlet: #910d08;
-  --color-redwine: #4c0805;
-  --color-redapple: #a91b0d;
-  --color-mahogany: #420d09;
-  --color-blood: #710c04;
-  --color-sangria: #5f1914;
-  --color-currant: #670c07;
-  --color-blush: #bb544a;
-  --color-candy: #d31603;
-  --color-lipstick: #9b0f02;
-  
-  /* pinks */
-    
-  --color-pink: #f69acd;
-  --color-fuchsia: #f012be;
-  --color-punch: #f25278;
-  --color-watermelon: #fe809c;
-  --color-flamingo: #fda4b8;
-  --color-rouge: #f26c8c;
-  --color-salmon: #fdab9f;
-  --color-coral: #fe7d67;
-  --color-peach: #fb9483;
-  --color-strawberry: #fc4c4e;
-  --color-rosewood: #a04242;
-  --color-lemonade: #fabacb;
-  --color-taffy: #fa85c4;
-  --color-bubblegum: #fd5ca8;
-  --color-balletslipper: #f69abf;
-  --color-crepe: #f1b7c6;
-  --color-maroon: #85144b;
-  --color-hotpink: #ff1696;
-  
-  /* purples */
-  
-  --color-purple: #b10dc9;
-  --color-mauve: #7a4a89;
-  --color-violet: #710193;
-  --color-boysenberry: #630536;
-  --color-lavender: #e3a0f6;
-  --color-plum: #601a36;
-  --color-lilac: #b65fcd;
-  --color-periwinkle: #be93d4; 
-  --color-eggplant: #311431;
-  --color-iris: #9866c5;
-  --color-heather: #9b7cb9;
-  --color-amethyst: #a45de4;
-  --color-raisin: #290916;
-  --color-orchid: #af69ee;
-  --color-mulberry: #4d0220;
-  
-  /* greens */
-    
-  --color-green: #2ecc40;
-  --color-chartreuse: #b0fd38;
-  --color-juniper: #395311;
-  --color-sage: #728c69;
-  --color-lime: #01ff70;
-  --color-fern: #5dbc64;
-  --color-olive: #98bf64;
-  --color-emerald: #038911;
-  --color-pear: #74b62d;
-  --color-moss: #476d1e;
-  --color-shamrock: #03ac13;
-  --color-seafoam: #3cec96;
-  --color-pine: #24501e;
-  --color-parakeet: #02c04a;
-  --color-mint: #98ecc3;
-  --color-seaweed: #354b21;
-  --color-pickle: #5a7d36;
-  --color-pistachio: #b2d3c1;
-  --color-basil: #32622d;
-  --color-crocodile: #5f7c3a;
-  
-  /* browns */
-    
-  --color-brown: #241709;
-  --color-coffee: #4b371c;
-  --color-mocha: #3c290d;
-  --color-peanut: #795c34;
-  --color-carob: #35260f;
-  --color-hickory: #371d10;
-  --color-pecan: #4a2512;
-  --color-walnut: #432711;
-  --color-caramel: #66360f;
-  --color-gingerbread: #5d2c04;
-  --color-chocolate: #2c1603;
-  --color-tortilla: #9a7b4f;
-  --color-umber: #352415;
-  --color-tawny: #7e491d;
-  --color-brunette: #391e07;
-  --color-cinammon: #642b0d;
-  --color-penny: #522915;
-  
-  /* greys */
-    
-  --color-grey: #aaaaaa;
-  --color-shadow: #373737;
-  --color-graphite: #584d5b;
-  --color-iron: #332d31;
-  --color-pewter: #6a6880;
-  --color-cloud: #c5c5d0;
-  --color-silver: #dddddd;
-  --color-smoke: #59515f;
-  --color-anchor: #42424c;
-  --color-ash: #554c4d;
-  --color-porpoise: #4d4c5c;
-  --color-dove: #7c6e7f;
-  --color-fog: #655965;
-  --color-flint: #7d7c9c;
-  --color-pebble: #333333;
-  --color-lead: #403f4e;
-  --color-coin: #9897a9;
-  --color-fossil: #787276;
-    
-  /* blacks */
-    
-  --color-black: #111111;
-  --color-ebony: #080401;
-  --color-crow: #25221F;
-  --color-charcoal: #222023;
-}
-.color-container {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1em;
-}
-.color-item {
-  align-items: center;
-  border: 2px solid var(--color-black);
-  display: flex;
-  flex-flow: column;
-  height: 200px;
-  justify-content: center;
-  width: 200px;
-}
-/* .color-10 {background-color: var(--dark-jungle-green);}
-.color-20 {background-color: var(--myrtle-green);}
-.color-30 {background-color: var(--morning-blue);}
-.color-40 {background-color: var(--peach-crayola);}
-.color-50 {background-color: var(--red-pigment);}
-
-/* Custom Material Design Palette 
-.md-primaryColor {background-color: #5500e8}
-.md-primaryLightColor {background-color: #9244ff}
-.md-primaryDarkColor {background-color: #0000b4}
-.md-secondaryColor {background-color: #1775d1}
-.md-secondaryLightColor {background-color: #63a3ff}
-.md-secondaryDarkColor {background-color: #004a9f}
-.md-primaryTextColor {background-color: #ffffff}
-.md-secondaryTextColor {background-color: #ffffff}
-
-/* Default Material Design Palette 
-.md-default-primaryColor {background-color: #6200EE}
-.md-default-primaryVariantColor {background-color: #3700B3}
-.md-default-secondaryColor {background-color: #03DAC6}
-.md-default-secondaryVariantColor {background-color: #018786}
-.md-default-backgroundColor {background-color: #FFFFFF}
-.md-default-surfaceColor {background-color: #FFFFFF}
-.md-default-errorColor {background-color: #B00020}
-.md-default-lightText {background-color: #FFFFFF}
-.md-default-darkText {background-color: #000000} */
-/* Colors taken from The New Defaults */
-/* whites */
-.white {background-color: var(--color-white);}
-.pearl {background-color: var(--color-pearl);}
-.alabaster {background-color: var(--color-alabaster);}
-.snow {background-color: var(--color-snow);}
-.ivory {background-color: var(--color-ivory);}
-.cream {background-color: var(--color-cream);}
-.eggshell {background-color: var(--color-eggshell);}
-.cotton {background-color: var(--color-cotton);}
-.chiffon {background-color: var(--color-chiffon);}
-.salt {background-color: var(--color-salt);}
-.lace {background-color: var(--color-lace);}
-.coconut {background-color: var(--color-coconut);}
-.linen {background-color: var(--color-linen);}
-.bone {background-color: var(--color-bone);}
-.porcelain {background-color: var(--color-porcelain);}
-.parchment {background-color: var(--color-parchment);}
-.rice {background-color: var(--color-rice);}
-/* blues */
-.blue { background-color: var(--color-blue);color: white;}
-.navy { background-color: var(--color-navy);color: white;}
-.aqua { background-color: var(--color-aqua);color: white;}
-.sky { background-color: var(--color-sky);color: white;}
-.teal { background-color: var(--color-teal);color: white;}
-.slate { background-color: var(--color-slate);color: white;}
-.indigo { background-color: var(--color-indigo);color: white;}
-.cobalt { background-color: var(--color-cobalt);color: white;}
-.ocean { background-color: var(--color-ocean);color: white;}
-.peacock { background-color: var(--color-peacock);color: white;}
-.azure { background-color: var(--color-azure);color: white;}
-.cerulean { background-color: var(--color-cerulean);color: white;}
-.lapis { background-color: var(--color-lapis);color: white;}
-.spruce { background-color: var(--color-spruce);color: white;}
-.stone { background-color: var(--color-stone);color: white;}
-.aegean { background-color: var(--color-aegean);color: white;}
-.berry { background-color: var(--color-berry);color: white;}
-.denim { background-color: var(--color-denim);color: white;}
-.admiral { background-color: var(--color-admiral);color: white;}
-.sapphire { background-color: var(--color-sapphire);color: white;}
-.arctic { background-color: var(--color-arctic);color: white;}
-/* browns */
-.tan {background-color: var(--color-tan);}
-.beige {background-color: var(--color-beige);}
-.macaroon {background-color: var(--color-macaroon);}
-.hazelwood {background-color: var(--color-hazelwood);}
-.granola {background-color: var(--color-granola);}
-.oat {background-color: var(--color-oat);}
-.eggnog {background-color: var(--color-eggnog);}
-.fawn {background-color: var(--color-fawn);}
-.sugarcookie {background-color: var(--color-sugarcookie);}
-.sand {background-color: var(--color-sand);}
-.sepia {background-color: var(--color-sepia);}
-.latte {background-color: var(--color-latte);}
-.oyster {background-color: var(--color-oyster);}
-.biscotti {background-color: var(--color-biscotti);}
-.parmesean {background-color: var(--color-parmesean);}
-.hazelnut {background-color: var(--color-hazelnut);}
-.sandcastle {background-color: var(--color-sandcastle);}
-.buttermilk {background-color: var(--color-buttermilk);}
-.sanddollar {background-color: var(--color-sanddollar);}
-.shortbread {background-color: var(--color-shortbread);}
-/* yellows */
-.yellow {background-color: var(--color-yellow);}
-.canary {background-color: var(--color-canary);}
-.gold {background-color: var(--color-gold);}
-.daffodil {background-color: var(--color-daffodil);}
-.flaxen {background-color: var(--color-flaxen);}
-.butter {background-color: var(--color-butter);}
-.lemon {background-color: var(--color-lemon);}
-.mustard {background-color: var(--color-mustard);}
-.corn {background-color: var(--color-corn);}
-.medallion {background-color: var(--color-medallion);}
-.dandelion {background-color: var(--color-dandelion);}
-.bumblebee {background-color: var(--color-bumblebee);}
-.banana {background-color: var(--color-banana);}
-.butterscotch {background-color: var(--color-butterscotch);}
-.dijon {background-color: var(--color-dijon);}
-.honey {background-color: var(--color-honey);}
-.blonde {background-color: var(--color-blonde);}
-.pineapple {background-color: var(--color-pineapple);}
-.tuscansun {background-color: var(--color-tuscansun);}
-/* oranges */
-.orange {background-color: var(--color-orange);}
-.tangerine {background-color: var(--color-tangerine);}
-.merigold {background-color: var(--color-merigold);}
-.cider {background-color: var(--color-cider);}
-.rust {background-color: var(--color-rust);}
-.ginger {background-color: var(--color-ginger);}
-.tiger {background-color: var(--color-tiger);}
-.bronze {background-color: var(--color-bronze);}
-.cantaloupe {background-color: var(--color-cantaloupe);}
-.apricot {background-color: var(--color-apricot);}
-.carrot {background-color: var(--color-carrot);}
-.squash {background-color: var(--color-squash);}
-.spice {background-color: var(--color-spice);}
-.marmalade {background-color: var(--color-marmalade);}
-.amber {background-color: var(--color-amber);}
-.sandstone {background-color: var(--color-sandstone);}
-.yam {background-color: var(--color-yam);}
-/* reds */
-.red {background-color: var(--color-red);color: white;}
-.cherry {background-color: var(--color-cherry);color: white;}
-.rose {background-color: var(--color-rose);color: white;}
-.jam {background-color: var(--color-jam);color: white;}
-.merlot {background-color: var(--color-merlot);color: white;}
-.garnet {background-color: var(--color-garnet);color: white;}
-.crimson {background-color: var(--color-crimson);color: white;}
-.ruby {background-color: var(--color-ruby);color: white;}
-.scarlet {background-color: var(--color-scarlet);color: white;}
-.redwine {background-color: var(--color-redwine);color: white;}
-.redapple {background-color: var(--color-redapple);color: white;}
-.mahogany {background-color: var(--color-mahogany);color: white;}
-.blood {background-color: var(--color-blood);color: white;}
-.sangria {background-color: var(--color-sangria);color: white;}
-.currant {background-color: var(--color-currant);color: white;}
-.blush {background-color: var(--color-blush);color: white;}
-.candy {background-color: var(--color-candy);color: white;}
-.lipstick {background-color: var(--color-lipstick);color: white;}
-/* pinks */
-.pink { background-color: var(--color-pink);color: white;}
-.fuchsia { background-color: var(--color-fuchsia);color: white;}
-.punch { background-color: var(--color-punch);color: white;}
-.watermelon { background-color: var(--color-watermelon);color: white;}
-.flamingo { background-color: var(--color-flamingo);color: white;}
-.rouge { background-color: var(--color-rouge);color: white;}
-.salmon { background-color: var(--color-salmon);color: white;}
-.coral { background-color: var(--color-coral);color: white;}
-.peach { background-color: var(--color-peach);color: white;}
-.strawberry { background-color: var(--color-strawberry);color: white;}
-.rosewood { background-color: var(--color-rosewood);color: white;}
-.lemonade { background-color: var(--color-lemonade);color: white;}
-.taffy { background-color: var(--color-taffy);color: white;}
-.bubblegum { background-color: var(--color-bubblegum);color: white;}
-.balletslipper { background-color: var(--color-balletslipper);color: white;}
-.crepe { background-color: var(--color-crepe);color: white;}
-.maroon { background-color: var(--color-maroon);color: white;}
-.hotpink { background-color: var(--color-hotpink);color: white;}
-/* purples */
-.purple { background-color: var(--color-purple);color: white;}
-.mauve { background-color: var(--color-mauve);color: white;}
-.violet { background-color: var(--color-violet);color: white;}
-.boysenberry { background-color: var(--color-boysenberry);color: white;}
-.lavender { background-color: var(--color-lavender);color: white;}
-.plum { background-color: var(--color-plum);color: white;}
-.lilac { background-color: var(--color-lilac);color: white;}
-.periwinkle { background-color: var(--color-periwinkle);color: white;}
-.eggplant { background-color: var(--color-eggplant);color: white;}
-.iris { background-color: var(--color-iris);color: white;}
-.heather { background-color: var(--color-heather);color: white;}
-.amethyst { background-color: var(--color-amethyst);color: white;}
-.raisin { background-color: var(--color-raisin);color: white;}
-.orchid { background-color: var(--color-orchid);color: white;}
-.mulberry { background-color: var(--color-mulberry);color: white;}
-/* greens */
-.green { background-color: var(--color-green);color: white;}
-.chartreuse { background-color: var(--color-chartreuse);color: white;}
-.juniper { background-color: var(--color-juniper);color: white;}
-.sage { background-color: var(--color-sage);color: white;}
-.lime { background-color: var(--color-lime);color: white;}
-.fern { background-color: var(--color-fern);color: white;}
-.olive { background-color: var(--color-olive);color: white;}
-.emerald { background-color: var(--color-emerald);color: white;}
-.pear { background-color: var(--color-pear);color: white;}
-.moss { background-color: var(--color-moss);color: white;}
-.shamrock { background-color: var(--color-shamrock);color: white;}
-.seafoam { background-color: var(--color-seafoam);color: white;}
-.pine { background-color: var(--color-pine);color: white;}
-.parakeet { background-color: var(--color-parakeet);color: white;}
-.mint { background-color: var(--color-mint);color: white;}
-.seaweed { background-color: var(--color-seaweed);color: white;}
-.pickle { background-color: var(--color-pickle);color: white;}
-.pistachio { background-color: var(--color-pistachio);color: white;}
-.basil { background-color: var(--color-basil);color: white;}
-.crocodile { background-color: var(--color-crocodile);color: white;}
-/* browns */
-.brown { background-color: var(--color-brown);color: white;}
-.coffee { background-color: var(--color-coffee);color: white;}
-.mocha { background-color: var(--color-mocha);color: white;}
-.peanut { background-color: var(--color-peanut);color: white;}
-.carob { background-color: var(--color-carob);color: white;}
-.hickory { background-color: var(--color-hickory);color: white;}
-.pecan { background-color: var(--color-pecan);color: white;}
-.walnut { background-color: var(--color-walnut);color: white;}
-.caramel { background-color: var(--color-caramel);color: white;}
-.gingerbread { background-color: var(--color-gingerbread);color: white;}
-.chocolate { background-color: var(--color-chocolate);color: white;}
-.tortilla { background-color: var(--color-tortilla);color: white;}
-.umber { background-color: var(--color-umber);color: white;}
-.tawny { background-color: var(--color-tawny);color: white;}
-.brunette { background-color: var(--color-brunette);color: white;}
-.cinammon { background-color: var(--color-cinammon);color: white;}
-.penny { background-color: var(--color-penny);color: white;}
-/* greys */
-.grey { background-color: var(--color-grey);color: white;}
-.shadow { background-color: var(--color-shadow);color: white;}
-.graphite { background-color: var(--color-graphite);color: white;}
-.iron { background-color: var(--color-iron);color: white;}
-.pewter { background-color: var(--color-pewter);color: white;}
-.cloud { background-color: var(--color-cloud);color: white;}
-.silver { background-color: var(--color-silver);color: white;}
-.smoke { background-color: var(--color-smoke);color: white;}
-.anchor { background-color: var(--color-anchor);color: white;}
-.ash { background-color: var(--color-ash);color: white;}
-.porpoise { background-color: var(--color-porpoise);color: white;}
-.dove { background-color: var(--color-dove);color: white;}
-.fog { background-color: var(--color-fog);color: white;}
-.flint { background-color: var(--color-flint);color: white;}
-.pebble { background-color: var(--color-pebble);color: white;}
-.lead { background-color: var(--color-lead);color: white;}
-.coin { background-color: var(--color-coin);color: white;}
-.fossil { background-color: var(--color-fossil);color: white;}
-/* blacks */
-.black { background-color: var(--color-black);color: white;}
-.ebony { background-color: var(--color-ebony);color: white;}
-.crow { background-color: var(--color-crow);color: white;}
-.charcoal { background-color: var(--color-charcoal);color: white;}
-:root {
-  --color-hemi-orange: #f3782b;
-  --color-plum-crazy: #6600cc;
-  --color-cherry: #d2042d;
-  --color-black-cherry: #52253a;
-  --color-panther-pink: #be439d;
-  --color-green-go: #339a4b;
-  --color-sublime-green: #a0e03a;
-  --color-go-mango: #da5246;
-  --color-butterscotch: #d48827;
-  --color-bright-green: #66ff00;
-  --color-top-banana: #ffed4d;
-  --color-citron-yella: #9fa91f;
-  --color-rebeccapurple: #663399;
-}
-.hemi-orange {  background-color: var(--color-hemi-orange); color: white; }
-.plum-crazy {  background-color: var(--color-plum-crazy); color: white; }
-.cherry {  background-color: var(--color-cherry:); color: white; }
-.black-cherry {  background-color: var(--color-black-cherry); color: white; }
-.panther-pink {  background-color: var(--color-panther-pink); color: white; }
-.green-go {  background-color: var(--color-green-go); color: white; }
-.sublime-green {  background-color: var(--color-sublime-green); color: white; }
-.go-mango {  background-color: var(--color-go-mango); color: white; }
-.butterscotch: {  background-color: var(--color-butterscotch); color: white; }
-.bright-green {  background-color: var(--color-bright-green); color: white; }
-.top-banana {  background-color: var(--color-top-banana); color: white; }
-.citron-yella {  background-color: var(--color-citron-yella); color: white; }
-.panther-pink {  background-color: var(--color-panther-pink); color: white; }
-.rebeccapurple {  background-color: var(--color-rebeccapurple); color: white; }
-/* color-mix() experiment: lighten a charcoal black */
-:root {
-  /* lightening charcoal */
-  --oklch-text1: color-mix(in oklch, var(--oklch-color-charcoal) 10%, white);
-  --oklch-text2: color-mix(in oklch, var(--oklch-color-charcoal) 20%, white);
-  --oklch-text3: color-mix(in oklch, var(--oklch-color-charcoal) 30%, white);
-  --oklch-text4: color-mix(in oklch, var(--oklch-color-charcoal) 40%, white);
-  --oklch-text5: color-mix(in oklch, var(--oklch-color-charcoal) 50%, white);
-  --oklch-text6: color-mix(in oklch, var(--oklch-color-charcoal) 60%, white);
-  --oklch-text7: color-mix(in oklch, var(--oklch-color-charcoal) 70%, white);
-  --oklch-text8: color-mix(in oklch, var(--oklch-color-charcoal) 80%, white);
-  --oklch-text9: color-mix(in oklch, var(--oklch-color-charcoal) 90%, white);
-}
-.lch-light-text1 {
-  background-color: var(--text1);
-}
-.lch-light-text2 {
-  background-color: var(--text2);
-}
-.lch-light-text3 {
-  background-color: var(--text3);
-}
-.lch-light-text4 {
-  background-color: var(--text4);
-}
-.lch-light-text5 {
-  background-color: var(--text5);
-}
-.lch-light-text6 {
-  background-color: var(--text6);
-}
-.lch-light-text7 {
-  background-color: var(--text7);
-}
-.lch-light-text8 {
-  background-color: var(--text8);
-}
-.lch-light-text9 {
-  background-color: var(--text9);
-  color: #fff;
-}
-/* color-mix() experiment: darken a dark green mint color  */
-:root {
-  --lch-dark-text1: color-mix(in lab, var(--lab-color-mint) 10%, black);
-  --lch-dark-text2: color-mix(in lab, var(--lab-color-mint) 20%, black);
-  --lch-dark-text3: color-mix(in lab, var(--lab-color-mint) 30%, black);
-  --lch-dark-text4: color-mix(in lab, var(--lab-color-mint) 40%, black);
-  --lch-dark-text5: color-mix(in lab, var(--lab-color-mint) 50%, black);
-  --lch-dark-text6: color-mix(in lab, var(--lab-color-mint) 60%, black);
-  --lch-dark-text7: color-mix(in lab, var(--lab-color-mint) 70%, black);
-  --lch-dark-text8: color-mix(in lab, var(--lab-color-mint) 80%, black);
-  --lch-dark-text9: color-mix(in lab, var(--lab-color-mint) 90%, black);
-}
-.lch-dark-text1 {
-  background-color: var(--lch-dark-text1);
-  color: #fff;
-}
-.lch-dark-text2 {
-  background-color: var(--lch-dark-text2);
-  color: #fff;
-}
-.lch-dark-text3 {
-  background-color: var(--lch-dark-text3);
-  color: #fff;
-}
-.lch-dark-text4 {
-  background-color: var(--lch-dark-text4);
-  color: #fff;
-}
-.lch-dark-text5 {
-  background-color: var(--lch-dark-text5);
-  color: #fff;
-}
-.lch-dark-text6 {
-  background-color: var(--lch-dark-text6);
-  color: #fff;
-}
-.lch-dark-text7 {
-  background-color: var(--lch-dark-text7);
-  color: #fff;
-}
-.lch-dark-text8 {
-  background-color: var(--lch-dark-text8);
-  color: #fff;
-}
-.lch-dark-text9 {
-  background-color: var(--lch-dark-text9);
-  color: #fff;
-}
-:root {
-  --oklch-color-white: oklch(1 0 326);
-  --oklch-color-alabaster: oklch(0.99 0.01 88.7);
-  --oklch-color-snow: oklch(0.99 0.01 190);
-  --oklch-color-ivory: oklch(0.98 0.02 89.2);
-  --oklch-color-cream: oklch(0.98 0.04 101);
-  --oklch-color-eggshell: oklch(0.98 0.03 96.4);
-  --oklch-color-cotton: oklch(0.99 0.01 116);
-  --oklch-color-chiffon: oklch(0.98 0.01 107);
-  --oklch-color-salt: oklch(0.96 0.01 39.4);
-  --oklch-color-lace: oklch(0.97 0.01 74.4);
-  --oklch-color-coconut: oklch(0.97 0.02 60.8);
-  --oklch-color-linen: oklch(0.94 0.03 93.5);
-  --oklch-color-bone: oklch(0.9 0.03 87.9);
-  --oklch-color-porcelain: oklch(1 0 106);
-  --oklch-color-parchment: oklch(0.97 0.03 94.9);
-  --oklch-color-rice: oklch(0.98 0.01 76.6);
-  --oklch-color-blue: oklch(0.56 0.18 254);
-  --oklch-color-navy: oklch(0.24 0.07 252);
-  --oklch-color-aqua: oklch(0.85 0.1 225);
-  --oklch-color-sky: oklch(0.73 0.16 238);
-  --oklch-color-teal: oklch(0.77 0.12 195);
-  --oklch-color-slate: oklch(0.58 0.02 264);
-  --oklch-color-indigo: oklch(0.29 0.11 285);
-  --oklch-color-cobalt: oklch(0.42 0.21 265);
-  --oklch-color-ocean: oklch(0.44 0.07 199);
-  --oklch-color-peacock: oklch(0.27 0.05 217);
-  --oklch-color-azure: oklch(0.36 0.2 268);
-  --oklch-color-cerulean: oklch(0.62 0.12 231);
-  --oklch-color-lapis: oklch(0.42 0.22 269);
-  --oklch-color-spruce: oklch(0.35 0.03 240);
-  --oklch-color-stone: oklch(0.56 0.05 238);
-  --oklch-color-aegean: oklch(0.38 0.08 252);
-  --oklch-color-berry: oklch(0.29 0.14 280);
-  --oklch-color-denim: oklch(0.24 0.06 268);
-  --oklch-color-admiral: oklch(0.31 0.2 265);
-  --oklch-color-sapphire: oklch(0.71 0.09 208);
-  --oklch-color-arctic: oklch(0.89 0.1 208);
-  --oklch-color-tan: oklch(0.89 0.06 97.4);
-  --oklch-color-beige: oklch(0.89 0.09 96.3);
-  --oklch-color-macaroon: oklch(0.9 0.13 96.8);
-  --oklch-color-hazelwood: oklch(0.79 0.06 94.2);
-  --oklch-color-granola: oklch(0.79 0.12 91.1);
-  --oklch-color-oat: oklch(0.84 0.08 91.8);
-  --oklch-color-eggnog: oklch(0.92 0.09 90.4);
-  --oklch-color-fawn: oklch(0.74 0.11 90.6);
-  --oklch-color-sugarcookie: oklch(0.93 0.08 102);
-  --oklch-color-sand: oklch(0.79 0.11 90.5);
-  --oklch-color-sepia: oklch(0.8 0.09 74.7);
-  --oklch-color-latte: oklch(0.83 0.1 80.7);
-  --oklch-color-oyster: oklch(0.87 0.07 103);
-  --oklch-color-biscotti: oklch(0.83 0.12 92.3);
-  --oklch-color-parmesean: oklch(0.93 0.11 96.1);
-  --oklch-color-hazelnut: oklch(0.73 0.1 91.5);
-  --oklch-color-sandcastle: oklch(0.82 0.09 90.3);
-  --oklch-color-buttermilk: oklch(0.95 0.08 96.7);
-  --oklch-color-sanddollar: oklch(0.92 0.06 103);
-  --oklch-color-shortbread: oklch(0.93 0.11 96.1);
-  --oklch-color-yellow: oklch(0.9 0.19 97.4);
-  --oklch-color-canary: oklch(0.85 0.17 90.4);
-  --oklch-color-gold: oklch(0.79 0.17 73.3);
-  --oklch-color-daffodil: oklch(0.94 0.12 101);
-  --oklch-color-flaxen: oklch(0.78 0.12 90.9);
-  --oklch-color-butter: oklch(0.91 0.18 99.7);
-  --oklch-color-lemon: oklch(0.96 0.18 114);
-  --oklch-color-mustard: oklch(0.8 0.15 87.8);
-  --oklch-color-corn: oklch(0.84 0.18 101);
-  --oklch-color-medallion: oklch(0.78 0.16 87.6);
-  --oklch-color-dandelion: oklch(0.87 0.17 91);
-  --oklch-color-bumblebee: oklch(0.91 0.19 101);
-  --oklch-color-banana: oklch(0.96 0.1 103);
-  --oklch-color-butterscotch: oklch(0.83 0.17 84.9);
-  --oklch-color-dijon: oklch(0.69 0.14 85);
-  --oklch-color-honey: oklch(0.75 0.16 69.6);
-  --oklch-color-blonde: oklch(0.93 0.14 101);
-  --oklch-color-pineapple: oklch(0.91 0.18 99.8);
-  --oklch-color-tuscansun: oklch(0.87 0.17 92.8);
-  --oklch-color-orange: oklch(0.74 0.18 53.5);
-  --oklch-color-tangerine: oklch(0.73 0.17 51.9);
-  --oklch-color-merigold: oklch(0.81 0.16 74.9);
-  --oklch-color-cider: oklch(0.59 0.13 56.2);
-  --oklch-color-rust: oklch(0.46 0.12 49.7);
-  --oklch-color-ginger: oklch(0.57 0.15 49.7);
-  --oklch-color-tiger: oklch(0.7 0.2 45.6);
-  --oklch-color-bronze: oklch(0.56 0.14 50.9);
-  --oklch-color-cantaloupe: oklch(0.79 0.13 47.7);
-  --oklch-color-apricot: oklch(0.71 0.17 57.1);
-  --oklch-color-carrot: oklch(0.68 0.18 49.1);
-  --oklch-color-squash: oklch(0.6 0.16 48.5);
-  --oklch-color-spice: oklch(0.42 0.11 52.4);
-  --oklch-color-marmalade: oklch(0.62 0.16 49.6);
-  --oklch-color-amber: oklch(0.44 0.13 42.7);
-  --oklch-color-sandstone: oklch(0.65 0.15 52);
-  --oklch-color-yam: oklch(0.6 0.17 46.7);
-  --oklch-color-red: oklch(0.66 0.23 28.4);
-  --oklch-color-cherry: oklch(0.44 0.17 30.4);
-  --oklch-color-rose: oklch(0.59 0.22 26.5);
-  --oklch-color-jam: oklch(0.32 0.11 28.5);
-  --oklch-color-merlot: oklch(0.32 0.08 26.9);
-  --oklch-color-garnet: oklch(0.31 0.12 30);
-  --oklch-color-crimson: oklch(0.5 0.2 29.2);
-  --oklch-color-ruby: oklch(0.41 0.17 29.2);
-  --oklch-color-scarlet: oklch(0.42 0.16 29.1);
-  --oklch-color-redwine: oklch(0.27 0.1 29);
-  --oklch-color-redapple: oklch(0.47 0.18 30.2);
-  --oklch-color-mahogany: oklch(0.25 0.08 28.6);
-  --oklch-color-blood: oklch(0.35 0.13 30.2);
-  --oklch-color-sangria: oklch(0.33 0.1 28.1);
-  --oklch-color-currant: oklch(0.33 0.12 29.2);
-  --oklch-color-blush: oklch(0.57 0.14 27.7);
-  --oklch-color-candy: oklch(0.55 0.22 30.2);
-  --oklch-color-lipstick: oklch(0.44 0.17 30.4);
-  --oklch-color-pink: oklch(0.79 0.13 346);
-  --oklch-color-fuchsia: oklch(0.65 0.27 341);
-  --oklch-color-punch: oklch(0.67 0.2 10);
-  --oklch-color-watermelon: oklch(0.75 0.15 7.5);
-  --oklch-color-flamingo: oklch(0.81 0.11 5.11);
-  --oklch-color-rouge: oklch(0.7 0.17 7.51);
-  --oklch-color-salmon: oklch(0.82 0.1 28.6);
-  --oklch-color-coral: oklch(0.73 0.16 31.2);
-  --oklch-color-peach: oklch(0.77 0.13 30.2);
-  --oklch-color-strawberry: oklch(0.67 0.21 24.5);
-  --oklch-color-rosewood: oklch(0.51 0.13 22.7);
-  --oklch-color-lemonade: oklch(0.85 0.08 1.31);
-  --oklch-color-taffy: oklch(0.76 0.16 348);
-  --oklch-color-bubblegum: oklch(0.71 0.21 355);
-  --oklch-color-balletslipper: oklch(0.79 0.12 354);
-  --oklch-color-crepe: oklch(0.84 0.07 1.58);
-  --oklch-color-maroon: oklch(0.41 0.15 358);
-  --oklch-color-hotpink: oklch(0.66 0.26 356);
-  --oklch-color-purple: oklch(0.55 0.26 321);
-  --oklch-color-mauve: oklch(0.49 0.11 318);
-  --oklch-color-violet: oklch(0.41 0.2 315);
-  --oklch-color-boysenberry: oklch(0.33 0.13 357);
-  --oklch-color-lavender: oklch(0.8 0.14 319);
-  --oklch-color-plum: oklch(0.34 0.1 360);
-  --oklch-color-lilac: oklch(0.63 0.18 319);
-  --oklch-color-periwinkle: oklch(0.73 0.1 314);
-  --oklch-color-eggplant: oklch(0.25 0.07 327);
-  --oklch-color-iris: oklch(0.6 0.15 307);
-  --oklch-color-heather: oklch(0.64 0.1 307);
-  --oklch-color-amethyst: oklch(0.62 0.2 306);
-  --oklch-color-raisin: oklch(0.2 0.06 358);
-  --oklch-color-orchid: oklch(0.66 0.2 306);
-  --oklch-color-mulberry: oklch(0.27 0.11 4.92);
-  --oklch-color-green: oklch(0.74 0.22 144);
-  --oklch-color-chartreuse: oklch(0.91 0.23 129);
-  --oklch-color-juniper: oklch(0.41 0.1 129);
-  --oklch-color-sage: oklch(0.61 0.06 138);
-  --oklch-color-lime: oklch(0.87 0.25 149);
-  --oklch-color-fern: oklch(0.72 0.15 145);
-  --oklch-color-olive: oklch(0.76 0.13 128);
-  --oklch-color-emerald: oklch(0.55 0.18 143);
-  --oklch-color-pear: oklch(0.71 0.18 132);
-  --oklch-color-moss: oklch(0.49 0.12 132);
-  --oklch-color-shamrock: oklch(0.65 0.22 143);
-  --oklch-color-seafoam: oklch(0.84 0.18 156);
-  --oklch-color-pine: oklch(0.39 0.09 141);
-  --oklch-color-parakeet: oklch(0.7 0.21 147);
-  --oklch-color-mint: oklch(0.88 0.1 162);
-  --oklch-color-seaweed: oklch(0.38 0.07 132);
-  --oklch-color-pickle: oklch(0.55 0.11 131);
-  --oklch-color-pistachio: oklch(0.84 0.04 161);
-  --oklch-color-basil: oklch(0.45 0.1 142);
-  --oklch-color-crocodile: oklch(0.55 0.1 129);
-  --oklch-color-brown: oklch(0.22 0.03 66.9);
-  --oklch-color-coffee: oklch(0.35 0.05 73.3);
-  --oklch-color-mocha: oklch(0.3 0.05 74.1);
-  --oklch-color-peanut: oklch(0.5 0.07 74);
-  --oklch-color-carob: oklch(0.28 0.04 76.2);
-  --oklch-color-hickory: oklch(0.26 0.05 46.6);
-  --oklch-color-pecan: oklch(0.31 0.06 46.5);
-  --oklch-color-walnut: oklch(0.3 0.05 56.9);
-  --oklch-color-caramel: oklch(0.39 0.08 55);
-  --oklch-color-gingerbread: oklch(0.35 0.09 52.9);
-  --oklch-color-chocolate: oklch(0.23 0.05 59.9);
-  --oklch-color-tortilla: oklch(0.6 0.07 75.4);
-  --oklch-color-umber: oklch(0.28 0.04 61.9);
-  --oklch-color-tawny: oklch(0.46 0.09 56.9);
-  --oklch-color-brunette: oklch(0.27 0.05 57.6);
-  --oklch-color-cinammon: oklch(0.36 0.09 44.9);
-  --oklch-color-penny: oklch(0.33 0.07 45.4);
-  --oklch-color-grey: oklch(0.74 0 0);
-  --oklch-color-shadow: oklch(0.34 0 0);
-  --oklch-color-graphite: oklch(0.44 0.03 319);
-  --oklch-color-iron: oklch(0.31 0.01 338);
-  --oklch-color-pewter: oklch(0.53 0.04 289);
-  --oklch-color-cloud: oklch(0.83 0.02 286);
-  --oklch-color-silver: oklch(0.9 0 0);
-  --oklch-color-smoke: oklch(0.45 0.02 311);
-  --oklch-color-anchor: oklch(0.38 0.02 286);
-  --oklch-color-ash: oklch(0.43 0.01 9.96);
-  --oklch-color-porpoise: oklch(0.42 0.03 288);
-  --oklch-color-dove: oklch(0.56 0.03 320);
-  --oklch-color-fog: oklch(0.48 0.02 326);
-  --oklch-color-flint: oklch(0.6 0.05 286);
-  --oklch-color-pebble: oklch(0.32 0 0);
-  --oklch-color-lead: oklch(0.37 0.03 288);
-  --oklch-color-coin: oklch(0.68 0.03 288);
-  --oklch-color-fossil: oklch(0.56 0.01 338);
-  --oklch-color-black: oklch(0.18 0 0);
-  --oklch-color-ebony: oklch(0.11 0.02 71.8);
-  --oklch-color-crow: oklch(0.25 0.01 67.5);
-  --oklch-color-charcoal: oklch(0.25 0.01 315);
-}
-/* .color-container {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1em;
-} */
-.oklch-color-item {
-  align-items: center;
-  border: 2px solid var(--oklch-color-charcoal);
-  display: flex;
-  flex-flow: column;
-  height: 300px;
-  justify-content: center;
-  width: 300px;
-}
-/* Colors taken from The New Defaults */
-/* whites */
-.white {background-color: var(--oklch-color-white);}
-.pearl {background-color: var(--oklch-color-pearl);}
-.alabaster {background-color: var(--oklch-color-alabaster);}
-.snow {background-color: var(--oklch-color-snow);}
-.ivory {background-color: var(--oklch-color-ivory);}
-.cream {background-color: var(--oklch-color-cream);}
-.eggshell {background-color: var(--oklch-color-eggshell);}
-.cotton {background-color: var(--oklch-color-cotton);}
-.chiffon {background-color: var(--oklch-color-chiffon);}
-.salt {background-color: var(--oklch-color-salt);}
-.lace {background-color: var(--oklch-color-lace);}
-.coconut {background-color: var(--oklch-color-coconut);}
-.linen {background-color: var(--oklch-color-linen);}
-.bone {background-color: var(--oklch-color-bone);}
-.porcelain {background-color: var(--oklch-color-porcelain);}
-.parchment {background-color: var(--oklch-color-parchment);}
-.rice {background-color: var(--oklch-color-rice);}
-/* blues */
-.blue { background-color: var(--oklch-color-blue);color: white;}
-.navy { background-color: var(--oklch-color-navy);color: white;}
-.aqua { background-color: var(--oklch-color-aqua);color: white;}
-.sky { background-color: var(--oklch-color-sky);color: white;}
-.teal { background-color: var(--oklch-color-teal);color: white;}
-.slate { background-color: var(--oklch-color-slate);color: white;}
-.indigo { background-color: var(--oklch-color-indigo);color: white;}
-.cobalt { background-color: var(--oklch-color-cobalt);color: white;}
-.ocean { background-color: var(--oklch-color-ocean);color: white;}
-.peacock { background-color: var(--oklch-color-peacock);color: white;}
-.azure { background-color: var(--oklch-color-azure);color: white;}
-.cerulean { background-color: var(--oklch-color-cerulean);color: white;}
-.lapis { background-color: var(--oklch-color-lapis);color: white;}
-.spruce { background-color: var(--oklch-color-spruce);color: white;}
-.stone { background-color: var(--oklch-color-stone);color: white;}
-.aegean { background-color: var(--oklch-color-aegean);color: white;}
-.berry { background-color: var(--oklch-color-berry);color: white;}
-.denim { background-color: var(--oklch-color-denim);color: white;}
-.admiral { background-color: var(--oklch-color-admiral);color: white;}
-.sapphire { background-color: var(--oklch-color-sapphire);color: white;}
-.arctic { background-color: var(--oklch-color-arctic);color: white;}
-/* browns */
-.tan {background-color: var(--oklch-color-tan);}
-.beige {background-color: var(--oklch-color-beige);}
-.macaroon {background-color: var(--oklch-color-macaroon);}
-.hazelwood {background-color: var(--oklch-color-hazelwood);}
-.granola {background-color: var(--oklch-color-granola);}
-.oat {background-color: var(--oklch-color-oat);}
-.eggnog {background-color: var(--oklch-color-eggnog);}
-.fawn {background-color: var(--oklch-color-fawn);}
-.sugarcookie {background-color: var(--oklch-color-sugarcookie);}
-.sand {background-color: var(--oklch-color-sand);}
-.sepia {background-color: var(--oklch-color-sepia);}
-.latte {background-color: var(--oklch-color-latte);}
-.oyster {background-color: var(--oklch-color-oyster);}
-.biscotti {background-color: var(--oklch-color-biscotti);}
-.parmesean {background-color: var(--oklch-color-parmesean);}
-.hazelnut {background-color: var(--oklch-color-hazelnut);}
-.sandcastle {background-color: var(--oklch-color-sandcastle);}
-.buttermilk {background-color: var(--oklch-color-buttermilk);}
-.sanddollar {background-color: var(--oklch-color-sanddollar);}
-.shortbread {background-color: var(--oklch-color-shortbread);}
-/* yellows */
-.yellow {background-color: var(--oklch-color-yellow);}
-.canary {background-color: var(--oklch-color-canary);}
-.gold {background-color: var(--oklch-color-gold);}
-.daffodil {background-color: var(--oklch-color-daffodil);}
-.flaxen {background-color: var(--oklch-color-flaxen);}
-.butter {background-color: var(--oklch-color-butter);}
-.lemon {background-color: var(--oklch-color-lemon);}
-.mustard {background-color: var(--oklch-color-mustard);}
-.corn {background-color: var(--oklch-color-corn);}
-.medallion {background-color: var(--oklch-color-medallion);}
-.dandelion {background-color: var(--oklch-color-dandelion);}
-.bumblebee {background-color: var(--oklch-color-bumblebee);}
-.banana {background-color: var(--oklch-color-banana);}
-.butterscotch {background-color: var(--oklch-color-butterscotch);}
-.dijon {background-color: var(--oklch-color-dijon);}
-.honey {background-color: var(--oklch-color-honey);}
-.blonde {background-color: var(--oklch-color-blonde);}
-.pineapple {background-color: var(--oklch-color-pineapple);}
-.tuscansun {background-color: var(--oklch-color-tuscansun);}
-/* oranges */
-.orange {background-color: var(--oklch-color-orange);}
-.tangerine {background-color: var(--oklch-color-tangerine);}
-.merigold {background-color: var(--oklch-color-merigold);}
-.cider {background-color: var(--oklch-color-cider);}
-.rust {background-color: var(--oklch-color-rust);}
-.ginger {background-color: var(--oklch-color-ginger);}
-.tiger {background-color: var(--oklch-color-tiger);}
-.bronze {background-color: var(--oklch-color-bronze);}
-.cantaloupe {background-color: var(--oklch-color-cantaloupe);}
-.apricot {background-color: var(--oklch-color-apricot);}
-.carrot {background-color: var(--oklch-color-carrot);}
-.squash {background-color: var(--oklch-color-squash);}
-.spice {background-color: var(--oklch-color-spice);}
-.marmalade {background-color: var(--oklch-color-marmalade);}
-.amber {background-color: var(--oklch-color-amber);}
-.sandstone {background-color: var(--oklch-color-sandstone);}
-.yam {background-color: var(--oklch-color-yam);}
-/* reds */
-.red {background-color: var(--oklch-color-red);color: white;}
-.cherry {background-color: var(--oklch-color-cherry);color: white;}
-.rose {background-color: var(--oklch-color-rose);color: white;}
-.jam {background-color: var(--oklch-color-jam);color: white;}
-.merlot {background-color: var(--oklch-color-merlot);color: white;}
-.garnet {background-color: var(--oklch-color-garnet);color: white;}
-.crimson {background-color: var(--oklch-color-crimson);color: white;}
-.ruby {background-color: var(--oklch-color-ruby);color: white;}
-.scarlet {background-color: var(--oklch-color-scarlet);color: white;}
-.redwine {background-color: var(--oklch-color-redwine);color: white;}
-.redapple {background-color: var(--oklch-color-redapple);color: white;}
-.mahogany {background-color: var(--oklch-color-mahogany);color: white;}
-.blood {background-color: var(--oklch-color-blood);color: white;}
-.sangria {background-color: var(--oklch-color-sangria);color: white;}
-.currant {background-color: var(--oklch-color-currant);color: white;}
-.blush {background-color: var(--oklch-color-blush);color: white;}
-.candy {background-color: var(--oklch-color-candy);color: white;}
-.lipstick {background-color: var(--oklch-color-lipstick);color: white;}
-/* pinks */
-.pink { background-color: var(--oklch-color-pink);color: white;}
-.fuchsia { background-color: var(--oklch-color-fuchsia);color: white;}
-.punch { background-color: var(--oklch-color-punch);color: white;}
-.watermelon { background-color: var(--oklch-color-watermelon);color: white;}
-.flamingo { background-color: var(--oklch-color-flamingo);color: white;}
-.rouge { background-color: var(--oklch-color-rouge);color: white;}
-.salmon { background-color: var(--oklch-color-salmon);color: white;}
-.coral { background-color: var(--oklch-color-coral);color: white;}
-.peach { background-color: var(--oklch-color-peach);color: white;}
-.strawberry { background-color: var(--oklch-color-strawberry);color: white;}
-.rosewood { background-color: var(--oklch-color-rosewood);color: white;}
-.lemonade { background-color: var(--oklch-color-lemonade);color: white;}
-.taffy { background-color: var(--oklch-color-taffy);color: white;}
-.bubblegum { background-color: var(--oklch-color-bubblegum);color: white;}
-.balletslipper { background-color: var(--oklch-color-balletslipper);color: white;}
-.crepe { background-color: var(--oklch-color-crepe);color: white;}
-.maroon { background-color: var(--oklch-color-maroon);color: white;}
-.hotpink { background-color: var(--oklch-color-hotpink);color: white;}
-/* purples */
-.purple { background-color: var(--oklch-color-purple);color: white;}
-.mauve { background-color: var(--oklch-color-mauve);color: white;}
-.violet { background-color: var(--oklch-color-violet);color: white;}
-.boysenberry { background-color: var(--oklch-color-boysenberry);color: white;}
-.lavender { background-color: var(--oklch-color-lavender);color: white;}
-.plum { background-color: var(--oklch-color-plum);color: white;}
-.lilac { background-color: var(--oklch-color-lilac);color: white;}
-.periwinkle { background-color: var(--oklch-color-periwinkle);color: white;}
-.eggplant { background-color: var(--oklch-color-eggplant);color: white;}
-.iris { background-color: var(--oklch-color-iris);color: white;}
-.heather { background-color: var(--oklch-color-heather);color: white;}
-.amethyst { background-color: var(--oklch-color-amethyst);color: white;}
-.raisin { background-color: var(--oklch-color-raisin);color: white;}
-.orchid { background-color: var(--oklch-color-orchid);color: white;}
-.mulberry { background-color: var(--oklch-color-mulberry);color: white;}
-/* greens */
-.green { background-color: var(--oklch-color-green);color: white;}
-.chartreuse { background-color: var(--oklch-color-chartreuse);color: white;}
-.juniper { background-color: var(--oklch-color-juniper);color: white;}
-.sage { background-color: var(--oklch-color-sage);color: white;}
-.lime { background-color: var(--oklch-color-lime);color: white;}
-.fern { background-color: var(--oklch-color-fern);color: white;}
-.olive { background-color: var(--oklch-color-olive);color: white;}
-.emerald { background-color: var(--oklch-color-emerald);color: white;}
-.pear { background-color: var(--oklch-color-pear);color: white;}
-.moss { background-color: var(--oklch-color-moss);color: white;}
-.shamrock { background-color: var(--oklch-color-shamrock);color: white;}
-.seafoam { background-color: var(--oklch-color-seafoam);color: white;}
-.pine { background-color: var(--oklch-color-pine);color: white;}
-.parakeet { background-color: var(--oklch-color-parakeet);color: white;}
-.mint { background-color: var(--oklch-color-mint);color: white;}
-.seaweed { background-color: var(--oklch-color-seaweed);color: white;}
-.pickle { background-color: var(--oklch-color-pickle);color: white;}
-.pistachio { background-color: var(--oklch-color-pistachio);color: white;}
-.basil { background-color: var(--oklch-color-basil);color: white;}
-.crocodile { background-color: var(--oklch-color-crocodile);color: white;}
-/* browns */
-.brown { background-color: var(--oklch-color-brown);color: white;}
-.coffee { background-color: var(--oklch-color-coffee);color: white;}
-.mocha { background-color: var(--oklch-color-mocha);color: white;}
-.peanut { background-color: var(--oklch-color-peanut);color: white;}
-.carob { background-color: var(--oklch-color-carob);color: white;}
-.hickory { background-color: var(--oklch-color-hickory);color: white;}
-.pecan { background-color: var(--oklch-color-pecan);color: white;}
-.walnut { background-color: var(--oklch-color-walnut);color: white;}
-.caramel { background-color: var(--oklch-color-caramel);color: white;}
-.gingerbread { background-color: var(--oklch-color-gingerbread);color: white;}
-.chocolate { background-color: var(--oklch-color-chocolate);color: white;}
-.tortilla { background-color: var(--oklch-color-tortilla);color: white;}
-.umber { background-color: var(--oklch-color-umber);color: white;}
-.tawny { background-color: var(--oklch-color-tawny);color: white;}
-.brunette { background-color: var(--oklch-color-brunette);color: white;}
-.cinammon { background-color: var(--oklch-color-cinammon);color: white;}
-.penny { background-color: var(--oklch-color-penny);color: white;}
-/* greys */
-.grey { background-color: var(--oklch-color-grey);color: white;}
-.shadow { background-color: var(--oklch-color-shadow);color: white;}
-.graphite { background-color: var(--oklch-color-graphite);color: white;}
-.iron { background-color: var(--oklch-color-iron);color: white;}
-.pewter { background-color: var(--oklch-color-pewter);color: white;}
-.cloud { background-color: var(--oklch-color-cloud);color: white;}
-.silver { background-color: var(--oklch-color-silver);color: white;}
-.smoke { background-color: var(--oklch-color-smoke);color: white;}
-.anchor { background-color: var(--oklch-color-anchor);color: white;}
-.ash { background-color: var(--oklch-color-ash);color: white;}
-.porpoise { background-color: var(--oklch-color-porpoise);color: white;}
-.dove { background-color: var(--oklch-color-dove);color: white;}
-.fog { background-color: var(--oklch-color-fog);color: white;}
-.flint { background-color: var(--oklch-color-flint);color: white;}
-.pebble { background-color: var(--oklch-color-pebble);color: white;}
-.lead { background-color: var(--oklch-color-lead);color: white;}
-.coin { background-color: var(--oklch-color-coin);color: white;}
-.fossil { background-color: var(--oklch-color-fossil);color: white;}
-/* blacks */
-.black { background-color: var(--oklch-color-black);color: white;}
-.ebony { background-color: var(--oklch-color-ebony);color: white;}
-.crow { background-color: var(--oklch-color-crow);color: white;}
-.charcoal { background-color: var(--oklch-color-charcoal);color: white;}
-:root {
-  --oklch-color-hemi-orange: oklch(0.7 0.17 48.1);
-  --oklch-color-plum-crazy: oklch(0.45 0.25 294);
-  --oklch-color-black-cherry: oklch(0.33 0.07 352);
-  --oklch-color-panther-pink: oklch(0.58 0.19 340);
-  --oklch-color-green-go: oklch(0.61 0.15 148);
-  --oklch-color-sublime-green: oklch(0.83 0.2 129);
-  --oklch-color-go-mango: oklch(0.62 0.17 28.2);
-  --oklch-color-bright-green: oklch(0.88 0.28 138);
-  --oklch-color-top-banana: oklch(0.93 0.17 103);
-  --oklch-color-citron-yella: oklch(0.7 0.15 114);
-  --oklch-color-rebeccapurple: oklch(0.44 0.16 303);
-}
-.lch-hemi-orange {  background-color: var(--oklch-color-hemi-orange); color: white; }
-.lch-plum-crazy {  background-color: var(--oklch-color-plum-crazy); color: white; }
-.lch-cherry {  background-color: var(--oklch-color-cherry:); color: white; }
-.lch-black-cherry {  background-color: var(--oklch-color-black-cherry); color: white; }
-.lch-panther-pink {  background-color: var(--oklch-color-panther-pink); color: white; }
-.lch-green-go {  background-color: var(--oklch-color-green-go); color: white; }
-.lch-sublime-green {  background-color: var(--oklch-color-sublime-green); color: white; }
-.lch-go-mango {  background-color: var(--oklch-color-go-mango); color: white; }
-.lch-butterscotch: {  background-color: var(--oklch-color-butterscotch); color: white; }
-.lch-bright-green {  background-color: var(--oklch-color-bright-green); color: white; }
-.lch-top-banana {  background-color: var(--oklch-color-top-banana); color: white; }
-.lch-citron-yella {  background-color: var(--oklch-color-citron-yella); color: white; }
-.lch-panther-pink {  background-color: var(--oklch-color-panther-pink); color: white; }
-.lch-rebeccapurple {  background-color: var(--oklch-color-rebeccapurple); color: white; }
-:root {
-  --theme-primary: #663399;
-  --theme-primary-900: lab(from var(--theme-primary) 10% a b);
-  --theme-primary-800: lab(from var(--theme-primary) 20% a b);
-  --theme-primary-700: lab(from var(--theme-primary) 30% a b);
-  --theme-primary-600: lab(from var(--theme-primary) 40% a b);
-  --theme-primary-500: lab(from var(--theme-primary) 50% a b);
-  --theme-primary-400: lab(from var(--theme-primary) 60% a b);
-  --theme-primary-300: lab(from var(--theme-primary) 70% a b);
-  --theme-primary-200: lab(from var(--theme-primary) 80% a b);
-  --theme-primary-100: lab(from var(--theme-primary) 90% a b);
-
-  --theme-secondary: #2632c2;
-  --theme-secondary-900: lab(from var(--theme-secondary) 10% a b);
-  --theme-secondary-800: lab(from var(--theme-secondary) 20% a b);
-  --theme-secondary-700: lab(from var(--theme-secondary) 30% a b);
-  --theme-secondary-600: lab(from var(--theme-secondary) 40% a b);
-  --theme-secondary-500: lab(from var(--theme-secondary) 50% a b);
-  --theme-secondary-400: lab(from var(--theme-secondary) 60% a b);
-  --theme-secondary-300: lab(from var(--theme-secondary) 70% a b);
-  --theme-secondary-200: lab(from var(--theme-secondary) 80% a b);
-  --theme-secondary-100: lab(from var(--theme-secondary) 90% a b);
-
-  --theme-tertiary: #d2042d;
-  --theme-tertiary-100: lab(from var(--theme-tertiary) 90% a b);
-  --theme-tertiary-200: lab(from var(--theme-tertiary) 80% a b);
-  --theme-tertiary-300: lab(from var(--theme-tertiary) 70% a b);
-  --theme-tertiary-400: lab(from var(--theme-tertiary) 60% a b);
-  --theme-tertiary-500: lab(from var(--theme-tertiary) 50% a b);
-  --theme-tertiary-600: lab(from var(--theme-tertiary) 40% a b);
-  --theme-tertiary-700: lab(from var(--theme-tertiary) 30% a b);
-  --theme-tertiary-800: lab(from var(--theme-tertiary) 20% a b);
-  --theme-tertiary-900: lab(from var(--theme-tertiary) 10% a b);
-}
-html {
-  font-family: Raleway, sans-serif;
-}
-.outside-container {
-  -webkit-margin-before: 4rem;
-          margin-block-start: 4rem;
-  margin-inline: 10rem;
-}
-.explainer {
-  font-size: 1.5rem;
-  -webkit-margin-after: 2rem;
-          margin-block-end: 2rem;
-  width: 80ch;
-}
-.container {
-  display: flex;
-  flex-flow: row;
-}
-.box {
-  border: 4px solid black;
-  display: flex;
-  font-size: 2rem;
-  height: 100px;
-  margin-block: 10px;
-  -webkit-margin-end: 5px;
-          margin-inline-end: 5px;
-  place-content: center;
-  place-items: center;
-  width: 100px;
-}
-.warning {
-  color: red;
-}
-/* Classes for themes */
-/* Primary theme */
-.theme-900 {
-  background: var(--theme-primary-900);
-  color: color-contrast(var(--theme-primary-900) vs black, white);
-}
-.theme-800 {
-  background: var(--theme-primary-800);
-  color: color-contrast(var(--theme-primary-800) vs white, black);
-}
-.theme-700 {
-  background: var(--theme-primary-700);
-  color: color-contrast(var(--theme-primary-700) vs white, black);
-}
-.theme-600 {
-  background: var(--theme-primary-600);
-  color: color-contrast(var(--theme-primary-600) vs white, black);
-}
-.theme-500 {
-  background: var(--theme-primary-500);
-  color: color-contrast(var(--theme-primary-500) vs white, black);
-}
-.theme-400 {
-  background: var(--theme-primary-400);
-  color: color-contrast(var(--theme-primary-400) vs white, black);
-}
-.theme-300 {
-  background: var(--theme-primary-300);
-  color: color-contrast(var(--theme-primary-300) vs white, black);
-}
-.theme-200 {
-  background: var(--theme-primary-200);
-  color: color-contrast(var(--theme-primary-200) vs white, black);
-}
-.theme-100 {
-  background: var(--theme-primary-100);
-  color: color-contrast(var(--theme-primary-100) vs white, black);
-}
-/* Secondary theme */
-.theme-secondary-900 {
-  background: var(--theme-secondary-900);
-  color: color-contrast(var(--theme-secondary-900) vs black, white);
-}
-.theme-secondary-800 {
-  background: var(--theme-secondary-800);
-  color: color-contrast(var(--theme-secondary-800) vs white, black);
-}
-.theme-secondary-700 {
-  background: var(--theme-secondary-700);
-  color: color-contrast(var(--theme-secondary-700) vs white, black);
-}
-.theme-secondary-600 {
-  background: var(--theme-secondary-600);
-  color: color-contrast(var(--theme-secondary-600) vs white, black);
-}
-.theme-secondary-500 {
-  background: var(--theme-secondary-500);
-  color: color-contrast(var(--theme-secondary-500) vs white, black);
-}
-.theme-secondary-400 {
-  background: var(--theme-secondary-400);
-  color: color-contrast(var(--theme-secondary-400) vs white, black);
-}
-.theme-secondary-300 {
-  background: var(--theme-secondary-300);
-  color: color-contrast(var(--theme-secondary-300) vs white, black);
-}
-.theme-secondary-200 {
-  background: var(--theme-secondary-200);
-  color: color-contrast(var(--theme-secondary-200) vs white, black);
-}
-.theme-secondary-100 {
-  background: var(--theme-secondary-100);
-  color: color-contrast(var(--theme-secondary-100) vs white, black);
-}
-/* Tertiary theme */
-.theme-tertiary-900 {
-  background: var(--theme-tertiary-900);
-  color: color-contrast(var(--theme-tertiary-900) vs black, white);
-}
-.theme-tertiary-800 {
-  background: var(--theme-tertiary-800);
-  color: color-contrast(var(--theme-tertiary-800) vs white, black);
-}
-.theme-tertiary-700 {
-  background: var(--theme-tertiary-700);
-  color: color-contrast(var(--theme-tertiary-700) vs white, black);
-}
-.theme-tertiary-600 {
-  background: var(--theme-tertiary-600);
-  color: color-contrast(var(--theme-tertiary-600) vs white, black);
-}
-.theme-tertiary-500 {
-  background: var(--theme-tertiary-500);
-  color: color-contrast(var(--theme-tertiary-500) vs white, black);
-}
-.theme-tertiary-400 {
-  background: var(--theme-tertiary-400);
-  color: color-contrast(var(--theme-tertiary-400) vs white, black);
-}
-.theme-tertiary-300 {
-  background: var(--theme-tertiary-300);
-  color: color-contrast(var(--theme-tertiary-300) vs white, black);
-}
-.theme-tertiary-200 {
-  background: var(--theme-tertiary-200);
-  color: color-contrast(var(--theme-tertiary-200) vs white, black);
-}
-.theme-tertiary-100 {
-  background: var(--theme-tertiary-100);
-  color: color-contrast(var(--theme-tertiary-100) vs white, black);
-}
 @font-face {
   font-family: 'Marvin Visions';
   src: url('/fonts/MarvinVisionsBig-Bold.woff2') format('woff2');
@@ -2609,22 +2571,17 @@ a:focus {
   outline: thin dotted;
 }
 .blockquote--normal {
-  -webkit-border-start: 5px solid var(--oklch-color-azure);
-          border-inline-start: 5px solid var(--oklch-color-azure);
-  -webkit-padding-start: 1.5em;
-          padding-inline-start: 1.5em;
+  border-inline-start: 5px solid var(--oklch-color-azure);
+  padding-inline-start: 1.5em;
 }
 .cite {
   font-weight: 700;
   margin-top: 1em;
 }
 .blockquote--center {
-  -webkit-border-after: 5px solid var(--oklch-color-azure);
-          border-block-end: 5px solid var(--oklch-color-azure);
+  border-block-end: 5px solid var(--oklch-color-azure);
 
-  -webkit-border-before: 5px solid var(--oklch-color-azure);
-
-          border-block-start: 5px solid var(--oklch-color-azure);
+  border-block-start: 5px solid var(--oklch-color-azure);
   margin: 0 auto;
   text-align: center;
 
@@ -2632,58 +2589,46 @@ a:focus {
   width: 80ch;
 }
 .blockquote--center p:first-child {
-    -webkit-margin-before: 1em;
-            margin-block-start: 1em;
+    margin-block-start: 1em;
   }
 .blockquote--center p:last-child {
-    -webkit-margin-after: 1em;
-            margin-block-end: 1em;
+    margin-block-end: 1em;
   }
 .blockquote--large {
   font-size: 1.5rem;
   width: 60ch;
 }
 .blockquote--single-top {
-  -webkit-border-before: 5px solid var(--oklch-color-azure);
-          border-block-start: 5px solid var(--oklch-color-azure);
+  border-block-start: 5px solid var(--oklch-color-azure);
 }
 .blockquote--single-top p:first-child {
-    -webkit-margin-before: 1rem;
-            margin-block-start: 1rem;
+    margin-block-start: 1rem;
   }
 .blockquote--single-bottom {
-  -webkit-border-after: 5px solid var(--oklch-color-azure);
-          border-block-end: 5px solid var(--oklch-color-azure);
+  border-block-end: 5px solid var(--oklch-color-azure);
 }
 .blockquote--single-bottom p:last-child {
-    -webkit-margin-after: 1rem;
-            margin-block-end: 1rem;
+    margin-block-end: 1rem;
   }
 .blockquote--single-both {
-  -webkit-border-after: 5px solid var(--oklch-color-azure);
-          border-block-end: 5px solid var(--oklch-color-azure);
-  -webkit-border-before: 5px solid var(--oklch-color-azure);
-          border-block-start: 5px solid var(--oklch-color-azure);
+  border-block-end: 5px solid var(--oklch-color-azure);
+  border-block-start: 5px solid var(--oklch-color-azure);
 }
 .blockquote--single-both p:first-child {
-    -webkit-margin-before: 1em;
-            margin-block-start: 1em;
+    margin-block-start: 1em;
   }
 .blockquote--single-both p:last-child {
-    -webkit-margin-after: 1em;
-            margin-block-end: 1em;
+    margin-block-end: 1em;
   }
 .blockquote--double-both {
   border-bottom: 10px double var(--oklch-color-azure);
   border-top: 10px double var(--oklch-color-azure);
 }
 .blockquote--double-both p:first-child {
-    -webkit-margin-before: 1em;
-            margin-block-start: 1em;
+    margin-block-start: 1em;
   }
 .blockquote--double-both p:last-child {
-    -webkit-margin-after: 1em;
-            margin-block-end: 1em;
+    margin-block-end: 1em;
   }
 pre {
   font-family: "Recursive", sans-serif;
@@ -2982,24 +2927,20 @@ dt {
   font-weight: 700;
 }
 dd {
-  -webkit-margin-start: 2em;
-          margin-inline-start: 2em;
+  margin-inline-start: 2em;
 }
 dd:not(:last-child) {
-  -webkit-margin-after: 2rem;
-          margin-block-end: 2rem;
+  margin-block-end: 2rem;
 }
 .font-desc {
   font-size: 1.5rem;
   font-weight: 700;
 }
 .font-desc dd {
-    -webkit-margin-start: 2em;
-            margin-inline-start: 2em;
+    margin-inline-start: 2em;
   }
 .font-desc dd:not(:last-child) {
-    -webkit-margin-after: 2rem;
-            margin-block-end: 2rem;
+    margin-block-end: 2rem;
   }
 @counter-style circled-decimal {
   suffix: ' ';

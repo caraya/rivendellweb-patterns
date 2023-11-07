@@ -1,4 +1,3 @@
-/* CSS HSL */
 :root {
 
   /* whites */
@@ -255,33 +254,6 @@
   width: 200px;
   height: 200px;
 }
-
-/* .color-10 {background-color: var(--dark-jungle-green);}
-.color-20 {background-color: var(--myrtle-green);}
-.color-30 {background-color: var(--morning-blue);}
-.color-40 {background-color: var(--peach-crayola);}
-.color-50 {background-color: var(--red-pigment);}
-
-/* Custom Material Design Palette 
-.md-primaryColor {background-color: #5500e8}
-.md-primaryLightColor {background-color: #9244ff}
-.md-primaryDarkColor {background-color: #0000b4}
-.md-secondaryColor {background-color: #1775d1}
-.md-secondaryLightColor {background-color: #63a3ff}
-.md-secondaryDarkColor {background-color: #004a9f}
-.md-primaryTextColor {background-color: #ffffff}
-.md-secondaryTextColor {background-color: #ffffff}
-
-/* Default Material Design Palette 
-.md-default-primaryColor {background-color: #6200EE}
-.md-default-primaryVariantColor {background-color: #3700B3}
-.md-default-secondaryColor {background-color: #03DAC6}
-.md-default-secondaryVariantColor {background-color: #018786}
-.md-default-backgroundColor {background-color: #FFFFFF}
-.md-default-surfaceColor {background-color: #FFFFFF}
-.md-default-errorColor {background-color: #B00020}
-.md-default-lightText {background-color: #FFFFFF}
-.md-default-darkText {background-color: #000000} */
 
 /* Colors taken from The New Defaults */
   /* whites */
